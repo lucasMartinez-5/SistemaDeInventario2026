@@ -50,6 +50,7 @@
     <Compile Include="aususis.cs" />
     <Compile Include="lususis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rproved.cs" />
     <Compile Include="xgeneral.cs" />
     <Compile Include="xnumcor.cs" />
   </ItemGroup>
