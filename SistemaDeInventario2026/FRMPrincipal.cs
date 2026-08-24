@@ -35,6 +35,7 @@ namespace SistemaDeInventario2026
             FRMFondo1 a = new FRMFondo1();
             a.MdiParent = this;
             a.Show();
+            /*
             BTNActualizarPassword.Enabled = false;
             BTNCerrarSesion.Enabled = false;
             BTNLogin.Enabled = true;
@@ -43,7 +44,9 @@ namespace SistemaDeInventario2026
             RTBAdministracion.Enabled = false;
             RBPInventario.Enabled = false;
             RTBInventario.Enabled = false;
-            
+            RBPDirectorio.Enabled = false;
+            RTBDirectorio.Enabled = false;
+            */
         }
         private void Estado_2()
         {
@@ -56,6 +59,7 @@ namespace SistemaDeInventario2026
             a.persona = this.persona;
             a.usuario = this.usuario;
             a.Show();
+            /*
             BTNActualizarPassword.Enabled = true;
             BTNCerrarSesion.Enabled = true;
             BTNLogin.Enabled = false;
@@ -64,6 +68,9 @@ namespace SistemaDeInventario2026
             RTBAdministracion.Enabled = true;
             RBPInventario.Enabled = true;
             RTBInventario.Enabled = true;
+            RBPDirectorio.Enabled = true;
+            RTBDirectorio.Enabled = true;
+            */
         }
         #endregion
 
@@ -176,6 +183,17 @@ namespace SistemaDeInventario2026
                 s.Close();
             }
             FRMCategoria_Lista a = new FRMCategoria_Lista();
+            a.MdiParent = this;
+            a.Show();
+        }
+
+        private void BTNProveedores_Click(object sender, EventArgs e)
+        {
+            foreach (Form s in this.MdiChildren)
+            {
+                s.Close();
+            }
+            FRMProveedor_Lista a = new FRMProveedor_Lista();
             a.MdiParent = this;
             a.Show();
         }

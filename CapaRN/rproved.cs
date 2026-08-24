@@ -21,7 +21,7 @@ namespace CapaRN
             private string _crprdirpro;
             private string _prprcodpro;
             private string _crprfotpro;
-            private string _crpnumcid;
+            private string _crprnumcid;
             //Instancia para conexion a PostgreSQL 8.2
             private CLConexionPGSQL Conexion;
 		#endregion 
@@ -77,10 +77,10 @@ namespace CapaRN
                 get{ return this._crprfotpro;}
                 set{ this._crprfotpro = value;}
             } 
-		    public string crpnumcid
+		    public string crprnumcid
             { 
-                get{ return this._crpnumcid;}
-                set{ this._crpnumcid = value;}
+                get{ return this._crprnumcid;}
+                set{ this._crprnumcid = value;}
             } 
         #endregion
 
@@ -97,7 +97,7 @@ namespace CapaRN
 		        this._crprdirpro = "";
 		        this._prprcodpro = "";
 		        this._crprfotpro = "";
-		        this._crpnumcid = "";
+		        this._crprnumcid = "";
                 this.Conexion = new CLConexionPGSQL();            } 
         #endregion
 
@@ -116,7 +116,7 @@ namespace CapaRN
                                      "crprdirpro," +
                                      "prprcodpro," +
                                      "crprfotpro," +
-                                     "crpnumcid " + 
+                                     "crprnumcid " + 
                              "from rproved " +
                              "where "+
                                     "prprcodpro = @prprcodpro";
@@ -139,7 +139,7 @@ namespace CapaRN
                     this._crprdirpro=ResultadoConsulta.GetString(7);
                     this._prprcodpro=ResultadoConsulta.GetString(8);
                     this._crprfotpro=ResultadoConsulta.GetString(9);
-                    this._crpnumcid=ResultadoConsulta.GetString(10);
+                    this._crprnumcid=ResultadoConsulta.GetString(10);
                     this.Conexion.Desconectar();
 
                     return true;
@@ -150,6 +150,61 @@ namespace CapaRN
                     return false;
                 }
             }
+
+            public bool ObtenerDatosCI(bool modificar, string ci)
+                {
+                this.Conexion.Conectar();
+                string sql = "select " +
+                                     "crprsexpro," +
+                                     "crprestpro," +
+                                     "crprapepat," +
+                                     "crprapemat," +
+                                     "crprnompro," +
+                                     "crprnumcel," +
+                                     "crprcorele," +
+                                     "crprdirpro," +
+                                     "prprcodpro," +
+                                     "crprfotpro," +
+                                     "crprnumcid " +
+                             "from rproved " +
+                             "where " +
+                                    "crprnumcid = @crprnumcid";
+
+                if (modificar)
+                {
+                    sql += " and crprnumcid!='" + ci + "'";
+                }
+
+                this.Conexion.PrepararComando(sql);
+
+                this.Conexion.AsignarParametroCadena("@crprnumcid", this._crprnumcid);
+
+                DbDataReader ResultadoConsulta = Conexion.EjecutarConsulta();
+
+                if (ResultadoConsulta.Read())
+                {
+                this._crprsexpro = ResultadoConsulta.GetBoolean(0);
+                this._crprestpro = ResultadoConsulta.GetBoolean(1);
+                this._crprapepat = ResultadoConsulta.GetString(2);
+                this._crprapemat = ResultadoConsulta.GetString(3);
+                this._crprnompro = ResultadoConsulta.GetString(4);
+                this._crprnumcel = ResultadoConsulta.GetString(5);
+                this._crprcorele = ResultadoConsulta.GetString(6);
+                this._crprdirpro = ResultadoConsulta.GetString(7);
+                this._prprcodpro = ResultadoConsulta.GetString(8);
+                this._crprfotpro = ResultadoConsulta.GetString(9);
+                this._crprnumcid = ResultadoConsulta.GetString(10);
+                this.Conexion.Desconectar();
+
+                    return true;
+                }
+                else
+                {
+                    this.Conexion.Desconectar();
+                    return false;
+                }
+            }
+            
             public bool VerificarExistencia()
             { 
                 this.Conexion.Conectar(); 
@@ -164,7 +219,7 @@ namespace CapaRN
                                      "crprdirpro," +
                                      "prprcodpro," +
                                      "crprfotpro," +
-                                     "crpnumcid " + 
+                                     "crprnumcid " + 
                              "from rproved " +
                              "where " +
                                     "prprcodpro = @prprcodpro";
@@ -208,7 +263,7 @@ namespace CapaRN
                                                        "crprdirpro," +
                                                        "prprcodpro," +
                                                        "crprfotpro," +
-                                                       "crpnumcid" +
+                                                       "crprnumcid" +
                                                        ") " +
 	                             "values (" + 
                                           "@crprsexpro," +
@@ -221,7 +276,7 @@ namespace CapaRN
                                           "@crprdirpro," +
                                           "@prprcodpro," +
                                           "@crprfotpro," +
-                                          "@crpnumcid" +
+                                          "@crprnumcid" +
                                                        ")";
 
                     this.Conexion.PrepararComando(sql);
@@ -236,7 +291,7 @@ namespace CapaRN
                     this.Conexion.AsignarParametroCadena("@crprdirpro",this._crprdirpro);
                     this.Conexion.AsignarParametroCadena("@prprcodpro",this._prprcodpro);
                     this.Conexion.AsignarParametroCadena("@crprfotpro",this._crprfotpro);
-                    this.Conexion.AsignarParametroCadena("@crpnumcid",this._crpnumcid);
+                    this.Conexion.AsignarParametroCadena("@crprnumcid",this._crprnumcid);
 
                     this.Conexion.EjecutarTransaccion();
                     this.Conexion.Desconectar();
@@ -263,7 +318,7 @@ namespace CapaRN
                                                      "crprcorele = @crprcorele, " +
                                                      "crprdirpro = @crprdirpro, " +
                                                      "crprfotpro = @crprfotpro, " +
-                                                     "crpnumcid = @crpnumcid" +
+                                                     "crprnumcid = @crprnumcid" +
                                  " where " +
                                         "prprcodpro = @prprcodpro";
  
@@ -279,7 +334,7 @@ namespace CapaRN
                     this.Conexion.AsignarParametroCadena("@crprdirpro",this._crprdirpro);
                     this.Conexion.AsignarParametroCadena("@prprcodpro",this._prprcodpro);
                     this.Conexion.AsignarParametroCadena("@crprfotpro",this._crprfotpro);
-                    this.Conexion.AsignarParametroCadena("@crpnumcid",this._crpnumcid);
+                    this.Conexion.AsignarParametroCadena("@crprnumcid",this._crprnumcid);
 
                     this.Conexion.EjecutarTransaccion();
                     this.Conexion.Desconectar();
@@ -302,7 +357,7 @@ namespace CapaRN
                                      "crprdirpro," +
                                      "prprcodpro," +
                                      "crprfotpro," +
-                                     "crpnumcid " + 
+                                     "crprnumcid " + 
                              "from rproved " ;
  
                 if (where.Replace(" ", "") != "")
@@ -329,7 +384,7 @@ namespace CapaRN
                           Auxiliar.crprdirpro = ResultadoConsulta.GetString(7);
                           Auxiliar.prprcodpro = ResultadoConsulta.GetString(8);
                           Auxiliar.crprfotpro = ResultadoConsulta.GetString(9);
-                          Auxiliar.crpnumcid = ResultadoConsulta.GetString(10);
+                          Auxiliar.crprnumcid = ResultadoConsulta.GetString(10);
                           ListaResultado.Add(Auxiliar);
                     }
 
