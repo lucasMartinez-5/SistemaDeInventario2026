@@ -234,6 +234,9 @@
     <EmbeddedResource Include="FRMProducto_Registrar.resx">
       <DependentUpon>FRMProducto_Registrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMProveedor_Registrar.resx">
+      <DependentUpon>FRMProveedor_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMSplash.resx">
       <DependentUpon>FRMSplash.cs</DependentUpon>
     </EmbeddedResource>
