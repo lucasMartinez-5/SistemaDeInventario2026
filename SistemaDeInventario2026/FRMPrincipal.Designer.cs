@@ -504,6 +504,7 @@
             this.RTBDirectorio.Name = "RTBDirectorio";
             this.RTBDirectorio.Panel = this.RBPDirectorio;
             this.RTBDirectorio.Text = "Directorio";
+            this.RTBDirectorio.Visible = false;
             // 
             // qatCustomizeItem1
             // 
@@ -519,7 +520,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 494);
+            this.ClientSize = new System.Drawing.Size(670, 490);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);

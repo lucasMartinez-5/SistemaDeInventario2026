@@ -1,6 +1,6 @@
 ﻿namespace SistemaDeInventario2026
 {
-    partial class FRMProveedor_Registrar
+    partial class FRMProveedor_Epica
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,10 @@
         private void InitializeComponent()
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
-            this.BTNBuscarProveedor = new DevComponents.DotNetBar.ButtonX();
-            this.SWBEstado = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.TXTRazonSocial = new System.Windows.Forms.TextBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.TXTDireccion = new System.Windows.Forms.TextBox();
+            this.BTNVer = new System.Windows.Forms.Button();
+            this.BTNRegistrar = new System.Windows.Forms.Button();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.TXTCelular = new System.Windows.Forms.TextBox();
-            this.TXTNIT = new System.Windows.Forms.TextBox();
-            this.BTNLimpiar = new System.Windows.Forms.Button();
-            this.BTNSalir = new System.Windows.Forms.Button();
-            this.BTNGrabar = new System.Windows.Forms.Button();
-            this.LBL = new MaterialSkin.Controls.MaterialLabel();
-            this.LBLRegistrarProveedor = new DevComponents.DotNetBar.LabelX();
+            this.LBLModificar = new DevComponents.DotNetBar.LabelX();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BTNAdministracionUsuarios = new System.Windows.Forms.Button();
             this.BTNPuntoDeVenta = new System.Windows.Forms.Button();
@@ -49,6 +40,11 @@
             this.BTNInventario = new System.Windows.Forms.Button();
             this.BTNDirectorio = new System.Windows.Forms.Button();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.BTNModificar = new System.Windows.Forms.Button();
+            this.BTNCostoRegistros = new System.Windows.Forms.Button();
+            this.BTNResumenInversion = new System.Windows.Forms.Button();
+            this.BTNHistorialAnual = new System.Windows.Forms.Button();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.PPrincipal.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,170 +52,77 @@
             // PPrincipal
             // 
             this.PPrincipal.BackColor = System.Drawing.Color.White;
-            this.PPrincipal.Controls.Add(this.BTNBuscarProveedor);
-            this.PPrincipal.Controls.Add(this.SWBEstado);
-            this.PPrincipal.Controls.Add(this.TXTRazonSocial);
+            this.PPrincipal.Controls.Add(this.BTNResumenInversion);
+            this.PPrincipal.Controls.Add(this.BTNHistorialAnual);
             this.PPrincipal.Controls.Add(this.materialLabel2);
-            this.PPrincipal.Controls.Add(this.TXTDireccion);
+            this.PPrincipal.Controls.Add(this.BTNCostoRegistros);
+            this.PPrincipal.Controls.Add(this.BTNModificar);
+            this.PPrincipal.Controls.Add(this.BTNVer);
+            this.PPrincipal.Controls.Add(this.BTNRegistrar);
             this.PPrincipal.Controls.Add(this.materialLabel1);
-            this.PPrincipal.Controls.Add(this.TXTCelular);
-            this.PPrincipal.Controls.Add(this.TXTNIT);
-            this.PPrincipal.Controls.Add(this.BTNLimpiar);
-            this.PPrincipal.Controls.Add(this.BTNSalir);
-            this.PPrincipal.Controls.Add(this.BTNGrabar);
-            this.PPrincipal.Controls.Add(this.LBL);
-            this.PPrincipal.Controls.Add(this.LBLRegistrarProveedor);
+            this.PPrincipal.Controls.Add(this.LBLModificar);
             this.PPrincipal.Controls.Add(this.panel2);
             this.PPrincipal.Controls.Add(this.materialLabel3);
             this.PPrincipal.Cursor = System.Windows.Forms.Cursors.Default;
             this.PPrincipal.Location = new System.Drawing.Point(0, 0);
             this.PPrincipal.Name = "PPrincipal";
             this.PPrincipal.Size = new System.Drawing.Size(1066, 554);
-            this.PPrincipal.TabIndex = 2;
+            this.PPrincipal.TabIndex = 1;
             // 
-            // BTNBuscarProveedor
+            // BTNVer
             // 
-            this.BTNBuscarProveedor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNBuscarProveedor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNBuscarProveedor.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNBuscarProveedor.Location = new System.Drawing.Point(917, 151);
-            this.BTNBuscarProveedor.Name = "BTNBuscarProveedor";
-            this.BTNBuscarProveedor.Size = new System.Drawing.Size(23, 23);
-            this.BTNBuscarProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNBuscarProveedor.TabIndex = 38;
-            this.BTNBuscarProveedor.Click += new System.EventHandler(this.BTNBuscarProveedor_Click);
+            this.BTNVer.BackColor = System.Drawing.Color.White;
+            this.BTNVer.FlatAppearance.BorderSize = 0;
+            this.BTNVer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNVer.ForeColor = System.Drawing.Color.Black;
+            this.BTNVer.Location = new System.Drawing.Point(398, 151);
+            this.BTNVer.Name = "BTNVer";
+            this.BTNVer.Size = new System.Drawing.Size(64, 38);
+            this.BTNVer.TabIndex = 24;
+            this.BTNVer.Text = "Ver";
+            this.BTNVer.UseVisualStyleBackColor = false;
+            this.BTNVer.Click += new System.EventHandler(this.BTNVer_Click);
             // 
-            // SWBEstado
+            // BTNRegistrar
             // 
-            // 
-            // 
-            // 
-            this.SWBEstado.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.SWBEstado.Location = new System.Drawing.Point(695, 151);
-            this.SWBEstado.Name = "SWBEstado";
-            this.SWBEstado.Size = new System.Drawing.Size(191, 23);
-            this.SWBEstado.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.SWBEstado.TabIndex = 37;
-            // 
-            // TXTRazonSocial
-            // 
-            this.TXTRazonSocial.Location = new System.Drawing.Point(695, 210);
-            this.TXTRazonSocial.Name = "TXTRazonSocial";
-            this.TXTRazonSocial.Size = new System.Drawing.Size(191, 23);
-            this.TXTRazonSocial.TabIndex = 36;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(692, 188);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(94, 19);
-            this.materialLabel2.TabIndex = 35;
-            this.materialLabel2.Text = "Razon Social";
-            // 
-            // TXTDireccion
-            // 
-            this.TXTDireccion.Location = new System.Drawing.Point(372, 273);
-            this.TXTDireccion.Name = "TXTDireccion";
-            this.TXTDireccion.Size = new System.Drawing.Size(514, 23);
-            this.TXTDireccion.TabIndex = 34;
+            this.BTNRegistrar.BackColor = System.Drawing.Color.Black;
+            this.BTNRegistrar.FlatAppearance.BorderSize = 0;
+            this.BTNRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNRegistrar.ForeColor = System.Drawing.Color.White;
+            this.BTNRegistrar.Location = new System.Drawing.Point(468, 151);
+            this.BTNRegistrar.Name = "BTNRegistrar";
+            this.BTNRegistrar.Size = new System.Drawing.Size(128, 38);
+            this.BTNRegistrar.TabIndex = 22;
+            this.BTNRegistrar.Text = "+Agregar";
+            this.BTNRegistrar.UseVisualStyleBackColor = false;
+            this.BTNRegistrar.Click += new System.EventHandler(this.BTNRegistrar_Click);
             // 
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(369, 251);
+            this.materialLabel1.Location = new System.Drawing.Point(325, 237);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(67, 19);
-            this.materialLabel1.TabIndex = 33;
-            this.materialLabel1.Text = "Direccion";
+            this.materialLabel1.Size = new System.Drawing.Size(261, 19);
+            this.materialLabel1.TabIndex = 16;
+            this.materialLabel1.Text = "Acciones para la gestión de compras";
             // 
-            // TXTCelular
-            // 
-            this.TXTCelular.Location = new System.Drawing.Point(372, 151);
-            this.TXTCelular.Name = "TXTCelular";
-            this.TXTCelular.Size = new System.Drawing.Size(191, 23);
-            this.TXTCelular.TabIndex = 32;
-            // 
-            // TXTNIT
-            // 
-            this.TXTNIT.Location = new System.Drawing.Point(372, 210);
-            this.TXTNIT.Name = "TXTNIT";
-            this.TXTNIT.Size = new System.Drawing.Size(191, 23);
-            this.TXTNIT.TabIndex = 31;
-            // 
-            // BTNLimpiar
-            // 
-            this.BTNLimpiar.BackColor = System.Drawing.Color.White;
-            this.BTNLimpiar.FlatAppearance.BorderSize = 0;
-            this.BTNLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNLimpiar.ForeColor = System.Drawing.Color.Black;
-            this.BTNLimpiar.Location = new System.Drawing.Point(711, 313);
-            this.BTNLimpiar.Name = "BTNLimpiar";
-            this.BTNLimpiar.Size = new System.Drawing.Size(158, 38);
-            this.BTNLimpiar.TabIndex = 30;
-            this.BTNLimpiar.Text = "Limpiar";
-            this.BTNLimpiar.UseVisualStyleBackColor = false;
-            // 
-            // BTNSalir
-            // 
-            this.BTNSalir.BackColor = System.Drawing.Color.White;
-            this.BTNSalir.FlatAppearance.BorderSize = 0;
-            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(388, 313);
-            this.BTNSalir.Name = "BTNSalir";
-            this.BTNSalir.Size = new System.Drawing.Size(158, 38);
-            this.BTNSalir.TabIndex = 29;
-            this.BTNSalir.Text = "Salir";
-            this.BTNSalir.UseVisualStyleBackColor = false;
-            // 
-            // BTNGrabar
-            // 
-            this.BTNGrabar.BackColor = System.Drawing.Color.Black;
-            this.BTNGrabar.FlatAppearance.BorderSize = 0;
-            this.BTNGrabar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNGrabar.ForeColor = System.Drawing.Color.White;
-            this.BTNGrabar.Location = new System.Drawing.Point(552, 313);
-            this.BTNGrabar.Name = "BTNGrabar";
-            this.BTNGrabar.Size = new System.Drawing.Size(153, 38);
-            this.BTNGrabar.TabIndex = 28;
-            this.BTNGrabar.Text = "Grabar";
-            this.BTNGrabar.UseVisualStyleBackColor = false;
-            this.BTNGrabar.Click += new System.EventHandler(this.BTNGrabar_Click);
-            // 
-            // LBL
-            // 
-            this.LBL.AutoSize = true;
-            this.LBL.Depth = 0;
-            this.LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.LBL.Location = new System.Drawing.Point(369, 188);
-            this.LBL.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LBL.Name = "LBL";
-            this.LBL.Size = new System.Drawing.Size(26, 19);
-            this.LBL.TabIndex = 16;
-            this.LBL.Text = "NIT";
-            // 
-            // LBLRegistrarProveedor
+            // LBLModificar
             // 
             // 
             // 
             // 
-            this.LBLRegistrarProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLRegistrarProveedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLRegistrarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLRegistrarProveedor.FontBold = true;
-            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(508, 30);
-            this.LBLRegistrarProveedor.Name = "LBLRegistrarProveedor";
-            this.LBLRegistrarProveedor.Size = new System.Drawing.Size(303, 41);
-            this.LBLRegistrarProveedor.TabIndex = 14;
-            this.LBLRegistrarProveedor.Text = "Agregar Proveedor";
-            this.LBLRegistrarProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLModificar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLModificar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLModificar.FontBold = true;
+            this.LBLModificar.Location = new System.Drawing.Point(507, 30);
+            this.LBLModificar.Name = "LBLModificar";
+            this.LBLModificar.Size = new System.Drawing.Size(309, 41);
+            this.LBLModificar.TabIndex = 14;
+            this.LBLModificar.Text = "Gestión de Proveedores";
             // 
             // panel2
             // 
@@ -332,26 +235,90 @@
             this.materialLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(369, 129);
+            this.materialLabel3.Location = new System.Drawing.Point(325, 129);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(50, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(285, 19);
             this.materialLabel3.TabIndex = 3;
-            this.materialLabel3.Text = "Celular";
+            this.materialLabel3.Text = "Acciones para la gestión de proveedores";
+            this.materialLabel3.Click += new System.EventHandler(this.materialLabel3_Click);
             // 
-            // FRMProveedor_Registrar
+            // BTNModificar
+            // 
+            this.BTNModificar.BackColor = System.Drawing.Color.White;
+            this.BTNModificar.FlatAppearance.BorderSize = 0;
+            this.BTNModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNModificar.ForeColor = System.Drawing.Color.Black;
+            this.BTNModificar.Location = new System.Drawing.Point(328, 151);
+            this.BTNModificar.Name = "BTNModificar";
+            this.BTNModificar.Size = new System.Drawing.Size(64, 38);
+            this.BTNModificar.TabIndex = 25;
+            this.BTNModificar.Text = "Editar";
+            this.BTNModificar.UseVisualStyleBackColor = false;
+            this.BTNModificar.Click += new System.EventHandler(this.BTNModificar_Click);
+            // 
+            // BTNCostoRegistros
+            // 
+            this.BTNCostoRegistros.BackColor = System.Drawing.Color.Black;
+            this.BTNCostoRegistros.FlatAppearance.BorderSize = 0;
+            this.BTNCostoRegistros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNCostoRegistros.ForeColor = System.Drawing.Color.White;
+            this.BTNCostoRegistros.Location = new System.Drawing.Point(328, 259);
+            this.BTNCostoRegistros.Name = "BTNCostoRegistros";
+            this.BTNCostoRegistros.Size = new System.Drawing.Size(213, 38);
+            this.BTNCostoRegistros.TabIndex = 26;
+            this.BTNCostoRegistros.Text = "Acceder a Registro de Costos";
+            this.BTNCostoRegistros.UseVisualStyleBackColor = false;
+            // 
+            // BTNResumenInversion
+            // 
+            this.BTNResumenInversion.BackColor = System.Drawing.Color.White;
+            this.BTNResumenInversion.FlatAppearance.BorderSize = 0;
+            this.BTNResumenInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNResumenInversion.ForeColor = System.Drawing.Color.Black;
+            this.BTNResumenInversion.Location = new System.Drawing.Point(328, 367);
+            this.BTNResumenInversion.Name = "BTNResumenInversion";
+            this.BTNResumenInversion.Size = new System.Drawing.Size(158, 38);
+            this.BTNResumenInversion.TabIndex = 29;
+            this.BTNResumenInversion.Text = "Resumen por Fecha";
+            this.BTNResumenInversion.UseVisualStyleBackColor = false;
+            // 
+            // BTNHistorialAnual
+            // 
+            this.BTNHistorialAnual.BackColor = System.Drawing.Color.Black;
+            this.BTNHistorialAnual.FlatAppearance.BorderSize = 0;
+            this.BTNHistorialAnual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNHistorialAnual.ForeColor = System.Drawing.Color.White;
+            this.BTNHistorialAnual.Location = new System.Drawing.Point(492, 367);
+            this.BTNHistorialAnual.Name = "BTNHistorialAnual";
+            this.BTNHistorialAnual.Size = new System.Drawing.Size(153, 38);
+            this.BTNHistorialAnual.TabIndex = 28;
+            this.BTNHistorialAnual.Text = "Ver Historial Anual";
+            this.BTNHistorialAnual.UseVisualStyleBackColor = false;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(325, 345);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(281, 19);
+            this.materialLabel2.TabIndex = 27;
+            this.materialLabel2.Text = "Acciones para el análisis de inversiones";
+            // 
+            // FRMProveedor_Epica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FRMProveedor_Registrar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRMProveedor_Registrar";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMProveedor_Registrar_FormClosing);
-            this.Load += new System.EventHandler(this.FRMProveedor_Registrar_Load);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "FRMProveedor_Epica";
+            this.Text = "FRMProveedor_Epica";
             this.PPrincipal.ResumeLayout(false);
             this.PPrincipal.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -362,10 +329,10 @@
         #endregion
 
         private System.Windows.Forms.Panel PPrincipal;
-        private System.Windows.Forms.Button BTNSalir;
-        private System.Windows.Forms.Button BTNGrabar;
-        private MaterialSkin.Controls.MaterialLabel LBL;
-        private DevComponents.DotNetBar.LabelX LBLRegistrarProveedor;
+        private System.Windows.Forms.Button BTNVer;
+        private System.Windows.Forms.Button BTNRegistrar;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private DevComponents.DotNetBar.LabelX LBLModificar;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Button BTNAdministracionUsuarios;
         public System.Windows.Forms.Button BTNPuntoDeVenta;
@@ -373,14 +340,10 @@
         public System.Windows.Forms.Button BTNInventario;
         public System.Windows.Forms.Button BTNDirectorio;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.Button BTNLimpiar;
-        private System.Windows.Forms.TextBox TXTNIT;
-        private System.Windows.Forms.TextBox TXTDireccion;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.TextBox TXTCelular;
-        private System.Windows.Forms.TextBox TXTRazonSocial;
+        private System.Windows.Forms.Button BTNCostoRegistros;
+        private System.Windows.Forms.Button BTNModificar;
+        private System.Windows.Forms.Button BTNResumenInversion;
+        private System.Windows.Forms.Button BTNHistorialAnual;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private DevComponents.DotNetBar.Controls.SwitchButton SWBEstado;
-        private DevComponents.DotNetBar.ButtonX BTNBuscarProveedor;
     }
 }

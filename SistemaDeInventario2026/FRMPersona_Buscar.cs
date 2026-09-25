@@ -31,14 +31,16 @@ namespace SistemaDeInventario2026
         {
             DTGLista.Rows.Clear();
             lista_personas.Clear();
-            String soloSinUsuari= "papscodper not in (select papscodper from aperson, aususis where papscodper = fauscodper order by papscodper)";
-            lista_personas = persona.Lista(soloSinUsuari + " and (capsnumcid like '%" + TXTFiltrar.Text + "%' or " +
+            String soloSinUsuariProveedorCliente = "papscodper not in (select papscodper from aperson, aususis where papscodper = fauscodper order by papscodper)";
+            lista_personas = persona.Lista(soloSinUsuariProveedorCliente + " AND papscodper not in (select papscodper from aperson, aproved where papscodper = faprcntpro order by papscodper) " + " AND papscodper not in (select papscodper from aperson, aclient where papscodper = faclcntcli order by papscodper) " +
+                                           "and (capsnumcid like '%" + TXTFiltrar.Text + "%' or " +
                                            "capsapepat like '%" + TXTFiltrar.Text + "%' or " +
                                            "capsapemat like '%" + TXTFiltrar.Text + "%' or " +
                                            "capsnomper like '%" + TXTFiltrar.Text + "%') and capsestper=true " +
                                            "limit " +
                                            IINFilas.Value.ToString()
                                            );
+
             foreach (aperson a in lista_personas)
             {
                 DTGLista.Rows.Add();
@@ -74,7 +76,6 @@ namespace SistemaDeInventario2026
                 DTGLista[8, DTGLista.Rows.Count - 1].Value = a.capsnumcel;
 
             }
-
         }
         #endregion
 
@@ -103,7 +104,6 @@ namespace SistemaDeInventario2026
             {
                 ActualizarGrid();
             }
-
         }
 
         private void BTNAceptar_Click(object sender, EventArgs e)
