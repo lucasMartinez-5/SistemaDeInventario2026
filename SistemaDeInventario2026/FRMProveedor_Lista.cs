@@ -14,7 +14,7 @@ using static MaterialSkin.Controls.MaterialForm;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMProveedor_Lista : Form
+    public partial class FRMDirectorioProveedor : Form
     {
         #region Variables
         private lproved lproveedor = new lproved();
@@ -23,29 +23,9 @@ namespace SistemaDeInventario2026
         #endregion
 
         #region Constructor
-        public FRMProveedor_Lista()
+        public FRMDirectorioProveedor()
         {
             InitializeComponent();
-            if (this.BTNDirectorio.Image != null)
-            {
-                this.BTNDirectorio.Image = new Bitmap(this.BTNDirectorio.Image, new Size(24, 24));
-            }
-            if (this.BTNInventario.Image != null)
-            {
-                this.BTNInventario.Image = new Bitmap(this.BTNInventario.Image, new Size(24, 24));
-            }
-            if (this.BTNPuntoDeVenta.Image != null)
-            {
-                this.BTNPuntoDeVenta.Image = new Bitmap(this.BTNPuntoDeVenta.Image, new Size(24, 24));
-            }
-            if (this.BTNAdministracionUsuarios.Image != null)
-            {
-                this.BTNAdministracionUsuarios.Image = new Bitmap(this.BTNAdministracionUsuarios.Image, new Size(24, 24));
-            }
-            if (this.BTNBusquedaAvanzada.Image != null)
-            {
-                this.BTNBusquedaAvanzada.Image = new Bitmap(this.BTNBusquedaAvanzada.Image, new Size(24, 24));
-            }
         }
         #endregion
 
@@ -90,7 +70,7 @@ namespace SistemaDeInventario2026
 
         private void FRMProveedor_Lista_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             ActualizarGrid();
         }
 

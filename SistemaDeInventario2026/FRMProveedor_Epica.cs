@@ -7,48 +7,46 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace SistemaDeInventario2026
 {
     public partial class FRMProveedor_Epica : Form
     {
+        #region Variables
+        #endregion
+
+        #region Constructor
         public FRMProveedor_Epica()
         {
             InitializeComponent();
-            if (this.BTNDirectorio.Image != null)
+            /*if (this.BTNDirectorio.Image != null)
             {
-                this.BTNDirectorio.Image = new Bitmap(this.BTNDirectorio.Image, new Size(24, 24));
-            }
-            if (this.BTNInventario.Image != null)
-            {
-                this.BTNInventario.Image = new Bitmap(this.BTNInventario.Image, new Size(24, 24));
+                this.BTNDirectorio.Image = new Bitmap(this.BTNDirectorio.Image, new Size(40, 40));
             }
             if (this.BTNPuntoDeVenta.Image != null)
             {
-                this.BTNPuntoDeVenta.Image = new Bitmap(this.BTNPuntoDeVenta.Image, new Size(24, 24));
+                this.BTNPuntoDeVenta.Image = new Bitmap(this.BTNPuntoDeVenta.Image, new Size(32, 32));
             }
             if (this.BTNAdministracionUsuarios.Image != null)
             {
-                this.BTNAdministracionUsuarios.Image = new Bitmap(this.BTNAdministracionUsuarios.Image, new Size(24, 24));
+                this.BTNAdministracionUsuarios.Image = new Bitmap(this.BTNAdministracionUsuarios.Image, new Size(32, 32));
             }
             if (this.BTNBusquedaAvanzada.Image != null)
             {
                 this.BTNBusquedaAvanzada.Image = new Bitmap(this.BTNBusquedaAvanzada.Image, new Size(24, 24));
             }
-
+            */
+            LBLGestionProveedor.ForeColor = System.Drawing.Color.Black;
+            LBLGestionProveedorInvPro.ForeColor = System.Drawing.Color.Black;
             this.PPrincipal.Cursor = Cursors.Default;
         }
+        #endregion
 
-        private void materialLabel3_Click(object sender, EventArgs e)
-        {
+        #region Metodos
+        #endregion
 
-        }
-
-        private void TXTNIT_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        #region Eventos
         private void BTNRegistrar_Click(object sender, EventArgs e)
         {
             FRMProveedor_Registrar a = new FRMProveedor_Registrar();
@@ -58,17 +56,22 @@ namespace SistemaDeInventario2026
 
         private void BTNVer_Click(object sender, EventArgs e)
         {
-            
-            FRMProveedor_Lista a = new FRMProveedor_Lista();
+            FRMDirectorioProveedor a = new FRMDirectorioProveedor();
             a.Show();
         }
 
         private void BTNModificar_Click(object sender, EventArgs e)
         {
-            FRMProveedor_Lista a = new FRMProveedor_Lista();
+            FRMDirectorioProveedor a = new FRMDirectorioProveedor();
             MessageBox.Show("Elija un proveedor de la lista haciendo doble clic en él.");
             a.ShowDialog();
             
+        }
+        #endregion
+
+        private void PPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

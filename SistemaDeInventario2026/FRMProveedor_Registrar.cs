@@ -30,27 +30,7 @@ namespace SistemaDeInventario2026
         public FRMProveedor_Registrar()
         {
             InitializeComponent();
-            if (this.BTNDirectorio.Image != null)
-            {
-                this.BTNDirectorio.Image = new Bitmap(this.BTNDirectorio.Image, new Size(24, 24));
-            }
-            if (this.BTNInventario.Image != null)
-            {
-                this.BTNInventario.Image = new Bitmap(this.BTNInventario.Image, new Size(24, 24));
-            }
-            if (this.BTNPuntoDeVenta.Image != null)
-            {
-                this.BTNPuntoDeVenta.Image = new Bitmap(this.BTNPuntoDeVenta.Image, new Size(24, 24));
-            }
-            if (this.BTNAdministracionUsuarios.Image != null)
-            {
-                this.BTNAdministracionUsuarios.Image = new Bitmap(this.BTNAdministracionUsuarios.Image, new Size(24, 24));
-            }
-            if (this.BTNBusquedaAvanzada.Image != null)
-            {
-                this.BTNBusquedaAvanzada.Image = new Bitmap(this.BTNBusquedaAvanzada.Image, new Size(24, 24));
-            }
-
+            
             this.PPrincipal.Cursor = Cursors.Default;
         }
         #endregion

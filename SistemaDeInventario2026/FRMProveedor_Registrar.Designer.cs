@@ -43,14 +43,19 @@
             this.LBL = new MaterialSkin.Controls.MaterialLabel();
             this.LBLRegistrarProveedor = new DevComponents.DotNetBar.LabelX();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.BTNAdministracionUsuarios = new System.Windows.Forms.Button();
             this.BTNPuntoDeVenta = new System.Windows.Forms.Button();
             this.BTNBusquedaAvanzada = new System.Windows.Forms.Button();
             this.BTNInventario = new System.Windows.Forms.Button();
             this.BTNDirectorio = new System.Windows.Forms.Button();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // PPrincipal
@@ -72,17 +77,18 @@
             this.PPrincipal.Controls.Add(this.panel2);
             this.PPrincipal.Controls.Add(this.materialLabel3);
             this.PPrincipal.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.PPrincipal.Location = new System.Drawing.Point(0, 45);
             this.PPrincipal.Name = "PPrincipal";
-            this.PPrincipal.Size = new System.Drawing.Size(1066, 554);
+            this.PPrincipal.Size = new System.Drawing.Size(1066, 509);
             this.PPrincipal.TabIndex = 2;
             // 
             // BTNBuscarProveedor
             // 
             this.BTNBuscarProveedor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.BTNBuscarProveedor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNBuscarProveedor.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNBuscarProveedor.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNBuscarProveedor.Location = new System.Drawing.Point(917, 151);
+            this.BTNBuscarProveedor.Location = new System.Drawing.Point(569, 151);
             this.BTNBuscarProveedor.Name = "BTNBuscarProveedor";
             this.BTNBuscarProveedor.Size = new System.Drawing.Size(23, 23);
             this.BTNBuscarProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -207,16 +213,17 @@
             // 
             // LBLRegistrarProveedor
             // 
+            this.LBLRegistrarProveedor.AutoSize = true;
             // 
             // 
             // 
             this.LBLRegistrarProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.LBLRegistrarProveedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLRegistrarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLRegistrarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLRegistrarProveedor.FontBold = true;
-            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(508, 30);
+            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(466, 41);
             this.LBLRegistrarProveedor.Name = "LBLRegistrarProveedor";
-            this.LBLRegistrarProveedor.Size = new System.Drawing.Size(303, 41);
+            this.LBLRegistrarProveedor.Size = new System.Drawing.Size(353, 50);
             this.LBLRegistrarProveedor.TabIndex = 14;
             this.LBLRegistrarProveedor.Text = "Agregar Proveedor";
             this.LBLRegistrarProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -233,98 +240,8 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(270, 554);
+            this.panel2.Size = new System.Drawing.Size(270, 509);
             this.panel2.TabIndex = 13;
-            // 
-            // BTNAdministracionUsuarios
-            // 
-            this.BTNAdministracionUsuarios.BackColor = System.Drawing.Color.Transparent;
-            this.BTNAdministracionUsuarios.FlatAppearance.BorderSize = 0;
-            this.BTNAdministracionUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BTNAdministracionUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNAdministracionUsuarios.Image = global::SistemaDeInventario2026.Properties.Resources.ic_candado;
-            this.BTNAdministracionUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNAdministracionUsuarios.Location = new System.Drawing.Point(5, 237);
-            this.BTNAdministracionUsuarios.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNAdministracionUsuarios.Name = "BTNAdministracionUsuarios";
-            this.BTNAdministracionUsuarios.Size = new System.Drawing.Size(260, 50);
-            this.BTNAdministracionUsuarios.TabIndex = 4;
-            this.BTNAdministracionUsuarios.Text = "Administración de Usuarios";
-            this.BTNAdministracionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNAdministracionUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNAdministracionUsuarios.UseVisualStyleBackColor = false;
-            // 
-            // BTNPuntoDeVenta
-            // 
-            this.BTNPuntoDeVenta.BackColor = System.Drawing.Color.Transparent;
-            this.BTNPuntoDeVenta.FlatAppearance.BorderSize = 0;
-            this.BTNPuntoDeVenta.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BTNPuntoDeVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNPuntoDeVenta.Image = global::SistemaDeInventario2026.Properties.Resources.ic_venta;
-            this.BTNPuntoDeVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNPuntoDeVenta.Location = new System.Drawing.Point(3, 183);
-            this.BTNPuntoDeVenta.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNPuntoDeVenta.Name = "BTNPuntoDeVenta";
-            this.BTNPuntoDeVenta.Size = new System.Drawing.Size(260, 50);
-            this.BTNPuntoDeVenta.TabIndex = 3;
-            this.BTNPuntoDeVenta.Text = "Punto de Venta";
-            this.BTNPuntoDeVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNPuntoDeVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNPuntoDeVenta.UseVisualStyleBackColor = false;
-            // 
-            // BTNBusquedaAvanzada
-            // 
-            this.BTNBusquedaAvanzada.BackColor = System.Drawing.Color.Transparent;
-            this.BTNBusquedaAvanzada.FlatAppearance.BorderSize = 0;
-            this.BTNBusquedaAvanzada.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BTNBusquedaAvanzada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNBusquedaAvanzada.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
-            this.BTNBusquedaAvanzada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNBusquedaAvanzada.Location = new System.Drawing.Point(3, 129);
-            this.BTNBusquedaAvanzada.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNBusquedaAvanzada.Name = "BTNBusquedaAvanzada";
-            this.BTNBusquedaAvanzada.Size = new System.Drawing.Size(260, 50);
-            this.BTNBusquedaAvanzada.TabIndex = 2;
-            this.BTNBusquedaAvanzada.Text = "Búsqueda Avanzada";
-            this.BTNBusquedaAvanzada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNBusquedaAvanzada.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNBusquedaAvanzada.UseVisualStyleBackColor = false;
-            // 
-            // BTNInventario
-            // 
-            this.BTNInventario.BackColor = System.Drawing.Color.Transparent;
-            this.BTNInventario.FlatAppearance.BorderSize = 0;
-            this.BTNInventario.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BTNInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNInventario.Image = global::SistemaDeInventario2026.Properties.Resources.ic_producto;
-            this.BTNInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNInventario.Location = new System.Drawing.Point(3, 75);
-            this.BTNInventario.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNInventario.Name = "BTNInventario";
-            this.BTNInventario.Size = new System.Drawing.Size(260, 50);
-            this.BTNInventario.TabIndex = 1;
-            this.BTNInventario.Text = "Inventario";
-            this.BTNInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNInventario.UseVisualStyleBackColor = false;
-            // 
-            // BTNDirectorio
-            // 
-            this.BTNDirectorio.BackColor = System.Drawing.Color.Transparent;
-            this.BTNDirectorio.FlatAppearance.BorderSize = 0;
-            this.BTNDirectorio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BTNDirectorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNDirectorio.Image = global::SistemaDeInventario2026.Properties.Resources.ic_proveedor;
-            this.BTNDirectorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNDirectorio.Location = new System.Drawing.Point(3, 21);
-            this.BTNDirectorio.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNDirectorio.Name = "BTNDirectorio";
-            this.BTNDirectorio.Size = new System.Drawing.Size(260, 50);
-            this.BTNDirectorio.TabIndex = 0;
-            this.BTNDirectorio.Text = "Gestíon de Inversión y Proveedores";
-            this.BTNDirectorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNDirectorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNDirectorio.UseVisualStyleBackColor = false;
             // 
             // materialLabel3
             // 
@@ -339,22 +256,150 @@
             this.materialLabel3.TabIndex = 3;
             this.materialLabel3.Text = "Celular";
             // 
+            // BTNAdministracionUsuarios
+            // 
+            this.BTNAdministracionUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.BTNAdministracionUsuarios.FlatAppearance.BorderSize = 0;
+            this.BTNAdministracionUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BTNAdministracionUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNAdministracionUsuarios.Image = global::SistemaDeInventario2026.Properties.Resources.ic_candado40;
+            this.BTNAdministracionUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNAdministracionUsuarios.Location = new System.Drawing.Point(10, 237);
+            this.BTNAdministracionUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNAdministracionUsuarios.Name = "BTNAdministracionUsuarios";
+            this.BTNAdministracionUsuarios.Size = new System.Drawing.Size(250, 50);
+            this.BTNAdministracionUsuarios.TabIndex = 4;
+            this.BTNAdministracionUsuarios.Text = "Administración de Usuarios";
+            this.BTNAdministracionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNAdministracionUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNAdministracionUsuarios.UseVisualStyleBackColor = false;
+            // 
+            // BTNPuntoDeVenta
+            // 
+            this.BTNPuntoDeVenta.BackColor = System.Drawing.Color.Transparent;
+            this.BTNPuntoDeVenta.FlatAppearance.BorderSize = 0;
+            this.BTNPuntoDeVenta.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BTNPuntoDeVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNPuntoDeVenta.Image = global::SistemaDeInventario2026.Properties.Resources.ic_venta40;
+            this.BTNPuntoDeVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNPuntoDeVenta.Location = new System.Drawing.Point(10, 183);
+            this.BTNPuntoDeVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNPuntoDeVenta.Name = "BTNPuntoDeVenta";
+            this.BTNPuntoDeVenta.Size = new System.Drawing.Size(250, 50);
+            this.BTNPuntoDeVenta.TabIndex = 3;
+            this.BTNPuntoDeVenta.Text = "Punto de Venta";
+            this.BTNPuntoDeVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNPuntoDeVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNPuntoDeVenta.UseVisualStyleBackColor = false;
+            // 
+            // BTNBusquedaAvanzada
+            // 
+            this.BTNBusquedaAvanzada.BackColor = System.Drawing.Color.Transparent;
+            this.BTNBusquedaAvanzada.FlatAppearance.BorderSize = 0;
+            this.BTNBusquedaAvanzada.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BTNBusquedaAvanzada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNBusquedaAvanzada.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar40;
+            this.BTNBusquedaAvanzada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNBusquedaAvanzada.Location = new System.Drawing.Point(10, 129);
+            this.BTNBusquedaAvanzada.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNBusquedaAvanzada.Name = "BTNBusquedaAvanzada";
+            this.BTNBusquedaAvanzada.Size = new System.Drawing.Size(250, 50);
+            this.BTNBusquedaAvanzada.TabIndex = 2;
+            this.BTNBusquedaAvanzada.Text = "Búsqueda Avanzada";
+            this.BTNBusquedaAvanzada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNBusquedaAvanzada.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNBusquedaAvanzada.UseVisualStyleBackColor = false;
+            // 
+            // BTNInventario
+            // 
+            this.BTNInventario.BackColor = System.Drawing.Color.Transparent;
+            this.BTNInventario.FlatAppearance.BorderSize = 0;
+            this.BTNInventario.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BTNInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNInventario.Image = global::SistemaDeInventario2026.Properties.Resources.icons8_producto_100__1___1_;
+            this.BTNInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNInventario.Location = new System.Drawing.Point(10, 75);
+            this.BTNInventario.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNInventario.Name = "BTNInventario";
+            this.BTNInventario.Size = new System.Drawing.Size(250, 50);
+            this.BTNInventario.TabIndex = 1;
+            this.BTNInventario.Text = "Inventario";
+            this.BTNInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNInventario.UseVisualStyleBackColor = false;
+            // 
+            // BTNDirectorio
+            // 
+            this.BTNDirectorio.BackColor = System.Drawing.Color.Transparent;
+            this.BTNDirectorio.FlatAppearance.BorderSize = 0;
+            this.BTNDirectorio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BTNDirectorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNDirectorio.Image = global::SistemaDeInventario2026.Properties.Resources.ic_proveedor40;
+            this.BTNDirectorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNDirectorio.Location = new System.Drawing.Point(10, 21);
+            this.BTNDirectorio.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNDirectorio.Name = "BTNDirectorio";
+            this.BTNDirectorio.Size = new System.Drawing.Size(250, 50);
+            this.BTNDirectorio.TabIndex = 0;
+            this.BTNDirectorio.Text = "Gestíon de Inversión y Proveedores";
+            this.BTNDirectorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNDirectorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNDirectorio.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1067, 45);
+            this.panel1.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(59, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(237, 25);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Directorio de Proveedores";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
+            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 32;
+            this.pictureBox4.TabStop = false;
+            // 
             // FRMProveedor_Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1067, 552);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMProveedor_Registrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRMProveedor_Registrar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMProveedor_Registrar_FormClosing);
             this.Load += new System.EventHandler(this.FRMProveedor_Registrar_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PPrincipal.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,5 +427,8 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private DevComponents.DotNetBar.Controls.SwitchButton SWBEstado;
         private DevComponents.DotNetBar.ButtonX BTNBuscarProveedor;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

@@ -442,5 +442,29 @@
   <ItemGroup>
     <None Include="Resources\ic_candado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_circle_usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_circle_bolsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_circle_analisis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-producto-100 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_candado40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_proveedor40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_venta40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_buscar40.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

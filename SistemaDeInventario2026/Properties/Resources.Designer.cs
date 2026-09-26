@@ -123,6 +123,16 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_buscar40 {
+            get {
+                object obj = ResourceManager.GetObject("ic_buscar40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_camara_abrir {
             get {
                 object obj = ResourceManager.GetObject("ic_camara_abrir", resourceCulture);
@@ -156,6 +166,16 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap ic_candado {
             get {
                 object obj = ResourceManager.GetObject("ic_candado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_candado40 {
+            get {
+                object obj = ResourceManager.GetObject("ic_candado40", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,36 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap ic_cerrar_sesion {
             get {
                 object obj = ResourceManager.GetObject("ic_cerrar_sesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_circle_analisis {
+            get {
+                object obj = ResourceManager.GetObject("ic_circle_analisis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_circle_bolsa {
+            get {
+                object obj = ResourceManager.GetObject("ic_circle_bolsa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_circle_usuario {
+            get {
+                object obj = ResourceManager.GetObject("ic_circle_usuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +463,16 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_proveedor40 {
+            get {
+                object obj = ResourceManager.GetObject("ic_proveedor40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_salir {
             get {
                 object obj = ResourceManager.GetObject("ic_salir", resourceCulture);
@@ -503,9 +563,29 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_venta40 {
+            get {
+                object obj = ResourceManager.GetObject("ic_venta40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_ver_password {
             get {
                 object obj = ResourceManager.GetObject("ic_ver_password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap icons8_producto_100__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-producto-100 (1) (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
