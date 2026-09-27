@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
+            this.LBLGestionProveedorInvPro = new DevComponents.DotNetBar.LabelX();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -54,7 +55,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.LBLGestionProveedorInvPro = new DevComponents.DotNetBar.LabelX();
+            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
+            this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
+            this.BTNConfiguracion = new System.Windows.Forms.Button();
             this.PPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -92,6 +95,23 @@
             this.PPrincipal.Size = new System.Drawing.Size(1067, 509);
             this.PPrincipal.TabIndex = 1;
             this.PPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PPrincipal_Paint);
+            // 
+            // LBLGestionProveedorInvPro
+            // 
+            this.LBLGestionProveedorInvPro.AutoSize = true;
+            // 
+            // 
+            // 
+            this.LBLGestionProveedorInvPro.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLGestionProveedorInvPro.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLGestionProveedorInvPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLGestionProveedorInvPro.FontBold = true;
+            this.LBLGestionProveedorInvPro.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LBLGestionProveedorInvPro.Location = new System.Drawing.Point(444, 92);
+            this.LBLGestionProveedorInvPro.Name = "LBLGestionProveedorInvPro";
+            this.LBLGestionProveedorInvPro.Size = new System.Drawing.Size(427, 50);
+            this.LBLGestionProveedorInvPro.TabIndex = 36;
+            this.LBLGestionProveedorInvPro.Text = "Inversión de Productos";
             // 
             // pictureBox3
             // 
@@ -410,6 +430,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.BTNBusquedaGeneral);
+            this.panel1.Controls.Add(this.TXTFiltrarGeneral);
+            this.panel1.Controls.Add(this.BTNConfiguracion);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -442,22 +465,35 @@
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
             // 
-            // LBLGestionProveedorInvPro
+            // BTNBusquedaGeneral
             // 
-            this.LBLGestionProveedorInvPro.AutoSize = true;
+            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
+            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1032, 10);
+            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
+            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
+            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNBusquedaGeneral.TabIndex = 43;
             // 
+            // TXTFiltrarGeneral
             // 
+            this.TXTFiltrarGeneral.Location = new System.Drawing.Point(864, 10);
+            this.TXTFiltrarGeneral.Name = "TXTFiltrarGeneral";
+            this.TXTFiltrarGeneral.Size = new System.Drawing.Size(191, 23);
+            this.TXTFiltrarGeneral.TabIndex = 42;
             // 
-            this.LBLGestionProveedorInvPro.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLGestionProveedorInvPro.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLGestionProveedorInvPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLGestionProveedorInvPro.FontBold = true;
-            this.LBLGestionProveedorInvPro.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBLGestionProveedorInvPro.Location = new System.Drawing.Point(444, 92);
-            this.LBLGestionProveedorInvPro.Name = "LBLGestionProveedorInvPro";
-            this.LBLGestionProveedorInvPro.Size = new System.Drawing.Size(427, 50);
-            this.LBLGestionProveedorInvPro.TabIndex = 36;
-            this.LBLGestionProveedorInvPro.Text = "Inversión de Productos";
+            // BTNConfiguracion
+            // 
+            this.BTNConfiguracion.FlatAppearance.BorderSize = 0;
+            this.BTNConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNConfiguracion.Location = new System.Drawing.Point(750, 7);
+            this.BTNConfiguracion.Name = "BTNConfiguracion";
+            this.BTNConfiguracion.Size = new System.Drawing.Size(108, 29);
+            this.BTNConfiguracion.TabIndex = 41;
+            this.BTNConfiguracion.Text = "Configuración";
+            this.BTNConfiguracion.UseVisualStyleBackColor = true;
             // 
             // FRMProveedor_Epica
             // 
@@ -511,5 +547,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private DevComponents.DotNetBar.LabelX LBLGestionProveedorInvPro;
+        private DevComponents.DotNetBar.ButtonX BTNBusquedaGeneral;
+        private System.Windows.Forms.TextBox TXTFiltrarGeneral;
+        private System.Windows.Forms.Button BTNConfiguracion;
     }
 }

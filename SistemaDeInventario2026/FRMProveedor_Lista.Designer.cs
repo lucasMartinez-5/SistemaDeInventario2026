@@ -30,6 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.DTGLista = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,12 +55,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
+            this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
+            this.BTNConfiguracion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
             this.CMSMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -91,6 +94,50 @@
             this.DTGLista.TabIndex = 0;
             this.DTGLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellContentClick);
             this.DTGLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellDoubleClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Código";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Estado";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 73;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "NIT";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 201;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Razón Social";
+            this.Column4.MinimumWidth = 20;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 305;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Celular";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 180;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Dirección";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            this.Column6.Width = 150;
             // 
             // CMSMenu
             // 
@@ -297,6 +344,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.BTNBusquedaGeneral);
+            this.panel2.Controls.Add(this.TXTFiltrarGeneral);
+            this.panel2.Controls.Add(this.BTNConfiguracion);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -328,49 +378,35 @@
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
             // 
-            // Column1
+            // BTNBusquedaGeneral
             // 
-            this.Column1.HeaderText = "Código";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
+            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
+            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1037, 10);
+            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
+            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
+            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNBusquedaGeneral.TabIndex = 46;
             // 
-            // Column2
+            // TXTFiltrarGeneral
             // 
-            this.Column2.HeaderText = "Estado";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 73;
+            this.TXTFiltrarGeneral.Location = new System.Drawing.Point(869, 10);
+            this.TXTFiltrarGeneral.Name = "TXTFiltrarGeneral";
+            this.TXTFiltrarGeneral.Size = new System.Drawing.Size(191, 23);
+            this.TXTFiltrarGeneral.TabIndex = 45;
             // 
-            // Column3
+            // BTNConfiguracion
             // 
-            this.Column3.HeaderText = "NIT";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 201;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Razón Social";
-            this.Column4.MinimumWidth = 20;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 305;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Celular";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 180;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Dirección";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
-            this.Column6.Width = 150;
+            this.BTNConfiguracion.FlatAppearance.BorderSize = 0;
+            this.BTNConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNConfiguracion.Location = new System.Drawing.Point(755, 7);
+            this.BTNConfiguracion.Name = "BTNConfiguracion";
+            this.BTNConfiguracion.Size = new System.Drawing.Size(108, 29);
+            this.BTNConfiguracion.TabIndex = 44;
+            this.BTNConfiguracion.Text = "Configuración";
+            this.BTNConfiguracion.UseVisualStyleBackColor = true;
             // 
             // FRMDirectorioProveedor
             // 
@@ -431,5 +467,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private DevComponents.DotNetBar.ButtonX BTNBusquedaGeneral;
+        private System.Windows.Forms.TextBox TXTFiltrarGeneral;
+        private System.Windows.Forms.Button BTNConfiguracion;
     }
 }

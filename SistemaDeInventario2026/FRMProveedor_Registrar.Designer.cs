@@ -43,15 +43,18 @@
             this.LBL = new MaterialSkin.Controls.MaterialLabel();
             this.LBLRegistrarProveedor = new DevComponents.DotNetBar.LabelX();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.BTNAdministracionUsuarios = new System.Windows.Forms.Button();
             this.BTNPuntoDeVenta = new System.Windows.Forms.Button();
             this.BTNBusquedaAvanzada = new System.Windows.Forms.Button();
             this.BTNInventario = new System.Windows.Forms.Button();
             this.BTNDirectorio = new System.Windows.Forms.Button();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
+            this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
+            this.BTNConfiguracion = new System.Windows.Forms.Button();
             this.PPrincipal.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -243,19 +246,6 @@
             this.panel2.Size = new System.Drawing.Size(270, 509);
             this.panel2.TabIndex = 13;
             // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(369, 129);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(50, 19);
-            this.materialLabel3.TabIndex = 3;
-            this.materialLabel3.Text = "Celular";
-            // 
             // BTNAdministracionUsuarios
             // 
             this.BTNAdministracionUsuarios.BackColor = System.Drawing.Color.Transparent;
@@ -346,9 +336,25 @@
             this.BTNDirectorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNDirectorio.UseVisualStyleBackColor = false;
             // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(369, 129);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(50, 19);
+            this.materialLabel3.TabIndex = 3;
+            this.materialLabel3.Text = "Celular";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.BTNBusquedaGeneral);
+            this.panel1.Controls.Add(this.TXTFiltrarGeneral);
+            this.panel1.Controls.Add(this.BTNConfiguracion);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -380,6 +386,36 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
+            // 
+            // BTNBusquedaGeneral
+            // 
+            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
+            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1032, 10);
+            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
+            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
+            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNBusquedaGeneral.TabIndex = 46;
+            // 
+            // TXTFiltrarGeneral
+            // 
+            this.TXTFiltrarGeneral.Location = new System.Drawing.Point(864, 10);
+            this.TXTFiltrarGeneral.Name = "TXTFiltrarGeneral";
+            this.TXTFiltrarGeneral.Size = new System.Drawing.Size(191, 23);
+            this.TXTFiltrarGeneral.TabIndex = 45;
+            // 
+            // BTNConfiguracion
+            // 
+            this.BTNConfiguracion.FlatAppearance.BorderSize = 0;
+            this.BTNConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNConfiguracion.Location = new System.Drawing.Point(750, 7);
+            this.BTNConfiguracion.Name = "BTNConfiguracion";
+            this.BTNConfiguracion.Size = new System.Drawing.Size(108, 29);
+            this.BTNConfiguracion.TabIndex = 44;
+            this.BTNConfiguracion.Text = "Configuración";
+            this.BTNConfiguracion.UseVisualStyleBackColor = true;
             // 
             // FRMProveedor_Registrar
             // 
@@ -430,5 +466,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private DevComponents.DotNetBar.ButtonX BTNBusquedaGeneral;
+        private System.Windows.Forms.TextBox TXTFiltrarGeneral;
+        private System.Windows.Forms.Button BTNConfiguracion;
     }
 }
