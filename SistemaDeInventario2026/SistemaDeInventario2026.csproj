@@ -96,6 +96,12 @@
     <Compile Include="FRMCategoria_Registrar.Designer.cs">
       <DependentUpon>FRMCategoria_Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMCompra_Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCompra_Registrar.Designer.cs">
+      <DependentUpon>FRMCompra_Registrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMFondo1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,12 @@
     </Compile>
     <Compile Include="FRMPersona_Registrar.Designer.cs">
       <DependentUpon>FRMPersona_Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMProducto_Epica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProducto_Epica.Designer.cs">
+      <DependentUpon>FRMProducto_Epica.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMProducto_Lista.cs">
       <SubType>Form</SubType>
@@ -201,11 +213,20 @@
     <Compile Include="MetodosGenerales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCLProductoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLProductoCard.Designer.cs">
+      <DependentUpon>UCLProductoCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FRMCategoria_Lista.resx">
       <DependentUpon>FRMCategoria_Lista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoria_Registrar.resx">
       <DependentUpon>FRMCategoria_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCompra_Registrar.resx">
+      <DependentUpon>FRMCompra_Registrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMFondo1.resx">
       <DependentUpon>FRMFondo1.cs</DependentUpon>
@@ -230,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPersona_Registrar.resx">
       <DependentUpon>FRMPersona_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMProducto_Epica.resx">
+      <DependentUpon>FRMProducto_Epica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Lista.resx">
       <DependentUpon>FRMProducto_Lista.cs</DependentUpon>
@@ -262,6 +286,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLProductoCard.resx">
+      <DependentUpon>UCLProductoCard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -465,6 +492,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_buscar40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_catalogo50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_lectorBarras23.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

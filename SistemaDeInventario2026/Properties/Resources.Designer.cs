@@ -183,6 +183,16 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_catalogo50 {
+            get {
+                object obj = ResourceManager.GetObject("ic_catalogo50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_categoria {
             get {
                 object obj = ResourceManager.GetObject("ic_categoria", resourceCulture);
@@ -296,6 +306,16 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap ic_iniciar_sesion {
             get {
                 object obj = ResourceManager.GetObject("ic_iniciar_sesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_lectorBarras23 {
+            get {
+                object obj = ResourceManager.GetObject("ic_lectorBarras23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

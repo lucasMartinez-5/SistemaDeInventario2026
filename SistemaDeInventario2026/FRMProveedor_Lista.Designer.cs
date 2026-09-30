@@ -53,11 +53,11 @@
             this.IINFilas = new DevComponents.Editors.IntegerInput();
             this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
             this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
             this.BTNConfiguracion = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
             this.CMSMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -146,27 +146,27 @@
             this.inhabilitarToolStripMenuItem,
             this.habilitarToolStripMenuItem});
             this.CMSMenu.Name = "CMSMenu";
-            this.CMSMenu.Size = new System.Drawing.Size(128, 70);
+            this.CMSMenu.Size = new System.Drawing.Size(181, 92);
             this.CMSMenu.Opening += new System.ComponentModel.CancelEventHandler(this.CMSMenu_Opening);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarToolStripMenuItem.Text = "&Modificar";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // inhabilitarToolStripMenuItem
             // 
             this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
-            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
             this.inhabilitarToolStripMenuItem.Click += new System.EventHandler(this.inhabilitarToolStripMenuItem_Click);
             // 
             // habilitarToolStripMenuItem
             // 
             this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
-            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.habilitarToolStripMenuItem.Text = "&Habilitar";
             this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
             // 
@@ -354,30 +354,6 @@
             this.panel2.Size = new System.Drawing.Size(1068, 45);
             this.panel2.TabIndex = 12;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(59, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 25);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Directorio de Proveedores";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 32;
-            this.pictureBox4.TabStop = false;
-            // 
             // BTNBusquedaGeneral
             // 
             this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -407,6 +383,30 @@
             this.BTNConfiguracion.TabIndex = 44;
             this.BTNConfiguracion.Text = "Configuración";
             this.BTNConfiguracion.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(59, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(237, 25);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Directorio de Proveedores";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
+            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 32;
+            this.pictureBox4.TabStop = false;
             // 
             // FRMDirectorioProveedor
             // 

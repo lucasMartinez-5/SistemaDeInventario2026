@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace SistemaDeInventario2026
+namespace SistemaDeGestion2026
 {
     public static class MetodosGenerales
     {
@@ -252,7 +252,7 @@ namespace SistemaDeInventario2026
                 return 0;
             }
             */
-            
+
 
             // CONDICIÓN 1: Si no tiene mínimo 8 caracteres, no es admisible
             if (string.IsNullOrEmpty(password) || password.Length < 8)
@@ -283,10 +283,10 @@ namespace SistemaDeInventario2026
             {
                 return 2; // Seguridad Media
             }
-            
+
             // Caso por defecto: Si no cae en ninguna regla anterior pero tiene 8 caracteres
             return 1; // Seguridad Baja por precaución
-            
+
         }
         #endregion
 

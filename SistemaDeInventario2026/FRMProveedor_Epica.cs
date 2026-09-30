@@ -73,5 +73,17 @@ namespace SistemaDeInventario2026
         {
 
         }
+
+        private void BTNInventario_Click(object sender, EventArgs e)
+        {
+            FRMProducto_Epica a = new FRMProducto_Epica();
+            a.ShowDialog();
+        }
+
+        private void BTNCostoRegistros_Click(object sender, EventArgs e)
+        {
+            FRMCompra_Registrar a = new FRMCompra_Registrar();
+            a.ShowDialog();
+        }
     }
 }

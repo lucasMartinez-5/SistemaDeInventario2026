@@ -1,5 +1,6 @@
 ﻿using CapaRN;
 using DevComponents.DotNetBar.Controls;
+using SistemaDeGestion2026;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

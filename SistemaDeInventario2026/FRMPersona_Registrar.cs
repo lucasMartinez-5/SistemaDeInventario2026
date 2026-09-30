@@ -2,6 +2,7 @@
 using AForge.Video.DirectShow;
 using CapaRN;
 using DevComponents.DotNetBar.Controls;
+using SistemaDeGestion2026;
 using SistemaDeInventario2026.Properties;
 using System;
 using System.Collections.Generic;
