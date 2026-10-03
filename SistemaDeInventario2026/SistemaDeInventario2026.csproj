@@ -150,6 +150,12 @@
     <Compile Include="FRMPersona_Registrar.Designer.cs">
       <DependentUpon>FRMPersona_Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMProducto_Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProducto_Buscar.Designer.cs">
+      <DependentUpon>FRMProducto_Buscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMProducto_Epica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,12 @@
     </Compile>
     <Compile Include="FRMProducto_Registrar.Designer.cs">
       <DependentUpon>FRMProducto_Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMProveedor_Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProveedor_Buscar.Designer.cs">
+      <DependentUpon>FRMProveedor_Buscar.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMProveedor_Epica.cs">
       <SubType>Form</SubType>
@@ -252,6 +264,9 @@
     <EmbeddedResource Include="FRMPersona_Registrar.resx">
       <DependentUpon>FRMPersona_Registrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMProducto_Buscar.resx">
+      <DependentUpon>FRMProducto_Buscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Epica.resx">
       <DependentUpon>FRMProducto_Epica.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Registrar.resx">
       <DependentUpon>FRMProducto_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMProveedor_Buscar.resx">
+      <DependentUpon>FRMProveedor_Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProveedor_Epica.resx">
       <DependentUpon>FRMProveedor_Epica.cs</DependentUpon>

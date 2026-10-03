@@ -14,7 +14,7 @@ using static MaterialSkin.Controls.MaterialForm;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMDirectorioProveedor : Form
+    public partial class FRMProveedor_Lista : Form
     {
         #region Variables
         private lproved lproveedor = new lproved();
@@ -23,7 +23,7 @@ namespace SistemaDeInventario2026
         #endregion
 
         #region Constructor
-        public FRMDirectorioProveedor()
+        public FRMProveedor_Lista()
         {
             InitializeComponent();
         }

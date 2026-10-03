@@ -193,7 +193,7 @@ namespace SistemaDeInventario2026
             {
                 s.Close();
             }
-            FRMDirectorioProveedor a = new FRMDirectorioProveedor();
+            FRMProveedor_Lista a = new FRMProveedor_Lista();
             a.MdiParent = this;
             a.Show();
         }

@@ -56,13 +56,13 @@ namespace SistemaDeInventario2026
 
         private void BTNVer_Click(object sender, EventArgs e)
         {
-            FRMDirectorioProveedor a = new FRMDirectorioProveedor();
+            FRMProveedor_Lista a = new FRMProveedor_Lista();
             a.Show();
         }
 
         private void BTNModificar_Click(object sender, EventArgs e)
         {
-            FRMDirectorioProveedor a = new FRMDirectorioProveedor();
+            FRMProveedor_Lista a = new FRMProveedor_Lista();
             MessageBox.Show("Elija un proveedor de la lista haciendo doble clic en él.");
             a.ShowDialog();
             

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMPersona_Buscar : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMPersona_Buscar : Form
     {
         #region Variables
         public aperson persona = new aperson();

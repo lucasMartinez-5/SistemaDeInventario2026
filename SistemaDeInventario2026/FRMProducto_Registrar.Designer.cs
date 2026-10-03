@@ -251,7 +251,6 @@
             this.CMBProductoNombre.Size = new System.Drawing.Size(336, 23);
             this.CMBProductoNombre.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.CMBProductoNombre.TabIndex = 81;
-            this.CMBProductoNombre.SelectedIndexChanged += new System.EventHandler(this.CMBProductoNombre_SelectedIndexChanged);
             this.CMBProductoNombre.Enter += new System.EventHandler(this.CMBProductoNombre_Enter);
             this.CMBProductoNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CMBProductoNombre_KeyDown);
             this.CMBProductoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBProductoNombre_KeyPress);

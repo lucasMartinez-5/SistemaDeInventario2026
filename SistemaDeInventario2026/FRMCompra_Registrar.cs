@@ -17,6 +17,10 @@ namespace SistemaDeInventario2026
     {
         #region Variables
         // Ajusta estos nombres a tus clases reales de la CapaRN / CapaAD
+        private aproved proveedor = new aproved();
+        private bool proveedorOk = false;
+        private aproduc producto = new aproduc();
+        private bool productoOk = false;
         private lcompra lCompra = new lcompra();
         private acompra acompra = new acompra();
         private xnumcor correlativo = new xnumcor();
@@ -34,10 +38,18 @@ namespace SistemaDeInventario2026
         {
             bool respuesta = true;
 
-            if (CMBCompraProveedor.SelectedIndex == -1)
+            
+            if (TXTCompraProveedor.Text.Replace(" ", "") == "")
             {
-                MessageBox.Show("Seleccione un PROVEEDOR", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                CMBCompraProveedor.Focus();
+                MessageBox.Show("Introduzca el proveedor", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProveedor.Focus();
+                respuesta = false;
+            }
+            
+            else if (TXTCompraProveedorCelular.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Introduzca el celular de la proveedor", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProveedorCelular.Focus();
                 respuesta = false;
             }
             else if (TXTCompraFactura.Text.Replace(" ", "") == "")
@@ -46,54 +58,45 @@ namespace SistemaDeInventario2026
                 TXTCompraFactura.Focus();
                 respuesta = false;
             }
+            /*
+            else if (TXTCompraProductoEncontrado.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Ingrese el producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProductoEncontrado.Focus();
+                respuesta = false;
+            }
+            
+            else if (NUDCantidad.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Ingrese una cantidad", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                NUDCantidad.Focus();
+                respuesta = false;
+            }
+            else if ((NUDPrecio.Value <= 0))
+            {
+                MessageBox.Show("Introduzca el PRECIO MÍNIMO del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                NUDPrecio.Focus();
+                respuesta = false;
+            }
+            */
             else if (LTVCarrito.Items.Count == 0)
             {
                 MessageBox.Show("El carrito de compras está vacío. Agregue al menos un producto.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                CMBCompraProducto.Focus();
+                TXTCompraProductoEncontrado.Focus();
                 respuesta = false;
             }
 
             return respuesta;
         }
-        private void CargarComboCategorias()
-        {
-            List<aproved> ListaCategorias = new List<aproved>();
-            aproved categoria = new aproved();
-            ListaCategorias = categoria.Lista("caprestpro = true order by caprsocpro");
-            CMBCompraProveedor.Items.Clear();
-            CMBCompraProveedor.DisplayMember = "caprsocpro";
-            CMBCompraProveedor.ValueMember = "paprcodpro";
-            CMBCompraProveedor.DataSource = ListaCategorias;
-            CMBCompraProveedor.SelectedIndex = -1;
-        }
-        private void CargarCombos()
-        {
-            // Ejemplo: Cargar Proveedores (Ajusta a tu lógica real)
-            List<lproved> listaProv = proveedor.Lista("order by nombre");
-            // CMBProveedor.DisplayMember = "nombre";
-            // CMBProveedor.ValueMember = "codigo";
-            // CMBProveedor.DataSource = listaProv;
-            CMBCompraProveedor.Items.Add("Proveedor Ejemplo S.A.");
-            CMBCompraProveedor.SelectedIndex = -1;
-
-            // Ejemplo: Cargar Productos
-            // List<aproduc> listaProd = producto.Lista("order by capdnompro");
-            // CMBProducto.DisplayMember = "capdnompro";
-            // CMBProducto.ValueMember = "papdcodpro";
-            // CMBProducto.DataSource = listaProd;
-            CMBCompraProducto.Items.Add("Polera - Negro - M");
-            CMBCompraProducto.Items.Add("Jean - Azul - 32");
-            CMBCompraProducto.SelectedIndex = -1;
-        }
 
         private void LimpiarCasillas()
         {
-            CMBCompraProveedor.SelectedIndex = -1;
+            TXTCompraProveedor.Text = "";
             TXTCompraFactura.Text = "";
-            TXTCelular.Text = "";
+            TXTCompraProveedorCelular.Text = "";
             //DTIFecha.Value = DateTime.Now;
             
-            CMBCompraProducto.SelectedIndex = -1;
+            TXTCompraProductoEncontrado.Text = "";
             NUDCantidad.Value = 1;
             NUDPrecio.Value = 0;
 
@@ -111,11 +114,12 @@ namespace SistemaDeInventario2026
                 }
             }
             LBLTotal.Text = $"Total: {total:F2}";
+
         }
 
         private void AgregarAlCarrito()
         {
-            string producto = CMBCompraProducto.Text;
+            string producto = TXTCompraProductoEncontrado.Text;
             int cantidad = (int)NUDCantidad.Value;
             decimal precio = NUDPrecio.Value;
             decimal subtotal = cantidad * precio;
@@ -124,8 +128,8 @@ namespace SistemaDeInventario2026
             item.SubItems.Add(cantidad.ToString());           // Columna 1: Cant.
             item.SubItems.Add(precio.ToString("F2"));         // Columna 2: Precio
             item.SubItems.Add(subtotal.ToString("F2"));       // Columna 3: Subtotal
-            item.SubItems.Add("✕");                           // Columna 4: Botón Eliminar
-
+            item.SubItems.Add("✕");                          // Columna 4: Botón Eliminar
+            item.Tag = this.producto.papdcodpro;              // Columna 5: Código del producto (para referencia al guardar en BD) // NUEVA (inciso a)
             // Guardamos el código del producto en el Tag por si necesitamos guardar en BD después
             // item.Tag = CMBProducto.SelectedValue.ToString(); 
 
@@ -151,7 +155,6 @@ namespace SistemaDeInventario2026
         #endregion
         private void FRMCompra_Registrar_Load(object sender, EventArgs e)
         {
-            CargarCombos();
             LimpiarCasillas();
             ConfigurarListView();
         }
@@ -175,38 +178,6 @@ namespace SistemaDeInventario2026
         private void BTNSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void BTNAgregarProducto_Click(object sender, EventArgs e)
-        {
-            if (CMBCompraProducto.SelectedIndex == -1 || CMBCompraProducto.Text == "")
-            {
-                MessageBox.Show("Seleccione un producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                CMBCompraProducto.Focus();
-                return;
-            }
-
-            if (NUDCantidad.Value <= 0)
-            {
-                MessageBox.Show("La cantidad debe ser mayor a 0", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                NUDCantidad.Focus();
-                return;
-            }
-
-            if (NUDPrecio.Value <= 0)
-            {
-                MessageBox.Show("El precio debe ser mayor a 0", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                NUDPrecio.Focus();
-                return;
-            }
-
-            AgregarAlCarrito();
-
-            // Limpiar solo los campos del producto para agregar otro rápidamente
-            CMBCompraProducto.SelectedIndex = -1;
-            NUDCantidad.Value = 1;
-            NUDPrecio.Value = 0;
-            CMBCompraProducto.Focus();
         }
 
         private void BTNVaciarCarrito_Click(object sender, EventArgs e)
@@ -243,14 +214,28 @@ namespace SistemaDeInventario2026
                     return;
                 }
 
+                // Generar los correlativos de los detalles: uno por cada fila del carrito
+                int cantidadFilas = LTVCarrito.Items.Count;
+                xnumcor correlativoDetalle = new xnumcor();
+                correlativoDetalle.pxnctipcor = "adetcompra";
+                if (!correlativoDetalle.ObtenerSiguiente(cantidadFilas))
+                {
+                    MessageBox.Show("Error al generar los códigos del detalle de compra.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                int numeroDetalle = correlativoDetalle.cxncnumcor - cantidadFilas + 1; // primer número reservado
+
+
+
                 // Asignar datos de la cabecera de la compra
                 // compra.capdfeccom = DateTime.Now; // Si tienes campo de fecha
                 acompra.capdfaccom = TXTCompraFactura.Text;
 
                 // Asignar proveedor (si usas ValueMember con el código)
-                if (CMBCompraProveedor.SelectedValue != null)
+                if (TXTCompraProveedor.Text != "")
                 {
-                    acompra.faprcodpro = CMBCompraProveedor.SelectedValue.ToString();
+                    // acompra.faprcodpro = TXTCompraProveedor.Text;
+                    acompra.faprcodpro = proveedor.paprcodpro;
                 }
                 else
                 {
@@ -261,8 +246,11 @@ namespace SistemaDeInventario2026
                     return; // Detiene la ejecución para que no intente guardar vacío
                 }
 
+                acompra.faprcodpro = proveedor.paprcodpro; // NUEVA (inciso b)
+
                 // Asignar el total de la compra
                 acompra.capctotcom = decimal.TryParse(LBLTotal.Text, out decimal total) ? total : 0.0m;
+                acompra.capctotcom = LTVCarrito.Items.Cast<ListViewItem>().Sum(i => decimal.Parse(i.SubItems[3].Text));   // NUEVA (inciso c)
 
                 // Grabar la cabecera de la compra
                 if (acompra.Grabar())
@@ -276,6 +264,10 @@ namespace SistemaDeInventario2026
 
                         // Asignar el código de compra (foránea)
                         detalle.fapdcodcom = acompra.papccodcom;
+
+                        // Generar el código del detalle usando el correlativo
+                        detalle.papdcoddet = correlativoDetalle.pxnctipcor + "-" + numeroDetalle.ToString("D12");
+                        numeroDetalle++;
 
                         // Asignar el producto (si guardaste el código en el Tag del ListViewItem)
                         if (item.Tag != null)
@@ -298,6 +290,15 @@ namespace SistemaDeInventario2026
                         {
                             detallesGrabados = false;
                             break; // Salir del bucle si hay error
+                        }
+                        // NUEVO: aumentar el stock del producto comprado
+                        aproduc productoStock = new aproduc();
+                        productoStock.papdcodpro = detalle.fapdcodpro;
+                        if (productoStock.ObtenerDatos())
+                        {
+                            productoStock.capdstopro += detalle.capdcandet;
+                            productoStock.capdfecmod = DateTime.Now;
+                            productoStock.Modificar();
                         }
                     }
 
@@ -444,6 +445,115 @@ namespace SistemaDeInventario2026
         private void TXTCompraFactura_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = char.ToUpper(e.KeyChar);
+        }
+
+        private void BTNBuscarProveedorCompra_Click(object sender, EventArgs e)
+        {
+            FRMProveedor_Buscar a = new FRMProveedor_Buscar();
+            a.ShowDialog();
+            if (a.seleccionadoOk)
+            {
+                this.proveedor = a.proveedor;
+                this.proveedorOk = true;
+                TXTCompraProveedorCelular.Text = proveedor.caprnumcel;
+                TXTCompraProveedor.Text = proveedor.caprsocpro;
+                BTNBuscarProveedorCompra.Enabled = false; // Deshabilitar el botón después de seleccionar un proveedor
+                /*TXTContacto.Text = persona.capsapepat + " " +
+                                  persona.capsapemat + " " +
+                                  persona.capsnomper;
+                */
+            }
+            else
+            {
+                this.proveedorOk = false;
+                TXTCompraProveedorCelular.Text = "";
+                TXTCompraProveedor.Text = "Nombre Completo";
+                //TXTContacto.Text = "Contacto";
+            }
+        }
+
+        private void BTNBuscarProductoCompra_Click(object sender, EventArgs e)
+        {
+            FRMProducto_Buscar a = new FRMProducto_Buscar();
+            a.ShowDialog();
+            if (a.seleccionadoOk)
+            {
+                this.producto = a.producto;
+                this.productoOk = true;
+                TXTCompraProductoEncontrado.Text = producto.capdnompro + " - " + 
+                                                   producto.capdcolpro + " - " + 
+                                                   producto.capdtalpro + " - " + 
+                                                   producto.capdmarpro + " - " +
+                                                   producto.capdgenpro;
+                //TXTCompraProveedor.Text = proveedor.caprsocpro;
+
+                /*TXTContacto.Text = persona.capsapepat + " " +
+                                  persona.capsapemat + " " +
+                                  persona.capsnomper;
+                */
+            }
+            else
+            {
+                this.productoOk = false;
+                TXTCompraProductoEncontrado.Text = "Producto No Encontrado";
+                //TXTContacto.Text = "Contacto";
+            }
+        }
+
+        private void BTNAgregarProductoAlCarrito_Click(object sender, EventArgs e)
+        {
+            bool respuesta = true;
+            if (TXTCompraProveedor.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Debe elegir un proveedor, es requisito. Recuerde que solo es un proveedor por compra, caso contrario emita una Nueva", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProveedor.Focus();
+                respuesta = false;
+            }
+            else if (TXTCompraProveedorCelular.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Procure ingresar el celular del proveedor elegido, Es requisito", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProveedorCelular.Focus();
+                respuesta = false;
+            }
+            else if (TXTCompraFactura.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Para esta compra se debe mantener el mismo NÚMERO DE FACTURA, caso contrario continúe el registro de la compra si lo desea y emita una Nueva", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraFactura.Focus();
+                respuesta = false;
+            }
+            else if (TXTCompraProductoEncontrado.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Ingrese el producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProductoEncontrado.Focus();
+                respuesta = false;
+            }
+            else if (NUDCantidad.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Ingrese una cantidad", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                NUDCantidad.Focus();
+                respuesta = false;
+            }
+            else if (NUDPrecio.Value <= 0)
+            {
+                MessageBox.Show("Introduzca el PRECIO MÍNIMO del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                NUDPrecio.Focus();
+                respuesta = false;
+            }
+            else if((TXTCompraProductoEncontrado.Text.Replace(" ", "") != "") && (NUDCantidad.Text.Replace(" ", "") != "") && (NUDPrecio.Value > 0))
+            {
+                AgregarAlCarrito();
+                // Limpiar solo los campos del producto para agregar otro rápidamente
+                TXTCompraProductoEncontrado.Text = "";
+                NUDCantidad.Value = 1;
+                NUDPrecio.Value = 0;
+                TXTCompraProductoEncontrado.Focus();
+            }
+
+            // Limpiar solo los campos del producto para agregar otro rápidamente
+            //TXTCompraProductoEncontrado.Text = "";
+            //NUDCantidad.Value = 1;
+            //NUDPrecio.Value = 0;
+            //TXTCompraProductoEncontrado.Focus();
         }
     }
 }

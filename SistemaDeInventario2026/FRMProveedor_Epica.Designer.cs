@@ -482,9 +482,9 @@
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Location = new System.Drawing.Point(59, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 25);
+            this.label4.Size = new System.Drawing.Size(142, 25);
             this.label4.TabIndex = 33;
-            this.label4.Text = "Directorio de Proveedores";
+            this.label4.Text = "Local de Dieter";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox4

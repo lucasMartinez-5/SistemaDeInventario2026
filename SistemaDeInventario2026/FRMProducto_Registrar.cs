@@ -46,22 +46,6 @@ namespace SistemaDeInventario2026
             bool respuesta = true;
             aproduc producto2 = new aproduc();
             producto2.capdcodbar = LBLCodigoDeBarras.Text;
-            //string cianterior = persona.capdnumcid;                           
-            //persona.capdnumcid = TXTCI.Text;
-
-            /*if (TXTProductoCodigo.Text.Replace(" ", "") == "")
-            {
-                MessageBox.Show("Introduzca el codigo dek producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TXTProductoCodigo.Focus();
-                respuesta = false;
-            }
-            if (producto.ObtenerDatos())
-            {
-                MessageBox.Show("Ya existe un producto con ese código", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TXTProductoCodigo.Focus();
-                respuesta = false;
-            }*/
-            
             if (CMBProductoNombre.Text.Replace(" ", "") == "" && CMBProductoNombre.SelectedIndex == -1)
             {
                 MessageBox.Show("Introduzca el nombre de la prenda", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -116,23 +100,6 @@ namespace SistemaDeInventario2026
                 CMBCategoria.Focus();
                 respuesta = false;
             }
-            /*else if (LBLCodigoDeBarras.Text.Replace(" ", "") == "")
-            {
-                MessageBox.Show("Introduzca el CÓDIGO DE BARRA del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                LBLCodigoDeBarras.Focus();
-                respuesta = false;
-            }*/
-            /*
-            else if (LBLCodigoDeBarras.Text == "")
-            {
-                if (producto2.ObtenerDatosCodBarra(modificar, producto.capdcodbar))
-                {
-                    MessageBox.Show("Ya existe un producto con ese código de barras", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    BTNCodigoDeBarras.Focus();
-                    respuesta = false;
-                }
-            }
-            */
             else if (producto2.ObtenerDatosCodBarra(modificar, producto.capdcodbar))
             {
                 MessageBox.Show("Ya existe un producto con ese código de barras", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -146,26 +113,12 @@ namespace SistemaDeInventario2026
                 NUDStockActual.Focus();
                 respuesta = false;
             }
-            /*
-            else if (NUDPrecioVenta.Text.Replace(" ", "") == "")
-            {
-                MessageBox.Show("Introduzca el PRECIO DE VENTA del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                NUDPrecioVenta.Focus();
-                respuesta = false;
-            }*/
             else if (NUDPrecioVenta.Value <= 0)
             {
                 MessageBox.Show("Introduzca el PRECIO DE VENTA del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 NUDPrecioVenta.Focus();
                 respuesta = false;
             }
-            /*
-            else if (NUDPrecioMinVenta.Text.Replace(" ", "") == "")
-            {
-                MessageBox.Show("Introduzca el PRECIO MÍNIMO del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                NUDPrecioMinVenta.Focus();
-                respuesta = false;
-            }*/
             else if ((NUDPrecioMinVenta.Value <= 0) && (NUDPrecioMinVenta.Value > NUDPrecioVenta.Value))
             {
                 MessageBox.Show("Introduzca el PRECIO MÍNIMO del producto", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -197,7 +150,6 @@ namespace SistemaDeInventario2026
         private void CargarCombo(String campo, ComboBox combo)
         {
             List<String> ListaNombresProducto = new List<String>();
-
             ListaNombresProducto = producto.Combo(campo);
             combo.Items.Clear();
             combo.DisplayMember = campo;
@@ -205,18 +157,6 @@ namespace SistemaDeInventario2026
             combo.SelectedIndex = -1;
 
         }
-        /*
-        private void CargarComboNombreProducto()
-        {
-            List<acatpro> ListaCategorias = new List<acatpro>();
-            acatpro categoria = new acatpro();
-            ListaCategorias = categoria.Lista("cacpestcat=true order by cacpnomcat");
-            CMBCategoria.Items.Clear();
-            CMBCategoria.DisplayMember = "cacpnomcat";
-            CMBCategoria.ValueMember = "pacpcodcat";
-            CMBCategoria.DataSource = ListaCategorias;
-            CMBCategoria.SelectedIndex = -1;
-        }*/
 
         private void LimpiarCasillas()
         {
@@ -242,13 +182,8 @@ namespace SistemaDeInventario2026
         {
             producto.papdcodpro = this.codProMod;
             producto.ObtenerDatos();
-            //producto.papdcodpro = this.codProMod;
-            //producto.ObtenerDatos();
             SWBEstadoStock.Value = producto.capdestpro;
-            //TXTProductoCodigo.Text = producto.papdcodpro;
             CMBProductoNombre.Text = producto.capdnompro;
-            //DTIProductoFechaCreacion.Value = producto.capdfeccre;s
-            //DTIProductoFechaModificacion.Value = producto.capdfecmod;
             CMBMarca.Text = producto.capdmarpro;
             CMBColor.Text = producto.capdcolpro;
             CMBTalla.Text = producto.capdtalpro;
@@ -635,10 +570,6 @@ namespace SistemaDeInventario2026
                 }
                 else
                 {
-                    /*if (LBLCodigoDeBarras.Text == "SIN CÓDIGO")
-                    {
-                        LBLCodigoDeBarras.BackColor = Color.Salmon;
-                    }*/
                     LBLCodigoDeBarras.BackColor = Color.LightBlue;
                 }
                 lectorCBHabilitado = false;
@@ -673,11 +604,6 @@ namespace SistemaDeInventario2026
         {
             TextBox a = (TextBox)sender;
             a.SelectAll();
-        }
-
-        private void CMBProductoNombre_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
