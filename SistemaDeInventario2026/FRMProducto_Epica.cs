@@ -12,9 +12,34 @@ namespace SistemaDeInventario2026
 {
     public partial class FRMProducto_Epica : Form
     {
+        private Control pantallaActual = null;
         public FRMProducto_Epica()
         {
             InitializeComponent();
+        }
+        private bool CerrarActual()
+        {
+            if (pantallaActual == null) return true;
+            if (pantallaActual is Form f) { f.Close(); if (!f.IsDisposed) return false; }
+            else pantallaActual.Dispose();
+            pantallaActual = null;
+            return true;
+        }
+        private void AbrirEnPanel(Control c)
+        {
+            if (!CerrarActual()) return;
+            if (c is Form f) { f.TopLevel = false; f.FormBorderStyle = FormBorderStyle.None; }
+            c.Dock = DockStyle.Fill;
+            PMenu_Producto.Visible = false;
+            PMenu_Producto.Parent.Controls.Add(c);
+            c.BringToFront(); pantallaActual = c;
+            c.Disposed += PantallaCerrada; c.Show();
+        }
+        private void PantallaCerrada(object sender, EventArgs e)
+        {
+            if (IsDisposed || Disposing) return;
+            if (pantallaActual == sender) pantallaActual = null;
+            PMenu_Producto.Visible = true;
         }
 
         private void FRMProducto_Epica_Load(object sender, EventArgs e)
@@ -28,16 +53,20 @@ namespace SistemaDeInventario2026
             a.ShowDialog();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void PCBLista_Producto_Click(object sender, EventArgs e)
         {
-            FRMProducto_Lista a = new FRMProducto_Lista();
-            a.ShowDialog();
+            //FRMProducto_Lista a = new FRMProducto_Lista();
+            //a.ShowDialog();
+            AbrirEnPanel(new FRMProducto_Lista());
+            return;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void PCBAgregar_Producto_Click(object sender, EventArgs e)
         {
-            FRMProducto_Registrar a = new FRMProducto_Registrar();
-            a.ShowDialog();
+            //FRMProducto_Registrar a = new FRMProducto_Registrar();
+            //a.ShowDialog();
+            AbrirEnPanel(new FRMProducto_Registrar());
+            return;
         }
     }
 }

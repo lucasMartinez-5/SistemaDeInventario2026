@@ -334,5 +334,10 @@ namespace SistemaDeInventario2026
                 //TXTContacto.Text = "Contacto";
             }
         }
+
+        private void BTNSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

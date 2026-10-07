@@ -20,6 +20,7 @@ namespace SistemaDeInventario2026
         private lproved lproveedor = new lproved();
         private aproved aproveedor = new aproved();
         private List<lproved> lista_proveedores = new List<lproved>();
+        public event Action<string> ProveedorElegido;
         #endregion
 
         #region Constructor
@@ -71,11 +72,17 @@ namespace SistemaDeInventario2026
         private void FRMProveedor_Lista_Load(object sender, EventArgs e)
         {
             //this.WindowState = FormWindowState.Maximized;
+
             ActualizarGrid();
         }
 
         private void DTGLista_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && ProveedorElegido != null)   // NUEVO
+            {
+                ProveedorElegido(DTGLista[0, e.RowIndex].Value.ToString());
+                return;
+            }
             if (e.RowIndex >= 0)
             {
                 if (DTGLista.SelectedRows.Count > 0)
@@ -83,7 +90,7 @@ namespace SistemaDeInventario2026
                     FRMProveedor_Registrar F1 = new FRMProveedor_Registrar();
                     F1.modificar = true;
                     F1.codPveMod = DTGLista[0, e.RowIndex].Value.ToString();
-                    F1.ShowDialog();
+                    //F1.ShowDialog();
                     if (F1.actualizar)
                     {
                         ActualizarGrid();
@@ -124,6 +131,8 @@ namespace SistemaDeInventario2026
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ProveedorElegido(DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString());
+            return;
             if (DTGLista.SelectedRows.Count > 0)
             {
                 FRMProveedor_Registrar F1 = new FRMProveedor_Registrar();
@@ -191,6 +200,11 @@ namespace SistemaDeInventario2026
                     }
                 }
             }
+        }
+
+        private void BTNSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

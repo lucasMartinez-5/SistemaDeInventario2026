@@ -126,6 +126,12 @@
     <Compile Include="FRMIniciar_Sesion_Huella.Designer.cs">
       <DependentUpon>FRMIniciar_Sesion_Huella.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMInicioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMInicioPrincipal.Designer.cs">
+      <DependentUpon>FRMInicioPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMModificarPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,12 @@
     <Compile Include="FRMUsuario_Registrar.Designer.cs">
       <DependentUpon>FRMUsuario_Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMVenta_Epica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMVenta_Epica.Designer.cs">
+      <DependentUpon>FRMVenta_Epica.cs</DependentUpon>
+    </Compile>
     <Compile Include="MetodosGenerales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -251,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMIniciar_Sesion_Huella.resx">
       <DependentUpon>FRMIniciar_Sesion_Huella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMInicioPrincipal.resx">
+      <DependentUpon>FRMInicioPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMModificarPassword.resx">
       <DependentUpon>FRMModificarPassword.cs</DependentUpon>
@@ -299,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMUsuario_Registrar.resx">
       <DependentUpon>FRMUsuario_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMVenta_Epica.resx">
+      <DependentUpon>FRMVenta_Epica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
