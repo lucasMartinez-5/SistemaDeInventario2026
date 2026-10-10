@@ -80,6 +80,7 @@
             this.PAgregar_Proveedor.Name = "PAgregar_Proveedor";
             this.PAgregar_Proveedor.Size = new System.Drawing.Size(1067, 552);
             this.PAgregar_Proveedor.TabIndex = 14;
+            this.PAgregar_Proveedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PAgregar_Proveedor_Paint);
             // 
             // BTNBuscarProveedor
             // 

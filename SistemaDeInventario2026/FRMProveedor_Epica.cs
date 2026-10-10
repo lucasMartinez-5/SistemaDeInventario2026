@@ -124,5 +124,15 @@ namespace SistemaDeInventario2026
         {
 
         }
+
+        private void BTNHistorialAnual_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMCompra_Historial_Grafico());
+        }
+
+        private void BTNResumenInversion_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMCompra_Resumen());
+        }
     }
 }

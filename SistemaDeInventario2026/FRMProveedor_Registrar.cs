@@ -339,5 +339,10 @@ namespace SistemaDeInventario2026
         {
             this.Close();
         }
+
+        private void PAgregar_Proveedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

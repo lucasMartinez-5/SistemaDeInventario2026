@@ -74,6 +74,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -96,11 +97,35 @@
     <Compile Include="FRMCategoria_Registrar.Designer.cs">
       <DependentUpon>FRMCategoria_Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMCompra_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCompra_Detalle.Designer.cs">
+      <DependentUpon>FRMCompra_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCompra_Historial_Grafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCompra_Historial_Grafico.Designer.cs">
+      <DependentUpon>FRMCompra_Historial_Grafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCompra_Lista_Filtro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCompra_Lista_Filtro.Designer.cs">
+      <DependentUpon>FRMCompra_Lista_Filtro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMCompra_Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMCompra_Registrar.Designer.cs">
       <DependentUpon>FRMCompra_Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCompra_Resumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCompra_Resumen.Designer.cs">
+      <DependentUpon>FRMCompra_Resumen.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMFondo1.cs">
       <SubType>Form</SubType>
@@ -249,8 +274,20 @@
     <EmbeddedResource Include="FRMCategoria_Registrar.resx">
       <DependentUpon>FRMCategoria_Registrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMCompra_Detalle.resx">
+      <DependentUpon>FRMCompra_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCompra_Historial_Grafico.resx">
+      <DependentUpon>FRMCompra_Historial_Grafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCompra_Lista_Filtro.resx">
+      <DependentUpon>FRMCompra_Lista_Filtro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMCompra_Registrar.resx">
       <DependentUpon>FRMCompra_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCompra_Resumen.resx">
+      <DependentUpon>FRMCompra_Resumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMFondo1.resx">
       <DependentUpon>FRMFondo1.cs</DependentUpon>

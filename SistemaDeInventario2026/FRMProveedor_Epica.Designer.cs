@@ -193,6 +193,7 @@
             this.BTNResumenInversion.TabIndex = 46;
             this.BTNResumenInversion.Text = "Resumen por Fecha";
             this.BTNResumenInversion.UseVisualStyleBackColor = false;
+            this.BTNResumenInversion.Click += new System.EventHandler(this.BTNResumenInversion_Click);
             // 
             // BTNHistorialAnual
             // 
@@ -206,6 +207,7 @@
             this.BTNHistorialAnual.TabIndex = 45;
             this.BTNHistorialAnual.Text = "Ver Historial Anual";
             this.BTNHistorialAnual.UseVisualStyleBackColor = false;
+            this.BTNHistorialAnual.Click += new System.EventHandler(this.BTNHistorialAnual_Click);
             // 
             // materialLabel2
             // 
