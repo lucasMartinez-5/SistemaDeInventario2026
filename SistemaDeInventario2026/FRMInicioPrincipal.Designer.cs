@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
             this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
             this.BTNConfiguracion = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Proveedor = new System.Windows.Forms.Panel();
             this.LBLGestionProveedor = new DevComponents.DotNetBar.LabelX();
@@ -41,13 +43,11 @@
             this.BTNBusquedaAvanzada = new System.Windows.Forms.Button();
             this.BTNInventario = new System.Windows.Forms.Button();
             this.BTNDirectorio = new System.Windows.Forms.Button();
-            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Proveedor.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +63,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1289, 45);
             this.panel1.TabIndex = 15;
+            // 
+            // BTNBusquedaGeneral
+            // 
+            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
+            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1254, 8);
+            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
+            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
+            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNBusquedaGeneral.TabIndex = 43;
             // 
             // TXTFiltrarGeneral
             // 
@@ -95,6 +107,16 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "Local de Dieter";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
+            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 32;
+            this.pictureBox4.TabStop = false;
             // 
             // PPrincipal
             // 
@@ -203,6 +225,7 @@
             this.BTNBusquedaAvanzada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNBusquedaAvanzada.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNBusquedaAvanzada.UseVisualStyleBackColor = false;
+            this.BTNBusquedaAvanzada.Click += new System.EventHandler(this.BTNBusquedaAvanzada_Click);
             // 
             // BTNInventario
             // 
@@ -242,28 +265,6 @@
             this.BTNDirectorio.UseVisualStyleBackColor = false;
             this.BTNDirectorio.Click += new System.EventHandler(this.BTNDirectorio_Click);
             // 
-            // BTNBusquedaGeneral
-            // 
-            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
-            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1254, 8);
-            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
-            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
-            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNBusquedaGeneral.TabIndex = 43;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 32;
-            this.pictureBox4.TabStop = false;
-            // 
             // FRMInicioPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -278,11 +279,11 @@
             this.Load += new System.EventHandler(this.FRMInicioPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.PPrincipal.ResumeLayout(false);
             this.PMenu_Proveedor.ResumeLayout(false);
             this.PMenu_Proveedor.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

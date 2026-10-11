@@ -439,7 +439,6 @@
             // 
             // NUDStockActual
             // 
-            this.NUDStockActual.DecimalPlaces = 2;
             this.NUDStockActual.Location = new System.Drawing.Point(313, 396);
             this.NUDStockActual.Maximum = new decimal(new int[] {
             5000,

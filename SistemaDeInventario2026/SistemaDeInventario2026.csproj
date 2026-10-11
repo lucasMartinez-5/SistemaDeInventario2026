@@ -85,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FRMAdministracion_Epica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Epica.Designer.cs">
+      <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMCategoria_Lista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,12 @@
     <Compile Include="FRMPersona_Registrar.Designer.cs">
       <DependentUpon>FRMPersona_Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMProducto_Alerta_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProducto_Alerta_Stock.Designer.cs">
+      <DependentUpon>FRMProducto_Alerta_Stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMProducto_Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +204,12 @@
     </Compile>
     <Compile Include="FRMProducto_Epica.Designer.cs">
       <DependentUpon>FRMProducto_Epica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMProducto_Filtro_Epica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMProducto_Filtro_Epica.Designer.cs">
+      <DependentUpon>FRMProducto_Filtro_Epica.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMProducto_Lista.cs">
       <SubType>Form</SubType>
@@ -268,6 +286,9 @@
     <Compile Include="UCLProductoCard.Designer.cs">
       <DependentUpon>UCLProductoCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FRMAdministracion_Epica.resx">
+      <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoria_Lista.resx">
       <DependentUpon>FRMCategoria_Lista.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,11 +337,17 @@
     <EmbeddedResource Include="FRMPersona_Registrar.resx">
       <DependentUpon>FRMPersona_Registrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMProducto_Alerta_Stock.resx">
+      <DependentUpon>FRMProducto_Alerta_Stock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Buscar.resx">
       <DependentUpon>FRMProducto_Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Epica.resx">
       <DependentUpon>FRMProducto_Epica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMProducto_Filtro_Epica.resx">
+      <DependentUpon>FRMProducto_Filtro_Epica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Lista.resx">
       <DependentUpon>FRMProducto_Lista.cs</DependentUpon>

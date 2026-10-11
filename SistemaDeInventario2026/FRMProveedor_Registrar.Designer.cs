@@ -56,7 +56,7 @@
             this.PPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PPrincipal.Location = new System.Drawing.Point(0, 0);
             this.PPrincipal.Name = "PPrincipal";
-            this.PPrincipal.Size = new System.Drawing.Size(1067, 552);
+            this.PPrincipal.Size = new System.Drawing.Size(970, 519);
             this.PPrincipal.TabIndex = 2;
             // 
             // PAgregar_Proveedor
@@ -78,7 +78,7 @@
             this.PAgregar_Proveedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAgregar_Proveedor.Location = new System.Drawing.Point(0, 0);
             this.PAgregar_Proveedor.Name = "PAgregar_Proveedor";
-            this.PAgregar_Proveedor.Size = new System.Drawing.Size(1067, 552);
+            this.PAgregar_Proveedor.Size = new System.Drawing.Size(970, 519);
             this.PAgregar_Proveedor.TabIndex = 14;
             this.PAgregar_Proveedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PAgregar_Proveedor_Paint);
             // 
@@ -88,7 +88,7 @@
             this.BTNBuscarProveedor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNBuscarProveedor.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNBuscarProveedor.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNBuscarProveedor.Location = new System.Drawing.Point(469, 199);
+            this.BTNBuscarProveedor.Location = new System.Drawing.Point(408, 199);
             this.BTNBuscarProveedor.Name = "BTNBuscarProveedor";
             this.BTNBuscarProveedor.Size = new System.Drawing.Size(23, 23);
             this.BTNBuscarProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -101,7 +101,7 @@
             // 
             // 
             this.SWBEstado.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.SWBEstado.Location = new System.Drawing.Point(595, 199);
+            this.SWBEstado.Location = new System.Drawing.Point(534, 199);
             this.SWBEstado.Name = "SWBEstado";
             this.SWBEstado.Size = new System.Drawing.Size(191, 23);
             this.SWBEstado.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -109,7 +109,7 @@
             // 
             // TXTRazonSocial
             // 
-            this.TXTRazonSocial.Location = new System.Drawing.Point(595, 258);
+            this.TXTRazonSocial.Location = new System.Drawing.Point(534, 258);
             this.TXTRazonSocial.Name = "TXTRazonSocial";
             this.TXTRazonSocial.Size = new System.Drawing.Size(191, 23);
             this.TXTRazonSocial.TabIndex = 50;
@@ -119,7 +119,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(592, 236);
+            this.materialLabel2.Location = new System.Drawing.Point(531, 236);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(94, 19);
@@ -128,7 +128,7 @@
             // 
             // TXTDireccion
             // 
-            this.TXTDireccion.Location = new System.Drawing.Point(272, 321);
+            this.TXTDireccion.Location = new System.Drawing.Point(211, 321);
             this.TXTDireccion.Name = "TXTDireccion";
             this.TXTDireccion.Size = new System.Drawing.Size(514, 23);
             this.TXTDireccion.TabIndex = 48;
@@ -138,7 +138,7 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(269, 299);
+            this.materialLabel1.Location = new System.Drawing.Point(208, 299);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(67, 19);
@@ -147,14 +147,14 @@
             // 
             // TXTCelular
             // 
-            this.TXTCelular.Location = new System.Drawing.Point(272, 199);
+            this.TXTCelular.Location = new System.Drawing.Point(211, 199);
             this.TXTCelular.Name = "TXTCelular";
             this.TXTCelular.Size = new System.Drawing.Size(191, 23);
             this.TXTCelular.TabIndex = 46;
             // 
             // TXTNIT
             // 
-            this.TXTNIT.Location = new System.Drawing.Point(272, 258);
+            this.TXTNIT.Location = new System.Drawing.Point(211, 258);
             this.TXTNIT.Name = "TXTNIT";
             this.TXTNIT.Size = new System.Drawing.Size(191, 23);
             this.TXTNIT.TabIndex = 45;
@@ -165,7 +165,7 @@
             this.BTNLimpiar.FlatAppearance.BorderSize = 0;
             this.BTNLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNLimpiar.ForeColor = System.Drawing.Color.Black;
-            this.BTNLimpiar.Location = new System.Drawing.Point(611, 361);
+            this.BTNLimpiar.Location = new System.Drawing.Point(550, 361);
             this.BTNLimpiar.Name = "BTNLimpiar";
             this.BTNLimpiar.Size = new System.Drawing.Size(158, 38);
             this.BTNLimpiar.TabIndex = 44;
@@ -178,7 +178,7 @@
             this.BTNSalir.FlatAppearance.BorderSize = 0;
             this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(288, 361);
+            this.BTNSalir.Location = new System.Drawing.Point(227, 361);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(158, 38);
             this.BTNSalir.TabIndex = 43;
@@ -192,7 +192,7 @@
             this.BTNGrabar.FlatAppearance.BorderSize = 0;
             this.BTNGrabar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNGrabar.ForeColor = System.Drawing.Color.White;
-            this.BTNGrabar.Location = new System.Drawing.Point(452, 361);
+            this.BTNGrabar.Location = new System.Drawing.Point(391, 361);
             this.BTNGrabar.Name = "BTNGrabar";
             this.BTNGrabar.Size = new System.Drawing.Size(153, 38);
             this.BTNGrabar.TabIndex = 42;
@@ -205,7 +205,7 @@
             this.LBL.AutoSize = true;
             this.LBL.Depth = 0;
             this.LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.LBL.Location = new System.Drawing.Point(269, 236);
+            this.LBL.Location = new System.Drawing.Point(208, 236);
             this.LBL.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL.Name = "LBL";
             this.LBL.Size = new System.Drawing.Size(26, 19);
@@ -222,7 +222,7 @@
             this.LBLRegistrarProveedor.Cursor = System.Windows.Forms.Cursors.Default;
             this.LBLRegistrarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLRegistrarProveedor.FontBold = true;
-            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(366, 89);
+            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(305, 89);
             this.LBLRegistrarProveedor.Name = "LBLRegistrarProveedor";
             this.LBLRegistrarProveedor.Size = new System.Drawing.Size(353, 50);
             this.LBLRegistrarProveedor.TabIndex = 40;
@@ -235,7 +235,7 @@
             this.materialLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(269, 177);
+            this.materialLabel3.Location = new System.Drawing.Point(208, 177);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(50, 19);
@@ -246,7 +246,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 552);
+            this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);

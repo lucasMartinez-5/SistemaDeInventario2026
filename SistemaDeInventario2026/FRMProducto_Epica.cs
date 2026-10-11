@@ -68,5 +68,11 @@ namespace SistemaDeInventario2026
             AbrirEnPanel(new FRMProducto_Registrar());
             return;
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMProducto_Alerta_Stock());
+            return;
+        }
     }
 }

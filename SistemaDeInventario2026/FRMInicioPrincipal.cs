@@ -69,5 +69,11 @@ namespace SistemaDeInventario2026
             AbrirEnPanel(new FRMVenta_Epica());
             return;
         }
+
+        private void BTNBusquedaAvanzada_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMProducto_Filtro_Epica());
+            return;
+        }
     }
 }
