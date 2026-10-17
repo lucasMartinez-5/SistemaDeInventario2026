@@ -91,6 +91,24 @@
     <Compile Include="FRMAdministracion_Epica.Designer.cs">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMAdministracion_Usuario_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Usuario_Lista.Designer.cs">
+      <DependentUpon>FRMAdministracion_Usuario_Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAdministracion_Usuario_Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Usuario_Registrar.Designer.cs">
+      <DependentUpon>FRMAdministracion_Usuario_Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAdministración_Copia_Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministración_Copia_Seguridad.Designer.cs">
+      <DependentUpon>FRMAdministración_Copia_Seguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMCategoria_Lista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +120,24 @@
     </Compile>
     <Compile Include="FRMCategoria_Registrar.Designer.cs">
       <DependentUpon>FRMCategoria_Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCliente_Buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCliente_Buscar.Designer.cs">
+      <DependentUpon>FRMCliente_Buscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCliente_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCliente_Lista.Designer.cs">
+      <DependentUpon>FRMCliente_Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMCliente_Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMCliente_Registrar.Designer.cs">
+      <DependentUpon>FRMCliente_Registrar.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMCompra_Detalle.cs">
       <SubType>Form</SubType>
@@ -277,9 +313,16 @@
     <Compile Include="FRMVenta_Epica.Designer.cs">
       <DependentUpon>FRMVenta_Epica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMVenta_Registrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMVenta_Registrar.Designer.cs">
+      <DependentUpon>FRMVenta_Registrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="MetodosGenerales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SesionActual.cs" />
     <Compile Include="UCLProductoCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -289,11 +332,29 @@
     <EmbeddedResource Include="FRMAdministracion_Epica.resx">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdministracion_Usuario_Lista.resx">
+      <DependentUpon>FRMAdministracion_Usuario_Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdministracion_Usuario_Registrar.resx">
+      <DependentUpon>FRMAdministracion_Usuario_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdministración_Copia_Seguridad.resx">
+      <DependentUpon>FRMAdministración_Copia_Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoria_Lista.resx">
       <DependentUpon>FRMCategoria_Lista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoria_Registrar.resx">
       <DependentUpon>FRMCategoria_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCliente_Buscar.resx">
+      <DependentUpon>FRMCliente_Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCliente_Lista.resx">
+      <DependentUpon>FRMCliente_Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMCliente_Registrar.resx">
+      <DependentUpon>FRMCliente_Registrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCompra_Detalle.resx">
       <DependentUpon>FRMCompra_Detalle.cs</DependentUpon>
@@ -381,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMVenta_Epica.resx">
       <DependentUpon>FRMVenta_Epica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMVenta_Registrar.resx">
+      <DependentUpon>FRMVenta_Registrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

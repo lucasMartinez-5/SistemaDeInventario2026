@@ -44,17 +44,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="acatpro.cs" />
+    <Compile Include="aclient.cs" />
     <Compile Include="acompra.cs" />
     <Compile Include="adetcompra.cs" />
+    <Compile Include="adetventa.cs" />
     <Compile Include="aperson.cs" />
     <Compile Include="AppConfWriter.cs" />
     <Compile Include="aproduc.cs" />
     <Compile Include="aproved.cs" />
     <Compile Include="aususis.cs" />
+    <Compile Include="aventa.cs" />
+    <Compile Include="lclient.cs" />
     <Compile Include="lcompra.cs" />
     <Compile Include="lproduc.cs" />
     <Compile Include="lproved.cs" />
     <Compile Include="lususis.cs" />
+    <Compile Include="lventa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="xgeneral.cs" />
     <Compile Include="xnumcor.cs" />

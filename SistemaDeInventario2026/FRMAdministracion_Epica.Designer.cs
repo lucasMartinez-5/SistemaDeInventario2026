@@ -30,20 +30,25 @@
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Administracion = new System.Windows.Forms.Panel();
+            this.BTNModificar = new System.Windows.Forms.Button();
+            this.BTNVer = new System.Windows.Forms.Button();
+            this.BTNRegistrar = new System.Windows.Forms.Button();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBLDirectorioProveedor = new DevComponents.DotNetBar.LabelX();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Administracion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // PPrincipal
@@ -58,6 +63,11 @@
             // 
             // PMenu_Administracion
             // 
+            this.PMenu_Administracion.Controls.Add(this.BTNModificar);
+            this.PMenu_Administracion.Controls.Add(this.BTNVer);
+            this.PMenu_Administracion.Controls.Add(this.BTNRegistrar);
+            this.PMenu_Administracion.Controls.Add(this.materialLabel3);
+            this.PMenu_Administracion.Controls.Add(this.LBLDirectorioProveedor);
             this.PMenu_Administracion.Controls.Add(this.pictureBox4);
             this.PMenu_Administracion.Controls.Add(this.label4);
             this.PMenu_Administracion.Controls.Add(this.pictureBox3);
@@ -72,82 +82,82 @@
             this.PMenu_Administracion.Size = new System.Drawing.Size(970, 519);
             this.PMenu_Administracion.TabIndex = 0;
             // 
-            // pictureBox3
+            // BTNModificar
             // 
-            this.pictureBox3.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_analisis;
-            this.pictureBox3.Location = new System.Drawing.Point(538, 283);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 58;
-            this.pictureBox3.TabStop = false;
+            this.BTNModificar.BackColor = System.Drawing.Color.White;
+            this.BTNModificar.FlatAppearance.BorderSize = 0;
+            this.BTNModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNModificar.ForeColor = System.Drawing.Color.Black;
+            this.BTNModificar.Location = new System.Drawing.Point(82, 134);
+            this.BTNModificar.Name = "BTNModificar";
+            this.BTNModificar.Size = new System.Drawing.Size(64, 38);
+            this.BTNModificar.TabIndex = 64;
+            this.BTNModificar.Text = "Editar";
+            this.BTNModificar.UseVisualStyleBackColor = false;
+            this.BTNModificar.Click += new System.EventHandler(this.BTNModificar_Click);
             // 
-            // label3
+            // BTNVer
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(582, 290);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 25);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "Informe Financiero del Dia";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNVer.BackColor = System.Drawing.Color.White;
+            this.BTNVer.FlatAppearance.BorderSize = 0;
+            this.BTNVer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNVer.ForeColor = System.Drawing.Color.Black;
+            this.BTNVer.Location = new System.Drawing.Point(152, 134);
+            this.BTNVer.Name = "BTNVer";
+            this.BTNVer.Size = new System.Drawing.Size(64, 38);
+            this.BTNVer.TabIndex = 63;
+            this.BTNVer.Text = "Ver";
+            this.BTNVer.UseVisualStyleBackColor = false;
+            this.BTNVer.Click += new System.EventHandler(this.BTNVer_Click);
             // 
-            // pictureBox2
+            // BTNRegistrar
             // 
-            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_bolsa;
-            this.pictureBox2.Location = new System.Drawing.Point(538, 175);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 56;
-            this.pictureBox2.TabStop = false;
+            this.BTNRegistrar.BackColor = System.Drawing.Color.Black;
+            this.BTNRegistrar.FlatAppearance.BorderSize = 0;
+            this.BTNRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNRegistrar.ForeColor = System.Drawing.Color.White;
+            this.BTNRegistrar.Location = new System.Drawing.Point(222, 134);
+            this.BTNRegistrar.Name = "BTNRegistrar";
+            this.BTNRegistrar.Size = new System.Drawing.Size(128, 38);
+            this.BTNRegistrar.TabIndex = 62;
+            this.BTNRegistrar.Text = "+Agregar";
+            this.BTNRegistrar.UseVisualStyleBackColor = false;
+            this.BTNRegistrar.Click += new System.EventHandler(this.BTNRegistrar_Click);
             // 
-            // label2
+            // materialLabel3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(582, 182);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 25);
-            this.label2.TabIndex = 55;
-            this.label2.Text = "Activar/Desactivar Privacidad";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(79, 112);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(260, 19);
+            this.materialLabel3.TabIndex = 61;
+            this.materialLabel3.Text = "Acciones para la gestión de usuarios";
             // 
-            // pictureBox1
+            // LBLDirectorioProveedor
             // 
-            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(538, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
+            this.LBLDirectorioProveedor.AutoSize = true;
             // 
-            // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(582, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 25);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Gestión de Usuarios";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            this.LBLDirectorioProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLDirectorioProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLDirectorioProveedor.FontBold = true;
+            this.LBLDirectorioProveedor.Location = new System.Drawing.Point(309, 34);
+            this.LBLDirectorioProveedor.Name = "LBLDirectorioProveedor";
+            this.LBLDirectorioProveedor.Size = new System.Drawing.Size(277, 50);
+            this.LBLDirectorioProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2000;
+            this.LBLDirectorioProveedor.TabIndex = 13;
+            this.LBLDirectorioProveedor.Text = "Administración";
+            this.LBLDirectorioProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox4.Location = new System.Drawing.Point(538, 390);
+            this.pictureBox4.Location = new System.Drawing.Point(538, 432);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(48, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,12 +171,84 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(582, 397);
+            this.label4.Location = new System.Drawing.Point(582, 439);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(366, 25);
             this.label4.TabIndex = 59;
             this.label4.Text = "Copia de Seguridad de la Base de Datos";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_analisis;
+            this.pictureBox3.Location = new System.Drawing.Point(538, 330);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 58;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Location = new System.Drawing.Point(582, 337);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(238, 25);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Informe Financiero del Dia";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_bolsa;
+            this.pictureBox2.Location = new System.Drawing.Point(538, 226);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 56;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(582, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(266, 25);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Activar/Desactivar Privacidad";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
+            this.pictureBox1.Location = new System.Drawing.Point(538, 127);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(582, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 25);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Gestión de Usuarios";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FRMAdministracion_Epica
             // 
@@ -175,16 +257,16 @@
             this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMAdministracion_Epica";
             this.Text = "FRMAdministracion_Epica";
             this.PPrincipal.ResumeLayout(false);
             this.PMenu_Administracion.ResumeLayout(false);
             this.PMenu_Administracion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,5 +283,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private DevComponents.DotNetBar.LabelX LBLDirectorioProveedor;
+        private System.Windows.Forms.Button BTNModificar;
+        private System.Windows.Forms.Button BTNVer;
+        private System.Windows.Forms.Button BTNRegistrar;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
     }
 }

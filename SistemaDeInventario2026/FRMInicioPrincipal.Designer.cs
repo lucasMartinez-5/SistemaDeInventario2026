@@ -188,6 +188,7 @@
             this.BTNAdministracionUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNAdministracionUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNAdministracionUsuarios.UseVisualStyleBackColor = false;
+            this.BTNAdministracionUsuarios.Click += new System.EventHandler(this.BTNAdministracionUsuarios_Click);
             // 
             // BTNPuntoDeVenta
             // 

@@ -40,7 +40,7 @@ namespace SistemaDeInventario2026
         {
             bool respuesta = true;
             aproved proveedor2 = new aproved();
-            proveedor2.caprnitpro = TXTRazonSocial.Text;
+            proveedor2.caprnitpro = TXTNIT.Text;
             aperson persona2 = new aperson();
             persona2.capsnumcel = TXTCelular.Text;
             //string cianterior = persona.capsnumcid;                           
@@ -52,10 +52,10 @@ namespace SistemaDeInventario2026
                 TXTCelular.Focus();
                 respuesta = false;
             }
-            else if (TXTRazonSocial.Text.Replace(" ", "") == "")
+            else if (TXTNIT.Text.Replace(" ", "") == "")
             {
                 MessageBox.Show("Introduzca el NIT del proveedor", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TXTRazonSocial.Focus();
+                TXTNIT.Focus();
                 respuesta = false;
             }// condicion para retringir NIT ajeno al modificar o registrar
             else if (proveedor2.ObtenerDatosNIT(modificar, proveedor.caprnitpro))
@@ -116,6 +116,7 @@ namespace SistemaDeInventario2026
         }
         #endregion
 
+        #region Eventos
         private void FRMProveedor_Registrar_Load(object sender, EventArgs e)
         {
             //IniciarCamara();
@@ -339,10 +340,6 @@ namespace SistemaDeInventario2026
         {
             this.Close();
         }
-
-        private void PAgregar_Proveedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

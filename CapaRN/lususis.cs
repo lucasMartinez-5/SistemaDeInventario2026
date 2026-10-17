@@ -21,6 +21,7 @@ namespace CapaRN
         private string _pauscodusu;
         private string _fauscodper;
         private string _causnomlog;
+        private string _causrolusu;
         private string _causpasswo;
         private string _causcodhu1;
         private string _causcodhu2;
@@ -93,6 +94,11 @@ namespace CapaRN
         {
             get { return this._causnomlog; }
             set { this._causnomlog = value; }
+        }
+        public string causrolusu
+        {
+            get { return this._causrolusu; }
+            set { this._causrolusu = value; }
         }
         public string causpasswo
         {
@@ -196,6 +202,7 @@ namespace CapaRN
             this._pauscodusu = "";
             this._fauscodper = "";
             this._causnomlog = "";
+            this._causrolusu = "";
             this._causpasswo = "";
             this._causcodhu1 = "";
             this._causcodhu2 = "";
@@ -221,6 +228,7 @@ namespace CapaRN
                                  "pauscodusu," +
                                  "fauscodper," +
                                  "causnomlog," +
+                                 "causrolusu," +
                                  "causpasswo," +
                                  "causcodhu1," +
                                  "causcodhu2," +
@@ -265,23 +273,24 @@ namespace CapaRN
                     Auxiliar.pauscodusu = ResultadoConsulta.GetString(7);
                     Auxiliar.fauscodper = ResultadoConsulta.GetString(8);
                     Auxiliar.causnomlog = ResultadoConsulta.GetString(9);
-                    Auxiliar.causpasswo = ResultadoConsulta.GetString(10);
-                    Auxiliar.causcodhu1 = ResultadoConsulta.GetString(11);
-                    Auxiliar.causcodhu2 = ResultadoConsulta.GetString(12);
-                    Auxiliar.causcodhu3 = ResultadoConsulta.GetString(13);
-                    Auxiliar.causcodhu4 = ResultadoConsulta.GetString(14);
-                    Auxiliar.capsfecnac = ResultadoConsulta.GetDateTime(15);
-                    Auxiliar.capssexper = ResultadoConsulta.GetBoolean(16);
-                    Auxiliar.capsestper = ResultadoConsulta.GetBoolean(17);
-                    Auxiliar.capsapemat = ResultadoConsulta.GetString(18);
-                    Auxiliar.capsnomper = ResultadoConsulta.GetString(19);
-                    Auxiliar.capsnumcel = ResultadoConsulta.GetString(20);
-                    Auxiliar.capscorele = ResultadoConsulta.GetString(21);
-                    Auxiliar.capsdirper = ResultadoConsulta.GetString(22);
-                    Auxiliar.papscodper = ResultadoConsulta.GetString(23);
-                    Auxiliar.capsfotper = ResultadoConsulta.GetString(24);
-                    Auxiliar.capsnumcid = ResultadoConsulta.GetString(25);
-                    Auxiliar.capsapepat = ResultadoConsulta.GetString(26);
+                    Auxiliar.causrolusu = ResultadoConsulta.GetString(10);
+                    Auxiliar.causpasswo = ResultadoConsulta.GetString(11);
+                    Auxiliar.causcodhu1 = ResultadoConsulta.GetString(12);
+                    Auxiliar.causcodhu2 = ResultadoConsulta.GetString(13);
+                    Auxiliar.causcodhu3 = ResultadoConsulta.GetString(14);
+                    Auxiliar.causcodhu4 = ResultadoConsulta.GetString(15);
+                    Auxiliar.capsfecnac = ResultadoConsulta.GetDateTime(16);
+                    Auxiliar.capssexper = ResultadoConsulta.GetBoolean(17);
+                    Auxiliar.capsestper = ResultadoConsulta.GetBoolean(18);
+                    Auxiliar.capsapemat = ResultadoConsulta.GetString(19);
+                    Auxiliar.capsnomper = ResultadoConsulta.GetString(20);
+                    Auxiliar.capsnumcel = ResultadoConsulta.GetString(21);
+                    Auxiliar.capscorele = ResultadoConsulta.GetString(22);
+                    Auxiliar.capsdirper = ResultadoConsulta.GetString(23);
+                    Auxiliar.papscodper = ResultadoConsulta.GetString(24);
+                    Auxiliar.capsfotper = ResultadoConsulta.GetString(25);
+                    Auxiliar.capsnumcid = ResultadoConsulta.GetString(26);
+                    Auxiliar.capsapepat = ResultadoConsulta.GetString(27);
                     ListaResultado.Add(Auxiliar);
                 }
 

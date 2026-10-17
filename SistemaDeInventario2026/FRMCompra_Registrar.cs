@@ -33,6 +33,7 @@ namespace SistemaDeInventario2026
         {
             InitializeComponent();
         }
+
         #region Metodos
         private bool VerificarIntegridad()
         {

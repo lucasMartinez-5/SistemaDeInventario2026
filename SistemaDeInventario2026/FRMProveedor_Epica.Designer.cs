@@ -65,7 +65,6 @@
             this.PPrincipal.Name = "PPrincipal";
             this.PPrincipal.Size = new System.Drawing.Size(970, 519);
             this.PPrincipal.TabIndex = 1;
-            this.PPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PPrincipal_Paint);
             // 
             // PMenu_Proveedor
             // 

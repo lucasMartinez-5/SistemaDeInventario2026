@@ -127,7 +127,7 @@
             this.BTNSalir.FlatAppearance.BorderSize = 0;
             this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(639, 92);
+            this.BTNSalir.Location = new System.Drawing.Point(601, 92);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(158, 23);
             this.BTNSalir.TabIndex = 44;
@@ -141,7 +141,7 @@
             this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
-            this.BTNFiltrar.Location = new System.Drawing.Point(609, 92);
+            this.BTNFiltrar.Location = new System.Drawing.Point(571, 92);
             this.BTNFiltrar.Name = "BTNFiltrar";
             this.BTNFiltrar.Size = new System.Drawing.Size(24, 23);
             this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -156,7 +156,7 @@
             this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.IINFilas.Increment = 10;
-            this.IINFilas.Location = new System.Drawing.Point(235, 92);
+            this.IINFilas.Location = new System.Drawing.Point(197, 92);
             this.IINFilas.MaxValue = 1000;
             this.IINFilas.MinValue = 0;
             this.IINFilas.Name = "IINFilas";
@@ -167,7 +167,7 @@
             // 
             // TXTFiltrar
             // 
-            this.TXTFiltrar.Location = new System.Drawing.Point(291, 92);
+            this.TXTFiltrar.Location = new System.Drawing.Point(253, 92);
             this.TXTFiltrar.Name = "TXTFiltrar";
             this.TXTFiltrar.Size = new System.Drawing.Size(312, 23);
             this.TXTFiltrar.TabIndex = 13;
@@ -181,7 +181,7 @@
             this.LBLDirectorioProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.LBLDirectorioProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLDirectorioProveedor.FontBold = true;
-            this.LBLDirectorioProveedor.Location = new System.Drawing.Point(281, 36);
+            this.LBLDirectorioProveedor.Location = new System.Drawing.Point(235, 36);
             this.LBLDirectorioProveedor.Name = "LBLDirectorioProveedor";
             this.LBLDirectorioProveedor.Size = new System.Drawing.Size(485, 50);
             this.LBLDirectorioProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2000;
@@ -207,13 +207,14 @@
             this.DTGLista.ContextMenuStrip = this.CMSMenu;
             this.DTGLista.Cursor = System.Windows.Forms.Cursors.Default;
             this.DTGLista.GridColor = System.Drawing.SystemColors.Control;
-            this.DTGLista.Location = new System.Drawing.Point(99, 148);
+            this.DTGLista.Location = new System.Drawing.Point(70, 142);
             this.DTGLista.Margin = new System.Windows.Forms.Padding(4);
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
             this.DTGLista.ReadOnly = true;
+            this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTGLista.Size = new System.Drawing.Size(862, 341);
+            this.DTGLista.Size = new System.Drawing.Size(821, 341);
             this.DTGLista.TabIndex = 11;
             this.DTGLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellDoubleClick);
             // 
@@ -266,7 +267,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1067, 552);
+            this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -293,12 +294,12 @@
         private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PProveedor_Lista;
+        private System.Windows.Forms.Button BTNSalir;
         private DevComponents.DotNetBar.ButtonX BTNFiltrar;
         private DevComponents.Editors.IntegerInput IINFilas;
         private System.Windows.Forms.TextBox TXTFiltrar;
         private DevComponents.DotNetBar.LabelX LBLDirectorioProveedor;
         private System.Windows.Forms.DataGridView DTGLista;
-        private System.Windows.Forms.Button BTNSalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

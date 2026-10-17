@@ -1,0 +1,205 @@
+﻿using CapaRN;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SistemaDeInventario2026
+{
+    public partial class FRMCliente_Lista : Form
+    {
+        #region Variables
+        private lclient lcliente = new lclient();
+        private aclient acliente = new aclient();
+        private List<lclient> lista_clientes = new List<lclient>();
+        public event Action<string> ClienteElegido;
+        #endregion
+
+        #region Constructor
+        public FRMCliente_Lista()
+        {
+            InitializeComponent();
+        }
+        #endregion
+
+        #region Métodos
+        private void ActualizarGrid()
+        {
+            DTGLista.Rows.Clear();
+            lista_clientes.Clear();
+            lista_clientes = lcliente.Lista("(capsnumcid like '%" + TXTFiltrar.Text + "%' or " +
+                                           "capsapepat like '%" + TXTFiltrar.Text + "%' or " +
+                                           "capsapemat like '%" + TXTFiltrar.Text + "%' or " +
+                                           "capsnomper like '%" + TXTFiltrar.Text + "%') limit " +
+                                           IINFilas.Value.ToString()
+                                           );
+            foreach (lclient a in lista_clientes)
+            {
+                DTGLista.Rows.Add();
+
+                if (a.caclestcli)
+                {
+                    if (DTGLista.Rows.Count % 2 == 0)
+                    {
+                        DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.LightSkyBlue;
+                    }
+                }
+                else
+                {
+                    DTGLista.Rows[DTGLista.Rows.Count - 1].DefaultCellStyle.BackColor = Color.Salmon;
+                }
+
+                DTGLista[0, DTGLista.Rows.Count - 1].Value = a.paclcodcli;
+                DTGLista[1, DTGLista.Rows.Count - 1].Value = a.caclestcli;
+                DTGLista[2, DTGLista.Rows.Count - 1].Value = a.caclnitcli;
+                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capsapepat + " " +
+                                                             a.capsapemat + " " +
+                                                             a.capsnomper;
+                DTGLista[4, DTGLista.Rows.Count - 1].Value = a.capsnumcel;
+
+            }
+        }
+        #endregion
+
+        private void FRMCliente_Lista_Load(object sender, EventArgs e)
+        {
+            ActualizarGrid();
+        }
+
+        private void DTGLista_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && ClienteElegido != null)   // NUEVO
+            {
+                ClienteElegido(DTGLista[0, e.RowIndex].Value.ToString());
+                return;
+            }
+            if (e.RowIndex >= 0)
+            {
+                if (DTGLista.SelectedRows.Count > 0)
+                {
+                    FRMCliente_Registrar F1 = new FRMCliente_Registrar();
+                    F1.modificar = true;
+                    F1.codCliMod = DTGLista[0, e.RowIndex].Value.ToString();
+                    //F1.ShowDialog();
+                    if (F1.actualizar)
+                    {
+                        ActualizarGrid();
+                    }
+                }
+            }
+        }
+
+        private void BTNFiltrar_Click(object sender, EventArgs e)
+        {
+            ActualizarGrid();
+        }
+
+        private void DTGLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 1)
+            {
+                aclient cliente = new aclient();
+
+                cliente.paclcodcli = DTGLista[0, e.RowIndex].Value?.ToString();
+
+                if (cliente.ObtenerDatos())
+                {
+                    cliente.caclestcli = !cliente.caclestcli;
+
+                    if (!cliente.Modificar())
+                    {
+                        MessageBox.Show("No se pudo modificar el estado del cliente.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                    }
+                }
+            }
+
+            ActualizarGrid();
+        }
+
+        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClienteElegido(DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString());
+            return;
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                FRMCliente_Registrar F1 = new FRMCliente_Registrar();
+                F1.modificar = true;
+                F1.codCliMod = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                F1.ShowDialog();
+                if (F1.actualizar)
+                {
+                    ActualizarGrid();
+                }
+            }
+        }
+
+        private void inhabilitarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                acliente.paclcodcli = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                if (acliente.ObtenerDatos())
+                {
+                    acliente.caclestcli = false;
+                    if (acliente.Modificar())
+                    {
+                        MessageBox.Show("Cliente Inhabilitado correctamente");
+                        ActualizarGrid();
+                    }
+                }
+            }
+        }
+
+        private void CMSMenu_Opening(object sender, CancelEventArgs e)
+        {
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                acliente.paclcodcli = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                if (acliente.ObtenerDatos())
+                {
+
+                    if (acliente.caclestcli)
+                    {
+                        CMSMenu.Items[2].Visible = false;
+                        CMSMenu.Items[1].Visible = true;
+                    }
+                    else
+                    {
+                        CMSMenu.Items[2].Visible = true;
+                        CMSMenu.Items[1].Visible = false;
+                    }
+                }
+            }
+        }
+
+        private void habilitarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                acliente.paclcodcli = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                if (acliente.ObtenerDatos())
+                {
+                    acliente.caclestcli = true;
+                    if (acliente.Modificar())
+                    {
+                        MessageBox.Show("Cliente Habilitado correctamente");
+                        ActualizarGrid();
+                    }
+                }
+            }
+        }
+
+        private void BTNSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.PCompra_Registrar = new System.Windows.Forms.Panel();
             this.TXTCompraProductoEncontrado = new System.Windows.Forms.TextBox();
             this.BTNBuscarProveedorCompra = new System.Windows.Forms.Button();
             this.TXTCompraProveedor = new System.Windows.Forms.TextBox();
@@ -57,7 +57,7 @@
             this.LBLTitulo = new DevComponents.DotNetBar.LabelX();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.PPrincipal.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.PCompra_Registrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDCantidad)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             // PPrincipal
             // 
             this.PPrincipal.BackColor = System.Drawing.Color.White;
-            this.PPrincipal.Controls.Add(this.panel3);
+            this.PPrincipal.Controls.Add(this.PCompra_Registrar);
             this.PPrincipal.Cursor = System.Windows.Forms.Cursors.Default;
             this.PPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PPrincipal.Location = new System.Drawing.Point(0, 0);
@@ -73,34 +73,34 @@
             this.PPrincipal.Size = new System.Drawing.Size(970, 519);
             this.PPrincipal.TabIndex = 7;
             // 
-            // panel3
+            // PCompra_Registrar
             // 
-            this.panel3.Controls.Add(this.TXTCompraProductoEncontrado);
-            this.panel3.Controls.Add(this.BTNBuscarProveedorCompra);
-            this.panel3.Controls.Add(this.TXTCompraProveedor);
-            this.panel3.Controls.Add(this.BTNSalir);
-            this.panel3.Controls.Add(this.LBLTotal);
-            this.panel3.Controls.Add(this.LTVCarrito);
-            this.panel3.Controls.Add(this.BTNBuscarProductoCompra);
-            this.panel3.Controls.Add(this.materialLabel6);
-            this.panel3.Controls.Add(this.NUDPrecio);
-            this.panel3.Controls.Add(this.materialLabel5);
-            this.panel3.Controls.Add(this.NUDCantidad);
-            this.panel3.Controls.Add(this.materialLabel4);
-            this.panel3.Controls.Add(this.BTNAgregarProductoAlCarrito);
-            this.panel3.Controls.Add(this.LBLProveedor);
-            this.panel3.Controls.Add(this.TXTCompraProveedorCelular);
-            this.panel3.Controls.Add(this.TXTCompraFactura);
-            this.panel3.Controls.Add(this.BTNVaciarCarrito);
-            this.panel3.Controls.Add(this.BTNRegistrarCompra);
-            this.panel3.Controls.Add(this.LBL);
-            this.panel3.Controls.Add(this.LBLTitulo);
-            this.panel3.Controls.Add(this.materialLabel3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(970, 519);
-            this.panel3.TabIndex = 39;
+            this.PCompra_Registrar.Controls.Add(this.TXTCompraProductoEncontrado);
+            this.PCompra_Registrar.Controls.Add(this.BTNBuscarProveedorCompra);
+            this.PCompra_Registrar.Controls.Add(this.TXTCompraProveedor);
+            this.PCompra_Registrar.Controls.Add(this.BTNSalir);
+            this.PCompra_Registrar.Controls.Add(this.LBLTotal);
+            this.PCompra_Registrar.Controls.Add(this.LTVCarrito);
+            this.PCompra_Registrar.Controls.Add(this.BTNBuscarProductoCompra);
+            this.PCompra_Registrar.Controls.Add(this.materialLabel6);
+            this.PCompra_Registrar.Controls.Add(this.NUDPrecio);
+            this.PCompra_Registrar.Controls.Add(this.materialLabel5);
+            this.PCompra_Registrar.Controls.Add(this.NUDCantidad);
+            this.PCompra_Registrar.Controls.Add(this.materialLabel4);
+            this.PCompra_Registrar.Controls.Add(this.BTNAgregarProductoAlCarrito);
+            this.PCompra_Registrar.Controls.Add(this.LBLProveedor);
+            this.PCompra_Registrar.Controls.Add(this.TXTCompraProveedorCelular);
+            this.PCompra_Registrar.Controls.Add(this.TXTCompraFactura);
+            this.PCompra_Registrar.Controls.Add(this.BTNVaciarCarrito);
+            this.PCompra_Registrar.Controls.Add(this.BTNRegistrarCompra);
+            this.PCompra_Registrar.Controls.Add(this.LBL);
+            this.PCompra_Registrar.Controls.Add(this.LBLTitulo);
+            this.PCompra_Registrar.Controls.Add(this.materialLabel3);
+            this.PCompra_Registrar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PCompra_Registrar.Location = new System.Drawing.Point(0, 0);
+            this.PCompra_Registrar.Name = "PCompra_Registrar";
+            this.PCompra_Registrar.Size = new System.Drawing.Size(970, 519);
+            this.PCompra_Registrar.TabIndex = 39;
             // 
             // TXTCompraProductoEncontrado
             // 
@@ -417,8 +417,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMCompra_Registrar_FormClosing);
             this.Load += new System.EventHandler(this.FRMCompra_Registrar_Load);
             this.PPrincipal.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.PCompra_Registrar.ResumeLayout(false);
+            this.PCompra_Registrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrecio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDCantidad)).EndInit();
             this.ResumeLayout(false);
@@ -427,7 +427,7 @@
 
         #endregion
         private System.Windows.Forms.Panel PPrincipal;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel PCompra_Registrar;
         private MaterialSkin.Controls.MaterialLabel LBLProveedor;
         private System.Windows.Forms.TextBox TXTCompraProveedorCelular;
         private System.Windows.Forms.TextBox TXTCompraFactura;

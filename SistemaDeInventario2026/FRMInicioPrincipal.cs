@@ -75,5 +75,11 @@ namespace SistemaDeInventario2026
             AbrirEnPanel(new FRMProducto_Filtro_Epica());
             return;
         }
+
+        private void BTNAdministracionUsuarios_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMAdministracion_Epica());
+            return;
+        }
     }
 }

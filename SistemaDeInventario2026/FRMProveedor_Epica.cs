@@ -83,11 +83,6 @@ namespace SistemaDeInventario2026
         #region Eventos
         #endregion
 
-        private void PPrincipal_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void BTNInventario_Click(object sender, EventArgs e)
         {
             AbrirEnPanel(new FRMProducto_Epica());

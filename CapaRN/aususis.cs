@@ -21,6 +21,7 @@ namespace CapaRN
             private string _pauscodusu;
             private string _fauscodper;
             private string _causnomlog;
+            private string _causrolusu;
             private string _causpasswo;
             private string _causcodhu1;
             private string _causcodhu2;
@@ -80,8 +81,13 @@ namespace CapaRN
             { 
                 get{ return this._causnomlog;}
                 set{ this._causnomlog = value;}
-            } 
-		    public string causpasswo
+            }
+            public string causrolusu
+            {
+                get { return this._causrolusu; }
+                set { this._causrolusu = value; }
+            }
+            public string causpasswo
             { 
                 get{ return this._causpasswo;}
                 set{ this._causpasswo = value;}
@@ -121,6 +127,7 @@ namespace CapaRN
 		        this._pauscodusu = "";
 		        this._fauscodper = "";
 		        this._causnomlog = "";
+                this._causrolusu = "";
 		        this._causpasswo = "";
 		        this._causcodhu1 = "";
 		        this._causcodhu2 = "";
@@ -144,6 +151,7 @@ namespace CapaRN
                                      "pauscodusu," +
                                      "fauscodper," +
                                      "causnomlog," +
+                                     "causrolusu," +
                                      "causpasswo," +
                                      "causcodhu1," +
                                      "causcodhu2," +
@@ -171,11 +179,12 @@ namespace CapaRN
                     this._pauscodusu=ResultadoConsulta.GetString(7);
                     this._fauscodper=ResultadoConsulta.GetString(8);
                     this._causnomlog=ResultadoConsulta.GetString(9);
-                    this._causpasswo=ResultadoConsulta.GetString(10);
-                    this._causcodhu1=ResultadoConsulta.GetString(11);
-                    this._causcodhu2=ResultadoConsulta.GetString(12);
-                    this._causcodhu3=ResultadoConsulta.GetString(13);
-                    this._causcodhu4=ResultadoConsulta.GetString(14);
+                    this._causrolusu=ResultadoConsulta.GetString(10);
+                    this._causpasswo=ResultadoConsulta.GetString(11);
+                    this._causcodhu1=ResultadoConsulta.GetString(12);
+                    this._causcodhu2=ResultadoConsulta.GetString(13);
+                    this._causcodhu3=ResultadoConsulta.GetString(14);
+                    this._causcodhu4=ResultadoConsulta.GetString(15);
                     this.Conexion.Desconectar();
 
                     return true;
@@ -201,6 +210,7 @@ namespace CapaRN
                                      "pauscodusu," +
                                      "fauscodper," +
                                      "causnomlog," +
+                                     "causrolusu," +
                                      "causpasswo," +
                                      "causcodhu1," +
                                      "causcodhu2," +
@@ -232,11 +242,12 @@ namespace CapaRN
                 this._pauscodusu = ResultadoConsulta.GetString(7);
                 this._fauscodper = ResultadoConsulta.GetString(8);
                 this._causnomlog = ResultadoConsulta.GetString(9);
-                this._causpasswo = ResultadoConsulta.GetString(10);
-                this._causcodhu1 = ResultadoConsulta.GetString(11);
-                this._causcodhu2 = ResultadoConsulta.GetString(12);
-                this._causcodhu3 = ResultadoConsulta.GetString(13);
-                this._causcodhu4 = ResultadoConsulta.GetString(14);
+                this._causrolusu = ResultadoConsulta.GetString(10);
+                this._causpasswo = ResultadoConsulta.GetString(11);
+                this._causcodhu1 = ResultadoConsulta.GetString(12);
+                this._causcodhu2 = ResultadoConsulta.GetString(13);
+                this._causcodhu3 = ResultadoConsulta.GetString(14);
+                this._causcodhu4 = ResultadoConsulta.GetString(15);
                 this.Conexion.Desconectar();
 
                 return true;
@@ -262,6 +273,7 @@ namespace CapaRN
                                      "pauscodusu," +
                                      "fauscodper," +
                                      "causnomlog," +
+                                     "causrolusu," +
                                      "causpasswo," +
                                      "causcodhu1," +
                                      "causcodhu2," +
@@ -310,6 +322,7 @@ namespace CapaRN
                                                        "pauscodusu," +
                                                        "fauscodper," +
                                                        "causnomlog," +
+                                                       "causrolusu," +
                                                        "causpasswo," +
                                                        "causcodhu1," +
                                                        "causcodhu2," +
@@ -327,6 +340,7 @@ namespace CapaRN
                                           "@pauscodusu," +
                                           "@fauscodper," +
                                           "@causnomlog," +
+                                          "@causrolusu," +
                                           "@causpasswo," +
                                           "@causcodhu1," +
                                           "@causcodhu2," +
@@ -346,6 +360,7 @@ namespace CapaRN
                     this.Conexion.AsignarParametroCadena("@pauscodusu",this._pauscodusu);
                     this.Conexion.AsignarParametroCadena("@fauscodper",this._fauscodper);
                     this.Conexion.AsignarParametroCadena("@causnomlog",this._causnomlog);
+                    this.Conexion.AsignarParametroCadena("@causrolusu",this._causrolusu);
                     this.Conexion.AsignarParametroCadena("@causpasswo",this._causpasswo);
                     this.Conexion.AsignarParametroCadena("@causcodhu1",this._causcodhu1);
                     this.Conexion.AsignarParametroCadena("@causcodhu2",this._causcodhu2);
@@ -377,6 +392,7 @@ namespace CapaRN
                                                      "causnumhu2 = @causnumhu2, " +
                                                      "fauscodper = @fauscodper, " +
                                                      "causnomlog = @causnomlog, " +
+                                                     "causrolusu = @causrolusu, " +
                                                      "causpasswo = @causpasswo, " +
                                                      "causcodhu1 = @causcodhu1, " +
                                                      "causcodhu2 = @causcodhu2, " +
@@ -397,6 +413,7 @@ namespace CapaRN
                     this.Conexion.AsignarParametroCadena("@pauscodusu",this._pauscodusu);
                     this.Conexion.AsignarParametroCadena("@fauscodper",this._fauscodper);
                     this.Conexion.AsignarParametroCadena("@causnomlog",this._causnomlog);
+                    this.Conexion.AsignarParametroCadena("@causrolusu",this._causrolusu);
                     this.Conexion.AsignarParametroCadena("@causpasswo",this._causpasswo);
                     this.Conexion.AsignarParametroCadena("@causcodhu1",this._causcodhu1);
                     this.Conexion.AsignarParametroCadena("@causcodhu2",this._causcodhu2);
@@ -424,6 +441,7 @@ namespace CapaRN
                                      "pauscodusu," +
                                      "fauscodper," +
                                      "causnomlog," +
+                                     "causrolusu," +
                                      "causpasswo," +
                                      "causcodhu1," +
                                      "causcodhu2," +
@@ -455,11 +473,12 @@ namespace CapaRN
                           Auxiliar.pauscodusu = ResultadoConsulta.GetString(7);
                           Auxiliar.fauscodper = ResultadoConsulta.GetString(8);
                           Auxiliar.causnomlog = ResultadoConsulta.GetString(9);
-                          Auxiliar.causpasswo = ResultadoConsulta.GetString(10);
-                          Auxiliar.causcodhu1 = ResultadoConsulta.GetString(11);
-                          Auxiliar.causcodhu2 = ResultadoConsulta.GetString(12);
-                          Auxiliar.causcodhu3 = ResultadoConsulta.GetString(13);
-                          Auxiliar.causcodhu4 = ResultadoConsulta.GetString(14);
+                          Auxiliar.causrolusu = ResultadoConsulta.GetString(10);
+                          Auxiliar.causpasswo = ResultadoConsulta.GetString(11);
+                          Auxiliar.causcodhu1 = ResultadoConsulta.GetString(12);
+                          Auxiliar.causcodhu2 = ResultadoConsulta.GetString(13);
+                          Auxiliar.causcodhu3 = ResultadoConsulta.GetString(14);
+                          Auxiliar.causcodhu4 = ResultadoConsulta.GetString(15);
                           ListaResultado.Add(Auxiliar);
                     }
 
