@@ -76,16 +76,6 @@ namespace SistemaDeInventario2026
             ActualizarGrid();
         }
 
-        private void BTNRegistrar_Click(object sender, EventArgs e)
-        {
-            FRMUsuario_Registrar a = new FRMUsuario_Registrar();
-            a.ShowDialog();
-            if (a.actualizar)
-            {
-                ActualizarGrid();
-            }
-        }
-
         private void BTNReporte_Click(object sender, EventArgs e)
         {
 
@@ -95,7 +85,7 @@ namespace SistemaDeInventario2026
         {
             if (DTGLista.SelectedRows.Count > 0)
             {
-                FRMUsuario_Registrar F1 = new FRMUsuario_Registrar();
+                FRMAdministracion_Usuario_Registrar F1 = new FRMAdministracion_Usuario_Registrar();
                 F1.modificar = true;
                 F1.codUsuMod = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
                 F1.ShowDialog();
@@ -112,7 +102,7 @@ namespace SistemaDeInventario2026
             {
                 if (DTGLista.SelectedRows.Count > 0)
                 {
-                    FRMUsuario_Registrar F1 = new FRMUsuario_Registrar();
+                    FRMAdministracion_Usuario_Registrar F1 = new FRMAdministracion_Usuario_Registrar();
                     F1.modificar = true;
                     F1.codUsuMod = DTGLista[0, e.RowIndex].Value.ToString();
                     F1.ShowDialog();
@@ -131,17 +121,62 @@ namespace SistemaDeInventario2026
 
         private void inhabilitarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                ausuario.pauscodusu = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                if (ausuario.ObtenerDatos())
+                {
+                    ausuario.causestusu = false;
+                    if (ausuario.Modificar())
+                    {
+                        MessageBox.Show("Usuario inhabilitado correctamente");
+                        ActualizarGrid();
+                    }
+                }
+            }
         }
 
         private void habilitarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                ausuario.pauscodusu = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                if (ausuario.ObtenerDatos())
+                {
+                    ausuario.causestusu = true;
+                    if (ausuario.Modificar())
+                    {
+                        MessageBox.Show("Usuario habilitado correctamente");
+                        ActualizarGrid();
+                    }
+                }
+            }
         }
 
         private void CMSMenu_Opening(object sender, CancelEventArgs e)
         {
+            if (DTGLista.SelectedRows.Count > 0)
+            {
+                ausuario.pauscodusu = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
+                if (ausuario.ObtenerDatos())
+                {
+                    if (ausuario.causestusu)
+                    {
+                        CMSMenu.Items[2].Visible = false;
+                        CMSMenu.Items[1].Visible = true;
 
+                    }
+                    else
+                    {
+                        CMSMenu.Items[2].Visible = true;
+                        CMSMenu.Items[1].Visible = false;
+                    }
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         private void TXTFiltrar_Enter(object sender, EventArgs e)

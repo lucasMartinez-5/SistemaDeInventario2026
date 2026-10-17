@@ -68,7 +68,7 @@ namespace SistemaDeInventario2026
         }
         private void BTNRegistrar_Click(object sender, EventArgs e)
         {
-            AbrirEnPanel(new FRMUsuario_Registrar());
+            AbrirEnPanel(new FRMAdministracion_Usuario_Registrar());
             return;
         }
 

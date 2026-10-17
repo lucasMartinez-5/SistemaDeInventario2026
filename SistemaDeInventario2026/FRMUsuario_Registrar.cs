@@ -302,10 +302,5 @@ namespace SistemaDeInventario2026
                 usuario.causcodhu3 = cadena;
             }
         }
-
-        private void GPPanelPrincipal_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

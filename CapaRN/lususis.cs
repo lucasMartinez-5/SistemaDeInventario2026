@@ -20,8 +20,8 @@ namespace CapaRN
         private int _causnumhu2;
         private string _pauscodusu;
         private string _fauscodper;
-        private string _causnomlog;
         private string _causrolusu;
+        private string _causnomlog;
         private string _causpasswo;
         private string _causcodhu1;
         private string _causcodhu2;
@@ -90,15 +90,15 @@ namespace CapaRN
             get { return this._fauscodper; }
             set { this._fauscodper = value; }
         }
-        public string causnomlog
-        {
-            get { return this._causnomlog; }
-            set { this._causnomlog = value; }
-        }
         public string causrolusu
         {
             get { return this._causrolusu; }
             set { this._causrolusu = value; }
+        }
+        public string causnomlog
+        {
+            get { return this._causnomlog; }
+            set { this._causnomlog = value; }
         }
         public string causpasswo
         {
@@ -201,8 +201,8 @@ namespace CapaRN
             this._causnumhu2 = 0;
             this._pauscodusu = "";
             this._fauscodper = "";
-            this._causnomlog = "";
             this._causrolusu = "";
+            this._causnomlog = "";
             this._causpasswo = "";
             this._causcodhu1 = "";
             this._causcodhu2 = "";
@@ -227,8 +227,8 @@ namespace CapaRN
                                  "causnumhu2," +
                                  "pauscodusu," +
                                  "fauscodper," +
-                                 "causnomlog," +
                                  "causrolusu," +
+                                 "causnomlog," +
                                  "causpasswo," +
                                  "causcodhu1," +
                                  "causcodhu2," +
@@ -272,8 +272,8 @@ namespace CapaRN
                     Auxiliar.causnumhu2 = ResultadoConsulta.GetInt32(6);
                     Auxiliar.pauscodusu = ResultadoConsulta.GetString(7);
                     Auxiliar.fauscodper = ResultadoConsulta.GetString(8);
-                    Auxiliar.causnomlog = ResultadoConsulta.GetString(9);
-                    Auxiliar.causrolusu = ResultadoConsulta.GetString(10);
+                    Auxiliar.causrolusu = ResultadoConsulta.GetString(9);
+                    Auxiliar.causnomlog = ResultadoConsulta.GetString(10);
                     Auxiliar.causpasswo = ResultadoConsulta.GetString(11);
                     Auxiliar.causcodhu1 = ResultadoConsulta.GetString(12);
                     Auxiliar.causcodhu2 = ResultadoConsulta.GetString(13);
