@@ -18,6 +18,7 @@ namespace CapaRN
         private int _causmashue;
         private int _causnumhu1;
         private int _causnumhu2;
+        private string _causcodhu4;
         private string _pauscodusu;
         private string _fauscodper;
         private string _causrolusu;
@@ -26,7 +27,6 @@ namespace CapaRN
         private string _causcodhu1;
         private string _causcodhu2;
         private string _causcodhu3;
-        private string _causcodhu4;
 
         private DateTime _capsfecnac;
         private bool _capssexper;
@@ -80,6 +80,11 @@ namespace CapaRN
             get { return this._causnumhu2; }
             set { this._causnumhu2 = value; }
         }
+        public string causcodhu4
+        {
+            get { return this._causcodhu4; }
+            set { this._causcodhu4 = value; }
+        }
         public string pauscodusu
         {
             get { return this._pauscodusu; }
@@ -120,12 +125,6 @@ namespace CapaRN
             get { return this._causcodhu3; }
             set { this._causcodhu3 = value; }
         }
-        public string causcodhu4
-        {
-            get { return this._causcodhu4; }
-            set { this._causcodhu4 = value; }
-        }
-
 
         public DateTime capsfecnac
         {
@@ -199,6 +198,7 @@ namespace CapaRN
             this._causmashue = 0;
             this._causnumhu1 = 0;
             this._causnumhu2 = 0;
+            this._causcodhu4 = "";
             this._pauscodusu = "";
             this._fauscodper = "";
             this._causrolusu = "";
@@ -207,7 +207,19 @@ namespace CapaRN
             this._causcodhu1 = "";
             this._causcodhu2 = "";
             this._causcodhu3 = "";
-            this._causcodhu4 = "";
+
+            this._capsfecnac = DateTime.Now;
+            this._capssexper = true;
+            this._capsestper = true;
+            this._capsapemat = "";
+            this._capsnomper = "";
+            this._capsnumcel = "";
+            this._capscorele = "";
+            this._capsdirper = "";
+            this._papscodper = "";
+            this._capsfotper = "";
+            this._capsnumcid = "";
+            this._capsapepat = "";
             this.Conexion = new CLConexionPGSQL();
         }
         #endregion
@@ -225,6 +237,7 @@ namespace CapaRN
                                  "causmashue," +
                                  "causnumhu1," +
                                  "causnumhu2," +
+                                 "causcodhu4," +
                                  "pauscodusu," +
                                  "fauscodper," +
                                  "causrolusu," +
@@ -232,8 +245,8 @@ namespace CapaRN
                                  "causpasswo," +
                                  "causcodhu1," +
                                  "causcodhu2," +
-                                 "causcodhu3," +
-                                 "causcodhu4," +
+                                 "causcodhu3, " +
+
                                  "capsfecnac," +
                                  "capssexper," +
                                  "capsestper," +
@@ -270,15 +283,16 @@ namespace CapaRN
                     Auxiliar.causmashue = ResultadoConsulta.GetInt32(4);
                     Auxiliar.causnumhu1 = ResultadoConsulta.GetInt32(5);
                     Auxiliar.causnumhu2 = ResultadoConsulta.GetInt32(6);
-                    Auxiliar.pauscodusu = ResultadoConsulta.GetString(7);
-                    Auxiliar.fauscodper = ResultadoConsulta.GetString(8);
-                    Auxiliar.causrolusu = ResultadoConsulta.GetString(9);
-                    Auxiliar.causnomlog = ResultadoConsulta.GetString(10);
-                    Auxiliar.causpasswo = ResultadoConsulta.GetString(11);
-                    Auxiliar.causcodhu1 = ResultadoConsulta.GetString(12);
-                    Auxiliar.causcodhu2 = ResultadoConsulta.GetString(13);
-                    Auxiliar.causcodhu3 = ResultadoConsulta.GetString(14);
-                    Auxiliar.causcodhu4 = ResultadoConsulta.GetString(15);
+                    Auxiliar.causcodhu4 = ResultadoConsulta.GetString(7);
+                    Auxiliar.pauscodusu = ResultadoConsulta.GetString(8);
+                    Auxiliar.fauscodper = ResultadoConsulta.GetString(9);
+                    Auxiliar.causrolusu = ResultadoConsulta.GetString(10);
+                    Auxiliar.causnomlog = ResultadoConsulta.GetString(11);
+                    Auxiliar.causpasswo = ResultadoConsulta.GetString(12);
+                    Auxiliar.causcodhu1 = ResultadoConsulta.GetString(13);
+                    Auxiliar.causcodhu2 = ResultadoConsulta.GetString(14);
+                    Auxiliar.causcodhu3 = ResultadoConsulta.GetString(15);
+
                     Auxiliar.capsfecnac = ResultadoConsulta.GetDateTime(16);
                     Auxiliar.capssexper = ResultadoConsulta.GetBoolean(17);
                     Auxiliar.capsestper = ResultadoConsulta.GetBoolean(18);

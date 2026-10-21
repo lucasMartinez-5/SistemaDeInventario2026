@@ -244,7 +244,7 @@ namespace SistemaDeInventario2026
                 }
                 else
                 {
-                    if (usuario.Modificar())
+                    if (usuario.ModificarDatos())
                     {
                         MessageBox.Show("Usuario modificado correctamente!!",
                                         "Mensaje",

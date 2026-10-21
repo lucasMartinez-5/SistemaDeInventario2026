@@ -91,6 +91,12 @@
     <Compile Include="FRMAdministracion_Epica.Designer.cs">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMAdministracion_Modificar_Contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Modificar_Contraseña.Designer.cs">
+      <DependentUpon>FRMAdministracion_Modificar_Contraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMAdministracion_Usuario_Lista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,18 @@
     </Compile>
     <Compile Include="FRMInicioPrincipal.Designer.cs">
       <DependentUpon>FRMInicioPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMLogin.Designer.cs">
+      <DependentUpon>FRMLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMLogin_Huella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMLogin_Huella.Designer.cs">
+      <DependentUpon>FRMLogin_Huella.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMModificarPassword.cs">
       <SubType>Form</SubType>
@@ -332,6 +350,9 @@
     <EmbeddedResource Include="FRMAdministracion_Epica.resx">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdministracion_Modificar_Contraseña.resx">
+      <DependentUpon>FRMAdministracion_Modificar_Contraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministracion_Usuario_Lista.resx">
       <DependentUpon>FRMAdministracion_Usuario_Lista.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,6 +406,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMInicioPrincipal.resx">
       <DependentUpon>FRMInicioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLogin.resx">
+      <DependentUpon>FRMLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLogin_Huella.resx">
+      <DependentUpon>FRMLogin_Huella.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMModificarPassword.resx">
       <DependentUpon>FRMModificarPassword.cs</DependentUpon>

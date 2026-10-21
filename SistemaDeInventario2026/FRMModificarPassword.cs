@@ -210,7 +210,7 @@ namespace SistemaDeInventario2026
                 {
                     usuario.causactpas = false;
                     usuario.causpasswo = TXTPassword.Text;
-                    if (usuario.Modificar())
+                    if (usuario.ModificarDatos())
                     {
                         MessageBox.Show("Password modificado correctamente", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();

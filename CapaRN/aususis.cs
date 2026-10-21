@@ -373,7 +373,7 @@ namespace CapaRN
                     return true;
                 } 
             } 
-            public bool Modificar()
+            public bool ModificarDatos()
             { 
                 if (!this.VerificarExistencia())
                 {

@@ -16,7 +16,7 @@ namespace SistemaDeInventario2026
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRMInicioPrincipal());
+            Application.Run(new FRMLogin());
         }
     }
 }

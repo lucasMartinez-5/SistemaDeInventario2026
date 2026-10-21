@@ -135,7 +135,7 @@ namespace SistemaDeInventario2026
                 if (ausuario.ObtenerDatos())
                 {
                     ausuario.causestusu = false;
-                    if (ausuario.Modificar())
+                    if (ausuario.ModificarDatos())
                     {
                         MessageBox.Show("Usuario inhabilitado correctamente");
                         ActualizarGrid();
@@ -152,7 +152,7 @@ namespace SistemaDeInventario2026
                 if (ausuario.ObtenerDatos())
                 {
                     ausuario.causestusu = true;
-                    if (ausuario.Modificar())
+                    if (ausuario.ModificarDatos())
                     {
                         MessageBox.Show("Usuario habilitado correctamente");
                         ActualizarGrid();
@@ -239,7 +239,7 @@ namespace SistemaDeInventario2026
                     ausuario.pauscodusu = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
                     ausuario.ObtenerDatos();
                     ausuario.causactpas = true;
-                    if (ausuario.Modificar())
+                    if (ausuario.ModificarDatos())
                     {
                         MessageBox.Show("Password reseatdo correctamente. El usuario deberá cambiar su password en el proximo inicio de sesion. Al loguear debe colocar como password su numero de documento.",
                         "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
