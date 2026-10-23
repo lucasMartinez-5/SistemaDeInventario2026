@@ -131,6 +131,7 @@ namespace SistemaDeInventario2026
 
         private void BTNIngresar_Click(object sender, EventArgs e)
         {
+
             if (VerificarIntegridad())
             {
                 usuario.causnomlog = TXTLoginUsuario.Text;
@@ -184,7 +185,15 @@ namespace SistemaDeInventario2026
                         SesionActual.NombreUsuario = usuario.causnomlog;
                         SesionActual.Rol = usuario.causrolusu;
                         AplicarPrivilegios();
+                        SesionActual.NombreUsuario = persona.capsapepat + " " + persona.capsapemat + " " + persona.capsnomper;
                         AbrirEnPanel(new FRMInicioPrincipal());
+                        LBLUsuario_Sesion.Text = "Usuario: " + SesionActual.NombreUsuario;
+                        /*
+                        LBLUsuario_Sesion.Text = "Usuario: " +
+                            persona.capsapepat + " " +
+                            persona.capsapemat + " " +
+                            persona.capsnomper;
+                        */
                     }
                     else
                     {
@@ -198,6 +207,13 @@ namespace SistemaDeInventario2026
         private void FRMLogin_Load(object sender, EventArgs e)
         {
             PrecalentarBD();
+            TMReloj.Enabled = true;
+            /*
+            LBLUsuario_Sesion.Text = "Usuario: " +
+                            persona.capsapepat + " " +
+                            persona.capsapemat + " " +
+                            persona.capsnomper;
+            */
         }
 
         private void BTNInventario_Click(object sender, EventArgs e)
@@ -234,6 +250,11 @@ namespace SistemaDeInventario2026
         {
             AbrirEnPanel(new FRMLogin_Huella());
             
+        }
+
+        private void TMReloj_Tick(object sender, EventArgs e)
+        {
+            LBLFecha_Sesion.Text = DateTime.Now.ToString("F");
         }
     }
 }

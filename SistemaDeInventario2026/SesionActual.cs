@@ -18,11 +18,11 @@ namespace SistemaDeInventario2026
         public static string Rol = "";
 
         // Claves de las secciones del panel izquierdo (evita errores de tipeo).
-        public const string SECCION_INVERSION = "inversion";   // Gestión de Inversión y Proveedores
-        public const string SECCION_INVENTARIO = "inventario"; // Inventario
-        public const string SECCION_BUSQUEDA = "busqueda";     // Búsqueda Avanzada
-        public const string SECCION_VENTAS = "ventas";         // Punto de Venta
-        public const string SECCION_USUARIOS = "usuarios";     // Administración de Usuarios
+        public const string SECCION_INVERSION = "Inversion";   // Gestión de Inversión y Proveedores
+        public const string SECCION_INVENTARIO = "Inventario"; // Inventario
+        public const string SECCION_BUSQUEDA = "Busqueda";     // Búsqueda Avanzada
+        public const string SECCION_VENTAS = "Ventas";         // Punto de Venta
+        public const string SECCION_USUARIOS = "Usuarios";     // Administración de Usuarios
 
         // Único lugar donde se define qué puede ver cada rol.
         public static bool PuedeAcceder(string seccion)
@@ -31,7 +31,7 @@ namespace SistemaDeInventario2026
             {
                 case "Administrador":
                     return true; // todas las secciones
-                case "cajero":
+                case "Cajero":
                     return seccion != SECCION_USUARIOS; // todas excepto Administración de Usuarios
                 default:
                     return false; // rol desconocido o sin sesión: nada

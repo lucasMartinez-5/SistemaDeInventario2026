@@ -366,8 +366,13 @@ namespace SistemaDeInventario2026
                                         MessageBoxIcon.Information);
                         LimpiarCasillas();
                         this.actualizar = true;
+                        //
+                        
+                        //
                         this.FormClosing -= FRMVenta_Registrar_FormClosing;
                         this.Close();
+                        FRMVenta_Detalle v = new FRMVenta_Detalle();
+                        v.ShowDialog();
                     }
                     else
                     {

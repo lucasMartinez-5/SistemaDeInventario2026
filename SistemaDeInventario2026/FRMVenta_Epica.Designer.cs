@@ -37,7 +37,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BTNResumenInversion = new System.Windows.Forms.Button();
-            this.BTNHistorialAnual = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.BTNCostoRegistros = new System.Windows.Forms.Button();
             this.BTNModificar = new System.Windows.Forms.Button();
@@ -72,7 +71,6 @@
             this.PMenu_Venta.Controls.Add(this.pictureBox6);
             this.PMenu_Venta.Controls.Add(this.label6);
             this.PMenu_Venta.Controls.Add(this.BTNResumenInversion);
-            this.PMenu_Venta.Controls.Add(this.BTNHistorialAnual);
             this.PMenu_Venta.Controls.Add(this.materialLabel2);
             this.PMenu_Venta.Controls.Add(this.BTNCostoRegistros);
             this.PMenu_Venta.Controls.Add(this.BTNModificar);
@@ -106,9 +104,9 @@
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Location = new System.Drawing.Point(643, 406);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 25);
+            this.label4.Size = new System.Drawing.Size(280, 25);
             this.label4.TabIndex = 99;
-            this.label4.Text = "Emitir comprobante";
+            this.label4.Text = "Informe de Venta/Emitir Recibo";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox5
@@ -169,21 +167,8 @@
             this.BTNResumenInversion.Name = "BTNResumenInversion";
             this.BTNResumenInversion.Size = new System.Drawing.Size(158, 38);
             this.BTNResumenInversion.TabIndex = 94;
-            this.BTNResumenInversion.Text = "Resumen por Fecha";
+            this.BTNResumenInversion.Text = "Emitir Recibo";
             this.BTNResumenInversion.UseVisualStyleBackColor = false;
-            // 
-            // BTNHistorialAnual
-            // 
-            this.BTNHistorialAnual.BackColor = System.Drawing.Color.Black;
-            this.BTNHistorialAnual.FlatAppearance.BorderSize = 0;
-            this.BTNHistorialAnual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNHistorialAnual.ForeColor = System.Drawing.Color.White;
-            this.BTNHistorialAnual.Location = new System.Drawing.Point(347, 402);
-            this.BTNHistorialAnual.Name = "BTNHistorialAnual";
-            this.BTNHistorialAnual.Size = new System.Drawing.Size(153, 38);
-            this.BTNHistorialAnual.TabIndex = 93;
-            this.BTNHistorialAnual.Text = "Ver Historial Anual";
-            this.BTNHistorialAnual.UseVisualStyleBackColor = false;
             // 
             // materialLabel2
             // 
@@ -327,7 +312,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button BTNResumenInversion;
-        private System.Windows.Forms.Button BTNHistorialAnual;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.Button BTNCostoRegistros;
         private System.Windows.Forms.Button BTNModificar;

@@ -49,7 +49,7 @@ namespace SistemaDeInventario2026
             }
             else if (TXTNIT.Text.Replace(" ", "") == "")
             {
-                MessageBox.Show("Introduzca el NIT del proveedor", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Introduzca el NIT del cliente", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXTNIT.Focus();
                 respuesta = false;
             }// condicion para retringir NIT ajeno al modificar o registrar
@@ -234,7 +234,7 @@ namespace SistemaDeInventario2026
                 if (!this.modificar)
                 {
                     //Generar el correlativo
-                    correlativo.pxnctipcor = "aproved";
+                    correlativo.pxnctipcor = "aclient";
                     if (correlativo.ObtenerSiguiente())
                     {
                         cliente.paclcodcli = correlativo.pxnctipcor + "-" +
