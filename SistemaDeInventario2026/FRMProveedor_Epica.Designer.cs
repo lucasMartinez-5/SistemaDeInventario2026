@@ -127,9 +127,9 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Location = new System.Drawing.Point(595, 418);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 25);
+            this.label3.Size = new System.Drawing.Size(213, 25);
             this.label3.TabIndex = 51;
-            this.label3.Text = "Directorio de Proveedores";
+            this.label3.Text = "Historial de Inversiones";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox2
@@ -151,9 +151,9 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(595, 310);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 25);
+            this.label2.Size = new System.Drawing.Size(266, 25);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Directorio de Proveedores";
+            this.label2.Text = "Registro de compras por Lote";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox1

@@ -45,6 +45,7 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.LBLCatalogoVisual = new DevComponents.DotNetBar.LabelX();
+            this.BTNVenta_Lista = new System.Windows.Forms.Button();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Venta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             // PMenu_Venta
             // 
+            this.PMenu_Venta.Controls.Add(this.BTNVenta_Lista);
             this.PMenu_Venta.Controls.Add(this.pictureBox4);
             this.PMenu_Venta.Controls.Add(this.label4);
             this.PMenu_Venta.Controls.Add(this.pictureBox5);
@@ -165,7 +167,7 @@
             this.BTNResumenInversion.ForeColor = System.Drawing.Color.Black;
             this.BTNResumenInversion.Location = new System.Drawing.Point(183, 402);
             this.BTNResumenInversion.Name = "BTNResumenInversion";
-            this.BTNResumenInversion.Size = new System.Drawing.Size(158, 38);
+            this.BTNResumenInversion.Size = new System.Drawing.Size(134, 38);
             this.BTNResumenInversion.TabIndex = 94;
             this.BTNResumenInversion.Text = "Emitir Recibo";
             this.BTNResumenInversion.UseVisualStyleBackColor = false;
@@ -281,6 +283,20 @@
             this.LBLCatalogoVisual.Text = "Caja";
             this.LBLCatalogoVisual.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
+            // BTNVenta_Lista
+            // 
+            this.BTNVenta_Lista.BackColor = System.Drawing.Color.Black;
+            this.BTNVenta_Lista.FlatAppearance.BorderSize = 0;
+            this.BTNVenta_Lista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNVenta_Lista.ForeColor = System.Drawing.Color.White;
+            this.BTNVenta_Lista.Location = new System.Drawing.Point(323, 402);
+            this.BTNVenta_Lista.Name = "BTNVenta_Lista";
+            this.BTNVenta_Lista.Size = new System.Drawing.Size(128, 38);
+            this.BTNVenta_Lista.TabIndex = 101;
+            this.BTNVenta_Lista.Text = "Ver las ventas";
+            this.BTNVenta_Lista.UseVisualStyleBackColor = false;
+            this.BTNVenta_Lista.Click += new System.EventHandler(this.BTNVenta_Lista_Click);
+            // 
             // FRMVenta_Epica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -320,5 +336,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private DevComponents.DotNetBar.LabelX LBLCatalogoVisual;
+        private System.Windows.Forms.Button BTNVenta_Lista;
     }
 }

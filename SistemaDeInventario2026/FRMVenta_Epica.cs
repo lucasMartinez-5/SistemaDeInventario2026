@@ -89,5 +89,10 @@ namespace SistemaDeInventario2026
             AbrirEnPanel(new FRMVenta_Registrar());
             return;
         }
+
+        private void BTNVenta_Lista_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMVenta_Lista());
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace CapaRN
             private string _papwcoddet;
             private string _fapwcodven;
             private string _fapwcodpro;
+            private string _capwobsdet;
             //Instancia para conexion a PostgreSQL 8.2
             private CLConexionPGSQL Conexion;
 		#endregion 
@@ -51,7 +52,12 @@ namespace CapaRN
             { 
                 get{ return this._fapwcodpro;}
                 set{ this._fapwcodpro = value;}
-            } 
+            }
+            public string capwobsdet
+            { 
+                get{ return this._capwobsdet;}
+                set{ this._capwobsdet = value;}
+            }
         #endregion
 
         #region Constructor
@@ -63,6 +69,7 @@ namespace CapaRN
 		        this._papwcoddet = "";
 		        this._fapwcodven = "";
 		        this._fapwcodpro = "";
+		        this._capwobsdet = "";
                 this.Conexion = new CLConexionPGSQL();            } 
         #endregion
 
@@ -76,7 +83,8 @@ namespace CapaRN
                                      "capwsubtot," +
                                      "papwcoddet," +
                                      "fapwcodven," +
-                                     "fapwcodpro " + 
+                                     "fapwcodpro," +
+                                     "capwobsdet " +
                              "from adetventa " +
                              "where "+
                                     "papwcoddet = @papwcoddet";
@@ -95,6 +103,7 @@ namespace CapaRN
                     this._papwcoddet=ResultadoConsulta.GetString(3);
                     this._fapwcodven=ResultadoConsulta.GetString(4);
                     this._fapwcodpro=ResultadoConsulta.GetString(5);
+                    this._capwobsdet=ResultadoConsulta.GetString(6);
                     this.Conexion.Desconectar();
 
                     return true;
@@ -114,7 +123,8 @@ namespace CapaRN
                                      "capwsubtot," +
                                      "papwcoddet," +
                                      "fapwcodven," +
-                                     "fapwcodpro " + 
+                                     "fapwcodpro," +
+                                     "capwobsdet " +
                              "from adetventa " +
                              "where " +
                                     "papwcoddet = @papwcoddet";
@@ -153,7 +163,8 @@ namespace CapaRN
                                                        "capwsubtot," +
                                                        "papwcoddet," +
                                                        "fapwcodven," +
-                                                       "fapwcodpro" +
+                                                       "fapwcodpro," +
+                                                       "capwobsdet" +
                                                        ") " +
 	                             "values (" + 
                                           "@capwcandet," +
@@ -161,7 +172,8 @@ namespace CapaRN
                                           "@capwsubtot," +
                                           "@papwcoddet," +
                                           "@fapwcodven," +
-                                          "@fapwcodpro" +
+                                          "@fapwcodpro," +
+                                          "@capwobsdet" +
                                                        ")";
 
                     this.Conexion.PrepararComando(sql);
@@ -172,6 +184,7 @@ namespace CapaRN
                     this.Conexion.AsignarParametroCadena("@papwcoddet",this._papwcoddet);
                     this.Conexion.AsignarParametroCadena("@fapwcodven",this._fapwcodven);
                     this.Conexion.AsignarParametroCadena("@fapwcodpro",this._fapwcodpro);
+                    this.Conexion.AsignarParametroCadena("@capwobsdet",this._capwobsdet);
 
                     this.Conexion.EjecutarTransaccion();
                     this.Conexion.Desconectar();
@@ -193,7 +206,8 @@ namespace CapaRN
                                                      "capwpreven = @capwpreven, " +
                                                      "capwsubtot = @capwsubtot, " +
                                                      "fapwcodven = @fapwcodven, " +
-                                                     "fapwcodpro = @fapwcodpro" +
+                                                     "fapwcodpro = @fapwcodpro, " +
+                                                     "capwobsdet = @capwobsdet" +
                                  " where " +
                                         "papwcoddet = @papwcoddet";
  
@@ -205,6 +219,7 @@ namespace CapaRN
                     this.Conexion.AsignarParametroCadena("@papwcoddet",this._papwcoddet);
                     this.Conexion.AsignarParametroCadena("@fapwcodven",this._fapwcodven);
                     this.Conexion.AsignarParametroCadena("@fapwcodpro",this._fapwcodpro);
+                    this.Conexion.AsignarParametroCadena("@capwobsdet",this._capwobsdet);
 
                     this.Conexion.EjecutarTransaccion();
                     this.Conexion.Desconectar();
@@ -222,7 +237,8 @@ namespace CapaRN
                                      "capwsubtot," +
                                      "papwcoddet," +
                                      "fapwcodven," +
-                                     "fapwcodpro " + 
+                                     "fapwcodpro," +
+                                     "capwobsdet " +
                              "from adetventa " ;
  
                 if (where.Replace(" ", "") != "")
@@ -245,6 +261,7 @@ namespace CapaRN
                           Auxiliar.papwcoddet = ResultadoConsulta.GetString(3);
                           Auxiliar.fapwcodven = ResultadoConsulta.GetString(4);
                           Auxiliar.fapwcodpro = ResultadoConsulta.GetString(5);
+                          Auxiliar.capwobsdet = ResultadoConsulta.GetString(6);
                           ListaResultado.Add(Auxiliar);
                     }
 

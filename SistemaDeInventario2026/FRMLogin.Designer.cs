@@ -49,29 +49,29 @@
             this.BTNInventario = new System.Windows.Forms.Button();
             this.BTNDirectorio = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
-            this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
-            this.BTNConfiguracion = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BTNBusquedaGeneral = new DevComponents.DotNetBar.ButtonX();
+            this.TXTFiltrarGeneral = new System.Windows.Forms.TextBox();
+            this.BTNConfiguracion = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.LBLUsuario_Sesion = new System.Windows.Forms.Label();
             this.LBLFecha_Sesion = new System.Windows.Forms.Label();
+            this.LBLUsuario_Sesion = new System.Windows.Forms.Label();
             this.TMReloj = new System.Windows.Forms.Timer(this.components);
             this.PPrincipal.SuspendLayout();
             this.PLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,6 +174,7 @@
             // 
             this.TXTPassword.Location = new System.Drawing.Point(392, 234);
             this.TXTPassword.Name = "TXTPassword";
+            this.TXTPassword.PasswordChar = '*';
             this.TXTPassword.Size = new System.Drawing.Size(363, 23);
             this.TXTPassword.TabIndex = 66;
             // 
@@ -191,6 +192,7 @@
             // 
             // TXTLoginUsuario
             // 
+            this.TXTLoginUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TXTLoginUsuario.Location = new System.Drawing.Point(392, 180);
             this.TXTLoginUsuario.Name = "TXTLoginUsuario";
             this.TXTLoginUsuario.Size = new System.Drawing.Size(363, 23);
@@ -361,60 +363,6 @@
             this.panel1.Size = new System.Drawing.Size(1289, 45);
             this.panel1.TabIndex = 17;
             // 
-            // BTNBusquedaGeneral
-            // 
-            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
-            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1254, 8);
-            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
-            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
-            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNBusquedaGeneral.TabIndex = 43;
-            // 
-            // TXTFiltrarGeneral
-            // 
-            this.TXTFiltrarGeneral.Location = new System.Drawing.Point(1086, 8);
-            this.TXTFiltrarGeneral.Name = "TXTFiltrarGeneral";
-            this.TXTFiltrarGeneral.Size = new System.Drawing.Size(191, 23);
-            this.TXTFiltrarGeneral.TabIndex = 42;
-            // 
-            // BTNConfiguracion
-            // 
-            this.BTNConfiguracion.FlatAppearance.BorderSize = 0;
-            this.BTNConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNConfiguracion.Location = new System.Drawing.Point(972, 5);
-            this.BTNConfiguracion.Name = "BTNConfiguracion";
-            this.BTNConfiguracion.Size = new System.Drawing.Size(108, 29);
-            this.BTNConfiguracion.TabIndex = 41;
-            this.BTNConfiguracion.Text = "Configuración";
-            this.BTNConfiguracion.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(59, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 25);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Local de Dieter";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 32;
-            this.pictureBox4.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -483,6 +431,60 @@
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
             // 
+            // BTNBusquedaGeneral
+            // 
+            this.BTNBusquedaGeneral.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNBusquedaGeneral.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNBusquedaGeneral.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
+            this.BTNBusquedaGeneral.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNBusquedaGeneral.Location = new System.Drawing.Point(1254, 8);
+            this.BTNBusquedaGeneral.Name = "BTNBusquedaGeneral";
+            this.BTNBusquedaGeneral.Size = new System.Drawing.Size(23, 23);
+            this.BTNBusquedaGeneral.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNBusquedaGeneral.TabIndex = 43;
+            // 
+            // TXTFiltrarGeneral
+            // 
+            this.TXTFiltrarGeneral.Location = new System.Drawing.Point(1086, 8);
+            this.TXTFiltrarGeneral.Name = "TXTFiltrarGeneral";
+            this.TXTFiltrarGeneral.Size = new System.Drawing.Size(191, 23);
+            this.TXTFiltrarGeneral.TabIndex = 42;
+            // 
+            // BTNConfiguracion
+            // 
+            this.BTNConfiguracion.FlatAppearance.BorderSize = 0;
+            this.BTNConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNConfiguracion.Location = new System.Drawing.Point(972, 5);
+            this.BTNConfiguracion.Name = "BTNConfiguracion";
+            this.BTNConfiguracion.Size = new System.Drawing.Size(108, 29);
+            this.BTNConfiguracion.TabIndex = 41;
+            this.BTNConfiguracion.Text = "Configuración";
+            this.BTNConfiguracion.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(59, 8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 25);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Local de Dieter";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
+            this.pictureBox4.Location = new System.Drawing.Point(5, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 32;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
@@ -493,20 +495,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1289, 45);
             this.panel4.TabIndex = 45;
-            // 
-            // LBLUsuario_Sesion
-            // 
-            this.LBLUsuario_Sesion.AutoSize = true;
-            this.LBLUsuario_Sesion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLUsuario_Sesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLUsuario_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBLUsuario_Sesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LBLUsuario_Sesion.Location = new System.Drawing.Point(5, 8);
-            this.LBLUsuario_Sesion.Name = "LBLUsuario_Sesion";
-            this.LBLUsuario_Sesion.Size = new System.Drawing.Size(153, 25);
-            this.LBLUsuario_Sesion.TabIndex = 33;
-            this.LBLUsuario_Sesion.Text = "Usuario: ---------";
-            this.LBLUsuario_Sesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LBLFecha_Sesion
             // 
@@ -522,6 +510,20 @@
             this.LBLFecha_Sesion.TabIndex = 34;
             this.LBLFecha_Sesion.Text = "Fecha: ---------";
             this.LBLFecha_Sesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // LBLUsuario_Sesion
+            // 
+            this.LBLUsuario_Sesion.AutoSize = true;
+            this.LBLUsuario_Sesion.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLUsuario_Sesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLUsuario_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LBLUsuario_Sesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LBLUsuario_Sesion.Location = new System.Drawing.Point(5, 8);
+            this.LBLUsuario_Sesion.Name = "LBLUsuario_Sesion";
+            this.LBLUsuario_Sesion.Size = new System.Drawing.Size(153, 25);
+            this.LBLUsuario_Sesion.TabIndex = 33;
+            this.LBLUsuario_Sesion.Text = "Usuario: ---------";
+            this.LBLUsuario_Sesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TMReloj
             // 
@@ -547,10 +549,10 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);

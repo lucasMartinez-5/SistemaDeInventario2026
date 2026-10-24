@@ -36,6 +36,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMVenta_Detalle));
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PVentaDetallePDF = new System.Windows.Forms.Panel();
+            this.LBLRecibo = new System.Windows.Forms.Label();
             this.DTGDetalle = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,7 +62,6 @@
             this.LBLDescripcion = new System.Windows.Forms.Label();
             this.LBLTitulo = new DevComponents.DotNetBar.LabelX();
             this.PBXLogo = new System.Windows.Forms.PictureBox();
-            this.LBLRecibo = new System.Windows.Forms.Label();
             this.PPrincipal.SuspendLayout();
             this.PVentaDetallePDF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTGDetalle)).BeginInit();
@@ -104,6 +104,15 @@
             this.PVentaDetallePDF.Name = "PVentaDetallePDF";
             this.PVentaDetallePDF.Size = new System.Drawing.Size(970, 519);
             this.PVentaDetallePDF.TabIndex = 0;
+            // 
+            // LBLRecibo
+            // 
+            this.LBLRecibo.AutoSize = true;
+            this.LBLRecibo.Location = new System.Drawing.Point(210, 177);
+            this.LBLRecibo.Name = "LBLRecibo";
+            this.LBLRecibo.Size = new System.Drawing.Size(111, 17);
+            this.LBLRecibo.TabIndex = 146;
+            this.LBLRecibo.Text = "Recibo de venta";
             // 
             // DTGDetalle
             // 
@@ -362,15 +371,6 @@
             this.PBXLogo.TabIndex = 133;
             this.PBXLogo.TabStop = false;
             // 
-            // LBLRecibo
-            // 
-            this.LBLRecibo.AutoSize = true;
-            this.LBLRecibo.Location = new System.Drawing.Point(210, 177);
-            this.LBLRecibo.Name = "LBLRecibo";
-            this.LBLRecibo.Size = new System.Drawing.Size(111, 17);
-            this.LBLRecibo.TabIndex = 146;
-            this.LBLRecibo.Text = "Recibo de venta";
-            // 
             // FRMVenta_Detalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -378,9 +378,10 @@
             this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMVenta_Detalle";
             this.Text = "FRMVenta_Detalle";
+            this.Load += new System.EventHandler(this.FRMVenta_Detalle_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PVentaDetallePDF.ResumeLayout(false);
             this.PVentaDetallePDF.PerformLayout();

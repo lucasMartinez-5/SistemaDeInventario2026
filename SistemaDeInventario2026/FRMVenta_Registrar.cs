@@ -54,7 +54,7 @@ namespace SistemaDeInventario2026
             }
             else if (TXTNIT.Text.Replace(" ", "") == "")
             {
-                MessageBox.Show("Introduzca el NÚMERO DE FACTURA", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Introduzca el NIT del Cliente", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXTNIT.Focus();
                 respuesta = false;
             }
@@ -339,6 +339,8 @@ namespace SistemaDeInventario2026
                         detalle.capwcandet = Convert.ToInt32(fila.Cells[2].Value);
                         detalle.capwpreven = Convert.ToDecimal(fila.Cells[3].Value);
                         detalle.capwsubtot = Convert.ToDecimal(fila.Cells[4].Value);
+                        // Tipo de precio con el que se vendió este producto (solo para auditoría)
+                        detalle.capwobsdet = ((string[])fila.Tag)[1];
 
                         // Grabar el detalle
                         if (!detalle.Grabar())
@@ -367,11 +369,12 @@ namespace SistemaDeInventario2026
                         LimpiarCasillas();
                         this.actualizar = true;
                         //
-                        
+
                         //
                         this.FormClosing -= FRMVenta_Registrar_FormClosing;
                         this.Close();
-                        FRMVenta_Detalle v = new FRMVenta_Detalle();
+                        //FRMVenta_Detalle v = new FRMVenta_Detalle();
+                        FRMVenta_Detalle v = new FRMVenta_Detalle(venta, cliente.caclsoccli);
                         v.ShowDialog();
                     }
                     else
@@ -449,7 +452,7 @@ namespace SistemaDeInventario2026
                     {
                         
                         // Anotar el tipo de precio de este producto (solo para auditoría)
-                        TXTObservaciones.Text += "(" + TXTProducto.Text + " - " + CMBTipoPrecio.Text + Environment.NewLine + ")";
+                        //TXTObservaciones.Text += "(" + TXTProducto.Text + " - " + CMBTipoPrecio.Text + Environment.NewLine + ")";
                     }
                     else if (CMBTipoPrecio.SelectedIndex == 1) // Precio Mayorista
                     {
@@ -457,7 +460,7 @@ namespace SistemaDeInventario2026
                         //TXTObservaciones.Text = producto.papdcodpro + " - " + "Precio Normal," + " ";
 
                         // Anotar el tipo de precio de este producto (solo para auditoría)
-                        TXTObservaciones.Text += "(" + TXTProducto.Text + " - " + CMBTipoPrecio.Text + Environment.NewLine + ")";
+                        //TXTObservaciones.Text += "(" + TXTProducto.Text + " - " + CMBTipoPrecio.Text + Environment.NewLine + ")";
                     }
                 }
                 else

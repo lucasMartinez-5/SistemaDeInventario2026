@@ -10,12 +10,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace SistemaDeInventario2026
 {
     public partial class FRMVenta_Detalle : Form
     {
         #region Variables
+        private Image imgMarca;
         private aventa venta;
         private string nombreCliente;
 
@@ -129,6 +131,20 @@ namespace SistemaDeInventario2026
             filaPDF = 0;
             primeraPaginaPDF = true;
             detallePendientePDF = true;
+
+            imgMarca = null;
+            try
+            {
+                string rutaMarca = Path.Combine(Application.StartupPath, "logo.png");
+                if (File.Exists(rutaMarca))
+                {
+                    using (Image temporal = Image.FromFile(rutaMarca))
+                    {
+                        imgMarca = new Bitmap(temporal);
+                    }
+                }
+            }
+            catch { }
         }
 
         private void LiberarImpresion()
@@ -140,6 +156,32 @@ namespace SistemaDeInventario2026
             if (bTexto != null) bTexto.Dispose();
             if (bGris != null) bGris.Dispose();
             if (bCuadro != null) bCuadro.Dispose();
+
+            if (imgMarca != null) imgMarca.Dispose();
+        }
+
+        private void FRMVenta_Detalle_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DibujarMarcaDeAgua(Graphics g, Rectangle pagina)
+        {
+            if (imgMarca == null) return;
+
+            float escala = Math.Min(pagina.Width * 0.6f / imgMarca.Width, pagina.Height * 0.6f / imgMarca.Height);
+            int w = (int)(imgMarca.Width * escala);
+            int h = (int)(imgMarca.Height * escala);
+            Rectangle destino = new Rectangle(pagina.Left + (pagina.Width - w) / 2,
+                                              pagina.Top + (pagina.Height - h) / 2, w, h);
+
+            using (ImageAttributes atributos = new ImageAttributes())
+            {
+                ColorMatrix matriz = new ColorMatrix();
+                matriz.Matrix33 = 0.10f;      // opacidad: 0.10 = 10 % (sube a 0.15 si la quieres más visible)
+                atributos.SetColorMatrix(matriz, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+                g.DrawImage(imgMarca, destino, 0, 0, imgMarca.Width, imgMarca.Height, GraphicsUnit.Pixel, atributos);
+            }
         }
 
         // Dibuja un bloque del recibo (cuadro gris + título + líneas) y devuelve la posición Y del siguiente
@@ -239,7 +281,9 @@ namespace SistemaDeInventario2026
             int y = m.Top;
             int xTabla = m.Left + CUADRO_PDF + 20;
             int anchoTabla = m.Width - CUADRO_PDF - 20;
-
+            //
+            DibujarMarcaDeAgua(g, e.PageBounds);
+            //
             if (primeraPaginaPDF)
             {
                 g.DrawString("Recibo de venta", fRecibo, bTexto, m.Left, y);
@@ -248,7 +292,7 @@ namespace SistemaDeInventario2026
                 y = DibujarBloque(g, m, y, LBLTituloFecha.Text,
                                   new string[] { LBLFecha.Text }, new bool[] { true }, null);
                 y = DibujarBloque(g, m, y, LBLTituloLocal.Text,
-                   new string[] { LBLRecibo.Text }, new bool[] { false }, PBXLogo.Image);
+                  new string[] { LBLRecibo.Text }, new bool[] { false }, PBXLogo.Image);
                 y = DibujarBloque(g, m, y, LBLTituloCliente.Text,
                                   new string[] { LBLCliente.Text, LBLNIT.Text }, new bool[] { false, true }, null);
 

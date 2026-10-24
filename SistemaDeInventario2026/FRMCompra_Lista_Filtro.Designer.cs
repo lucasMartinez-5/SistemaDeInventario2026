@@ -30,13 +30,13 @@
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Compra_Lista_Filtro = new System.Windows.Forms.Panel();
+            this.PCompra_Lista = new System.Windows.Forms.Panel();
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
+            this.IINFilas = new DevComponents.Editors.IntegerInput();
             this.TXTFiltrar = new System.Windows.Forms.TextBox();
             this.LBLDetalles_Compra_Filtro = new DevComponents.DotNetBar.LabelX();
             this.DTGLista = new System.Windows.Forms.DataGridView();
-            this.PProveedor_Lista = new System.Windows.Forms.Panel();
-            this.IINFilas = new DevComponents.Editors.IntegerInput();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,9 +44,9 @@
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Compra_Lista_Filtro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
-            this.PProveedor_Lista.SuspendLayout();
+            this.PCompra_Lista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IINFilas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
             this.SuspendLayout();
             // 
             // PPrincipal
@@ -61,12 +61,26 @@
             // 
             // PMenu_Compra_Lista_Filtro
             // 
-            this.PMenu_Compra_Lista_Filtro.Controls.Add(this.PProveedor_Lista);
+            this.PMenu_Compra_Lista_Filtro.Controls.Add(this.PCompra_Lista);
             this.PMenu_Compra_Lista_Filtro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PMenu_Compra_Lista_Filtro.Location = new System.Drawing.Point(0, 0);
             this.PMenu_Compra_Lista_Filtro.Name = "PMenu_Compra_Lista_Filtro";
             this.PMenu_Compra_Lista_Filtro.Size = new System.Drawing.Size(970, 519);
             this.PMenu_Compra_Lista_Filtro.TabIndex = 0;
+            // 
+            // PCompra_Lista
+            // 
+            this.PCompra_Lista.Controls.Add(this.BTNSalir);
+            this.PCompra_Lista.Controls.Add(this.BTNFiltrar);
+            this.PCompra_Lista.Controls.Add(this.IINFilas);
+            this.PCompra_Lista.Controls.Add(this.TXTFiltrar);
+            this.PCompra_Lista.Controls.Add(this.LBLDetalles_Compra_Filtro);
+            this.PCompra_Lista.Controls.Add(this.DTGLista);
+            this.PCompra_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PCompra_Lista.Location = new System.Drawing.Point(0, 0);
+            this.PCompra_Lista.Name = "PCompra_Lista";
+            this.PCompra_Lista.Size = new System.Drawing.Size(970, 519);
+            this.PCompra_Lista.TabIndex = 16;
             // 
             // BTNSalir
             // 
@@ -94,6 +108,24 @@
             this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.BTNFiltrar.TabIndex = 15;
             this.BTNFiltrar.Click += new System.EventHandler(this.BTNFiltrar_Click);
+            // 
+            // IINFilas
+            // 
+            // 
+            // 
+            // 
+            this.IINFilas.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.IINFilas.Increment = 10;
+            this.IINFilas.Location = new System.Drawing.Point(187, 88);
+            this.IINFilas.MaxValue = 1000;
+            this.IINFilas.MinValue = 0;
+            this.IINFilas.Name = "IINFilas";
+            this.IINFilas.ShowUpDown = true;
+            this.IINFilas.Size = new System.Drawing.Size(50, 23);
+            this.IINFilas.TabIndex = 14;
+            this.IINFilas.Value = 50;
             // 
             // TXTFiltrar
             // 
@@ -145,38 +177,6 @@
             this.DTGLista.TabIndex = 11;
             this.DTGLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellContentClick);
             // 
-            // PProveedor_Lista
-            // 
-            this.PProveedor_Lista.Controls.Add(this.BTNSalir);
-            this.PProveedor_Lista.Controls.Add(this.BTNFiltrar);
-            this.PProveedor_Lista.Controls.Add(this.IINFilas);
-            this.PProveedor_Lista.Controls.Add(this.TXTFiltrar);
-            this.PProveedor_Lista.Controls.Add(this.LBLDetalles_Compra_Filtro);
-            this.PProveedor_Lista.Controls.Add(this.DTGLista);
-            this.PProveedor_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PProveedor_Lista.Location = new System.Drawing.Point(0, 0);
-            this.PProveedor_Lista.Name = "PProveedor_Lista";
-            this.PProveedor_Lista.Size = new System.Drawing.Size(970, 519);
-            this.PProveedor_Lista.TabIndex = 16;
-            // 
-            // IINFilas
-            // 
-            // 
-            // 
-            // 
-            this.IINFilas.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.IINFilas.Increment = 10;
-            this.IINFilas.Location = new System.Drawing.Point(187, 88);
-            this.IINFilas.MaxValue = 1000;
-            this.IINFilas.MinValue = 0;
-            this.IINFilas.Name = "IINFilas";
-            this.IINFilas.ShowUpDown = true;
-            this.IINFilas.Size = new System.Drawing.Size(50, 23);
-            this.IINFilas.TabIndex = 14;
-            this.IINFilas.Value = 50;
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Código";
@@ -222,16 +222,16 @@
             this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMCompra_Lista_Filtro";
             this.Text = "FRMCompra_Lista_Filtro";
             this.Load += new System.EventHandler(this.FRMCompra_Lista_Filtro_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PMenu_Compra_Lista_Filtro.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).EndInit();
-            this.PProveedor_Lista.ResumeLayout(false);
-            this.PProveedor_Lista.PerformLayout();
+            this.PCompra_Lista.ResumeLayout(false);
+            this.PCompra_Lista.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IINFilas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,7 +240,7 @@
 
         private System.Windows.Forms.Panel PPrincipal;
         private System.Windows.Forms.Panel PMenu_Compra_Lista_Filtro;
-        private System.Windows.Forms.Panel PProveedor_Lista;
+        private System.Windows.Forms.Panel PCompra_Lista;
         private System.Windows.Forms.Button BTNSalir;
         private DevComponents.DotNetBar.ButtonX BTNFiltrar;
         private DevComponents.Editors.IntegerInput IINFilas;

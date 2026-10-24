@@ -91,6 +91,12 @@
     <Compile Include="FRMAdministracion_Epica.Designer.cs">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMAdministracion_Extracto_Fecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Extracto_Fecha.Designer.cs">
+      <DependentUpon>FRMAdministracion_Extracto_Fecha.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMAdministracion_Modificar_Contraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="FRMAdministracion_Usuario_Registrar.Designer.cs">
       <DependentUpon>FRMAdministracion_Usuario_Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAdministracion_Venta_Detalle_Auditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Venta_Detalle_Auditoria.Designer.cs">
+      <DependentUpon>FRMAdministracion_Venta_Detalle_Auditoria.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMAdministración_Copia_Seguridad.cs">
       <SubType>Form</SubType>
@@ -337,6 +349,18 @@
     <Compile Include="FRMVenta_Epica.Designer.cs">
       <DependentUpon>FRMVenta_Epica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMVenta_Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMVenta_Lista.Designer.cs">
+      <DependentUpon>FRMVenta_Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMVenta_Lista_Filtro_Auditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMVenta_Lista_Filtro_Auditoria.Designer.cs">
+      <DependentUpon>FRMVenta_Lista_Filtro_Auditoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMVenta_Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,6 +380,9 @@
     <EmbeddedResource Include="FRMAdministracion_Epica.resx">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdministracion_Extracto_Fecha.resx">
+      <DependentUpon>FRMAdministracion_Extracto_Fecha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministracion_Modificar_Contraseña.resx">
       <DependentUpon>FRMAdministracion_Modificar_Contraseña.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministracion_Usuario_Registrar.resx">
       <DependentUpon>FRMAdministracion_Usuario_Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdministracion_Venta_Detalle_Auditoria.resx">
+      <DependentUpon>FRMAdministracion_Venta_Detalle_Auditoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministración_Copia_Seguridad.resx">
       <DependentUpon>FRMAdministración_Copia_Seguridad.cs</DependentUpon>
@@ -478,6 +508,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMVenta_Epica.resx">
       <DependentUpon>FRMVenta_Epica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMVenta_Lista.resx">
+      <DependentUpon>FRMVenta_Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMVenta_Lista_Filtro_Auditoria.resx">
+      <DependentUpon>FRMVenta_Lista_Filtro_Auditoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMVenta_Registrar.resx">
       <DependentUpon>FRMVenta_Registrar.cs</DependentUpon>

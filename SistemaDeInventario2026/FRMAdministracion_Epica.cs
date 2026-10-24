@@ -84,5 +84,10 @@ namespace SistemaDeInventario2026
             //AbrirEnPanel(new FRMUsuario_Lista());
             AbrirEnPanel(CrearLista());
         }
+
+        private void BTNExtracto_Venta_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMAdministracion_Extracto_Fecha());
+        }
     }
 }
