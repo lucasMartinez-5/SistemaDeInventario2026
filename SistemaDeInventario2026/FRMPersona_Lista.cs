@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMPersona_Lista : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMPersona_Lista : Form
     {
         #region Variables
-           private aperson persona = new aperson();
-           private List<aperson> lista_personas = new List<aperson>();
+        private aperson persona = new aperson();
+        private List<aperson> lista_personas = new List<aperson>();
+        public event Action<string> PersonaElegida;
         #endregion
 
         #region Constructor
@@ -140,6 +141,8 @@ namespace SistemaDeInventario2026
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            PersonaElegida(DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString());
+            return;
             if (DTGLista.SelectedRows.Count > 0)
             {
                 FRMPersona_Registrar F1 = new FRMPersona_Registrar();
@@ -220,14 +223,9 @@ namespace SistemaDeInventario2026
             TXTFiltrar.SelectAll();
         }
 
-        private void TXTFiltrar_TextChanged(object sender, EventArgs e)
+        private void BTNSalir_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void IINFilas_ValueChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

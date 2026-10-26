@@ -29,444 +29,106 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMPersona_Registrar));
-            this.GPPanelPrincipal = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.GPFotografia = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.PCBFotografia = new System.Windows.Forms.PictureBox();
-            this.BTNAbrirFoto = new DevComponents.DotNetBar.ButtonX();
-            this.BTNLimpiarFoto = new DevComponents.DotNetBar.ButtonX();
-            this.BTNCapturarFoto = new DevComponents.DotNetBar.ButtonX();
-            this.PCBCamara = new System.Windows.Forms.PictureBox();
-            this.BTNSalir = new DevComponents.DotNetBar.ButtonX();
-            this.BTNLimpiar = new DevComponents.DotNetBar.ButtonX();
-            this.BTNGrabar = new DevComponents.DotNetBar.ButtonX();
-            this.TXTCI = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTApellidoPaterno = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTDireccion = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTCorreoElectronico = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTCelular = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTNombres = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTApellidoMaterno = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.DTINacimiento = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.SWBSexo = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.SWBEstado = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.BLTAyuda = new DevComponents.DotNetBar.BalloonTip();
             this.OFDElegirImagen = new System.Windows.Forms.OpenFileDialog();
-            this.GPPanelPrincipal.SuspendLayout();
-            this.GPFotografia.SuspendLayout();
+            this.PPrincipal = new System.Windows.Forms.Panel();
+            this.PAgregar_Persona = new System.Windows.Forms.Panel();
+            this.PCBFotografia = new System.Windows.Forms.PictureBox();
+            this.SWBSexo = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.SWBEstado = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.BTNAbrirFoto = new DevComponents.DotNetBar.ButtonX();
+            this.PCBCamara = new System.Windows.Forms.PictureBox();
+            this.BTNCapturarFoto = new DevComponents.DotNetBar.ButtonX();
+            this.BTNLimpiarFoto = new DevComponents.DotNetBar.ButtonX();
+            this.LBLRegistrarPersona = new DevComponents.DotNetBar.LabelX();
+            this.TXTCI = new System.Windows.Forms.TextBox();
+            this.LBLCI = new MaterialSkin.Controls.MaterialLabel();
+            this.TXTNombreCompleto = new System.Windows.Forms.TextBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.TXTApellidoPaterno = new System.Windows.Forms.TextBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.TXTApellidoMaterno = new System.Windows.Forms.TextBox();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.DTINacimiento = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeInput1 = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.TXTDireccion = new System.Windows.Forms.TextBox();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.TXTCelular = new System.Windows.Forms.TextBox();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.TXTCorreoElectronico = new System.Windows.Forms.TextBox();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.BTNLimpiar = new System.Windows.Forms.Button();
+            this.BTNSalir = new System.Windows.Forms.Button();
+            this.BTNGrabar = new System.Windows.Forms.Button();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.PPrincipal.SuspendLayout();
+            this.PAgregar_Persona.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DTINacimiento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).BeginInit();
             this.SuspendLayout();
             // 
-            // GPPanelPrincipal
+            // OFDElegirImagen
             // 
-            this.GPPanelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.GPPanelPrincipal.CanvasColor = System.Drawing.SystemColors.Control;
-            this.GPPanelPrincipal.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.GPPanelPrincipal.Controls.Add(this.GPFotografia);
-            this.GPPanelPrincipal.Controls.Add(this.BTNSalir);
-            this.GPPanelPrincipal.Controls.Add(this.BTNLimpiar);
-            this.GPPanelPrincipal.Controls.Add(this.BTNGrabar);
-            this.GPPanelPrincipal.Controls.Add(this.TXTCI);
-            this.GPPanelPrincipal.Controls.Add(this.TXTApellidoPaterno);
-            this.GPPanelPrincipal.Controls.Add(this.TXTDireccion);
-            this.GPPanelPrincipal.Controls.Add(this.TXTCorreoElectronico);
-            this.GPPanelPrincipal.Controls.Add(this.TXTCelular);
-            this.GPPanelPrincipal.Controls.Add(this.TXTNombres);
-            this.GPPanelPrincipal.Controls.Add(this.TXTApellidoMaterno);
-            this.GPPanelPrincipal.Controls.Add(this.DTINacimiento);
-            this.GPPanelPrincipal.Controls.Add(this.SWBSexo);
-            this.GPPanelPrincipal.Controls.Add(this.SWBEstado);
-            this.GPPanelPrincipal.DisabledBackColor = System.Drawing.Color.Empty;
-            this.GPPanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GPPanelPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.GPPanelPrincipal.Name = "GPPanelPrincipal";
-            this.GPPanelPrincipal.Size = new System.Drawing.Size(703, 323);
+            this.OFDElegirImagen.Filter = "Archivos de Imagen|*.jpg;*.jpeg;*.png";
+            this.OFDElegirImagen.Title = "Elegir fotografía";
             // 
+            // PPrincipal
             // 
+            this.PPrincipal.BackColor = System.Drawing.Color.White;
+            this.PPrincipal.Controls.Add(this.PAgregar_Persona);
+            this.PPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.PPrincipal.Name = "PPrincipal";
+            this.PPrincipal.Size = new System.Drawing.Size(970, 519);
+            this.PPrincipal.TabIndex = 0;
             // 
-            this.GPPanelPrincipal.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.GPPanelPrincipal.Style.BackColorGradientAngle = 90;
-            this.GPPanelPrincipal.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.GPPanelPrincipal.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderBottomWidth = 1;
-            this.GPPanelPrincipal.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.GPPanelPrincipal.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderLeftWidth = 1;
-            this.GPPanelPrincipal.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderRightWidth = 1;
-            this.GPPanelPrincipal.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderTopWidth = 1;
-            this.GPPanelPrincipal.Style.CornerDiameter = 4;
-            this.GPPanelPrincipal.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.GPPanelPrincipal.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.GPPanelPrincipal.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.GPPanelPrincipal.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // PAgregar_Persona
             // 
-            // 
-            // 
-            this.GPPanelPrincipal.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.GPPanelPrincipal.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.GPPanelPrincipal.TabIndex = 0;
-            this.GPPanelPrincipal.Text = "Persona";
-            // 
-            // GPFotografia
-            // 
-            this.GPFotografia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.GPFotografia.CanvasColor = System.Drawing.SystemColors.Control;
-            this.GPFotografia.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.GPFotografia.Controls.Add(this.PCBFotografia);
-            this.GPFotografia.Controls.Add(this.BTNAbrirFoto);
-            this.GPFotografia.Controls.Add(this.BTNLimpiarFoto);
-            this.GPFotografia.Controls.Add(this.BTNCapturarFoto);
-            this.GPFotografia.Controls.Add(this.PCBCamara);
-            this.GPFotografia.DisabledBackColor = System.Drawing.Color.Empty;
-            this.GPFotografia.Location = new System.Drawing.Point(328, 3);
-            this.GPFotografia.Name = "GPFotografia";
-            this.GPFotografia.Size = new System.Drawing.Size(361, 233);
-            // 
-            // 
-            // 
-            this.GPFotografia.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.GPFotografia.Style.BackColorGradientAngle = 90;
-            this.GPFotografia.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.GPFotografia.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPFotografia.Style.BorderBottomWidth = 1;
-            this.GPFotografia.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.GPFotografia.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPFotografia.Style.BorderLeftWidth = 1;
-            this.GPFotografia.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPFotografia.Style.BorderRightWidth = 1;
-            this.GPFotografia.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPFotografia.Style.BorderTopWidth = 1;
-            this.GPFotografia.Style.CornerDiameter = 4;
-            this.GPFotografia.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.GPFotografia.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.GPFotografia.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.GPFotografia.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.GPFotografia.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.GPFotografia.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.GPFotografia.TabIndex = 8;
-            this.GPFotografia.Text = "Fotografía";
+            this.PAgregar_Persona.Controls.Add(this.materialLabel7);
+            this.PAgregar_Persona.Controls.Add(this.BTNLimpiar);
+            this.PAgregar_Persona.Controls.Add(this.BTNSalir);
+            this.PAgregar_Persona.Controls.Add(this.BTNGrabar);
+            this.PAgregar_Persona.Controls.Add(this.materialLabel6);
+            this.PAgregar_Persona.Controls.Add(this.TXTCorreoElectronico);
+            this.PAgregar_Persona.Controls.Add(this.TXTDireccion);
+            this.PAgregar_Persona.Controls.Add(this.materialLabel4);
+            this.PAgregar_Persona.Controls.Add(this.TXTCelular);
+            this.PAgregar_Persona.Controls.Add(this.materialLabel5);
+            this.PAgregar_Persona.Controls.Add(this.dateTimeInput1);
+            this.PAgregar_Persona.Controls.Add(this.DTINacimiento);
+            this.PAgregar_Persona.Controls.Add(this.TXTApellidoMaterno);
+            this.PAgregar_Persona.Controls.Add(this.materialLabel3);
+            this.PAgregar_Persona.Controls.Add(this.TXTApellidoPaterno);
+            this.PAgregar_Persona.Controls.Add(this.materialLabel1);
+            this.PAgregar_Persona.Controls.Add(this.TXTNombreCompleto);
+            this.PAgregar_Persona.Controls.Add(this.materialLabel2);
+            this.PAgregar_Persona.Controls.Add(this.TXTCI);
+            this.PAgregar_Persona.Controls.Add(this.LBLCI);
+            this.PAgregar_Persona.Controls.Add(this.LBLRegistrarPersona);
+            this.PAgregar_Persona.Controls.Add(this.PCBFotografia);
+            this.PAgregar_Persona.Controls.Add(this.SWBSexo);
+            this.PAgregar_Persona.Controls.Add(this.SWBEstado);
+            this.PAgregar_Persona.Controls.Add(this.BTNAbrirFoto);
+            this.PAgregar_Persona.Controls.Add(this.PCBCamara);
+            this.PAgregar_Persona.Controls.Add(this.BTNCapturarFoto);
+            this.PAgregar_Persona.Controls.Add(this.BTNLimpiarFoto);
+            this.PAgregar_Persona.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PAgregar_Persona.Location = new System.Drawing.Point(0, 0);
+            this.PAgregar_Persona.Name = "PAgregar_Persona";
+            this.PAgregar_Persona.Size = new System.Drawing.Size(970, 519);
+            this.PAgregar_Persona.TabIndex = 0;
             // 
             // PCBFotografia
             // 
             this.PCBFotografia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PCBFotografia.Image = ((System.Drawing.Image)(resources.GetObject("PCBFotografia.Image")));
-            this.PCBFotografia.Location = new System.Drawing.Point(179, 8);
+            this.PCBFotografia.Location = new System.Drawing.Point(730, 121);
             this.PCBFotografia.Name = "PCBFotografia";
             this.PCBFotografia.Size = new System.Drawing.Size(170, 132);
             this.PCBFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PCBFotografia.TabIndex = 14;
+            this.PCBFotografia.TabIndex = 50;
             this.PCBFotografia.TabStop = false;
-            // 
-            // BTNAbrirFoto
-            // 
-            this.BTNAbrirFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNAbrirFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNAbrirFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_abrir;
-            this.BTNAbrirFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNAbrirFoto.Location = new System.Drawing.Point(247, 146);
-            this.BTNAbrirFoto.Name = "BTNAbrirFoto";
-            this.BTNAbrirFoto.Size = new System.Drawing.Size(102, 51);
-            this.BTNAbrirFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNAbrirFoto.TabIndex = 2;
-            this.BTNAbrirFoto.Text = "&Abrir";
-            this.BTNAbrirFoto.Click += new System.EventHandler(this.BTNAbrirFoto_Click);
-            // 
-            // BTNLimpiarFoto
-            // 
-            this.BTNLimpiarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNLimpiarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNLimpiarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_Limpiar;
-            this.BTNLimpiarFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNLimpiarFoto.Location = new System.Drawing.Point(128, 146);
-            this.BTNLimpiarFoto.Name = "BTNLimpiarFoto";
-            this.BTNLimpiarFoto.Size = new System.Drawing.Size(113, 51);
-            this.BTNLimpiarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNLimpiarFoto.TabIndex = 1;
-            this.BTNLimpiarFoto.Text = "L&impiar";
-            this.BTNLimpiarFoto.Click += new System.EventHandler(this.BTNLimpiarFoto_Click);
-            // 
-            // BTNCapturarFoto
-            // 
-            this.BTNCapturarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNCapturarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNCapturarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_tomar;
-            this.BTNCapturarFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNCapturarFoto.Location = new System.Drawing.Point(3, 146);
-            this.BTNCapturarFoto.Name = "BTNCapturarFoto";
-            this.BTNCapturarFoto.Size = new System.Drawing.Size(119, 51);
-            this.BTNCapturarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNCapturarFoto.TabIndex = 0;
-            this.BTNCapturarFoto.Text = "&Capturar";
-            this.BTNCapturarFoto.Click += new System.EventHandler(this.BTNCapturarFoto_Click);
-            // 
-            // PCBCamara
-            // 
-            this.PCBCamara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PCBCamara.Image = ((System.Drawing.Image)(resources.GetObject("PCBCamara.Image")));
-            this.PCBCamara.Location = new System.Drawing.Point(3, 8);
-            this.PCBCamara.Name = "PCBCamara";
-            this.PCBCamara.Size = new System.Drawing.Size(170, 132);
-            this.PCBCamara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PCBCamara.TabIndex = 0;
-            this.PCBCamara.TabStop = false;
-            // 
-            // BTNSalir
-            // 
-            this.BTNSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNSalir.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTNSalir.Image = global::SistemaDeInventario2026.Properties.Resources.ic_salir;
-            this.BTNSalir.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNSalir.Location = new System.Drawing.Point(383, 242);
-            this.BTNSalir.Name = "BTNSalir";
-            this.BTNSalir.Size = new System.Drawing.Size(121, 51);
-            this.BTNSalir.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNSalir.TabIndex = 13;
-            this.BTNSalir.Text = "&Salir";
-            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
-            // 
-            // BTNLimpiar
-            // 
-            this.BTNLimpiar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNLimpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNLimpiar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_limpiar;
-            this.BTNLimpiar.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNLimpiar.Location = new System.Drawing.Point(256, 242);
-            this.BTNLimpiar.Name = "BTNLimpiar";
-            this.BTNLimpiar.Size = new System.Drawing.Size(121, 51);
-            this.BTNLimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNLimpiar.TabIndex = 12;
-            this.BTNLimpiar.Text = "&Limpiar";
-            this.BTNLimpiar.Click += new System.EventHandler(this.BTNLimpiar_Click);
-            // 
-            // BTNGrabar
-            // 
-            this.BTNGrabar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNGrabar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNGrabar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_guardar;
-            this.BTNGrabar.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNGrabar.Location = new System.Drawing.Point(129, 242);
-            this.BTNGrabar.Name = "BTNGrabar";
-            this.BTNGrabar.Size = new System.Drawing.Size(121, 51);
-            this.BTNGrabar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNGrabar.TabIndex = 11;
-            this.BTNGrabar.Text = "&Grabar";
-            this.BTNGrabar.Click += new System.EventHandler(this.BTNGrabar_Click);
-            // 
-            // TXTCI
-            // 
-            this.TXTCI.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTCI, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTCI, "Número de documento de identidad de la persona");
-            // 
-            // 
-            // 
-            this.TXTCI.Border.Class = "TextBoxBorder";
-            this.TXTCI.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTCI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTCI.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTCI.ForeColor = System.Drawing.Color.Black;
-            this.TXTCI.Location = new System.Drawing.Point(9, 35);
-            this.TXTCI.Name = "TXTCI";
-            this.TXTCI.PreventEnterBeep = true;
-            this.TXTCI.Size = new System.Drawing.Size(149, 23);
-            this.TXTCI.TabIndex = 0;
-            this.TXTCI.WatermarkText = "CI";
-            this.TXTCI.Enter += new System.EventHandler(this.TXTCI_Enter);
-            this.TXTCI.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTCI_KeyDown);
-            // 
-            // TXTApellidoPaterno
-            // 
-            this.TXTApellidoPaterno.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTApellidoPaterno, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTApellidoPaterno, "Apellido Paterno de la persona");
-            // 
-            // 
-            // 
-            this.TXTApellidoPaterno.Border.Class = "TextBoxBorder";
-            this.TXTApellidoPaterno.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTApellidoPaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTApellidoPaterno.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTApellidoPaterno.ForeColor = System.Drawing.Color.Black;
-            this.TXTApellidoPaterno.Location = new System.Drawing.Point(9, 67);
-            this.TXTApellidoPaterno.Name = "TXTApellidoPaterno";
-            this.TXTApellidoPaterno.PreventEnterBeep = true;
-            this.TXTApellidoPaterno.Size = new System.Drawing.Size(149, 23);
-            this.TXTApellidoPaterno.TabIndex = 2;
-            this.TXTApellidoPaterno.WatermarkText = "Apellido Paterno";
-            this.TXTApellidoPaterno.Enter += new System.EventHandler(this.TXTCI_Enter);
-            this.TXTApellidoPaterno.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTApellidoPaterno_KeyDown);
-            // 
-            // TXTDireccion
-            // 
-            this.TXTDireccion.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTDireccion, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTDireccion, "Dirección del domicilio de la persona");
-            // 
-            // 
-            // 
-            this.TXTDireccion.Border.Class = "TextBoxBorder";
-            this.TXTDireccion.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTDireccion.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTDireccion.ForeColor = System.Drawing.Color.Black;
-            this.TXTDireccion.Location = new System.Drawing.Point(9, 163);
-            this.TXTDireccion.Multiline = true;
-            this.TXTDireccion.Name = "TXTDireccion";
-            this.TXTDireccion.PreventEnterBeep = true;
-            this.TXTDireccion.Size = new System.Drawing.Size(304, 73);
-            this.TXTDireccion.TabIndex = 7;
-            this.TXTDireccion.WatermarkText = "Dirección";
-            this.TXTDireccion.Enter += new System.EventHandler(this.TXTCI_Enter);
-            // 
-            // TXTCorreoElectronico
-            // 
-            this.TXTCorreoElectronico.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTCorreoElectronico, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTCorreoElectronico, "Correo Electrónico de la persona");
-            // 
-            // 
-            // 
-            this.TXTCorreoElectronico.Border.Class = "TextBoxBorder";
-            this.TXTCorreoElectronico.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTCorreoElectronico.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTCorreoElectronico.ForeColor = System.Drawing.Color.Black;
-            this.TXTCorreoElectronico.Location = new System.Drawing.Point(98, 131);
-            this.TXTCorreoElectronico.Name = "TXTCorreoElectronico";
-            this.TXTCorreoElectronico.PreventEnterBeep = true;
-            this.TXTCorreoElectronico.Size = new System.Drawing.Size(215, 23);
-            this.TXTCorreoElectronico.TabIndex = 6;
-            this.TXTCorreoElectronico.WatermarkText = "Correo Electrónico";
-            this.TXTCorreoElectronico.Enter += new System.EventHandler(this.TXTCI_Enter);
-            this.TXTCorreoElectronico.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTCorreoElectronico_KeyDown);
-            // 
-            // TXTCelular
-            // 
-            this.TXTCelular.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTCelular, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTCelular, "Número de Celular de la persona");
-            // 
-            // 
-            // 
-            this.TXTCelular.Border.Class = "TextBoxBorder";
-            this.TXTCelular.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTCelular.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTCelular.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTCelular.ForeColor = System.Drawing.Color.Black;
-            this.TXTCelular.Location = new System.Drawing.Point(10, 131);
-            this.TXTCelular.Name = "TXTCelular";
-            this.TXTCelular.PreventEnterBeep = true;
-            this.TXTCelular.Size = new System.Drawing.Size(82, 23);
-            this.TXTCelular.TabIndex = 5;
-            this.TXTCelular.WatermarkText = "Celular";
-            this.TXTCelular.Enter += new System.EventHandler(this.TXTCI_Enter);
-            this.TXTCelular.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTCelular_KeyDown);
-            // 
-            // TXTNombres
-            // 
-            this.TXTNombres.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTNombres, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTNombres, "Nombre de la persona");
-            // 
-            // 
-            // 
-            this.TXTNombres.Border.Class = "TextBoxBorder";
-            this.TXTNombres.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTNombres.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTNombres.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTNombres.ForeColor = System.Drawing.Color.Black;
-            this.TXTNombres.Location = new System.Drawing.Point(9, 99);
-            this.TXTNombres.Name = "TXTNombres";
-            this.TXTNombres.PreventEnterBeep = true;
-            this.TXTNombres.Size = new System.Drawing.Size(304, 23);
-            this.TXTNombres.TabIndex = 4;
-            this.TXTNombres.WatermarkText = "Nombres";
-            this.TXTNombres.TextChanged += new System.EventHandler(this.TXTNombres_TextChanged);
-            this.TXTNombres.Enter += new System.EventHandler(this.TXTCI_Enter);
-            this.TXTNombres.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTApellidoPaterno_KeyDown);
-            // 
-            // TXTApellidoMaterno
-            // 
-            this.TXTApellidoMaterno.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTApellidoMaterno, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTApellidoMaterno, "Apellido Materno de la persona");
-            // 
-            // 
-            // 
-            this.TXTApellidoMaterno.Border.Class = "TextBoxBorder";
-            this.TXTApellidoMaterno.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTApellidoMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTApellidoMaterno.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTApellidoMaterno.ForeColor = System.Drawing.Color.Black;
-            this.TXTApellidoMaterno.Location = new System.Drawing.Point(164, 67);
-            this.TXTApellidoMaterno.Name = "TXTApellidoMaterno";
-            this.TXTApellidoMaterno.PreventEnterBeep = true;
-            this.TXTApellidoMaterno.Size = new System.Drawing.Size(149, 23);
-            this.TXTApellidoMaterno.TabIndex = 3;
-            this.TXTApellidoMaterno.WatermarkText = "Apellido Materno";
-            this.TXTApellidoMaterno.TextChanged += new System.EventHandler(this.TXTApellidoMaterno_TextChanged);
-            this.TXTApellidoMaterno.Enter += new System.EventHandler(this.TXTCI_Enter);
-            this.TXTApellidoMaterno.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTApellidoPaterno_KeyDown);
-            // 
-            // DTINacimiento
-            // 
-            // 
-            // 
-            // 
-            this.DTINacimiento.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.DTINacimiento.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.BLTAyuda.SetBalloonCaption(this.DTINacimiento, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.DTINacimiento, "Fecha de nacimiento de la persona");
-            this.DTINacimiento.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.DTINacimiento.ButtonDropDown.Visible = true;
-            this.DTINacimiento.IsPopupCalendarOpen = false;
-            this.DTINacimiento.Location = new System.Drawing.Point(164, 35);
-            // 
-            // 
-            // 
-            // 
-            // 
-            // 
-            this.DTINacimiento.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.DTINacimiento.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.DTINacimiento.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.DTINacimiento.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.DTINacimiento.MonthCalendar.DisplayMonth = new System.DateTime(2026, 5, 1, 0, 0, 0, 0);
-            this.DTINacimiento.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            // 
-            // 
-            // 
-            this.DTINacimiento.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.DTINacimiento.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.DTINacimiento.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.DTINacimiento.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.DTINacimiento.MonthCalendar.TodayButtonVisible = true;
-            this.DTINacimiento.Name = "DTINacimiento";
-            this.DTINacimiento.Size = new System.Drawing.Size(149, 23);
-            this.DTINacimiento.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.DTINacimiento.TabIndex = 1;
-            this.DTINacimiento.WatermarkText = "Nacimiento";
             // 
             // SWBSexo
             // 
@@ -474,9 +136,7 @@
             // 
             // 
             this.SWBSexo.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.BLTAyuda.SetBalloonCaption(this.SWBSexo, "Ayuda ");
-            this.BLTAyuda.SetBalloonText(this.SWBSexo, "Sexo de la persona");
-            this.SWBSexo.Location = new System.Drawing.Point(164, 3);
+            this.SWBSexo.Location = new System.Drawing.Point(305, 121);
             this.SWBSexo.Name = "SWBSexo";
             this.SWBSexo.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.SWBSexo.OffText = "Femenino";
@@ -484,9 +144,9 @@
             this.SWBSexo.OnBackColor = System.Drawing.Color.DodgerBlue;
             this.SWBSexo.OnText = "Masculino";
             this.SWBSexo.OnTextColor = System.Drawing.Color.White;
-            this.SWBSexo.Size = new System.Drawing.Size(149, 26);
+            this.SWBSexo.Size = new System.Drawing.Size(188, 26);
             this.SWBSexo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.SWBSexo.TabIndex = 10;
+            this.SWBSexo.TabIndex = 46;
             this.SWBSexo.Value = true;
             this.SWBSexo.ValueObject = "Y";
             // 
@@ -496,9 +156,7 @@
             // 
             // 
             this.SWBEstado.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.BLTAyuda.SetBalloonCaption(this.SWBEstado, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.SWBEstado, "Estado de la persona");
-            this.SWBEstado.Location = new System.Drawing.Point(9, 3);
+            this.SWBEstado.Location = new System.Drawing.Point(69, 121);
             this.SWBEstado.Name = "SWBEstado";
             this.SWBEstado.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.SWBEstado.OffText = "Inhabilitado";
@@ -506,25 +164,338 @@
             this.SWBEstado.OnBackColor = System.Drawing.Color.LimeGreen;
             this.SWBEstado.OnText = "Habilitado";
             this.SWBEstado.OnTextColor = System.Drawing.Color.White;
-            this.SWBEstado.Size = new System.Drawing.Size(149, 26);
+            this.SWBEstado.Size = new System.Drawing.Size(188, 26);
             this.SWBEstado.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.SWBEstado.TabIndex = 9;
+            this.SWBEstado.TabIndex = 45;
             this.SWBEstado.Value = true;
             this.SWBEstado.ValueObject = "Y";
             // 
-            // OFDElegirImagen
+            // BTNAbrirFoto
             // 
-            this.OFDElegirImagen.Filter = "Archivos de Imagen|*.jpg;*.jpeg;*.png";
-            this.OFDElegirImagen.Title = "Elegir fotografía";
+            this.BTNAbrirFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNAbrirFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNAbrirFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_abrir;
+            this.BTNAbrirFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.BTNAbrirFoto.Location = new System.Drawing.Point(798, 259);
+            this.BTNAbrirFoto.Name = "BTNAbrirFoto";
+            this.BTNAbrirFoto.Size = new System.Drawing.Size(102, 51);
+            this.BTNAbrirFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNAbrirFoto.TabIndex = 38;
+            this.BTNAbrirFoto.Text = "&Abrir";
+            this.BTNAbrirFoto.Click += new System.EventHandler(this.BTNAbrirFoto_Click);
+            // 
+            // PCBCamara
+            // 
+            this.PCBCamara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PCBCamara.Image = ((System.Drawing.Image)(resources.GetObject("PCBCamara.Image")));
+            this.PCBCamara.Location = new System.Drawing.Point(532, 121);
+            this.PCBCamara.Name = "PCBCamara";
+            this.PCBCamara.Size = new System.Drawing.Size(170, 132);
+            this.PCBCamara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PCBCamara.TabIndex = 35;
+            this.PCBCamara.TabStop = false;
+            // 
+            // BTNCapturarFoto
+            // 
+            this.BTNCapturarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNCapturarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNCapturarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_tomar;
+            this.BTNCapturarFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.BTNCapturarFoto.Location = new System.Drawing.Point(532, 259);
+            this.BTNCapturarFoto.Name = "BTNCapturarFoto";
+            this.BTNCapturarFoto.Size = new System.Drawing.Size(119, 51);
+            this.BTNCapturarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNCapturarFoto.TabIndex = 34;
+            this.BTNCapturarFoto.Text = "&Capturar";
+            this.BTNCapturarFoto.Click += new System.EventHandler(this.BTNCapturarFoto_Click);
+            // 
+            // BTNLimpiarFoto
+            // 
+            this.BTNLimpiarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNLimpiarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNLimpiarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_Limpiar;
+            this.BTNLimpiarFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
+            this.BTNLimpiarFoto.Location = new System.Drawing.Point(667, 259);
+            this.BTNLimpiarFoto.Name = "BTNLimpiarFoto";
+            this.BTNLimpiarFoto.Size = new System.Drawing.Size(113, 51);
+            this.BTNLimpiarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNLimpiarFoto.TabIndex = 37;
+            this.BTNLimpiarFoto.Text = "L&impiar";
+            this.BTNLimpiarFoto.Click += new System.EventHandler(this.BTNLimpiarFoto_Click);
+            // 
+            // LBLRegistrarPersona
+            // 
+            this.LBLRegistrarPersona.AutoSize = true;
+            // 
+            // 
+            // 
+            this.LBLRegistrarPersona.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLRegistrarPersona.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLRegistrarPersona.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLRegistrarPersona.FontBold = true;
+            this.LBLRegistrarPersona.Location = new System.Drawing.Point(327, 21);
+            this.LBLRegistrarPersona.Name = "LBLRegistrarPersona";
+            this.LBLRegistrarPersona.Size = new System.Drawing.Size(316, 50);
+            this.LBLRegistrarPersona.TabIndex = 55;
+            this.LBLRegistrarPersona.Text = "Agregar Persona";
+            this.LBLRegistrarPersona.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // TXTCI
+            // 
+            this.TXTCI.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TXTCI.Location = new System.Drawing.Point(69, 181);
+            this.TXTCI.Name = "TXTCI";
+            this.TXTCI.Size = new System.Drawing.Size(188, 23);
+            this.TXTCI.TabIndex = 61;
+            this.TXTCI.Enter += new System.EventHandler(this.TXTCI_Enter);
+            // 
+            // LBLCI
+            // 
+            this.LBLCI.AutoSize = true;
+            this.LBLCI.Depth = 0;
+            this.LBLCI.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.LBLCI.Location = new System.Drawing.Point(66, 159);
+            this.LBLCI.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBLCI.Name = "LBLCI";
+            this.LBLCI.Size = new System.Drawing.Size(15, 19);
+            this.LBLCI.TabIndex = 60;
+            this.LBLCI.Text = "CI";
+            // 
+            // TXTNombreCompleto
+            // 
+            this.TXTNombreCompleto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TXTNombreCompleto.Location = new System.Drawing.Point(69, 305);
+            this.TXTNombreCompleto.Name = "TXTNombreCompleto";
+            this.TXTNombreCompleto.Size = new System.Drawing.Size(424, 23);
+            this.TXTNombreCompleto.TabIndex = 66;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(66, 283);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(129, 19);
+            this.materialLabel2.TabIndex = 65;
+            this.materialLabel2.Text = "Nombre Completo";
+            // 
+            // TXTApellidoPaterno
+            // 
+            this.TXTApellidoPaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TXTApellidoPaterno.Location = new System.Drawing.Point(69, 241);
+            this.TXTApellidoPaterno.Name = "TXTApellidoPaterno";
+            this.TXTApellidoPaterno.Size = new System.Drawing.Size(188, 23);
+            this.TXTApellidoPaterno.TabIndex = 68;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(66, 219);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(117, 19);
+            this.materialLabel1.TabIndex = 67;
+            this.materialLabel1.Text = "Apellido Paterno";
+            // 
+            // TXTApellidoMaterno
+            // 
+            this.TXTApellidoMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TXTApellidoMaterno.Location = new System.Drawing.Point(305, 241);
+            this.TXTApellidoMaterno.Name = "TXTApellidoMaterno";
+            this.TXTApellidoMaterno.Size = new System.Drawing.Size(188, 23);
+            this.TXTApellidoMaterno.TabIndex = 70;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(302, 219);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel3.TabIndex = 69;
+            this.materialLabel3.Text = "Apellido Materno";
+            // 
+            // DTINacimiento
+            // 
+            this.DTINacimiento.Location = new System.Drawing.Point(305, 181);
+            this.DTINacimiento.Name = "DTINacimiento";
+            this.DTINacimiento.Size = new System.Drawing.Size(188, 23);
+            this.DTINacimiento.TabIndex = 71;
+            // 
+            // dateTimeInput1
+            // 
+            // 
+            // 
+            // 
+            this.dateTimeInput1.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dateTimeInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeInput1.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dateTimeInput1.ButtonDropDown.Visible = true;
+            this.dateTimeInput1.IsPopupCalendarOpen = false;
+            this.dateTimeInput1.Location = new System.Drawing.Point(700, 444);
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BackColor2 = System.Drawing.SystemColors.ButtonHighlight;
+            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BorderColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.DashDotDot;
+            this.dateTimeInput1.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeInput1.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dateTimeInput1.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeInput1.MonthCalendar.DisplayMonth = new System.DateTime(2026, 10, 1, 0, 0, 0, 0);
+            this.dateTimeInput1.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
+            // 
+            // 
+            // 
+            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dateTimeInput1.MonthCalendar.TodayButtonVisible = true;
+            this.dateTimeInput1.Name = "dateTimeInput1";
+            this.dateTimeInput1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimeInput1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.dateTimeInput1.TabIndex = 72;
+            // 
+            // TXTDireccion
+            // 
+            this.TXTDireccion.Location = new System.Drawing.Point(532, 373);
+            this.TXTDireccion.Name = "TXTDireccion";
+            this.TXTDireccion.Size = new System.Drawing.Size(368, 23);
+            this.TXTDireccion.TabIndex = 76;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(529, 351);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(67, 19);
+            this.materialLabel4.TabIndex = 75;
+            this.materialLabel4.Text = "Direccion";
+            // 
+            // TXTCelular
+            // 
+            this.TXTCelular.Location = new System.Drawing.Point(69, 373);
+            this.TXTCelular.Name = "TXTCelular";
+            this.TXTCelular.Size = new System.Drawing.Size(188, 23);
+            this.TXTCelular.TabIndex = 74;
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(66, 351);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(50, 19);
+            this.materialLabel5.TabIndex = 73;
+            this.materialLabel5.Text = "Celular";
+            // 
+            // TXTCorreoElectronico
+            // 
+            this.TXTCorreoElectronico.Location = new System.Drawing.Point(305, 373);
+            this.TXTCorreoElectronico.Name = "TXTCorreoElectronico";
+            this.TXTCorreoElectronico.Size = new System.Drawing.Size(188, 23);
+            this.TXTCorreoElectronico.TabIndex = 77;
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(302, 351);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(129, 19);
+            this.materialLabel6.TabIndex = 78;
+            this.materialLabel6.Text = "Correo Electronico";
+            // 
+            // BTNLimpiar
+            // 
+            this.BTNLimpiar.BackColor = System.Drawing.Color.White;
+            this.BTNLimpiar.FlatAppearance.BorderSize = 0;
+            this.BTNLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNLimpiar.ForeColor = System.Drawing.Color.Black;
+            this.BTNLimpiar.Location = new System.Drawing.Point(534, 444);
+            this.BTNLimpiar.Name = "BTNLimpiar";
+            this.BTNLimpiar.Size = new System.Drawing.Size(126, 38);
+            this.BTNLimpiar.TabIndex = 81;
+            this.BTNLimpiar.Text = "Limpiar";
+            this.BTNLimpiar.UseVisualStyleBackColor = false;
+            this.BTNLimpiar.Click += new System.EventHandler(this.BTNLimpiar_Click);
+            // 
+            // BTNSalir
+            // 
+            this.BTNSalir.BackColor = System.Drawing.Color.White;
+            this.BTNSalir.FlatAppearance.BorderSize = 0;
+            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
+            this.BTNSalir.Location = new System.Drawing.Point(246, 444);
+            this.BTNSalir.Name = "BTNSalir";
+            this.BTNSalir.Size = new System.Drawing.Size(131, 38);
+            this.BTNSalir.TabIndex = 80;
+            this.BTNSalir.Text = "Salir";
+            this.BTNSalir.UseVisualStyleBackColor = false;
+            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
+            // 
+            // BTNGrabar
+            // 
+            this.BTNGrabar.BackColor = System.Drawing.Color.Black;
+            this.BTNGrabar.FlatAppearance.BorderSize = 0;
+            this.BTNGrabar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNGrabar.ForeColor = System.Drawing.Color.White;
+            this.BTNGrabar.Location = new System.Drawing.Point(383, 444);
+            this.BTNGrabar.Name = "BTNGrabar";
+            this.BTNGrabar.Size = new System.Drawing.Size(145, 38);
+            this.BTNGrabar.TabIndex = 79;
+            this.BTNGrabar.Text = "Grabar";
+            this.BTNGrabar.UseVisualStyleBackColor = false;
+            this.BTNGrabar.Click += new System.EventHandler(this.BTNGrabar_Click);
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.Location = new System.Drawing.Point(302, 159);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(150, 19);
+            this.materialLabel7.TabIndex = 82;
+            this.materialLabel7.Text = "Fecha de Nacimiento";
             // 
             // FRMPersona_Registrar
             // 
-            this.AcceptButton = this.BTNGrabar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.BTNSalir;
-            this.ClientSize = new System.Drawing.Size(703, 323);
-            this.Controls.Add(this.GPPanelPrincipal);
+            this.ClientSize = new System.Drawing.Size(970, 519);
+            this.Controls.Add(this.PPrincipal);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -533,38 +504,48 @@
             this.Text = "FRMPersona_Registrar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMPersona_Registrar_FormClosing);
             this.Load += new System.EventHandler(this.FRMPersona_Registrar_Load);
-            this.GPPanelPrincipal.ResumeLayout(false);
-            this.GPFotografia.ResumeLayout(false);
+            this.PPrincipal.ResumeLayout(false);
+            this.PAgregar_Persona.ResumeLayout(false);
+            this.PAgregar_Persona.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DTINacimiento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevComponents.DotNetBar.Controls.GroupPanel GPPanelPrincipal;
-        private DevComponents.DotNetBar.Controls.SwitchButton SWBEstado;
-        private DevComponents.DotNetBar.Controls.SwitchButton SWBSexo;
-        private DevComponents.Editors.DateTimeAdv.DateTimeInput DTINacimiento;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTApellidoMaterno;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTNombres;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTCelular;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTDireccion;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTCorreoElectronico;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTApellidoPaterno;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTCI;
-        private DevComponents.DotNetBar.ButtonX BTNGrabar;
-        private DevComponents.DotNetBar.ButtonX BTNLimpiar;
-        private DevComponents.DotNetBar.ButtonX BTNSalir;
-        private System.Windows.Forms.PictureBox PCBFotografia;
-        private DevComponents.DotNetBar.Controls.GroupPanel GPFotografia;
-        private DevComponents.DotNetBar.ButtonX BTNLimpiarFoto;
-        private DevComponents.DotNetBar.ButtonX BTNCapturarFoto;
-        private System.Windows.Forms.PictureBox PCBCamara;
-        private DevComponents.DotNetBar.ButtonX BTNAbrirFoto;
         private DevComponents.DotNetBar.BalloonTip BLTAyuda;
         private System.Windows.Forms.OpenFileDialog OFDElegirImagen;
+        private System.Windows.Forms.Panel PPrincipal;
+        private System.Windows.Forms.Panel PAgregar_Persona;
+        private System.Windows.Forms.PictureBox PCBFotografia;
+        private DevComponents.DotNetBar.Controls.SwitchButton SWBSexo;
+        private DevComponents.DotNetBar.Controls.SwitchButton SWBEstado;
+        private DevComponents.DotNetBar.ButtonX BTNAbrirFoto;
+        private System.Windows.Forms.PictureBox PCBCamara;
+        private DevComponents.DotNetBar.ButtonX BTNCapturarFoto;
+        private DevComponents.DotNetBar.ButtonX BTNLimpiarFoto;
+        private DevComponents.DotNetBar.LabelX LBLRegistrarPersona;
+        private System.Windows.Forms.TextBox TXTCI;
+        private MaterialSkin.Controls.MaterialLabel LBLCI;
+        private System.Windows.Forms.TextBox TXTNombreCompleto;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.TextBox TXTApellidoMaterno;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.TextBox TXTApellidoPaterno;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInput1;
+        private System.Windows.Forms.DateTimePicker DTINacimiento;
+        private System.Windows.Forms.TextBox TXTDireccion;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private System.Windows.Forms.TextBox TXTCelular;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private System.Windows.Forms.TextBox TXTCorreoElectronico;
+        private System.Windows.Forms.Button BTNLimpiar;
+        private System.Windows.Forms.Button BTNSalir;
+        private System.Windows.Forms.Button BTNGrabar;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
     }
 }

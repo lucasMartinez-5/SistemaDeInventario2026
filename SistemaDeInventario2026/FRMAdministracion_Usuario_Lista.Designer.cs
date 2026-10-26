@@ -37,16 +37,16 @@
             this.TXTFiltrar = new System.Windows.Forms.TextBox();
             this.LBLDirectorioUsuario = new DevComponents.DotNetBar.LabelX();
             this.DTGLista = new System.Windows.Forms.DataGridView();
+            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PPrincipal.SuspendLayout();
             this.PLista_Usuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IINFilas)).BeginInit();
@@ -177,6 +177,37 @@
             this.DTGLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellContentClick);
             this.DTGLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellDoubleClick);
             // 
+            // CMSMenu
+            // 
+            this.CMSMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarToolStripMenuItem,
+            this.inhabilitarToolStripMenuItem,
+            this.habilitarToolStripMenuItem});
+            this.CMSMenu.Name = "CMSMenu";
+            this.CMSMenu.Size = new System.Drawing.Size(128, 70);
+            this.CMSMenu.Opening += new System.ComponentModel.CancelEventHandler(this.CMSMenu_Opening);
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.modificarToolStripMenuItem.Text = "&Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
+            // 
+            // inhabilitarToolStripMenuItem
+            // 
+            this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
+            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
+            this.inhabilitarToolStripMenuItem.Click += new System.EventHandler(this.inhabilitarToolStripMenuItem_Click);
+            // 
+            // habilitarToolStripMenuItem
+            // 
+            this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
+            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.habilitarToolStripMenuItem.Text = "&Habilitar";
+            this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
+            // 
             // Column1
             // 
             this.Column1.HeaderText = "Código";
@@ -220,37 +251,6 @@
             this.Column6.ReadOnly = true;
             this.Column6.Width = 160;
             // 
-            // CMSMenu
-            // 
-            this.CMSMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modificarToolStripMenuItem,
-            this.inhabilitarToolStripMenuItem,
-            this.habilitarToolStripMenuItem});
-            this.CMSMenu.Name = "CMSMenu";
-            this.CMSMenu.Size = new System.Drawing.Size(128, 70);
-            this.CMSMenu.Opening += new System.ComponentModel.CancelEventHandler(this.CMSMenu_Opening);
-            // 
-            // modificarToolStripMenuItem
-            // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.modificarToolStripMenuItem.Text = "&Modificar";
-            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
-            // 
-            // inhabilitarToolStripMenuItem
-            // 
-            this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
-            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
-            this.inhabilitarToolStripMenuItem.Click += new System.EventHandler(this.inhabilitarToolStripMenuItem_Click);
-            // 
-            // habilitarToolStripMenuItem
-            // 
-            this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
-            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.habilitarToolStripMenuItem.Text = "&Habilitar";
-            this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
-            // 
             // FRMAdministracion_Usuario_Lista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,15 +282,15 @@
         private System.Windows.Forms.TextBox TXTFiltrar;
         private DevComponents.DotNetBar.LabelX LBLDirectorioUsuario;
         private System.Windows.Forms.DataGridView DTGLista;
+        private System.Windows.Forms.ContextMenuStrip CMSMenu;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inhabilitarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.ContextMenuStrip CMSMenu;
-        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inhabilitarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
     }
 }

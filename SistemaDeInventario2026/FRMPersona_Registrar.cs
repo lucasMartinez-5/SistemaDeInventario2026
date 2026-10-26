@@ -16,7 +16,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMPersona_Registrar : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMPersona_Registrar : Form
     {
         #region Variables
         private aperson persona = new aperson();
@@ -72,10 +72,10 @@ namespace SistemaDeInventario2026
                 TXTApellidoPaterno.Focus();
                 respuesta = false;
             }
-            else if (TXTNombres.Text.Replace(" ", "") == "")
+            else if (TXTNombreCompleto.Text.Replace(" ", "") == "")
             {
                 MessageBox.Show("Introduzca los NOMBRES de la persona", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                TXTNombres.Focus();
+                TXTNombreCompleto.Focus();
                 respuesta = false;
             }
             else if (TXTCelular.Text.Replace(" ", "") == "")
@@ -123,7 +123,7 @@ namespace SistemaDeInventario2026
             DTINacimiento.Value = persona.capsfecnac;
             TXTApellidoPaterno.Text = persona.capsapepat;
             TXTApellidoMaterno.Text = persona.capsapemat;
-            TXTNombres.Text = persona.capsnomper;
+            TXTNombreCompleto.Text = persona.capsnomper;
             TXTCelular.Text = persona.capsnumcel;
             TXTCorreoElectronico.Text = persona.capscorele;
             TXTDireccion.Text = persona.capsdirper;
@@ -166,7 +166,7 @@ namespace SistemaDeInventario2026
 
         private void TXTCI_Enter(object sender, EventArgs e)
         {
-            TextBoxX a = (TextBoxX)sender;
+            TextBox a = (TextBox)sender;
             a.SelectAll();
         }
 
@@ -178,7 +178,7 @@ namespace SistemaDeInventario2026
                 JalarDatos();
                 BTNGrabar.Text = "&Modificar";
                 this.Text = "Modificar Persona";
-                GPPanelPrincipal.Text = "Modificar Persona";
+                PAgregar_Persona.Text = "Modificar Persona";
                 TXTCI.Focus();
             }
             else
@@ -186,7 +186,7 @@ namespace SistemaDeInventario2026
                 LimpiarCasillas();
                 BTNGrabar.Text = "&Guardar";
                 this.Text = "Registrar Persona";
-                GPPanelPrincipal.Text = "Registrar Persona";
+                PAgregar_Persona.Text = "Registrar Persona";
                 TXTCI.Focus();
             }
         }
@@ -311,7 +311,7 @@ namespace SistemaDeInventario2026
                 persona.capsfecnac = DTINacimiento.Value;
                 persona.capsapepat = TXTApellidoPaterno.Text;
                 persona.capsapemat = TXTApellidoMaterno.Text;
-                persona.capsnomper = TXTNombres.Text;
+                persona.capsnomper = TXTNombreCompleto.Text;
                 persona.capsnumcel = TXTCelular.Text;
                 persona.capscorele = TXTCorreoElectronico.Text;
                 persona.capsdirper = TXTDireccion.Text;

@@ -85,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FRMAdministracion_Copia_Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdministracion_Copia_Seguridad.Designer.cs">
+      <DependentUpon>FRMAdministracion_Copia_Seguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMAdministracion_Epica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,12 +126,6 @@
     </Compile>
     <Compile Include="FRMAdministracion_Venta_Detalle_Auditoria.Designer.cs">
       <DependentUpon>FRMAdministracion_Venta_Detalle_Auditoria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FRMAdministración_Copia_Seguridad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMAdministración_Copia_Seguridad.Designer.cs">
-      <DependentUpon>FRMAdministración_Copia_Seguridad.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMCategoria_Lista.cs">
       <SubType>Form</SubType>
@@ -377,6 +377,9 @@
     <Compile Include="UCLProductoCard.Designer.cs">
       <DependentUpon>UCLProductoCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FRMAdministracion_Copia_Seguridad.resx">
+      <DependentUpon>FRMAdministracion_Copia_Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministracion_Epica.resx">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,9 +397,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministracion_Venta_Detalle_Auditoria.resx">
       <DependentUpon>FRMAdministracion_Venta_Detalle_Auditoria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRMAdministración_Copia_Seguridad.resx">
-      <DependentUpon>FRMAdministración_Copia_Seguridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCategoria_Lista.resx">
       <DependentUpon>FRMCategoria_Lista.cs</DependentUpon>
