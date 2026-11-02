@@ -403,6 +403,26 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_flecha_negra_derecha_48x48 {
+            get {
+                object obj = ResourceManager.GetObject("ic_flecha negra_derecha 48x48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_flecha_negra_izquierda_48x48 {
+            get {
+                object obj = ResourceManager.GetObject("ic_flecha negra_izquierda 48x48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_guardar {
             get {
                 object obj = ResourceManager.GetObject("ic_guardar", resourceCulture);
@@ -456,6 +476,16 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap ic_login_huella {
             get {
                 object obj = ResourceManager.GetObject("ic_login_huella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_ojo_30 {
+            get {
+                object obj = ResourceManager.GetObject("ic_ojo 30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -743,9 +773,49 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_ver_password_23 {
+            get {
+                object obj = ResourceManager.GetObject("ic_ver password 23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap icons8_producto_100__1___1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-producto-100 (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap lapiz_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("lapiz fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap lapiz_fondo_gris_PhotoShop_30 {
+            get {
+                object obj = ResourceManager.GetObject("lapiz fondo gris PhotoShop 30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap lapiz_sin_fondo_30 {
+            get {
+                object obj = ResourceManager.GetObject("lapiz sin fondo 30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

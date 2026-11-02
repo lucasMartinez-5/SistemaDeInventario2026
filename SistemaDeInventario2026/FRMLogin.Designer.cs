@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PLogin = new System.Windows.Forms.Panel();
-            this.BTNMostrarPassword = new System.Windows.Forms.Button();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.BTNLoginHuella = new System.Windows.Forms.Button();
@@ -54,6 +53,7 @@
             this.LBLFecha_Sesion = new System.Windows.Forms.Label();
             this.LBLUsuario_Sesion = new System.Windows.Forms.Label();
             this.TMReloj = new System.Windows.Forms.Timer(this.components);
+            this.BTNMostrarPassword = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNAdministracionUsuarios = new System.Windows.Forms.Button();
             this.BTNPuntoDeVenta = new System.Windows.Forms.Button();
@@ -104,15 +104,6 @@
             this.PLogin.Name = "PLogin";
             this.PLogin.Size = new System.Drawing.Size(1010, 502);
             this.PLogin.TabIndex = 5;
-            // 
-            // BTNMostrarPassword
-            // 
-            this.BTNMostrarPassword.Location = new System.Drawing.Point(769, 234);
-            this.BTNMostrarPassword.Name = "BTNMostrarPassword";
-            this.BTNMostrarPassword.Size = new System.Drawing.Size(37, 23);
-            this.BTNMostrarPassword.TabIndex = 71;
-            this.BTNMostrarPassword.UseVisualStyleBackColor = true;
-            this.BTNMostrarPassword.Click += new System.EventHandler(this.BTNMostrarPassword_Click);
             // 
             // materialLabel3
             // 
@@ -175,7 +166,7 @@
             this.TXTPassword.Location = new System.Drawing.Point(392, 234);
             this.TXTPassword.Name = "TXTPassword";
             this.TXTPassword.PasswordChar = '*';
-            this.TXTPassword.Size = new System.Drawing.Size(363, 23);
+            this.TXTPassword.Size = new System.Drawing.Size(377, 23);
             this.TXTPassword.TabIndex = 66;
             // 
             // materialLabel2
@@ -195,7 +186,7 @@
             this.TXTLoginUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TXTLoginUsuario.Location = new System.Drawing.Point(392, 180);
             this.TXTLoginUsuario.Name = "TXTLoginUsuario";
-            this.TXTLoginUsuario.Size = new System.Drawing.Size(363, 23);
+            this.TXTLoginUsuario.Size = new System.Drawing.Size(377, 23);
             this.TXTLoginUsuario.TabIndex = 64;
             // 
             // materialLabel1
@@ -380,6 +371,16 @@
             // TMReloj
             // 
             this.TMReloj.Tick += new System.EventHandler(this.TMReloj_Tick);
+            // 
+            // BTNMostrarPassword
+            // 
+            this.BTNMostrarPassword.Image = global::SistemaDeInventario2026.Properties.Resources.ic_ver_password_23;
+            this.BTNMostrarPassword.Location = new System.Drawing.Point(777, 234);
+            this.BTNMostrarPassword.Name = "BTNMostrarPassword";
+            this.BTNMostrarPassword.Size = new System.Drawing.Size(29, 23);
+            this.BTNMostrarPassword.TabIndex = 71;
+            this.BTNMostrarPassword.UseVisualStyleBackColor = true;
+            this.BTNMostrarPassword.Click += new System.EventHandler(this.BTNMostrarPassword_Click);
             // 
             // pictureBox1
             // 

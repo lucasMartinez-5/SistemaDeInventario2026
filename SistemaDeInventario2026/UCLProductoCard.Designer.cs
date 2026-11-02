@@ -33,10 +33,9 @@
             this.LBLPrecio = new System.Windows.Forms.Label();
             this.LBLTallaColor = new System.Windows.Forms.Label();
             this.LBLNombre = new System.Windows.Forms.Label();
-            this.PCBImagen = new System.Windows.Forms.PictureBox();
-            this.BTNModificarUCLProducto = new System.Windows.Forms.Button();
             this.BTNVerUCLProducto = new System.Windows.Forms.Button();
-            this.SWBEstado = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.BTNModificarUCLProducto = new System.Windows.Forms.Button();
+            this.PCBImagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PCBImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +75,25 @@
             this.LBLNombre.TabIndex = 79;
             this.LBLNombre.Text = "label1";
             // 
+            // BTNVerUCLProducto
+            // 
+            this.BTNVerUCLProducto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_ojo_30;
+            this.BTNVerUCLProducto.Location = new System.Drawing.Point(142, 5);
+            this.BTNVerUCLProducto.Name = "BTNVerUCLProducto";
+            this.BTNVerUCLProducto.Size = new System.Drawing.Size(30, 30);
+            this.BTNVerUCLProducto.TabIndex = 85;
+            this.BTNVerUCLProducto.UseVisualStyleBackColor = true;
+            // 
+            // BTNModificarUCLProducto
+            // 
+            this.BTNModificarUCLProducto.Image = global::SistemaDeInventario2026.Properties.Resources.lapiz_sin_fondo_30;
+            this.BTNModificarUCLProducto.Location = new System.Drawing.Point(6, 6);
+            this.BTNModificarUCLProducto.Name = "BTNModificarUCLProducto";
+            this.BTNModificarUCLProducto.Size = new System.Drawing.Size(30, 30);
+            this.BTNModificarUCLProducto.TabIndex = 84;
+            this.BTNModificarUCLProducto.UseVisualStyleBackColor = true;
+            this.BTNModificarUCLProducto.Click += new System.EventHandler(this.BTNModificarUCLProducto_Click);
+            // 
             // PCBImagen
             // 
             this.PCBImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -87,42 +105,10 @@
             this.PCBImagen.TabIndex = 78;
             this.PCBImagen.TabStop = false;
             // 
-            // BTNModificarUCLProducto
-            // 
-            this.BTNModificarUCLProducto.Location = new System.Drawing.Point(112, 5);
-            this.BTNModificarUCLProducto.Name = "BTNModificarUCLProducto";
-            this.BTNModificarUCLProducto.Size = new System.Drawing.Size(30, 23);
-            this.BTNModificarUCLProducto.TabIndex = 84;
-            this.BTNModificarUCLProducto.Text = "button2";
-            this.BTNModificarUCLProducto.UseVisualStyleBackColor = true;
-            this.BTNModificarUCLProducto.Click += new System.EventHandler(this.BTNModificarUCLProducto_Click);
-            // 
-            // BTNVerUCLProducto
-            // 
-            this.BTNVerUCLProducto.Location = new System.Drawing.Point(142, 5);
-            this.BTNVerUCLProducto.Name = "BTNVerUCLProducto";
-            this.BTNVerUCLProducto.Size = new System.Drawing.Size(30, 23);
-            this.BTNVerUCLProducto.TabIndex = 85;
-            this.BTNVerUCLProducto.Text = "button3";
-            this.BTNVerUCLProducto.UseVisualStyleBackColor = true;
-            // 
-            // SWBEstado
-            // 
-            // 
-            // 
-            // 
-            this.SWBEstado.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.SWBEstado.Location = new System.Drawing.Point(6, 6);
-            this.SWBEstado.Name = "SWBEstado";
-            this.SWBEstado.Size = new System.Drawing.Size(61, 23);
-            this.SWBEstado.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.SWBEstado.TabIndex = 86;
-            // 
             // UCLProductoCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.SWBEstado);
             this.Controls.Add(this.BTNVerUCLProducto);
             this.Controls.Add(this.BTNModificarUCLProducto);
             this.Controls.Add(this.LBLStock);
@@ -150,6 +136,5 @@
         private System.Windows.Forms.PictureBox PCBImagen;
         private System.Windows.Forms.Button BTNModificarUCLProducto;
         private System.Windows.Forms.Button BTNVerUCLProducto;
-        private DevComponents.DotNetBar.Controls.SwitchButton SWBEstado;
     }
 }
