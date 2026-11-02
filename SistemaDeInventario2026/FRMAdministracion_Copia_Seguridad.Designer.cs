@@ -32,10 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMAdministracion_Copia_Seguridad));
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Copia_Seguridad = new System.Windows.Forms.Panel();
-            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PCBFotografia = new System.Windows.Forms.PictureBox();
             this.BTNSalir = new DevComponents.DotNetBar.ButtonX();
             this.BTNLimpiar = new DevComponents.DotNetBar.ButtonX();
@@ -54,12 +50,16 @@
             this.TXTCI = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.BTNLimpiarFoto = new DevComponents.DotNetBar.ButtonX();
             this.TXTCorreoElectronico = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.CMSMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Copia_Seguridad.SuspendLayout();
-            this.CMSMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DTINacimiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).BeginInit();
+            this.CMSMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // PPrincipal
@@ -97,37 +97,6 @@
             this.PMenu_Copia_Seguridad.Name = "PMenu_Copia_Seguridad";
             this.PMenu_Copia_Seguridad.Size = new System.Drawing.Size(970, 519);
             this.PMenu_Copia_Seguridad.TabIndex = 0;
-            // 
-            // CMSMenu
-            // 
-            this.CMSMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modificarToolStripMenuItem,
-            this.inhabilitarToolStripMenuItem,
-            this.habilitarToolStripMenuItem});
-            this.CMSMenu.Name = "CMSMenu";
-            this.CMSMenu.Size = new System.Drawing.Size(128, 70);
-            this.CMSMenu.Opening += new System.ComponentModel.CancelEventHandler(this.CMSMenu_Opening);
-            // 
-            // modificarToolStripMenuItem
-            // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.modificarToolStripMenuItem.Text = "&Modificar";
-            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
-            // 
-            // inhabilitarToolStripMenuItem
-            // 
-            this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
-            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
-            this.inhabilitarToolStripMenuItem.Click += new System.EventHandler(this.inhabilitarToolStripMenuItem_Click);
-            // 
-            // habilitarToolStripMenuItem
-            // 
-            this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
-            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
-            this.habilitarToolStripMenuItem.Text = "&Habilitar";
-            this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
             // 
             // PCBFotografia
             // 
@@ -442,6 +411,37 @@
             this.TXTCorreoElectronico.TabIndex = 25;
             this.TXTCorreoElectronico.WatermarkText = "Correo Electrónico";
             // 
+            // CMSMenu
+            // 
+            this.CMSMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarToolStripMenuItem,
+            this.inhabilitarToolStripMenuItem,
+            this.habilitarToolStripMenuItem});
+            this.CMSMenu.Name = "CMSMenu";
+            this.CMSMenu.Size = new System.Drawing.Size(128, 70);
+            this.CMSMenu.Opening += new System.ComponentModel.CancelEventHandler(this.CMSMenu_Opening);
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.modificarToolStripMenuItem.Text = "&Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
+            // 
+            // inhabilitarToolStripMenuItem
+            // 
+            this.inhabilitarToolStripMenuItem.Name = "inhabilitarToolStripMenuItem";
+            this.inhabilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.inhabilitarToolStripMenuItem.Text = "&Inhabilitar";
+            this.inhabilitarToolStripMenuItem.Click += new System.EventHandler(this.inhabilitarToolStripMenuItem_Click);
+            // 
+            // habilitarToolStripMenuItem
+            // 
+            this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
+            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.habilitarToolStripMenuItem.Text = "&Habilitar";
+            this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
+            // 
             // FRMAdministracion_Copia_Seguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -455,10 +455,10 @@
             this.Load += new System.EventHandler(this.FRMAdministracion_Copia_Seguridad_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PMenu_Copia_Seguridad.ResumeLayout(false);
-            this.CMSMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DTINacimiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).EndInit();
+            this.CMSMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

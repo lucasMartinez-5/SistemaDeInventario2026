@@ -73,6 +73,36 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap agregar_fondo_gris_PhotoShop_2 {
+            get {
+                object obj = ResourceManager.GetObject("agregar fondo gris PhotoShop 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap analisis_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("analisis fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap arcoiris_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("arcoiris fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap banner_proyecto_ropa_0 {
             get {
                 object obj = ResourceManager.GetObject("banner_proyecto_ropa_0", resourceCulture);
@@ -96,6 +126,96 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap BannerTiendaDeRopa1 {
             get {
                 object obj = ResourceManager.GetObject("BannerTiendaDeRopa1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap bolsa_de_dinero_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("bolsa de dinero fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap campana_alerta_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("campana alerta fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap carrito_compra_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("carrito compra fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap carrito_venta_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("carrito venta fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap catalogo_visual_100 {
+            get {
+                object obj = ResourceManager.GetObject("catalogo_visual_100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cliente_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("cliente fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap comprar_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("comprar fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap etiqueta_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("etiqueta fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap guardar_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("guardar fondo gris PhotoShop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +523,16 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ic_producto_categoria_circle {
+            get {
+                object obj = ResourceManager.GetObject("ic_producto_categoria_circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ic_producto_modificar {
             get {
                 object obj = ResourceManager.GetObject("ic_producto_modificar", resourceCulture);
@@ -416,6 +546,16 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap ic_producto_nuevo {
             get {
                 object obj = ResourceManager.GetObject("ic_producto_nuevo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ic_producto_nuevo1 {
+            get {
+                object obj = ResourceManager.GetObject("ic_producto_nuevo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -616,6 +756,56 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap no_image {
             get {
                 object obj = ResourceManager.GetObject("no_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap personas_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("personas fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap proveedor_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("proveedor fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap regla_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("regla fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap usuario_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("usuario fondo gris PhotoShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap vender_fondo_gris_PhotoShop {
+            get {
+                object obj = ResourceManager.GetObject("vender fondo gris PhotoShop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

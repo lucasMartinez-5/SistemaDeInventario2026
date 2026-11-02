@@ -118,164 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ic_venta40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_venta40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_usuario_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_usuario_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_candado40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_candado40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_ver_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_ver_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_cerrar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_cerrar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_camara_tomar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_camara_tomar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_usuario_cambiar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_usuario_cambiar_password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_categoria_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_categoria_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_producto_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_producto_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_persona_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_persona_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_usuario_reporte1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_usuario_reporte1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_proveedor40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_proveedor_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="no_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\no_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_catalogo50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_catalogo50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_usuario_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_usuario_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_circle_bolsa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_circle_bolsa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_salir_app" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_salir_app.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guardar fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_producto_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_producto_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_circle_usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_circle_usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_producto_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_producto_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_proveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_camara_abrir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_camara_abrir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-producto-100 (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-producto-100 (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_categoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_categoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BannerTiendaDeRopa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BannerTiendaDeRopa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_proveedor_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_usuario_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_usuario_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BannerTiendaDeRopa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BannerTiendaDeRopa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_iniciar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_iniciar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_categoria_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_categoria_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_persona" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_persona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_categoria_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_categoria_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_camara_Limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_camara_Limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_producto_nuevo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto_nuevo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_buscar40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_buscar40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="analisis fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\analisis fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_circle_analisis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_circle_analisis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_actualizar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_actualizar_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_persona_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_persona_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_persona_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_persona_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_configurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_configurar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_categoria_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_categoria_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_login_huella" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_login_huella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_producto1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_persona_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_persona_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_producto_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="banner_proyecto_ropa_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banner_proyecto_ropa_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_persona_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_persona_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_persona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_persona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="proveedor fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proveedor fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_usuario_registrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_usuario_registrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -285,5 +168,179 @@
   </data>
   <data name="ic_lectorBarras23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_lectorBarras23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_camara_abrir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_camara_abrir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_producto_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuario fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuario fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_usuario_reporte1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_usuario_reporte1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_salir_app" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_salir_app.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vender fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vender fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_proveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_configurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_configurar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_proveedor40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BannerTiendaDeRopa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BannerTiendaDeRopa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrito venta fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrito venta fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_circle_usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_circle_usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cliente fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cliente fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_persona_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_persona_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_iniciar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_iniciar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_cerrar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_cerrar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_circle_analisis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_circle_analisis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_venta40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_venta40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_actualizar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_actualizar_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comprar fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comprar fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_camara_tomar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_camara_tomar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="etiqueta fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\etiqueta fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_categoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_categoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_proveedor_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BannerTiendaDeRopa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BannerTiendaDeRopa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcoiris fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcoiris fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bolsa de dinero fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bolsa de dinero fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_camara_Limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_camara_Limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_circle_bolsa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_circle_bolsa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_producto1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_usuario_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_usuario_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-producto-100 (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-producto-100 (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrito compra fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrito compra fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catalogo_visual_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_visual_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_producto_categoria_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto_categoria_circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_categoria_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_categoria_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_proveedor_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_producto_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_buscar40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_buscar40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campana alerta fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campana alerta fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agregar fondo gris PhotoShop 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agregar fondo gris PhotoShop 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_usuario_cambiar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_usuario_cambiar_password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_login_huella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_login_huella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regla fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regla fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_ver_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_ver_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_categoria_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_categoria_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_catalogo50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_catalogo50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_candado40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_candado40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner_proyecto_ropa_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner_proyecto_ropa_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="personas fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personas fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

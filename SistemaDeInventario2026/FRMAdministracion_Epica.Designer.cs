@@ -34,7 +34,6 @@
             this.BTNVerPersona = new System.Windows.Forms.Button();
             this.BTNRegistrarPersona = new System.Windows.Forms.Button();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BTNEstadoCopiaSeguridad = new System.Windows.Forms.Button();
             this.BTNCopiaSeguridad = new System.Windows.Forms.Button();
@@ -46,12 +45,13 @@
             this.BTNRegistrar = new System.Windows.Forms.Button();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.LBLDirectorioProveedor = new DevComponents.DotNetBar.LabelX();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.LBL = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Administracion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -154,16 +154,6 @@
             this.materialLabel1.Size = new System.Drawing.Size(264, 19);
             this.materialLabel1.TabIndex = 77;
             this.materialLabel1.Text = "Acciones para la gestión de personas";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox2.Location = new System.Drawing.Point(538, 410);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 76;
-            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -320,16 +310,6 @@
             this.LBLDirectorioProveedor.Text = "Administración";
             this.LBLDirectorioProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox4.Location = new System.Drawing.Point(538, 231);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 60;
-            this.pictureBox4.TabStop = false;
-            // 
             // LBL
             // 
             this.LBL.AutoSize = true;
@@ -343,16 +323,6 @@
             this.LBL.TabIndex = 59;
             this.LBL.Text = "Copia de Seguridad";
             this.LBL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_analisis;
-            this.pictureBox3.Location = new System.Drawing.Point(538, 326);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 58;
-            this.pictureBox3.TabStop = false;
             // 
             // label3
             // 
@@ -368,16 +338,6 @@
             this.label3.Text = "Informe Financiero del Dia";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(538, 142);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -391,6 +351,46 @@
             this.label1.TabIndex = 53;
             this.label1.Text = "Gestión de Usuarios";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.personas_fondo_gris_PhotoShop;
+            this.pictureBox2.Location = new System.Drawing.Point(524, 403);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 76;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.guardar_fondo_gris_PhotoShop;
+            this.pictureBox4.Location = new System.Drawing.Point(524, 225);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 60;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SistemaDeInventario2026.Properties.Resources.bolsa_de_dinero_fondo_gris_PhotoShop;
+            this.pictureBox3.Location = new System.Drawing.Point(524, 319);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 58;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.usuario_fondo_gris_PhotoShop;
+            this.pictureBox1.Location = new System.Drawing.Point(528, 146);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
             // 
             // FRMAdministracion_Epica
             // 

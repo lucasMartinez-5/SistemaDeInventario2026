@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMProducto_Filtro_Epica));
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PFiltradoAvanzado_Producto = new System.Windows.Forms.Panel();
-            this.PBCLogoTalla = new System.Windows.Forms.PictureBox();
-            this.PNLCuadroDetalle = new System.Windows.Forms.Panel();
-            this.PNLCuadroProveedor = new System.Windows.Forms.Panel();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.LBLRegistrarProducto = new DevComponents.DotNetBar.LabelX();
             this.CMBMarca = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -45,12 +41,16 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.BTNLimpiar = new System.Windows.Forms.Button();
-            this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNBuscar = new System.Windows.Forms.Button();
             this.LBL = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PBCLogoTalla = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.PFiltradoAvanzado_Producto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCLogoTalla)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,9 +67,9 @@
             // PFiltradoAvanzado_Producto
             // 
             this.PFiltradoAvanzado_Producto.BackColor = System.Drawing.Color.White;
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.pictureBox2);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.pictureBox1);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.PBCLogoTalla);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.PNLCuadroDetalle);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.PNLCuadroProveedor);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.labelX1);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.LBLRegistrarProducto);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBMarca);
@@ -81,7 +81,6 @@
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel5);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel2);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.BTNLimpiar);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.BTNSalir);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.BTNBuscar);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.LBL);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel3);
@@ -90,31 +89,6 @@
             this.PFiltradoAvanzado_Producto.Name = "PFiltradoAvanzado_Producto";
             this.PFiltradoAvanzado_Producto.Size = new System.Drawing.Size(970, 519);
             this.PFiltradoAvanzado_Producto.TabIndex = 0;
-            // 
-            // PBCLogoTalla
-            // 
-            this.PBCLogoTalla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PBCLogoTalla.Image = ((System.Drawing.Image)(resources.GetObject("PBCLogoTalla.Image")));
-            this.PBCLogoTalla.Location = new System.Drawing.Point(536, 151);
-            this.PBCLogoTalla.Name = "PBCLogoTalla";
-            this.PBCLogoTalla.Size = new System.Drawing.Size(52, 52);
-            this.PBCLogoTalla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PBCLogoTalla.TabIndex = 139;
-            this.PBCLogoTalla.TabStop = false;
-            // 
-            // PNLCuadroDetalle
-            // 
-            this.PNLCuadroDetalle.Location = new System.Drawing.Point(536, 221);
-            this.PNLCuadroDetalle.Name = "PNLCuadroDetalle";
-            this.PNLCuadroDetalle.Size = new System.Drawing.Size(52, 52);
-            this.PNLCuadroDetalle.TabIndex = 138;
-            // 
-            // PNLCuadroProveedor
-            // 
-            this.PNLCuadroProveedor.Location = new System.Drawing.Point(536, 290);
-            this.PNLCuadroProveedor.Name = "PNLCuadroProveedor";
-            this.PNLCuadroProveedor.Size = new System.Drawing.Size(52, 52);
-            this.PNLCuadroProveedor.TabIndex = 137;
             // 
             // labelX1
             // 
@@ -261,7 +235,7 @@
             this.BTNLimpiar.FlatAppearance.BorderSize = 0;
             this.BTNLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNLimpiar.ForeColor = System.Drawing.Color.Black;
-            this.BTNLimpiar.Location = new System.Drawing.Point(556, 411);
+            this.BTNLimpiar.Location = new System.Drawing.Point(461, 412);
             this.BTNLimpiar.Name = "BTNLimpiar";
             this.BTNLimpiar.Size = new System.Drawing.Size(142, 38);
             this.BTNLimpiar.TabIndex = 126;
@@ -269,27 +243,13 @@
             this.BTNLimpiar.UseVisualStyleBackColor = false;
             this.BTNLimpiar.Click += new System.EventHandler(this.BTNLimpiar_Click);
             // 
-            // BTNSalir
-            // 
-            this.BTNSalir.BackColor = System.Drawing.Color.White;
-            this.BTNSalir.FlatAppearance.BorderSize = 0;
-            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(253, 411);
-            this.BTNSalir.Name = "BTNSalir";
-            this.BTNSalir.Size = new System.Drawing.Size(146, 38);
-            this.BTNSalir.TabIndex = 125;
-            this.BTNSalir.Text = "Salir";
-            this.BTNSalir.UseVisualStyleBackColor = false;
-            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
-            // 
             // BTNBuscar
             // 
             this.BTNBuscar.BackColor = System.Drawing.Color.Black;
             this.BTNBuscar.FlatAppearance.BorderSize = 0;
             this.BTNBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNBuscar.ForeColor = System.Drawing.Color.White;
-            this.BTNBuscar.Location = new System.Drawing.Point(401, 411);
+            this.BTNBuscar.Location = new System.Drawing.Point(306, 412);
             this.BTNBuscar.Name = "BTNBuscar";
             this.BTNBuscar.Size = new System.Drawing.Size(152, 38);
             this.BTNBuscar.TabIndex = 124;
@@ -322,6 +282,36 @@
             this.materialLabel3.TabIndex = 122;
             this.materialLabel3.Text = "Nombre";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.arcoiris_fondo_gris_PhotoShop;
+            this.pictureBox2.Location = new System.Drawing.Point(536, 221);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 141;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.etiqueta_fondo_gris_PhotoShop;
+            this.pictureBox1.Location = new System.Drawing.Point(536, 291);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 140;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PBCLogoTalla
+            // 
+            this.PBCLogoTalla.Image = global::SistemaDeInventario2026.Properties.Resources.regla_fondo_gris_PhotoShop;
+            this.PBCLogoTalla.Location = new System.Drawing.Point(536, 151);
+            this.PBCLogoTalla.Name = "PBCLogoTalla";
+            this.PBCLogoTalla.Size = new System.Drawing.Size(52, 52);
+            this.PBCLogoTalla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBCLogoTalla.TabIndex = 139;
+            this.PBCLogoTalla.TabStop = false;
+            // 
             // FRMProducto_Filtro_Epica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -332,11 +322,12 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMProducto_Filtro_Epica";
             this.Text = "FRMProducto_Filtro_Epica";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMProducto_Filtro_Epica_FormClosing);
             this.Load += new System.EventHandler(this.FRMProducto_Filtro_Epica_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PFiltradoAvanzado_Producto.ResumeLayout(false);
             this.PFiltradoAvanzado_Producto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCLogoTalla)).EndInit();
             this.ResumeLayout(false);
 
@@ -355,14 +346,13 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.Button BTNLimpiar;
-        private System.Windows.Forms.Button BTNSalir;
         private System.Windows.Forms.Button BTNBuscar;
         private MaterialSkin.Controls.MaterialLabel LBL;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private DevComponents.DotNetBar.LabelX LBLRegistrarProducto;
         private DevComponents.DotNetBar.LabelX labelX1;
         private System.Windows.Forms.PictureBox PBCLogoTalla;
-        private System.Windows.Forms.Panel PNLCuadroDetalle;
-        private System.Windows.Forms.Panel PNLCuadroProveedor;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

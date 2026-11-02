@@ -735,5 +735,62 @@
   <ItemGroup>
     <None Include="Resources\ic_lectorBarras23.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_producto_categoria_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etiqueta fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcoiris fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regla fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo_visual_100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campana alerta fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_producto_nuevo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar fondo gris PhotoShop 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vender fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprar fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analisis fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito compra fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito venta fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa de dinero fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario fondo gris PhotoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personas fondo gris PhotoShop.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

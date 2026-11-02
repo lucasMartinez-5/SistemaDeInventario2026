@@ -169,22 +169,6 @@ namespace SistemaDeInventario2026
             this.Close();
         }
 
-        private void FRMProducto_Filtro_Epica_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("¿Está seguro que desea cerrar el formulario?",
-                                "Pregunta",
-                                MessageBoxButtons.YesNo,
-                                MessageBoxIcon.Question,
-                                MessageBoxDefaultButton.Button2) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-                //ApagarCamara();
-            }
-        }
-
         private void CMBProductoNombre_KeyDown(object sender, KeyEventArgs e)
         {
             bool teclaValida = false;

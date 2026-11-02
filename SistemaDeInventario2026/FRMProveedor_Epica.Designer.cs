@@ -110,10 +110,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_analisis;
-            this.pictureBox3.Location = new System.Drawing.Point(551, 411);
+            this.pictureBox3.Image = global::SistemaDeInventario2026.Properties.Resources.analisis_fondo_gris_PhotoShop;
+            this.pictureBox3.Location = new System.Drawing.Point(537, 405);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox3.Size = new System.Drawing.Size(52, 52);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 52;
             this.pictureBox3.TabStop = false;
@@ -134,10 +134,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_bolsa;
-            this.pictureBox2.Location = new System.Drawing.Point(551, 303);
+            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.carrito_compra_fondo_gris_PhotoShop;
+            this.pictureBox2.Location = new System.Drawing.Point(537, 297);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(52, 52);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 50;
             this.pictureBox2.TabStop = false;
@@ -158,10 +158,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.ic_circle_usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(551, 195);
+            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.proveedor_fondo_gris_PhotoShop;
+            this.pictureBox1.Location = new System.Drawing.Point(537, 188);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
