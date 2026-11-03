@@ -256,5 +256,13 @@ namespace SistemaDeInventario2026
         {
             LBLFecha_Sesion.Text = DateTime.Now.ToString("F");
         }
+
+        private void materialLabel3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Su contraseña se restablecerá por su seguridad, ingrese nuevamente con su carnet de identidad", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            usuario.causactpas = true;
+            usuario.causpasswo = persona.capsnumcid;
+            TXTPassword.Focus();
+        }
     }
 }

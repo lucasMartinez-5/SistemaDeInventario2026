@@ -35,10 +35,10 @@
             this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PNLConetenedorCatalogo = new System.Windows.Forms.Panel();
-            this.LBLCatalogoVisual = new DevComponents.DotNetBar.LabelX();
-            this.FLPCatalogo = new System.Windows.Forms.FlowLayoutPanel();
             this.BTNAnterior = new System.Windows.Forms.Button();
+            this.LBLCatalogoVisual = new DevComponents.DotNetBar.LabelX();
             this.BTNSiguiente = new System.Windows.Forms.Button();
+            this.FLPCatalogo = new System.Windows.Forms.FlowLayoutPanel();
             this.CMSMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.PNLConetenedorCatalogo.SuspendLayout();
@@ -94,6 +94,17 @@
             this.PNLConetenedorCatalogo.Size = new System.Drawing.Size(1067, 552);
             this.PNLConetenedorCatalogo.TabIndex = 79;
             // 
+            // BTNAnterior
+            // 
+            this.BTNAnterior.FlatAppearance.BorderSize = 0;
+            this.BTNAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNAnterior.Image = global::SistemaDeInventario2026.Properties.Resources.ic_flecha_negra_izquierda_48x48;
+            this.BTNAnterior.Location = new System.Drawing.Point(150, 269);
+            this.BTNAnterior.Name = "BTNAnterior";
+            this.BTNAnterior.Size = new System.Drawing.Size(46, 33);
+            this.BTNAnterior.TabIndex = 80;
+            this.BTNAnterior.UseVisualStyleBackColor = true;
+            // 
             // LBLCatalogoVisual
             // 
             this.LBLCatalogoVisual.AutoSize = true;
@@ -111,27 +122,6 @@
             this.LBLCatalogoVisual.Text = "Catálogo Visual";
             this.LBLCatalogoVisual.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // FLPCatalogo
-            // 
-            this.FLPCatalogo.AutoScroll = true;
-            this.FLPCatalogo.BackColor = System.Drawing.Color.White;
-            this.FLPCatalogo.Location = new System.Drawing.Point(202, 106);
-            this.FLPCatalogo.Name = "FLPCatalogo";
-            this.FLPCatalogo.Size = new System.Drawing.Size(682, 361);
-            this.FLPCatalogo.TabIndex = 79;
-            this.FLPCatalogo.WrapContents = false;
-            // 
-            // BTNAnterior
-            // 
-            this.BTNAnterior.FlatAppearance.BorderSize = 0;
-            this.BTNAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNAnterior.Image = global::SistemaDeInventario2026.Properties.Resources.ic_flecha_negra_izquierda_48x48;
-            this.BTNAnterior.Location = new System.Drawing.Point(150, 269);
-            this.BTNAnterior.Name = "BTNAnterior";
-            this.BTNAnterior.Size = new System.Drawing.Size(46, 33);
-            this.BTNAnterior.TabIndex = 80;
-            this.BTNAnterior.UseVisualStyleBackColor = true;
-            // 
             // BTNSiguiente
             // 
             this.BTNSiguiente.FlatAppearance.BorderSize = 0;
@@ -142,6 +132,16 @@
             this.BTNSiguiente.Size = new System.Drawing.Size(43, 33);
             this.BTNSiguiente.TabIndex = 81;
             this.BTNSiguiente.UseVisualStyleBackColor = true;
+            // 
+            // FLPCatalogo
+            // 
+            this.FLPCatalogo.AutoScroll = true;
+            this.FLPCatalogo.BackColor = System.Drawing.Color.White;
+            this.FLPCatalogo.Location = new System.Drawing.Point(202, 106);
+            this.FLPCatalogo.Name = "FLPCatalogo";
+            this.FLPCatalogo.Size = new System.Drawing.Size(682, 361);
+            this.FLPCatalogo.TabIndex = 79;
+            this.FLPCatalogo.WrapContents = false;
             // 
             // FRMProducto_Lista
             // 
