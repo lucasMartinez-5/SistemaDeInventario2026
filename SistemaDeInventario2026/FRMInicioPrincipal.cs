@@ -61,6 +61,7 @@ namespace SistemaDeInventario2026
 
         private void FRMInicioPrincipal_Load(object sender, EventArgs e)
         {
+            LBLMenuPrincipal.ForeColor = Color.Black;
             PrecalentarBD();
         }
 

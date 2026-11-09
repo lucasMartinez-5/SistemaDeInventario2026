@@ -627,5 +627,10 @@ namespace SistemaDeInventario2026
             else if (CMBTipoPrecio.SelectedIndex == 1)   // Precio Normal
                 TXTPrecioUnitario.Text = producto.capdpreven.ToString("F2");
         }
+
+        private void FRMVenta_Registrar_Load(object sender, EventArgs e)
+        {
+            LBLTitulo.ForeColor = Color.Black;
+        }
     }
 }

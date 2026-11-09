@@ -156,6 +156,7 @@ namespace SistemaDeInventario2026
         #endregion
         private void FRMCompra_Registrar_Load(object sender, EventArgs e)
         {
+            LBLTitulo.ForeColor = Color.Black;
             LimpiarCasillas();
             ConfigurarListView();
         }

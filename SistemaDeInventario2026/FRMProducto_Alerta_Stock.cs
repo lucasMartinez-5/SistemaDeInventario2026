@@ -91,6 +91,8 @@ namespace SistemaDeInventario2026
 
         private void FRMProducto_Alerta_Stock_Load(object sender, EventArgs e)
         {
+            LBLAlertas.ForeColor = Color.Black;
+            LBLAlertas2.ForeColor = Color.Black;
             //NUDCantidadMinima.Value = int.Parse(cantidadMinima);
             NUDCantidadMinima.Value = StockMinimo;
         }

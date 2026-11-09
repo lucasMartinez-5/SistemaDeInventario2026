@@ -813,5 +813,11 @@
   <ItemGroup>
     <None Include="Resources\ic_ver password 23.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIETER_ camisa casual de fiesta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_local_Dieter_circle.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

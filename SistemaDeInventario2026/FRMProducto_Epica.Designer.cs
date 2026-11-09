@@ -31,19 +31,19 @@
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Producto = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PCBAlertasStock = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.PCBLista_Producto = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.PCBAgregar_Producto = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LBLGestionProveedor = new DevComponents.DotNetBar.LabelX();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PCBLista_Producto = new System.Windows.Forms.PictureBox();
-            this.PCBAgregar_Producto = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Producto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBAlertasStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBLista_Producto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBAgregar_Producto)).BeginInit();
             this.SuspendLayout();
@@ -62,9 +62,9 @@
             // 
             // PMenu_Producto
             // 
-            this.PMenu_Producto.Controls.Add(this.pictureBox1);
             this.PMenu_Producto.Controls.Add(this.label6);
-            this.PMenu_Producto.Controls.Add(this.label7);
+            this.PMenu_Producto.Controls.Add(this.label4);
+            this.PMenu_Producto.Controls.Add(this.PCBAlertasStock);
             this.PMenu_Producto.Controls.Add(this.label5);
             this.PMenu_Producto.Controls.Add(this.label3);
             this.PMenu_Producto.Controls.Add(this.PCBLista_Producto);
@@ -82,25 +82,31 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(594, 392);
+            this.label6.Location = new System.Drawing.Point(594, 327);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 17);
-            this.label6.TabIndex = 56;
-            this.label6.Text = "Registrar entradas por talla/color, etc.";
+            this.label6.Size = new System.Drawing.Size(228, 17);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Configurar alertas de Stock Mínimo";
             // 
-            // label7
+            // label4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(592, 367);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 25);
-            this.label7.TabIndex = 55;
-            this.label7.Text = "Agregar Productos";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(594, 218);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(174, 17);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Ver productos con imagen";
+            // 
+            // PCBAlertasStock
+            // 
+            this.PCBAlertasStock.Image = global::SistemaDeInventario2026.Properties.Resources.campana_alerta_fondo_gris_PhotoShop;
+            this.PCBAlertasStock.Location = new System.Drawing.Point(534, 298);
+            this.PCBAlertasStock.Name = "PCBAlertasStock";
+            this.PCBAlertasStock.Size = new System.Drawing.Size(52, 52);
+            this.PCBAlertasStock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PCBAlertasStock.TabIndex = 57;
+            this.PCBAlertasStock.TabStop = false;
+            this.PCBAlertasStock.Click += new System.EventHandler(this.PCBAlertasStock_Click);
             // 
             // label5
             // 
@@ -118,12 +124,23 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(592, 311);
+            this.label3.Location = new System.Drawing.Point(592, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 25);
             this.label3.TabIndex = 51;
             this.label3.Text = "Alertas Críticas";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // PCBLista_Producto
+            // 
+            this.PCBLista_Producto.Image = global::SistemaDeInventario2026.Properties.Resources.catalogo_visual_100;
+            this.PCBLista_Producto.Location = new System.Drawing.Point(534, 190);
+            this.PCBLista_Producto.Name = "PCBLista_Producto";
+            this.PCBLista_Producto.Size = new System.Drawing.Size(52, 52);
+            this.PCBLista_Producto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PCBLista_Producto.TabIndex = 50;
+            this.PCBLista_Producto.TabStop = false;
+            this.PCBLista_Producto.Click += new System.EventHandler(this.PCBLista_Producto_Click);
             // 
             // label2
             // 
@@ -132,12 +149,23 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(592, 203);
+            this.label2.Location = new System.Drawing.Point(592, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 25);
             this.label2.TabIndex = 49;
             this.label2.Text = "Catálogo Visual";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // PCBAgregar_Producto
+            // 
+            this.PCBAgregar_Producto.Image = global::SistemaDeInventario2026.Properties.Resources.agregar_fondo_gris_PhotoShop_2;
+            this.PCBAgregar_Producto.Location = new System.Drawing.Point(536, 88);
+            this.PCBAgregar_Producto.Name = "PCBAgregar_Producto";
+            this.PCBAgregar_Producto.Size = new System.Drawing.Size(52, 52);
+            this.PCBAgregar_Producto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PCBAgregar_Producto.TabIndex = 48;
+            this.PCBAgregar_Producto.TabStop = false;
+            this.PCBAgregar_Producto.Click += new System.EventHandler(this.PCBAgregar_Producto_Click);
             // 
             // label1
             // 
@@ -184,38 +212,6 @@
             this.materialLabel3.TabIndex = 42;
             this.materialLabel3.Text = "Acciones para la gestión de proveedores";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.campana_alerta_fondo_gris_PhotoShop;
-            this.pictureBox1.Location = new System.Drawing.Point(534, 298);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
-            // 
-            // PCBLista_Producto
-            // 
-            this.PCBLista_Producto.Image = global::SistemaDeInventario2026.Properties.Resources.catalogo_visual_100;
-            this.PCBLista_Producto.Location = new System.Drawing.Point(534, 190);
-            this.PCBLista_Producto.Name = "PCBLista_Producto";
-            this.PCBLista_Producto.Size = new System.Drawing.Size(52, 52);
-            this.PCBLista_Producto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PCBLista_Producto.TabIndex = 50;
-            this.PCBLista_Producto.TabStop = false;
-            this.PCBLista_Producto.Click += new System.EventHandler(this.PCBLista_Producto_Click);
-            // 
-            // PCBAgregar_Producto
-            // 
-            this.PCBAgregar_Producto.Image = global::SistemaDeInventario2026.Properties.Resources.agregar_fondo_gris_PhotoShop_2;
-            this.PCBAgregar_Producto.Location = new System.Drawing.Point(536, 88);
-            this.PCBAgregar_Producto.Name = "PCBAgregar_Producto";
-            this.PCBAgregar_Producto.Size = new System.Drawing.Size(52, 52);
-            this.PCBAgregar_Producto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PCBAgregar_Producto.TabIndex = 48;
-            this.PCBAgregar_Producto.TabStop = false;
-            this.PCBAgregar_Producto.Click += new System.EventHandler(this.PCBAgregar_Producto_Click);
-            // 
             // FRMProducto_Epica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,7 +226,7 @@
             this.PPrincipal.ResumeLayout(false);
             this.PMenu_Producto.ResumeLayout(false);
             this.PMenu_Producto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBAlertasStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBLista_Producto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBAgregar_Producto)).EndInit();
             this.ResumeLayout(false);
@@ -240,8 +236,6 @@
         #endregion
         private System.Windows.Forms.Panel PPrincipal;
         private System.Windows.Forms.Panel PMenu_Producto;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox PCBLista_Producto;
@@ -250,6 +244,8 @@
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.LabelX LBLGestionProveedor;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PCBAlertasStock;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
     }
 }

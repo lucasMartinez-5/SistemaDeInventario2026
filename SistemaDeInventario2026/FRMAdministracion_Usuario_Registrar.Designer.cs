@@ -44,7 +44,7 @@
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNGrabar = new System.Windows.Forms.Button();
             this.LBLCI = new MaterialSkin.Controls.MaterialLabel();
-            this.LBLRegistrarProveedor = new DevComponents.DotNetBar.LabelX();
+            this.LBLRegistrarUsuario = new DevComponents.DotNetBar.LabelX();
             this.PPrincipal.SuspendLayout();
             this.PAgregar_Usuario.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +75,7 @@
             this.PAgregar_Usuario.Controls.Add(this.BTNSalir);
             this.PAgregar_Usuario.Controls.Add(this.BTNGrabar);
             this.PAgregar_Usuario.Controls.Add(this.LBLCI);
-            this.PAgregar_Usuario.Controls.Add(this.LBLRegistrarProveedor);
+            this.PAgregar_Usuario.Controls.Add(this.LBLRegistrarUsuario);
             this.PAgregar_Usuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAgregar_Usuario.Location = new System.Drawing.Point(0, 0);
             this.PAgregar_Usuario.Name = "PAgregar_Usuario";
@@ -239,22 +239,22 @@
             this.LBLCI.TabIndex = 55;
             this.LBLCI.Text = "CI";
             // 
-            // LBLRegistrarProveedor
+            // LBLRegistrarUsuario
             // 
-            this.LBLRegistrarProveedor.AutoSize = true;
+            this.LBLRegistrarUsuario.AutoSize = true;
             // 
             // 
             // 
-            this.LBLRegistrarProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLRegistrarProveedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLRegistrarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLRegistrarProveedor.FontBold = true;
-            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(322, 27);
-            this.LBLRegistrarProveedor.Name = "LBLRegistrarProveedor";
-            this.LBLRegistrarProveedor.Size = new System.Drawing.Size(305, 50);
-            this.LBLRegistrarProveedor.TabIndex = 54;
-            this.LBLRegistrarProveedor.Text = "Agregar Usuario";
-            this.LBLRegistrarProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLRegistrarUsuario.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLRegistrarUsuario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLRegistrarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLRegistrarUsuario.FontBold = true;
+            this.LBLRegistrarUsuario.Location = new System.Drawing.Point(322, 27);
+            this.LBLRegistrarUsuario.Name = "LBLRegistrarUsuario";
+            this.LBLRegistrarUsuario.Size = new System.Drawing.Size(305, 50);
+            this.LBLRegistrarUsuario.TabIndex = 54;
+            this.LBLRegistrarUsuario.Text = "Agregar Usuario";
+            this.LBLRegistrarUsuario.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // FRMAdministracion_Usuario_Registrar
             // 
@@ -290,7 +290,7 @@
         private System.Windows.Forms.Button BTNSalir;
         private System.Windows.Forms.Button BTNGrabar;
         private MaterialSkin.Controls.MaterialLabel LBLCI;
-        private DevComponents.DotNetBar.LabelX LBLRegistrarProveedor;
+        private DevComponents.DotNetBar.LabelX LBLRegistrarUsuario;
         private DPFP.Gui.Enrollment.EnrollmentControl DPECHuellas;
         private System.Windows.Forms.TextBox TXTRol;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;

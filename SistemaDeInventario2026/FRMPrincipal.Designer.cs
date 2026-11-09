@@ -32,32 +32,32 @@
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.RBPDirectorio = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
-            this.BTNProveedores = new DevComponents.DotNetBar.ButtonItem();
             this.RBPInventario = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
-            this.BTNCategorias = new DevComponents.DotNetBar.ButtonItem();
-            this.BTNProductos = new DevComponents.DotNetBar.ButtonItem();
             this.RBPAdministracion = new DevComponents.DotNetBar.RibbonPanel();
-            this.BTNUsuarios = new DevComponents.DotNetBar.ButtonX();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.BTNPersonas = new DevComponents.DotNetBar.ButtonItem();
             this.applicationButton1 = new DevComponents.DotNetBar.ApplicationButton();
             this.itemContainer1 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer3 = new DevComponents.DotNetBar.ItemContainer();
-            this.BTNLogin = new DevComponents.DotNetBar.ButtonItem();
-            this.BTNLoginHuella = new DevComponents.DotNetBar.ButtonItem();
-            this.BTNActualizarPassword = new DevComponents.DotNetBar.ButtonItem();
-            this.BTNCerrarSesion = new DevComponents.DotNetBar.ButtonItem();
             this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
-            this.BTNConfigurar = new DevComponents.DotNetBar.ButtonItem();
-            this.BTNSalir = new DevComponents.DotNetBar.ButtonItem();
             this.RTBAdministracion = new DevComponents.DotNetBar.RibbonTabItem();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.RTBInventario = new DevComponents.DotNetBar.RibbonTabItem();
             this.RTBDirectorio = new DevComponents.DotNetBar.RibbonTabItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.BTNProveedores = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNCategorias = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNProductos = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNUsuarios = new DevComponents.DotNetBar.ButtonX();
+            this.BTNPersonas = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNLogin = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNLoginHuella = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNActualizarPassword = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNCerrarSesion = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNConfigurar = new DevComponents.DotNetBar.ButtonItem();
+            this.BTNSalir = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.RBPDirectorio.SuspendLayout();
             this.RBPInventario.SuspendLayout();
@@ -164,16 +164,6 @@
             // 
             this.ribbonBar3.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // BTNProveedores
-            // 
-            this.BTNProveedores.Image = global::SistemaDeInventario2026.Properties.Resources.ic_proveedor;
-            this.BTNProveedores.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.BTNProveedores.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNProveedores.Name = "BTNProveedores";
-            this.BTNProveedores.SubItemsExpandWidth = 14;
-            this.BTNProveedores.Text = "Proveedores";
-            this.BTNProveedores.Click += new System.EventHandler(this.BTNProveedores_Click);
-            // 
             // RBPInventario
             // 
             this.RBPInventario.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -231,26 +221,6 @@
             // 
             this.ribbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // BTNCategorias
-            // 
-            this.BTNCategorias.Image = global::SistemaDeInventario2026.Properties.Resources.ic_categoria;
-            this.BTNCategorias.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.BTNCategorias.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNCategorias.Name = "BTNCategorias";
-            this.BTNCategorias.SubItemsExpandWidth = 14;
-            this.BTNCategorias.Text = "Categorias";
-            this.BTNCategorias.Click += new System.EventHandler(this.BTNCategorias_Click);
-            // 
-            // BTNProductos
-            // 
-            this.BTNProductos.Image = global::SistemaDeInventario2026.Properties.Resources.ic_producto;
-            this.BTNProductos.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.BTNProductos.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNProductos.Name = "BTNProductos";
-            this.BTNProductos.SubItemsExpandWidth = 16;
-            this.BTNProductos.Text = "Productos";
-            this.BTNProductos.Click += new System.EventHandler(this.BTNProductos_Click);
-            // 
             // RBPAdministracion
             // 
             this.RBPAdministracion.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -276,21 +246,6 @@
             this.RBPAdministracion.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.RBPAdministracion.TabIndex = 1;
             this.RBPAdministracion.Visible = false;
-            // 
-            // BTNUsuarios
-            // 
-            this.BTNUsuarios.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNUsuarios.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNUsuarios.Image = global::SistemaDeInventario2026.Properties.Resources.ic_usuario;
-            this.BTNUsuarios.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.BTNUsuarios.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNUsuarios.Location = new System.Drawing.Point(83, 3);
-            this.BTNUsuarios.Name = "BTNUsuarios";
-            this.BTNUsuarios.Size = new System.Drawing.Size(75, 74);
-            this.BTNUsuarios.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNUsuarios.TabIndex = 1;
-            this.BTNUsuarios.Text = "Usuarios";
-            this.BTNUsuarios.Click += new System.EventHandler(this.BTNUsuarios_Click);
             // 
             // ribbonBar1
             // 
@@ -323,16 +278,6 @@
             // 
             // 
             this.ribbonBar1.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // BTNPersonas
-            // 
-            this.BTNPersonas.Image = global::SistemaDeInventario2026.Properties.Resources.ic_persona;
-            this.BTNPersonas.ImageFixedSize = new System.Drawing.Size(50, 50);
-            this.BTNPersonas.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.BTNPersonas.Name = "BTNPersonas";
-            this.BTNPersonas.SubItemsExpandWidth = 14;
-            this.BTNPersonas.Text = "Personas";
-            this.BTNPersonas.Click += new System.EventHandler(this.BTNPersonas_Click);
             // 
             // applicationButton1
             // 
@@ -402,6 +347,115 @@
             // 
             this.itemContainer3.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
+            // itemContainer4
+            // 
+            // 
+            // 
+            // 
+            this.itemContainer4.BackgroundStyle.Class = "RibbonFileMenuBottomContainer";
+            this.itemContainer4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemContainer4.HorizontalItemAlignment = DevComponents.DotNetBar.eHorizontalItemsAlignment.Right;
+            this.itemContainer4.Name = "itemContainer4";
+            this.itemContainer4.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.BTNConfigurar,
+            this.BTNSalir});
+            // 
+            // 
+            // 
+            this.itemContainer4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // RTBAdministracion
+            // 
+            this.RTBAdministracion.Name = "RTBAdministracion";
+            this.RTBAdministracion.Panel = this.RBPAdministracion;
+            this.RTBAdministracion.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem1});
+            this.RTBAdministracion.Text = "&Administración";
+            // 
+            // buttonItem1
+            // 
+            this.buttonItem1.Name = "buttonItem1";
+            this.buttonItem1.Text = "buttonItem1";
+            // 
+            // RTBInventario
+            // 
+            this.RTBInventario.Name = "RTBInventario";
+            this.RTBInventario.Panel = this.RBPInventario;
+            this.RTBInventario.Text = "Inventario";
+            // 
+            // RTBDirectorio
+            // 
+            this.RTBDirectorio.Checked = true;
+            this.RTBDirectorio.Name = "RTBDirectorio";
+            this.RTBDirectorio.Panel = this.RBPDirectorio;
+            this.RTBDirectorio.Text = "Directorio";
+            this.RTBDirectorio.Visible = false;
+            // 
+            // qatCustomizeItem1
+            // 
+            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
+            // 
+            // styleManager1
+            // 
+            this.styleManager1.ManagerColorTint = System.Drawing.Color.DodgerBlue;
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            // 
+            // BTNProveedores
+            // 
+            this.BTNProveedores.Image = global::SistemaDeInventario2026.Properties.Resources.ic_proveedor;
+            this.BTNProveedores.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.BTNProveedores.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTNProveedores.Name = "BTNProveedores";
+            this.BTNProveedores.SubItemsExpandWidth = 14;
+            this.BTNProveedores.Text = "Proveedores";
+            this.BTNProveedores.Click += new System.EventHandler(this.BTNProveedores_Click);
+            // 
+            // BTNCategorias
+            // 
+            this.BTNCategorias.Image = global::SistemaDeInventario2026.Properties.Resources.ic_categoria;
+            this.BTNCategorias.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.BTNCategorias.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTNCategorias.Name = "BTNCategorias";
+            this.BTNCategorias.SubItemsExpandWidth = 14;
+            this.BTNCategorias.Text = "Categorias";
+            this.BTNCategorias.Click += new System.EventHandler(this.BTNCategorias_Click);
+            // 
+            // BTNProductos
+            // 
+            this.BTNProductos.Image = global::SistemaDeInventario2026.Properties.Resources.ic_producto;
+            this.BTNProductos.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.BTNProductos.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTNProductos.Name = "BTNProductos";
+            this.BTNProductos.SubItemsExpandWidth = 16;
+            this.BTNProductos.Text = "Productos";
+            this.BTNProductos.Click += new System.EventHandler(this.BTNProductos_Click);
+            // 
+            // BTNUsuarios
+            // 
+            this.BTNUsuarios.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNUsuarios.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNUsuarios.Image = global::SistemaDeInventario2026.Properties.Resources.ic_usuario;
+            this.BTNUsuarios.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.BTNUsuarios.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTNUsuarios.Location = new System.Drawing.Point(83, 3);
+            this.BTNUsuarios.Name = "BTNUsuarios";
+            this.BTNUsuarios.Size = new System.Drawing.Size(75, 74);
+            this.BTNUsuarios.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNUsuarios.TabIndex = 1;
+            this.BTNUsuarios.Text = "Usuarios";
+            this.BTNUsuarios.Click += new System.EventHandler(this.BTNUsuarios_Click);
+            // 
+            // BTNPersonas
+            // 
+            this.BTNPersonas.Image = global::SistemaDeInventario2026.Properties.Resources.ic_persona;
+            this.BTNPersonas.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.BTNPersonas.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.BTNPersonas.Name = "BTNPersonas";
+            this.BTNPersonas.SubItemsExpandWidth = 14;
+            this.BTNPersonas.Text = "Personas";
+            this.BTNPersonas.Click += new System.EventHandler(this.BTNPersonas_Click);
+            // 
             // BTNLogin
             // 
             this.BTNLogin.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
@@ -442,23 +496,6 @@
             this.BTNCerrarSesion.Text = "&Cerrar Sesion";
             this.BTNCerrarSesion.Click += new System.EventHandler(this.BTNCerrarSesion_Click);
             // 
-            // itemContainer4
-            // 
-            // 
-            // 
-            // 
-            this.itemContainer4.BackgroundStyle.Class = "RibbonFileMenuBottomContainer";
-            this.itemContainer4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemContainer4.HorizontalItemAlignment = DevComponents.DotNetBar.eHorizontalItemsAlignment.Right;
-            this.itemContainer4.Name = "itemContainer4";
-            this.itemContainer4.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.BTNConfigurar,
-            this.BTNSalir});
-            // 
-            // 
-            // 
-            this.itemContainer4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
             // BTNConfigurar
             // 
             this.BTNConfigurar.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
@@ -479,48 +516,11 @@
             this.BTNSalir.SubItemsExpandWidth = 24;
             this.BTNSalir.Text = "&Salir";
             // 
-            // RTBAdministracion
-            // 
-            this.RTBAdministracion.Name = "RTBAdministracion";
-            this.RTBAdministracion.Panel = this.RBPAdministracion;
-            this.RTBAdministracion.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem1});
-            this.RTBAdministracion.Text = "&Administración";
-            // 
-            // buttonItem1
-            // 
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.Text = "buttonItem1";
-            // 
-            // RTBInventario
-            // 
-            this.RTBInventario.Name = "RTBInventario";
-            this.RTBInventario.Panel = this.RBPInventario;
-            this.RTBInventario.Text = "Inventario";
-            // 
-            // RTBDirectorio
-            // 
-            this.RTBDirectorio.Checked = true;
-            this.RTBDirectorio.Name = "RTBDirectorio";
-            this.RTBDirectorio.Panel = this.RBPDirectorio;
-            this.RTBDirectorio.Text = "Directorio";
-            this.RTBDirectorio.Visible = false;
-            // 
-            // qatCustomizeItem1
-            // 
-            this.qatCustomizeItem1.Name = "qatCustomizeItem1";
-            // 
-            // styleManager1
-            // 
-            this.styleManager1.ManagerColorTint = System.Drawing.Color.DodgerBlue;
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
-            // 
             // FRMPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 488);
+            this.ClientSize = new System.Drawing.Size(670, 484);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);

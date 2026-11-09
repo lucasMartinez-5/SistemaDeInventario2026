@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PVenta_Registrar = new System.Windows.Forms.Panel();
             this.TXTPrecioUnitario = new System.Windows.Forms.TextBox();
@@ -40,6 +40,12 @@
             this.CMBTipoPrecio = new System.Windows.Forms.ComboBox();
             this.LBLTipoPrecio = new MaterialSkin.Controls.MaterialLabel();
             this.DTGCarrito = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.TXTProducto = new System.Windows.Forms.TextBox();
             this.BTNBuscarCliente = new System.Windows.Forms.Button();
             this.TXTCliente = new System.Windows.Forms.TextBox();
@@ -58,12 +64,6 @@
             this.LBLNIT = new MaterialSkin.Controls.MaterialLabel();
             this.LBLTitulo = new DevComponents.DotNetBar.LabelX();
             this.LBLCelular = new MaterialSkin.Controls.MaterialLabel();
-            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.PPrincipal.SuspendLayout();
             this.PVenta_Registrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTGCarrito)).BeginInit();
@@ -234,6 +234,52 @@
             this.DTGCarrito.TabIndex = 118;
             this.DTGCarrito.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGCarrito_CellContentClick);
             this.DTGCarrito.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGCarrito_CellEndEdit);
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 80F;
+            this.Column1.HeaderText = "Foto";
+            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 80;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column2.HeaderText = "Producto";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 120;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Cantidad";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 75;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Precio";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column4.Width = 80;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Sub Total";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = " X";
+            this.Column6.Name = "Column6";
+            this.Column6.Text = "Quitar";
+            this.Column6.UseColumnTextForButtonValue = true;
+            this.Column6.Width = 60;
             // 
             // TXTProducto
             // 
@@ -435,6 +481,7 @@
             this.LBLTitulo.Cursor = System.Windows.Forms.Cursors.Default;
             this.LBLTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLTitulo.FontBold = true;
+            this.LBLTitulo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LBLTitulo.Location = new System.Drawing.Point(330, 24);
             this.LBLTitulo.Name = "LBLTitulo";
             this.LBLTitulo.Size = new System.Drawing.Size(291, 50);
@@ -455,52 +502,6 @@
             this.LBLCelular.TabIndex = 97;
             this.LBLCelular.Text = "Celular";
             // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 80F;
-            this.Column1.HeaderText = "Foto";
-            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 80;
-            // 
-            // Column2
-            // 
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column2.HeaderText = "Producto";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 120;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Cantidad";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 75;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Precio";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column4.Width = 80;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Sub Total";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = " X";
-            this.Column6.Name = "Column6";
-            this.Column6.Text = "Quitar";
-            this.Column6.UseColumnTextForButtonValue = true;
-            this.Column6.Width = 60;
-            // 
             // FRMVenta_Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -512,6 +513,7 @@
             this.Name = "FRMVenta_Registrar";
             this.Text = "FRMVenta_Registrar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMVenta_Registrar_FormClosing);
+            this.Load += new System.EventHandler(this.FRMVenta_Registrar_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PVenta_Registrar.ResumeLayout(false);
             this.PVenta_Registrar.PerformLayout();

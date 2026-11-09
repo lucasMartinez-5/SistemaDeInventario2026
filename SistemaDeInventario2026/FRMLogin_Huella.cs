@@ -115,6 +115,9 @@ namespace SistemaDeInventario2026
             }
         }
 
-        
+        private void FRMLogin_Huella_Load(object sender, EventArgs e)
+        {
+            LBLBiometrico.ForeColor = Color.Black;
+        }
     }
 }

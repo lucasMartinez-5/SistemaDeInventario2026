@@ -128,6 +128,7 @@ namespace SistemaDeInventario2026
 
         private void FRMAdministracion_Usuario_Registrar_Load(object sender, EventArgs e)
         {
+            LBLRegistrarUsuario.ForeColor = Color.Black;
             if (this.modificar)
             {
                 JalarDatos();

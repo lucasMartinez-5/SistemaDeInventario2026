@@ -114,6 +114,7 @@ namespace SistemaDeInventario2026
 
         private void FRMCliente_Registrar_Load(object sender, EventArgs e)
         {
+            LBLRegistrarCliente.ForeColor = Color.Black;
             //IniciarCamara();
 
             if (this.modificar)

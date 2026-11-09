@@ -203,6 +203,16 @@ namespace SistemaDeInventario2026.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap DIETER__camisa_casual_de_fiesta {
+            get {
+                object obj = ResourceManager.GetObject("DIETER_ camisa casual de fiesta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap etiqueta_fondo_gris_PhotoShop {
             get {
                 object obj = ResourceManager.GetObject("etiqueta fondo gris PhotoShop", resourceCulture);
@@ -816,6 +826,16 @@ namespace SistemaDeInventario2026.Properties {
         public static System.Drawing.Bitmap lapiz_sin_fondo_30 {
             get {
                 object obj = ResourceManager.GetObject("lapiz sin fondo 30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap logo_local_Dieter_circle {
+            get {
+                object obj = ResourceManager.GetObject("logo_local_Dieter_circle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

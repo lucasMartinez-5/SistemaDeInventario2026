@@ -30,7 +30,7 @@
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Proveedor = new System.Windows.Forms.Panel();
-            this.LBLGestionProveedor = new DevComponents.DotNetBar.LabelX();
+            this.LBLMenuPrincipal = new DevComponents.DotNetBar.LabelX();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Proveedor.SuspendLayout();
             this.SuspendLayout();
@@ -49,30 +49,30 @@
             // 
             // PMenu_Proveedor
             // 
-            this.PMenu_Proveedor.Controls.Add(this.LBLGestionProveedor);
+            this.PMenu_Proveedor.Controls.Add(this.LBLMenuPrincipal);
             this.PMenu_Proveedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PMenu_Proveedor.Location = new System.Drawing.Point(0, 0);
             this.PMenu_Proveedor.Name = "PMenu_Proveedor";
             this.PMenu_Proveedor.Size = new System.Drawing.Size(970, 519);
             this.PMenu_Proveedor.TabIndex = 5;
             // 
-            // LBLGestionProveedor
+            // LBLMenuPrincipal
             // 
-            this.LBLGestionProveedor.AutoSize = true;
+            this.LBLMenuPrincipal.AutoSize = true;
             // 
             // 
             // 
-            this.LBLGestionProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLGestionProveedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLGestionProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLGestionProveedor.FontBold = true;
-            this.LBLGestionProveedor.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBLGestionProveedor.Location = new System.Drawing.Point(201, 192);
-            this.LBLGestionProveedor.Name = "LBLGestionProveedor";
-            this.LBLGestionProveedor.Size = new System.Drawing.Size(547, 65);
-            this.LBLGestionProveedor.TabIndex = 38;
-            this.LBLGestionProveedor.Text = "Sistema De Inventario";
-            this.LBLGestionProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLMenuPrincipal.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLMenuPrincipal.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLMenuPrincipal.FontBold = true;
+            this.LBLMenuPrincipal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LBLMenuPrincipal.Location = new System.Drawing.Point(201, 192);
+            this.LBLMenuPrincipal.Name = "LBLMenuPrincipal";
+            this.LBLMenuPrincipal.Size = new System.Drawing.Size(547, 65);
+            this.LBLMenuPrincipal.TabIndex = 38;
+            this.LBLMenuPrincipal.Text = "Sistema De Inventario";
+            this.LBLMenuPrincipal.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // FRMInicioPrincipal
             // 
@@ -95,6 +95,6 @@
         #endregion
         private System.Windows.Forms.Panel PPrincipal;
         private System.Windows.Forms.Panel PMenu_Proveedor;
-        private DevComponents.DotNetBar.LabelX LBLGestionProveedor;
+        private DevComponents.DotNetBar.LabelX LBLMenuPrincipal;
     }
 }

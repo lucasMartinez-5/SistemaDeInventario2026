@@ -32,12 +32,12 @@
             this.PAlertasConfig_Producto = new System.Windows.Forms.Panel();
             this.BTNCancelar = new System.Windows.Forms.Button();
             this.NUDCantidadMinima = new System.Windows.Forms.NumericUpDown();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.LBLAlertas2 = new DevComponents.DotNetBar.LabelX();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNGuardar = new System.Windows.Forms.Button();
             this.LBLCantidadMinima = new MaterialSkin.Controls.MaterialLabel();
-            this.LBLRegistrarProveedor = new DevComponents.DotNetBar.LabelX();
+            this.LBLAlertas = new DevComponents.DotNetBar.LabelX();
             this.PPrincipal.SuspendLayout();
             this.PAlertasConfig_Producto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDCantidadMinima)).BeginInit();
@@ -57,12 +57,12 @@
             // 
             this.PAlertasConfig_Producto.Controls.Add(this.BTNCancelar);
             this.PAlertasConfig_Producto.Controls.Add(this.NUDCantidadMinima);
-            this.PAlertasConfig_Producto.Controls.Add(this.labelX1);
+            this.PAlertasConfig_Producto.Controls.Add(this.LBLAlertas2);
             this.PAlertasConfig_Producto.Controls.Add(this.materialLabel3);
             this.PAlertasConfig_Producto.Controls.Add(this.BTNSalir);
             this.PAlertasConfig_Producto.Controls.Add(this.BTNGuardar);
             this.PAlertasConfig_Producto.Controls.Add(this.LBLCantidadMinima);
-            this.PAlertasConfig_Producto.Controls.Add(this.LBLRegistrarProveedor);
+            this.PAlertasConfig_Producto.Controls.Add(this.LBLAlertas);
             this.PAlertasConfig_Producto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAlertasConfig_Producto.Location = new System.Drawing.Point(0, 0);
             this.PAlertasConfig_Producto.Name = "PAlertasConfig_Producto";
@@ -95,22 +95,22 @@
             this.NUDCantidadMinima.Size = new System.Drawing.Size(180, 23);
             this.NUDCantidadMinima.TabIndex = 101;
             // 
-            // labelX1
+            // LBLAlertas2
             // 
-            this.labelX1.AutoSize = true;
+            this.LBLAlertas2.AutoSize = true;
             // 
             // 
             // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.FontBold = true;
-            this.labelX1.Location = new System.Drawing.Point(92, 228);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(133, 50);
-            this.labelX1.TabIndex = 52;
-            this.labelX1.Text = "Alertas";
-            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLAlertas2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLAlertas2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLAlertas2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLAlertas2.FontBold = true;
+            this.LBLAlertas2.Location = new System.Drawing.Point(92, 228);
+            this.LBLAlertas2.Name = "LBLAlertas2";
+            this.LBLAlertas2.Size = new System.Drawing.Size(133, 50);
+            this.LBLAlertas2.TabIndex = 52;
+            this.LBLAlertas2.Text = "Alertas";
+            this.LBLAlertas2.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // materialLabel3
             // 
@@ -165,22 +165,22 @@
             this.LBLCantidadMinima.TabIndex = 47;
             this.LBLCantidadMinima.Text = "Nivel de Cantidad Mínima";
             // 
-            // LBLRegistrarProveedor
+            // LBLAlertas
             // 
-            this.LBLRegistrarProveedor.AutoSize = true;
+            this.LBLAlertas.AutoSize = true;
             // 
             // 
             // 
-            this.LBLRegistrarProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLRegistrarProveedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLRegistrarProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLRegistrarProveedor.FontBold = true;
-            this.LBLRegistrarProveedor.Location = new System.Drawing.Point(92, 178);
-            this.LBLRegistrarProveedor.Name = "LBLRegistrarProveedor";
-            this.LBLRegistrarProveedor.Size = new System.Drawing.Size(317, 50);
-            this.LBLRegistrarProveedor.TabIndex = 46;
-            this.LBLRegistrarProveedor.Text = "Configuración de";
-            this.LBLRegistrarProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLAlertas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLAlertas.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLAlertas.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLAlertas.FontBold = true;
+            this.LBLAlertas.Location = new System.Drawing.Point(92, 178);
+            this.LBLAlertas.Name = "LBLAlertas";
+            this.LBLAlertas.Size = new System.Drawing.Size(317, 50);
+            this.LBLAlertas.TabIndex = 46;
+            this.LBLAlertas.Text = "Configuración de";
+            this.LBLAlertas.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // FRMProducto_Alerta_Stock
             // 
@@ -208,8 +208,8 @@
         private System.Windows.Forms.Button BTNSalir;
         private System.Windows.Forms.Button BTNGuardar;
         private MaterialSkin.Controls.MaterialLabel LBLCantidadMinima;
-        private DevComponents.DotNetBar.LabelX LBLRegistrarProveedor;
-        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX LBLAlertas;
+        private DevComponents.DotNetBar.LabelX LBLAlertas2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.NumericUpDown NUDCantidadMinima;
         private System.Windows.Forms.Button BTNCancelar;

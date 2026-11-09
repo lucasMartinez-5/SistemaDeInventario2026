@@ -69,17 +69,17 @@ namespace SistemaDeInventario2026
             return;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            AbrirEnPanel(new FRMProducto_Alerta_Stock());
-            return;
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             //FRMProducto_Lista a = new FRMProducto_Lista();
             //a.ShowDialog();
             AbrirEnPanel(new FRMProducto_Lista());
+            return;
+        }
+
+        private void PCBAlertasStock_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMProducto_Alerta_Stock());
             return;
         }
     }

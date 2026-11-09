@@ -172,6 +172,7 @@ namespace SistemaDeInventario2026
 
         private void FRMPersona_Registrar_Load(object sender, EventArgs e)
         {
+            LBLRegistrarPersona.ForeColor = Color.Black;
             IniciarCamara();
             if (this.modificar)
             {

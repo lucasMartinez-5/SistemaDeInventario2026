@@ -206,6 +206,8 @@ namespace SistemaDeInventario2026
 
         private void FRMLogin_Load(object sender, EventArgs e)
         {
+            
+            LBLAccesoSistema.ForeColor = Color.Black;
             PrecalentarBD();
             TMReloj.Enabled = true;
             /*
