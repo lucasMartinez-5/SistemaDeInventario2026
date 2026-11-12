@@ -62,13 +62,13 @@
             this.Column5,
             this.Column6});
             this.DTGLista.Cursor = System.Windows.Forms.Cursors.Default;
-            this.DTGLista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DTGLista.GridColor = System.Drawing.SystemColors.Control;
             this.DTGLista.Location = new System.Drawing.Point(0, 90);
             this.DTGLista.Margin = new System.Windows.Forms.Padding(4);
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
             this.DTGLista.ReadOnly = true;
+            this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTGLista.Size = new System.Drawing.Size(970, 429);
             this.DTGLista.TabIndex = 27;

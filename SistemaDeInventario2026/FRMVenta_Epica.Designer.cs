@@ -31,8 +31,11 @@
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Venta = new System.Windows.Forms.Panel();
             this.BTNVenta_Lista = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BTNResumenInversion = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -43,9 +46,6 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.LBLCatalogoVisual = new DevComponents.DotNetBar.LabelX();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Venta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -65,6 +65,7 @@
             // 
             // PMenu_Venta
             // 
+            this.PMenu_Venta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PMenu_Venta.Controls.Add(this.BTNVenta_Lista);
             this.PMenu_Venta.Controls.Add(this.pictureBox4);
             this.PMenu_Venta.Controls.Add(this.label4);
@@ -81,7 +82,6 @@
             this.PMenu_Venta.Controls.Add(this.materialLabel1);
             this.PMenu_Venta.Controls.Add(this.materialLabel3);
             this.PMenu_Venta.Controls.Add(this.LBLCatalogoVisual);
-            this.PMenu_Venta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PMenu_Venta.Location = new System.Drawing.Point(0, 0);
             this.PMenu_Venta.Name = "PMenu_Venta";
             this.PMenu_Venta.Size = new System.Drawing.Size(1067, 554);
@@ -101,6 +101,16 @@
             this.BTNVenta_Lista.UseVisualStyleBackColor = false;
             this.BTNVenta_Lista.Click += new System.EventHandler(this.BTNVenta_Lista_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.analisis_fondo_gris_PhotoShop;
+            this.pictureBox4.Location = new System.Drawing.Point(585, 392);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 100;
+            this.pictureBox4.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -115,6 +125,16 @@
             this.label4.Text = "Informe de Venta / Emitir Recibo";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::SistemaDeInventario2026.Properties.Resources.carrito_venta_fondo_gris_PhotoShop;
+            this.pictureBox5.Location = new System.Drawing.Point(585, 285);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 98;
+            this.pictureBox5.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -128,6 +148,16 @@
             this.label5.TabIndex = 97;
             this.label5.Text = "Carrito";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::SistemaDeInventario2026.Properties.Resources.cliente_fondo_gris_PhotoShop;
+            this.pictureBox6.Location = new System.Drawing.Point(585, 177);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 96;
+            this.pictureBox6.TabStop = false;
             // 
             // label6
             // 
@@ -266,36 +296,6 @@
             this.LBLCatalogoVisual.TabIndex = 79;
             this.LBLCatalogoVisual.Text = "Caja";
             this.LBLCatalogoVisual.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SistemaDeInventario2026.Properties.Resources.analisis_fondo_gris_PhotoShop;
-            this.pictureBox4.Location = new System.Drawing.Point(585, 392);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 100;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::SistemaDeInventario2026.Properties.Resources.carrito_venta_fondo_gris_PhotoShop;
-            this.pictureBox5.Location = new System.Drawing.Point(585, 285);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 98;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::SistemaDeInventario2026.Properties.Resources.cliente_fondo_gris_PhotoShop;
-            this.pictureBox6.Location = new System.Drawing.Point(585, 177);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 96;
-            this.pictureBox6.TabStop = false;
             // 
             // FRMVenta_Epica
             // 

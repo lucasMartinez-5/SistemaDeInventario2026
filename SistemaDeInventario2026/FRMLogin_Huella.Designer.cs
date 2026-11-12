@@ -50,10 +50,10 @@
             // 
             // PSesion_Huella
             // 
+            this.PSesion_Huella.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PSesion_Huella.Controls.Add(this.PVCHuella);
             this.PSesion_Huella.Controls.Add(this.LBLMensaje);
             this.PSesion_Huella.Controls.Add(this.LBLBiometrico);
-            this.PSesion_Huella.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PSesion_Huella.Location = new System.Drawing.Point(0, 0);
             this.PSesion_Huella.Name = "PSesion_Huella";
             this.PSesion_Huella.Size = new System.Drawing.Size(970, 519);
@@ -72,6 +72,7 @@
             // 
             // LBLMensaje
             // 
+            this.LBLMensaje.Image = global::SistemaDeInventario2026.Properties.Resources.ic_login_huella;
             this.LBLMensaje.Location = new System.Drawing.Point(776, 175);
             this.LBLMensaje.Margin = new System.Windows.Forms.Padding(4);
             this.LBLMensaje.Name = "LBLMensaje";

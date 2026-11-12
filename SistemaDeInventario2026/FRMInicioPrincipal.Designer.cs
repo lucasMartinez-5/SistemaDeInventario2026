@@ -49,8 +49,8 @@
             // 
             // PMenu_Proveedor
             // 
+            this.PMenu_Proveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PMenu_Proveedor.Controls.Add(this.LBLMenuPrincipal);
-            this.PMenu_Proveedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PMenu_Proveedor.Location = new System.Drawing.Point(0, 0);
             this.PMenu_Proveedor.Name = "PMenu_Proveedor";
             this.PMenu_Proveedor.Size = new System.Drawing.Size(970, 519);

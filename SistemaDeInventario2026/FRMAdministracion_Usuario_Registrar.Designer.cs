@@ -61,6 +61,7 @@
             // 
             // PAgregar_Usuario
             // 
+            this.PAgregar_Usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PAgregar_Usuario.Controls.Add(this.TXTRol);
             this.PAgregar_Usuario.Controls.Add(this.materialLabel4);
             this.PAgregar_Usuario.Controls.Add(this.DPECHuellas);
@@ -76,7 +77,6 @@
             this.PAgregar_Usuario.Controls.Add(this.BTNGrabar);
             this.PAgregar_Usuario.Controls.Add(this.LBLCI);
             this.PAgregar_Usuario.Controls.Add(this.LBLRegistrarUsuario);
-            this.PAgregar_Usuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAgregar_Usuario.Location = new System.Drawing.Point(0, 0);
             this.PAgregar_Usuario.Name = "PAgregar_Usuario";
             this.PAgregar_Usuario.Size = new System.Drawing.Size(970, 519);

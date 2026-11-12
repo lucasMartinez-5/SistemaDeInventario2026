@@ -70,13 +70,13 @@
             // 
             // PCompra_Lista
             // 
+            this.PCompra_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PCompra_Lista.Controls.Add(this.BTNSalir);
             this.PCompra_Lista.Controls.Add(this.BTNFiltrar);
             this.PCompra_Lista.Controls.Add(this.IINFilas);
             this.PCompra_Lista.Controls.Add(this.TXTFiltrar);
             this.PCompra_Lista.Controls.Add(this.LBLDetalles_Compra_Filtro);
             this.PCompra_Lista.Controls.Add(this.DTGLista);
-            this.PCompra_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PCompra_Lista.Location = new System.Drawing.Point(0, 0);
             this.PCompra_Lista.Name = "PCompra_Lista";
             this.PCompra_Lista.Size = new System.Drawing.Size(970, 519);

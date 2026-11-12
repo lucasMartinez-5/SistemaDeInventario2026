@@ -83,12 +83,12 @@
             // 
             // PNLConetenedorCatalogo
             // 
+            this.PNLConetenedorCatalogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PNLConetenedorCatalogo.BackColor = System.Drawing.Color.White;
             this.PNLConetenedorCatalogo.Controls.Add(this.BTNAnterior);
             this.PNLConetenedorCatalogo.Controls.Add(this.LBLCatalogoVisual);
             this.PNLConetenedorCatalogo.Controls.Add(this.BTNSiguiente);
             this.PNLConetenedorCatalogo.Controls.Add(this.FLPCatalogo);
-            this.PNLConetenedorCatalogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PNLConetenedorCatalogo.Location = new System.Drawing.Point(0, 0);
             this.PNLConetenedorCatalogo.Name = "PNLConetenedorCatalogo";
             this.PNLConetenedorCatalogo.Size = new System.Drawing.Size(1067, 552);

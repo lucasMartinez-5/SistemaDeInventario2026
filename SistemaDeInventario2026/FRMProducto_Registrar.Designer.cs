@@ -101,6 +101,7 @@
             // 
             // PAgregar_Producto
             // 
+            this.PAgregar_Producto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PAgregar_Producto.Controls.Add(this.CMBMarca);
             this.PAgregar_Producto.Controls.Add(this.CMBProductoNombre);
             this.PAgregar_Producto.Controls.Add(this.CMBTalla);
@@ -138,7 +139,6 @@
             this.PAgregar_Producto.Controls.Add(this.LBL);
             this.PAgregar_Producto.Controls.Add(this.LBLRegistrarProducto);
             this.PAgregar_Producto.Controls.Add(this.materialLabel3);
-            this.PAgregar_Producto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAgregar_Producto.Location = new System.Drawing.Point(0, 0);
             this.PAgregar_Producto.Name = "PAgregar_Producto";
             this.PAgregar_Producto.Size = new System.Drawing.Size(802, 554);

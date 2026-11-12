@@ -100,13 +100,13 @@
             // 
             // PLista_Persona
             // 
+            this.PLista_Persona.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PLista_Persona.Controls.Add(this.DTGLista);
             this.PLista_Persona.Controls.Add(this.BTNSalir);
             this.PLista_Persona.Controls.Add(this.BTNFiltrar);
             this.PLista_Persona.Controls.Add(this.IINFilas);
             this.PLista_Persona.Controls.Add(this.TXTFiltrar);
             this.PLista_Persona.Controls.Add(this.LBLDirectorioPersonas);
-            this.PLista_Persona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PLista_Persona.Location = new System.Drawing.Point(0, 0);
             this.PLista_Persona.Name = "PLista_Persona";
             this.PLista_Persona.Size = new System.Drawing.Size(970, 519);

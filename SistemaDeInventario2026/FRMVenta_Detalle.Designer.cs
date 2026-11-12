@@ -54,6 +54,7 @@
             this.LBLTituloLocal = new System.Windows.Forms.Label();
             this.LBLFecha = new System.Windows.Forms.Label();
             this.LBLTituloFecha = new System.Windows.Forms.Label();
+            this.PBXLogo = new System.Windows.Forms.PictureBox();
             this.PNLCuadroTotal = new System.Windows.Forms.Panel();
             this.PNLCuadroDetalle = new System.Windows.Forms.Panel();
             this.PNLCuadroProveedor = new System.Windows.Forms.Panel();
@@ -61,7 +62,6 @@
             this.BTNImprimir = new System.Windows.Forms.Button();
             this.LBLDescripcion = new System.Windows.Forms.Label();
             this.LBLTitulo = new DevComponents.DotNetBar.LabelX();
-            this.PBXLogo = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.PVentaDetallePDF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTGDetalle)).BeginInit();
@@ -80,6 +80,7 @@
             // 
             // PVentaDetallePDF
             // 
+            this.PVentaDetallePDF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVentaDetallePDF.Controls.Add(this.LBLRecibo);
             this.PVentaDetallePDF.Controls.Add(this.DTGDetalle);
             this.PVentaDetallePDF.Controls.Add(this.LBLTotal);
@@ -99,7 +100,6 @@
             this.PVentaDetallePDF.Controls.Add(this.BTNImprimir);
             this.PVentaDetallePDF.Controls.Add(this.LBLDescripcion);
             this.PVentaDetallePDF.Controls.Add(this.LBLTitulo);
-            this.PVentaDetallePDF.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVentaDetallePDF.Location = new System.Drawing.Point(0, 0);
             this.PVentaDetallePDF.Name = "PVentaDetallePDF";
             this.PVentaDetallePDF.Size = new System.Drawing.Size(970, 519);
@@ -289,6 +289,17 @@
             this.LBLTituloFecha.TabIndex = 134;
             this.LBLTituloFecha.Text = "Fecha";
             // 
+            // PBXLogo
+            // 
+            this.PBXLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PBXLogo.Image = ((System.Drawing.Image)(resources.GetObject("PBXLogo.Image")));
+            this.PBXLogo.Location = new System.Drawing.Point(152, 151);
+            this.PBXLogo.Name = "PBXLogo";
+            this.PBXLogo.Size = new System.Drawing.Size(52, 52);
+            this.PBXLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBXLogo.TabIndex = 133;
+            this.PBXLogo.TabStop = false;
+            // 
             // PNLCuadroTotal
             // 
             this.PNLCuadroTotal.Location = new System.Drawing.Point(570, 368);
@@ -359,17 +370,6 @@
             this.LBLTitulo.TabIndex = 126;
             this.LBLTitulo.Text = "Vista previa del recibo en PDF";
             this.LBLTitulo.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // PBXLogo
-            // 
-            this.PBXLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PBXLogo.Image = ((System.Drawing.Image)(resources.GetObject("PBXLogo.Image")));
-            this.PBXLogo.Location = new System.Drawing.Point(152, 151);
-            this.PBXLogo.Name = "PBXLogo";
-            this.PBXLogo.Size = new System.Drawing.Size(52, 52);
-            this.PBXLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PBXLogo.TabIndex = 133;
-            this.PBXLogo.TabStop = false;
             // 
             // FRMVenta_Detalle
             // 

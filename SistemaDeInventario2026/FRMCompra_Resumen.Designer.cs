@@ -58,11 +58,11 @@
             // 
             // PCompra_Resumen
             // 
+            this.PCompra_Resumen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PCompra_Resumen.Controls.Add(this.PFechaInversion);
             this.PCompra_Resumen.Controls.Add(this.PInversionTotal);
             this.PCompra_Resumen.Controls.Add(this.label1);
             this.PCompra_Resumen.Controls.Add(this.LBLTitulo);
-            this.PCompra_Resumen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PCompra_Resumen.Location = new System.Drawing.Point(0, 0);
             this.PCompra_Resumen.Name = "PCompra_Resumen";
             this.PCompra_Resumen.Size = new System.Drawing.Size(970, 519);

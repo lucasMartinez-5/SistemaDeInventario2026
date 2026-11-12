@@ -55,6 +55,7 @@
             // 
             // PAlertasConfig_Producto
             // 
+            this.PAlertasConfig_Producto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PAlertasConfig_Producto.Controls.Add(this.BTNCancelar);
             this.PAlertasConfig_Producto.Controls.Add(this.NUDCantidadMinima);
             this.PAlertasConfig_Producto.Controls.Add(this.LBLAlertas2);
@@ -63,7 +64,6 @@
             this.PAlertasConfig_Producto.Controls.Add(this.BTNGuardar);
             this.PAlertasConfig_Producto.Controls.Add(this.LBLCantidadMinima);
             this.PAlertasConfig_Producto.Controls.Add(this.LBLAlertas);
-            this.PAlertasConfig_Producto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAlertasConfig_Producto.Location = new System.Drawing.Point(0, 0);
             this.PAlertasConfig_Producto.Name = "PAlertasConfig_Producto";
             this.PAlertasConfig_Producto.Size = new System.Drawing.Size(970, 519);

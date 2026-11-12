@@ -157,6 +157,8 @@ namespace SistemaDeInventario2026
 
         private void FRMProducto_Filtro_Epica_Load(object sender, EventArgs e)
         {
+            LBLBuscarPor.ForeColor = Color.Black;
+            LBLOpcionesFiltro.ForeColor = Color.Black;
             CargarComboCategorias();
             CargarCombo("capdnompro", CMBProductoNombre);
             CargarCombo("capdmarpro", CMBMarca);

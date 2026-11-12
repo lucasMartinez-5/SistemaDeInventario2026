@@ -71,6 +71,7 @@
             // 
             // PAgregar_Proveedor
             // 
+            this.PAgregar_Proveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PAgregar_Proveedor.Controls.Add(this.BTNBuscarCliente);
             this.PAgregar_Proveedor.Controls.Add(this.SWBEstado);
             this.PAgregar_Proveedor.Controls.Add(this.TXTRazonSocial);
@@ -85,7 +86,6 @@
             this.PAgregar_Proveedor.Controls.Add(this.LBL);
             this.PAgregar_Proveedor.Controls.Add(this.LBLRegistrarCliente);
             this.PAgregar_Proveedor.Controls.Add(this.materialLabel3);
-            this.PAgregar_Proveedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAgregar_Proveedor.Location = new System.Drawing.Point(0, 0);
             this.PAgregar_Proveedor.Name = "PAgregar_Proveedor";
             this.PAgregar_Proveedor.Size = new System.Drawing.Size(970, 519);

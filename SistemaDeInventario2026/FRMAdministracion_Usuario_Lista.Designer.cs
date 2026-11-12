@@ -66,13 +66,13 @@
             // 
             // PLista_Usuario
             // 
+            this.PLista_Usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PLista_Usuario.Controls.Add(this.BTNSalir);
             this.PLista_Usuario.Controls.Add(this.BTNFiltrar);
             this.PLista_Usuario.Controls.Add(this.IINFilas);
             this.PLista_Usuario.Controls.Add(this.TXTFiltrar);
             this.PLista_Usuario.Controls.Add(this.LBLDirectorioUsuario);
             this.PLista_Usuario.Controls.Add(this.DTGLista);
-            this.PLista_Usuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PLista_Usuario.Location = new System.Drawing.Point(0, 0);
             this.PLista_Usuario.Name = "PLista_Usuario";
             this.PLista_Usuario.Size = new System.Drawing.Size(970, 519);

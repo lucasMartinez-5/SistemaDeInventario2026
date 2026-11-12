@@ -60,11 +60,11 @@
             // 
             // PAdmin_Venta_Extracto
             // 
+            this.PAdmin_Venta_Extracto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PAdmin_Venta_Extracto.Controls.Add(this.PVentaTotal);
             this.PAdmin_Venta_Extracto.Controls.Add(this.label1);
             this.PAdmin_Venta_Extracto.Controls.Add(this.PFechaVentas);
             this.PAdmin_Venta_Extracto.Controls.Add(this.LBLTitulo);
-            this.PAdmin_Venta_Extracto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PAdmin_Venta_Extracto.Location = new System.Drawing.Point(0, 0);
             this.PAdmin_Venta_Extracto.Name = "PAdmin_Venta_Extracto";
             this.PAdmin_Venta_Extracto.Size = new System.Drawing.Size(970, 519);

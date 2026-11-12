@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PVenta_Registrar = new System.Windows.Forms.Panel();
             this.TXTPrecioUnitario = new System.Windows.Forms.TextBox();
@@ -82,6 +82,7 @@
             // 
             // PVenta_Registrar
             // 
+            this.PVenta_Registrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVenta_Registrar.Controls.Add(this.TXTPrecioUnitario);
             this.PVenta_Registrar.Controls.Add(this.LBLPrecioUnitario);
             this.PVenta_Registrar.Controls.Add(this.TXTStockDisponible);
@@ -109,7 +110,6 @@
             this.PVenta_Registrar.Controls.Add(this.LBLNIT);
             this.PVenta_Registrar.Controls.Add(this.LBLTitulo);
             this.PVenta_Registrar.Controls.Add(this.LBLCelular);
-            this.PVenta_Registrar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVenta_Registrar.Location = new System.Drawing.Point(0, 0);
             this.PVenta_Registrar.Name = "PVenta_Registrar";
             this.PVenta_Registrar.Size = new System.Drawing.Size(970, 519);
@@ -246,8 +246,8 @@
             // 
             // Column2
             // 
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column2.HeaderText = "Producto";
             this.Column2.Name = "Column2";
             this.Column2.Width = 120;

@@ -127,7 +127,7 @@
   <data name="PCBFotografia.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAACoNJREFUeF7tnXesPkUVhn8oiqg0EWOjY40iVlRCkSYgGgUxRlEDisbeK0hHiEZp
+        DAAACwwBP0AiyAAACoNJREFUeF7tnXesPkUVhn8oiqg0EWOjY40iVlRCkSYgGgUxRlEDisbeK0hHiEZp
         hlClSZEoipIIKhiNSrHE3ntvRFCwAvI+CZNMhnd2Z5fdvbvft2/y/HPv7O7cPbuzZ86cM3fVrFmzZs2a
         NWvWrFmzZs2aNWvWrFlLrDXEDuIl4m3i7QvG68RzxUPFqPVocb64Qfx/Sfi+eIe4pxiN6Mzp4hbhOr0M
         /E48R6y4HiS+Llwnl41bxcFixbSW+LZwnVtm3iJWRB8TrkPLzs1iJzGodhSuMzF/Fl8Wn10wviX+J9zf
@@ -178,7 +178,7 @@
   <data name="PCBCamara.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAACoNJREFUeF7tnXesPkUVhn8oiqg0EWOjY40iVlRCkSYgGgUxRlEDisbeK0hHiEZp
+        DAAACwwBP0AiyAAACoNJREFUeF7tnXesPkUVhn8oiqg0EWOjY40iVlRCkSYgGgUxRlEDisbeK0hHiEZp
         hlClSZEoipIIKhiNSrHE3ntvRFCwAvI+CZNMhnd2Z5fdvbvft2/y/HPv7O7cPbuzZ86cM3fVrFmzZs2a
         NWvWrFmzZs2aNWvWrFlLrDXEDuIl4m3i7QvG68RzxUPFqPVocb64Qfx/Sfi+eIe4pxiN6Mzp4hbhOr0M
         /E48R6y4HiS+Llwnl41bxcFixbSW+LZwnVtm3iJWRB8TrkPLzs1iJzGodhSuMzF/Fl8Wn10wviX+J9zf

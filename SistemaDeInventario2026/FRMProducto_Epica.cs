@@ -44,7 +44,7 @@ namespace SistemaDeInventario2026
 
         private void FRMProducto_Epica_Load(object sender, EventArgs e)
         {
-
+            LBLGestionInventario.ForeColor = Color.Black;
         }
 
         private void BTNDirectorio_Click(object sender, EventArgs e)

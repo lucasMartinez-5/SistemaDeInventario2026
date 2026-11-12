@@ -60,13 +60,13 @@
             // 
             // PVenta_Lista_Fecha
             // 
+            this.PVenta_Lista_Fecha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVenta_Lista_Fecha.Controls.Add(this.BTNSalir);
             this.PVenta_Lista_Fecha.Controls.Add(this.BTNFiltrar);
             this.PVenta_Lista_Fecha.Controls.Add(this.IINFilas);
             this.PVenta_Lista_Fecha.Controls.Add(this.TXTFiltrar);
             this.PVenta_Lista_Fecha.Controls.Add(this.LBLDetalles_Venta_Lista);
             this.PVenta_Lista_Fecha.Controls.Add(this.DTGLista);
-            this.PVenta_Lista_Fecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVenta_Lista_Fecha.Location = new System.Drawing.Point(0, 0);
             this.PVenta_Lista_Fecha.Name = "PVenta_Lista_Fecha";
             this.PVenta_Lista_Fecha.Size = new System.Drawing.Size(970, 519);
@@ -222,7 +222,7 @@
             this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMVenta_Lista_Filtro_Auditoria";
             this.Text = "FRMVenta_Lista_Filtro_Auditoria";
             this.Load += new System.EventHandler(this.FRMVenta_Lista_Filtro_Auditoria_Load);

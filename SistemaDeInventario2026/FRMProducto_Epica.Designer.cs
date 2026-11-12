@@ -39,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PCBAgregar_Producto = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.LBLGestionProveedor = new DevComponents.DotNetBar.LabelX();
+            this.LBLGestionInventario = new DevComponents.DotNetBar.LabelX();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Producto.SuspendLayout();
@@ -62,6 +62,7 @@
             // 
             // PMenu_Producto
             // 
+            this.PMenu_Producto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PMenu_Producto.Controls.Add(this.label6);
             this.PMenu_Producto.Controls.Add(this.label4);
             this.PMenu_Producto.Controls.Add(this.PCBAlertasStock);
@@ -71,9 +72,8 @@
             this.PMenu_Producto.Controls.Add(this.label2);
             this.PMenu_Producto.Controls.Add(this.PCBAgregar_Producto);
             this.PMenu_Producto.Controls.Add(this.label1);
-            this.PMenu_Producto.Controls.Add(this.LBLGestionProveedor);
+            this.PMenu_Producto.Controls.Add(this.LBLGestionInventario);
             this.PMenu_Producto.Controls.Add(this.materialLabel3);
-            this.PMenu_Producto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PMenu_Producto.Location = new System.Drawing.Point(0, 0);
             this.PMenu_Producto.Name = "PMenu_Producto";
             this.PMenu_Producto.Size = new System.Drawing.Size(970, 519);
@@ -181,23 +181,23 @@
             this.label1.Text = "Agregar Productos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // LBLGestionProveedor
+            // LBLGestionInventario
             // 
-            this.LBLGestionProveedor.AutoSize = true;
+            this.LBLGestionInventario.AutoSize = true;
             // 
             // 
             // 
-            this.LBLGestionProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLGestionProveedor.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLGestionProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLGestionProveedor.FontBold = true;
-            this.LBLGestionProveedor.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBLGestionProveedor.Location = new System.Drawing.Point(103, 193);
-            this.LBLGestionProveedor.Name = "LBLGestionProveedor";
-            this.LBLGestionProveedor.Size = new System.Drawing.Size(266, 35);
-            this.LBLGestionProveedor.TabIndex = 43;
-            this.LBLGestionProveedor.Text = "Gestión de Inventario";
-            this.LBLGestionProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLGestionInventario.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLGestionInventario.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLGestionInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLGestionInventario.FontBold = true;
+            this.LBLGestionInventario.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LBLGestionInventario.Location = new System.Drawing.Point(50, 190);
+            this.LBLGestionInventario.Name = "LBLGestionInventario";
+            this.LBLGestionInventario.Size = new System.Drawing.Size(397, 50);
+            this.LBLGestionInventario.TabIndex = 43;
+            this.LBLGestionInventario.Text = "Gestión de Inventario";
+            this.LBLGestionInventario.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // materialLabel3
             // 
@@ -205,7 +205,7 @@
             this.materialLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(109, 231);
+            this.materialLabel3.Location = new System.Drawing.Point(57, 243);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(285, 19);
@@ -242,7 +242,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox PCBAgregar_Producto;
         private System.Windows.Forms.Label label1;
-        private DevComponents.DotNetBar.LabelX LBLGestionProveedor;
+        private DevComponents.DotNetBar.LabelX LBLGestionInventario;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.PictureBox PCBAlertasStock;
         private System.Windows.Forms.Label label4;

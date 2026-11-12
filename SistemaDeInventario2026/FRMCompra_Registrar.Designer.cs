@@ -75,6 +75,7 @@
             // 
             // PCompra_Registrar
             // 
+            this.PCompra_Registrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PCompra_Registrar.Controls.Add(this.TXTCompraProductoEncontrado);
             this.PCompra_Registrar.Controls.Add(this.BTNBuscarProveedorCompra);
             this.PCompra_Registrar.Controls.Add(this.TXTCompraProveedor);
@@ -96,7 +97,6 @@
             this.PCompra_Registrar.Controls.Add(this.LBL);
             this.PCompra_Registrar.Controls.Add(this.LBLTitulo);
             this.PCompra_Registrar.Controls.Add(this.materialLabel3);
-            this.PCompra_Registrar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PCompra_Registrar.Location = new System.Drawing.Point(0, 0);
             this.PCompra_Registrar.Name = "PCompra_Registrar";
             this.PCompra_Registrar.Size = new System.Drawing.Size(970, 519);

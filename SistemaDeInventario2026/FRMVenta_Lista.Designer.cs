@@ -59,13 +59,13 @@
             // 
             // PVenta_Lista
             // 
+            this.PVenta_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PVenta_Lista.Controls.Add(this.BTNSalir);
             this.PVenta_Lista.Controls.Add(this.BTNFiltrar);
             this.PVenta_Lista.Controls.Add(this.IINFilas);
             this.PVenta_Lista.Controls.Add(this.TXTFiltrar);
             this.PVenta_Lista.Controls.Add(this.LBLDetalles_Venta_Lista);
             this.PVenta_Lista.Controls.Add(this.DTGLista);
-            this.PVenta_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PVenta_Lista.Location = new System.Drawing.Point(0, 0);
             this.PVenta_Lista.Name = "PVenta_Lista";
             this.PVenta_Lista.Size = new System.Drawing.Size(970, 519);
@@ -212,7 +212,7 @@
             this.ClientSize = new System.Drawing.Size(970, 519);
             this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMVenta_Lista";
             this.Text = "FRMVenta_Lista";
             this.Load += new System.EventHandler(this.FRMVenta_Lista_Load);

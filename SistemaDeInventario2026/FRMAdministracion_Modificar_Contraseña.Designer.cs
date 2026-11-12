@@ -57,6 +57,7 @@
             // 
             // PModificar_Contraseña
             // 
+            this.PModificar_Contraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PModificar_Contraseña.Controls.Add(this.BTNConfirmarPassword);
             this.PModificar_Contraseña.Controls.Add(this.BTNCancelar);
             this.PModificar_Contraseña.Controls.Add(this.BTNGuardar);
@@ -68,7 +69,6 @@
             this.PModificar_Contraseña.Controls.Add(this.materialLabel2);
             this.PModificar_Contraseña.Controls.Add(this.TXTNombreLogin);
             this.PModificar_Contraseña.Controls.Add(this.materialLabel1);
-            this.PModificar_Contraseña.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PModificar_Contraseña.Location = new System.Drawing.Point(0, 0);
             this.PModificar_Contraseña.Name = "PModificar_Contraseña";
             this.PModificar_Contraseña.Size = new System.Drawing.Size(970, 519);

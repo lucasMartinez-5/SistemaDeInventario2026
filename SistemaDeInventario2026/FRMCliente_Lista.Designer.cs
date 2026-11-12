@@ -66,13 +66,13 @@
             // 
             // PCliente_Lista
             // 
+            this.PCliente_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PCliente_Lista.Controls.Add(this.BTNSalir);
             this.PCliente_Lista.Controls.Add(this.BTNFiltrar);
             this.PCliente_Lista.Controls.Add(this.IINFilas);
             this.PCliente_Lista.Controls.Add(this.TXTFiltrar);
             this.PCliente_Lista.Controls.Add(this.LBLDirectorioProveedor);
             this.PCliente_Lista.Controls.Add(this.DTGLista);
-            this.PCliente_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PCliente_Lista.Location = new System.Drawing.Point(0, 0);
             this.PCliente_Lista.Name = "PCliente_Lista";
             this.PCliente_Lista.Size = new System.Drawing.Size(970, 519);

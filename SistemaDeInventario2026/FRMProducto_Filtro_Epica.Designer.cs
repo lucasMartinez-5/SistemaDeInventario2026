@@ -30,8 +30,11 @@
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PFiltradoAvanzado_Producto = new System.Windows.Forms.Panel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.LBLRegistrarProducto = new DevComponents.DotNetBar.LabelX();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PBCLogoTalla = new System.Windows.Forms.PictureBox();
+            this.LBLOpcionesFiltro = new DevComponents.DotNetBar.LabelX();
+            this.LBLBuscarPor = new DevComponents.DotNetBar.LabelX();
             this.CMBMarca = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.CMBProductoNombre = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.CMBTalla = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -44,9 +47,6 @@
             this.BTNBuscar = new System.Windows.Forms.Button();
             this.LBL = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PBCLogoTalla = new System.Windows.Forms.PictureBox();
             this.PPrincipal.SuspendLayout();
             this.PFiltradoAvanzado_Producto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,12 +66,13 @@
             // 
             // PFiltradoAvanzado_Producto
             // 
+            this.PFiltradoAvanzado_Producto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PFiltradoAvanzado_Producto.BackColor = System.Drawing.Color.White;
             this.PFiltradoAvanzado_Producto.Controls.Add(this.pictureBox2);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.pictureBox1);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.PBCLogoTalla);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.labelX1);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.LBLRegistrarProducto);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.LBLOpcionesFiltro);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.LBLBuscarPor);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBMarca);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBProductoNombre);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBTalla);
@@ -84,45 +85,74 @@
             this.PFiltradoAvanzado_Producto.Controls.Add(this.BTNBuscar);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.LBL);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel3);
-            this.PFiltradoAvanzado_Producto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PFiltradoAvanzado_Producto.Location = new System.Drawing.Point(0, 0);
             this.PFiltradoAvanzado_Producto.Name = "PFiltradoAvanzado_Producto";
             this.PFiltradoAvanzado_Producto.Size = new System.Drawing.Size(970, 519);
             this.PFiltradoAvanzado_Producto.TabIndex = 0;
             // 
-            // labelX1
+            // pictureBox2
             // 
-            this.labelX1.AutoSize = true;
+            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.arcoiris_fondo_gris_PhotoShop;
+            this.pictureBox2.Location = new System.Drawing.Point(536, 221);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 141;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.etiqueta_fondo_gris_PhotoShop;
+            this.pictureBox1.Location = new System.Drawing.Point(536, 291);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 140;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PBCLogoTalla
+            // 
+            this.PBCLogoTalla.Image = global::SistemaDeInventario2026.Properties.Resources.regla_fondo_gris_PhotoShop;
+            this.PBCLogoTalla.Location = new System.Drawing.Point(536, 151);
+            this.PBCLogoTalla.Name = "PBCLogoTalla";
+            this.PBCLogoTalla.Size = new System.Drawing.Size(52, 52);
+            this.PBCLogoTalla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBCLogoTalla.TabIndex = 139;
+            this.PBCLogoTalla.TabStop = false;
+            // 
+            // LBLOpcionesFiltro
+            // 
+            this.LBLOpcionesFiltro.AutoSize = true;
             // 
             // 
             // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.FontBold = true;
-            this.labelX1.Location = new System.Drawing.Point(536, 65);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(227, 35);
-            this.labelX1.TabIndex = 136;
-            this.labelX1.Text = "Opciones de Filtro";
-            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLOpcionesFiltro.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLOpcionesFiltro.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLOpcionesFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLOpcionesFiltro.FontBold = true;
+            this.LBLOpcionesFiltro.Location = new System.Drawing.Point(536, 65);
+            this.LBLOpcionesFiltro.Name = "LBLOpcionesFiltro";
+            this.LBLOpcionesFiltro.Size = new System.Drawing.Size(283, 42);
+            this.LBLOpcionesFiltro.TabIndex = 136;
+            this.LBLOpcionesFiltro.Text = "Opciones de Filtro";
+            this.LBLOpcionesFiltro.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // LBLRegistrarProducto
+            // LBLBuscarPor
             // 
-            this.LBLRegistrarProducto.AutoSize = true;
+            this.LBLBuscarPor.AutoSize = true;
             // 
             // 
             // 
-            this.LBLRegistrarProducto.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.LBLRegistrarProducto.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LBLRegistrarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLRegistrarProducto.FontBold = true;
-            this.LBLRegistrarProducto.Location = new System.Drawing.Point(175, 65);
-            this.LBLRegistrarProducto.Name = "LBLRegistrarProducto";
-            this.LBLRegistrarProducto.Size = new System.Drawing.Size(144, 35);
-            this.LBLRegistrarProducto.TabIndex = 135;
-            this.LBLRegistrarProducto.Text = "Buscar por:";
-            this.LBLRegistrarProducto.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLBuscarPor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLBuscarPor.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLBuscarPor.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLBuscarPor.FontBold = true;
+            this.LBLBuscarPor.Location = new System.Drawing.Point(175, 65);
+            this.LBLBuscarPor.Name = "LBLBuscarPor";
+            this.LBLBuscarPor.Size = new System.Drawing.Size(179, 42);
+            this.LBLBuscarPor.TabIndex = 135;
+            this.LBLBuscarPor.Text = "Buscar por:";
+            this.LBLBuscarPor.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // CMBMarca
             // 
@@ -282,36 +312,6 @@
             this.materialLabel3.TabIndex = 122;
             this.materialLabel3.Text = "Nombre";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SistemaDeInventario2026.Properties.Resources.arcoiris_fondo_gris_PhotoShop;
-            this.pictureBox2.Location = new System.Drawing.Point(536, 221);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 141;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemaDeInventario2026.Properties.Resources.etiqueta_fondo_gris_PhotoShop;
-            this.pictureBox1.Location = new System.Drawing.Point(536, 291);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 140;
-            this.pictureBox1.TabStop = false;
-            // 
-            // PBCLogoTalla
-            // 
-            this.PBCLogoTalla.Image = global::SistemaDeInventario2026.Properties.Resources.regla_fondo_gris_PhotoShop;
-            this.PBCLogoTalla.Location = new System.Drawing.Point(536, 151);
-            this.PBCLogoTalla.Name = "PBCLogoTalla";
-            this.PBCLogoTalla.Size = new System.Drawing.Size(52, 52);
-            this.PBCLogoTalla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PBCLogoTalla.TabIndex = 139;
-            this.PBCLogoTalla.TabStop = false;
-            // 
             // FRMProducto_Filtro_Epica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -349,8 +349,8 @@
         private System.Windows.Forms.Button BTNBuscar;
         private MaterialSkin.Controls.MaterialLabel LBL;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private DevComponents.DotNetBar.LabelX LBLRegistrarProducto;
-        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX LBLBuscarPor;
+        private DevComponents.DotNetBar.LabelX LBLOpcionesFiltro;
         private System.Windows.Forms.PictureBox PBCLogoTalla;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
