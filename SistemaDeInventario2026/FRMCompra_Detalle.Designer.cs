@@ -402,6 +402,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMCompra_Detalle";
             this.Text = "FRMCompra_Detalle";
+            this.Load += new System.EventHandler(this.FRMCompra_Detalle_Load);
             this.PPrincipal.ResumeLayout(false);
             this.PCompraDetallePDF.ResumeLayout(false);
             this.PCompraDetallePDF.PerformLayout();

@@ -36,6 +36,22 @@ namespace SistemaDeInventario2026
             InitializeComponent();
             this.compra = compra;
             this.nombreProveedor = proveedor;
+            // === FORZAR COLOR BLANCO INCLUSO AL ESTAR SELECCIONADO ===
+
+            // 1. Desactiva el estilo azul de Windows en las cabeceras
+            DTGDetalle.EnableHeadersVisualStyles = false;
+
+            // 2. Fuerza que la cabecera sea blanca incluso si tiene el "foco"
+            DTGDetalle.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+            DTGDetalle.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.White; // Clave: igual al BackColor
+            DTGDetalle.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            DTGDetalle.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // 3. Fuerza que las filas sean blancas incluso si están "seleccionadas"
+            DTGDetalle.DefaultCellStyle.SelectionBackColor = Color.White;
+            DTGDetalle.DefaultCellStyle.SelectionForeColor = Color.Black;
+            // ==========================================================
+
             CargarDatos();
         }
         #endregion
@@ -113,6 +129,7 @@ namespace SistemaDeInventario2026
                 DTGDetalle[5, f].Value = d.capdprecom.ToString("N2");       // Precio (compra unitario)
                 DTGDetalle[6, f].Value = (cantidad * d.capdprecom).ToString("N2");   // Sub total = cantidad x precio
             }
+            
         }
         private string Celda(int fila, int columna)
         {
@@ -133,6 +150,13 @@ namespace SistemaDeInventario2026
             filaPDF = 0;
             primeraPaginaPDF = true;
             detallePendientePDF = true;
+        }
+
+        private void FRMCompra_Detalle_Load(object sender, EventArgs e)
+        {
+            // Esto quita la fila azul y el foco de la celda [0,0] al abrir el formulario
+            DTGDetalle.ClearSelection();
+            DTGDetalle.CurrentCell = null;
         }
 
         private void LiberarImpresion()

@@ -102,7 +102,7 @@ namespace SistemaDeInventario2026
             NUDPrecio.Value = 0;
 
             LTVCarrito.Items.Clear();
-            LBLTotal.Text = "Total: 0.00";
+            LBLTotal.Text = "Total: Bs. 0.00";
         }
         private void CalcularTotal()
         {
@@ -114,7 +114,7 @@ namespace SistemaDeInventario2026
                     total += subtotal;
                 }
             }
-            LBLTotal.Text = $"Total: {total:F2}";
+            LBLTotal.Text = $"Total: Bs. {total:F2}";
 
         }
 
@@ -156,6 +156,7 @@ namespace SistemaDeInventario2026
         #endregion
         private void FRMCompra_Registrar_Load(object sender, EventArgs e)
         {
+            LBLTotal.ForeColor = Color.Black;
             LBLTitulo.ForeColor = Color.Black;
             LimpiarCasillas();
             ConfigurarListView();
@@ -556,6 +557,11 @@ namespace SistemaDeInventario2026
             //NUDCantidad.Value = 1;
             //NUDPrecio.Value = 0;
             //TXTCompraProductoEncontrado.Focus();
+        }
+
+        private void LBLTotal_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

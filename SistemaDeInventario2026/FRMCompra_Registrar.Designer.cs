@@ -156,10 +156,11 @@
             this.LBLTotal.FontBold = true;
             this.LBLTotal.Location = new System.Drawing.Point(491, 302);
             this.LBLTotal.Name = "LBLTotal";
-            this.LBLTotal.Size = new System.Drawing.Size(134, 35);
+            this.LBLTotal.Size = new System.Drawing.Size(188, 35);
             this.LBLTotal.TabIndex = 92;
-            this.LBLTotal.Text = "Total: 0.00";
+            this.LBLTotal.Text = "Total : Bs. 0.00";
             this.LBLTotal.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.LBLTotal.Click += new System.EventHandler(this.LBLTotal_Click);
             // 
             // LTVCarrito
             // 
