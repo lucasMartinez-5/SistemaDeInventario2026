@@ -102,9 +102,17 @@
             this.SWBEstado.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.SWBEstado.Location = new System.Drawing.Point(534, 199);
             this.SWBEstado.Name = "SWBEstado";
+            this.SWBEstado.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.SWBEstado.OffText = "INHABILITADO";
+            this.SWBEstado.OffTextColor = System.Drawing.Color.White;
+            this.SWBEstado.OnBackColor = System.Drawing.Color.LimeGreen;
+            this.SWBEstado.OnText = "HABILITADO";
+            this.SWBEstado.OnTextColor = System.Drawing.Color.White;
             this.SWBEstado.Size = new System.Drawing.Size(191, 23);
             this.SWBEstado.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.SWBEstado.TabIndex = 51;
+            this.SWBEstado.Value = true;
+            this.SWBEstado.ValueObject = "Y";
             // 
             // TXTRazonSocial
             // 

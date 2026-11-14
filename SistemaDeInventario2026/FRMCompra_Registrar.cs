@@ -518,6 +518,12 @@ namespace SistemaDeInventario2026
                 TXTCompraProveedorCelular.Focus();
                 respuesta = false;
             }
+            else if (LTVCarrito.Items.Count == 0 && TXTCompraFactura.Text.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Ingrese N° de Factura, Es requisito", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTCompraProveedorCelular.Focus();
+                respuesta = false;
+            }
             else if (TXTCompraFactura.Text.Replace(" ", "") == "")
             {
                 MessageBox.Show("Para esta compra se debe mantener el mismo NÚMERO DE FACTURA, caso contrario continúe el registro de la compra si lo desea y emita una Nueva", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);

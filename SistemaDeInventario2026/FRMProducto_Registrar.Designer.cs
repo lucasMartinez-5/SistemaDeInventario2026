@@ -505,11 +505,17 @@
             this.SWBEstadoStock.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.SWBEstadoStock.Location = new System.Drawing.Point(312, 96);
             this.SWBEstadoStock.Name = "SWBEstadoStock";
+            this.SWBEstadoStock.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.SWBEstadoStock.OffText = "INHABILITADO";
+            this.SWBEstadoStock.OffTextColor = System.Drawing.Color.White;
+            this.SWBEstadoStock.OnBackColor = System.Drawing.Color.LimeGreen;
             this.SWBEstadoStock.OnText = "HABILITADO";
+            this.SWBEstadoStock.OnTextColor = System.Drawing.Color.White;
             this.SWBEstadoStock.Size = new System.Drawing.Size(224, 24);
             this.SWBEstadoStock.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.SWBEstadoStock.TabIndex = 96;
+            this.SWBEstadoStock.Value = true;
+            this.SWBEstadoStock.ValueObject = "Y";
             this.SWBEstadoStock.ValueChanged += new System.EventHandler(this.SWBEstadoStock_ValueChanged);
             // 
             // materialLabel8

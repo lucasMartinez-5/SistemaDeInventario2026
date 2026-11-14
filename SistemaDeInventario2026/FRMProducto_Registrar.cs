@@ -246,6 +246,7 @@ namespace SistemaDeInventario2026
 
         private void FRMProducto_Registrar_Load(object sender, EventArgs e)
         {
+            LBLRegistrarProducto.ForeColor = Color.Black;
             CargarComboCategorias();
             CargarCombo("capdnompro", CMBProductoNombre);
             CargarCombo("capdmarpro", CMBMarca);

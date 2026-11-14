@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMProducto_Buscar : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMProducto_Buscar : Form
     {
         #region Variables
         // Producto seleccionado que se devolverá al formulario anterior
