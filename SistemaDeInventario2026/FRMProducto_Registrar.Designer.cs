@@ -45,10 +45,6 @@
             this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.BTNAbrirFoto = new System.Windows.Forms.Button();
             this.BTNLimpiarFoto = new System.Windows.Forms.Button();
-            this.BTNCapturarFoto = new System.Windows.Forms.Button();
-            this.PCBFotografia = new System.Windows.Forms.PictureBox();
-            this.PCBCamara = new System.Windows.Forms.PictureBox();
-            this.BTNCodigoDeBarras = new DevComponents.DotNetBar.ButtonX();
             this.TXTProductoDescripcion = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.LBLCodigoDeBarras = new DevComponents.DotNetBar.LabelX();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
@@ -73,13 +69,23 @@
             this.LBL = new MaterialSkin.Controls.MaterialLabel();
             this.LBLRegistrarProducto = new DevComponents.DotNetBar.LabelX();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
+            this.BTNCapturarFoto = new System.Windows.Forms.Button();
+            this.PCBFotografia = new System.Windows.Forms.PictureBox();
+            this.PCBCamara = new System.Windows.Forms.PictureBox();
+            this.BTNCodigoDeBarras = new DevComponents.DotNetBar.ButtonX();
             this.PPrincipal.SuspendLayout();
             this.PAgregar_Producto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDStockActual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrecioVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrecioMinVenta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).BeginInit();
             this.SuspendLayout();
             // 
             // OFDElegirImagen
@@ -102,6 +108,12 @@
             // PAgregar_Producto
             // 
             this.PAgregar_Producto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PAgregar_Producto.Controls.Add(this.materialLabel17);
+            this.PAgregar_Producto.Controls.Add(this.materialLabel18);
+            this.PAgregar_Producto.Controls.Add(this.materialLabel15);
+            this.PAgregar_Producto.Controls.Add(this.materialLabel16);
+            this.PAgregar_Producto.Controls.Add(this.materialLabel14);
+            this.PAgregar_Producto.Controls.Add(this.materialLabel4);
             this.PAgregar_Producto.Controls.Add(this.CMBMarca);
             this.PAgregar_Producto.Controls.Add(this.CMBProductoNombre);
             this.PAgregar_Producto.Controls.Add(this.CMBTalla);
@@ -256,13 +268,14 @@
             // 
             // BTNAbrirFoto
             // 
-            this.BTNAbrirFoto.BackColor = System.Drawing.Color.Black;
+            this.BTNAbrirFoto.BackColor = System.Drawing.Color.White;
             this.BTNAbrirFoto.FlatAppearance.BorderSize = 0;
             this.BTNAbrirFoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNAbrirFoto.ForeColor = System.Drawing.Color.White;
-            this.BTNAbrirFoto.Location = new System.Drawing.Point(201, 264);
+            this.BTNAbrirFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_eliminar_imagen_35;
+            this.BTNAbrirFoto.Location = new System.Drawing.Point(256, 264);
             this.BTNAbrirFoto.Name = "BTNAbrirFoto";
-            this.BTNAbrirFoto.Size = new System.Drawing.Size(34, 35);
+            this.BTNAbrirFoto.Size = new System.Drawing.Size(35, 35);
             this.BTNAbrirFoto.TabIndex = 114;
             this.BTNAbrirFoto.Text = "-";
             this.BTNAbrirFoto.UseVisualStyleBackColor = false;
@@ -270,66 +283,18 @@
             // 
             // BTNLimpiarFoto
             // 
-            this.BTNLimpiarFoto.BackColor = System.Drawing.Color.Black;
+            this.BTNLimpiarFoto.BackColor = System.Drawing.Color.White;
             this.BTNLimpiarFoto.FlatAppearance.BorderSize = 0;
             this.BTNLimpiarFoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNLimpiarFoto.ForeColor = System.Drawing.Color.White;
-            this.BTNLimpiarFoto.Location = new System.Drawing.Point(201, 374);
+            this.BTNLimpiarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_elegir_imagen_35;
+            this.BTNLimpiarFoto.Location = new System.Drawing.Point(256, 374);
             this.BTNLimpiarFoto.Name = "BTNLimpiarFoto";
-            this.BTNLimpiarFoto.Size = new System.Drawing.Size(34, 35);
+            this.BTNLimpiarFoto.Size = new System.Drawing.Size(35, 35);
             this.BTNLimpiarFoto.TabIndex = 113;
             this.BTNLimpiarFoto.Text = "..";
             this.BTNLimpiarFoto.UseVisualStyleBackColor = false;
             this.BTNLimpiarFoto.Click += new System.EventHandler(this.BTNAbrirFoto_Click);
-            // 
-            // BTNCapturarFoto
-            // 
-            this.BTNCapturarFoto.BackColor = System.Drawing.Color.Black;
-            this.BTNCapturarFoto.FlatAppearance.BorderSize = 0;
-            this.BTNCapturarFoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNCapturarFoto.ForeColor = System.Drawing.Color.White;
-            this.BTNCapturarFoto.Location = new System.Drawing.Point(201, 209);
-            this.BTNCapturarFoto.Name = "BTNCapturarFoto";
-            this.BTNCapturarFoto.Size = new System.Drawing.Size(34, 35);
-            this.BTNCapturarFoto.TabIndex = 112;
-            this.BTNCapturarFoto.Text = "+";
-            this.BTNCapturarFoto.UseVisualStyleBackColor = false;
-            this.BTNCapturarFoto.Click += new System.EventHandler(this.BTNCapturarFoto_Click);
-            // 
-            // PCBFotografia
-            // 
-            this.PCBFotografia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PCBFotografia.Image = ((System.Drawing.Image)(resources.GetObject("PCBFotografia.Image")));
-            this.PCBFotografia.Location = new System.Drawing.Point(40, 325);
-            this.PCBFotografia.Name = "PCBFotografia";
-            this.PCBFotografia.Size = new System.Drawing.Size(138, 138);
-            this.PCBFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PCBFotografia.TabIndex = 111;
-            this.PCBFotografia.TabStop = false;
-            // 
-            // PCBCamara
-            // 
-            this.PCBCamara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PCBCamara.Image = ((System.Drawing.Image)(resources.GetObject("PCBCamara.Image")));
-            this.PCBCamara.Location = new System.Drawing.Point(40, 183);
-            this.PCBCamara.Name = "PCBCamara";
-            this.PCBCamara.Size = new System.Drawing.Size(138, 138);
-            this.PCBCamara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PCBCamara.TabIndex = 110;
-            this.PCBCamara.TabStop = false;
-            // 
-            // BTNCodigoDeBarras
-            // 
-            this.BTNCodigoDeBarras.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNCodigoDeBarras.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNCodigoDeBarras.Image = global::SistemaDeInventario2026.Properties.Resources.ic_lectorBarras23;
-            this.BTNCodigoDeBarras.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNCodigoDeBarras.Location = new System.Drawing.Point(256, 97);
-            this.BTNCodigoDeBarras.Name = "BTNCodigoDeBarras";
-            this.BTNCodigoDeBarras.Size = new System.Drawing.Size(23, 23);
-            this.BTNCodigoDeBarras.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNCodigoDeBarras.TabIndex = 109;
-            this.BTNCodigoDeBarras.Click += new System.EventHandler(this.BTNCodigoDeBarras_Click);
             // 
             // TXTProductoDescripcion
             // 
@@ -662,6 +627,128 @@
             this.materialLabel3.TabIndex = 83;
             this.materialLabel3.Text = "Nombre";
             // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(184, 209);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(34, 19);
+            this.materialLabel4.TabIndex = 122;
+            this.materialLabel4.Text = "Abrir";
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.AutoSize = true;
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel14.Location = new System.Drawing.Point(184, 228);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(57, 19);
+            this.materialLabel14.TabIndex = 123;
+            this.materialLabel14.Text = "Cámara";
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel15.Location = new System.Drawing.Point(184, 283);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(54, 19);
+            this.materialLabel15.TabIndex = 125;
+            this.materialLabel15.Text = "Imagen";
+            // 
+            // materialLabel16
+            // 
+            this.materialLabel16.AutoSize = true;
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel16.Location = new System.Drawing.Point(184, 264);
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            this.materialLabel16.Size = new System.Drawing.Size(59, 19);
+            this.materialLabel16.TabIndex = 124;
+            this.materialLabel16.Text = "Eliminar";
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel17.Location = new System.Drawing.Point(184, 393);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(54, 19);
+            this.materialLabel17.TabIndex = 127;
+            this.materialLabel17.Text = "Imagen";
+            // 
+            // materialLabel18
+            // 
+            this.materialLabel18.AutoSize = true;
+            this.materialLabel18.Depth = 0;
+            this.materialLabel18.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel18.Location = new System.Drawing.Point(184, 374);
+            this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel18.Name = "materialLabel18";
+            this.materialLabel18.Size = new System.Drawing.Size(40, 19);
+            this.materialLabel18.TabIndex = 126;
+            this.materialLabel18.Text = "Elegir";
+            // 
+            // BTNCapturarFoto
+            // 
+            this.BTNCapturarFoto.BackColor = System.Drawing.Color.White;
+            this.BTNCapturarFoto.FlatAppearance.BorderSize = 0;
+            this.BTNCapturarFoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNCapturarFoto.ForeColor = System.Drawing.Color.White;
+            this.BTNCapturarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_abrir_camara_35;
+            this.BTNCapturarFoto.Location = new System.Drawing.Point(256, 210);
+            this.BTNCapturarFoto.Name = "BTNCapturarFoto";
+            this.BTNCapturarFoto.Size = new System.Drawing.Size(35, 35);
+            this.BTNCapturarFoto.TabIndex = 112;
+            this.BTNCapturarFoto.Text = "+";
+            this.BTNCapturarFoto.UseVisualStyleBackColor = false;
+            this.BTNCapturarFoto.Click += new System.EventHandler(this.BTNCapturarFoto_Click);
+            // 
+            // PCBFotografia
+            // 
+            this.PCBFotografia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PCBFotografia.Image = ((System.Drawing.Image)(resources.GetObject("PCBFotografia.Image")));
+            this.PCBFotografia.Location = new System.Drawing.Point(40, 325);
+            this.PCBFotografia.Name = "PCBFotografia";
+            this.PCBFotografia.Size = new System.Drawing.Size(138, 138);
+            this.PCBFotografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PCBFotografia.TabIndex = 111;
+            this.PCBFotografia.TabStop = false;
+            // 
+            // PCBCamara
+            // 
+            this.PCBCamara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PCBCamara.Image = ((System.Drawing.Image)(resources.GetObject("PCBCamara.Image")));
+            this.PCBCamara.Location = new System.Drawing.Point(40, 183);
+            this.PCBCamara.Name = "PCBCamara";
+            this.PCBCamara.Size = new System.Drawing.Size(138, 138);
+            this.PCBCamara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PCBCamara.TabIndex = 110;
+            this.PCBCamara.TabStop = false;
+            // 
+            // BTNCodigoDeBarras
+            // 
+            this.BTNCodigoDeBarras.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNCodigoDeBarras.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNCodigoDeBarras.Image = global::SistemaDeInventario2026.Properties.Resources.ic_lectorBarras23;
+            this.BTNCodigoDeBarras.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNCodigoDeBarras.Location = new System.Drawing.Point(256, 97);
+            this.BTNCodigoDeBarras.Name = "BTNCodigoDeBarras";
+            this.BTNCodigoDeBarras.Size = new System.Drawing.Size(23, 23);
+            this.BTNCodigoDeBarras.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNCodigoDeBarras.TabIndex = 109;
+            this.BTNCodigoDeBarras.Click += new System.EventHandler(this.BTNCodigoDeBarras_Click);
+            // 
             // FRMProducto_Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -679,11 +766,11 @@
             this.PPrincipal.ResumeLayout(false);
             this.PAgregar_Producto.ResumeLayout(false);
             this.PAgregar_Producto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDStockActual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrecioVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDPrecioMinVenta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -733,5 +820,11 @@
         private MaterialSkin.Controls.MaterialLabel LBL;
         private DevComponents.DotNetBar.LabelX LBLRegistrarProducto;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel14;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel17;
+        private MaterialSkin.Controls.MaterialLabel materialLabel18;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
+        private MaterialSkin.Controls.MaterialLabel materialLabel16;
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.EPNFiltrar = new DevComponents.DotNetBar.ExpandablePanel();
+            this.BTNAceptar = new DevComponents.DotNetBar.ButtonX();
+            this.BTNAgregarProveedor = new DevComponents.DotNetBar.ButtonX();
+            this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.TXTFiltrar = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.IINFilas = new DevComponents.Editors.IntegerInput();
             this.DTGLista = new System.Windows.Forms.DataGridView();
@@ -38,9 +41,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTNAceptar = new DevComponents.DotNetBar.ButtonX();
-            this.BTNAgregarProveedor = new DevComponents.DotNetBar.ButtonX();
-            this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.EPNFiltrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IINFilas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
@@ -76,6 +76,50 @@
             this.EPNFiltrar.TitleStyle.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.EPNFiltrar.TitleStyle.GradientAngle = 90;
             this.EPNFiltrar.TitleText = "Filtrar";
+            // 
+            // BTNAceptar
+            // 
+            this.BTNAceptar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNAceptar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BTNAceptar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_ok;
+            this.BTNAceptar.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNAceptar.Location = new System.Drawing.Point(481, 50);
+            this.BTNAceptar.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNAceptar.Name = "BTNAceptar";
+            this.BTNAceptar.Size = new System.Drawing.Size(36, 32);
+            this.BTNAceptar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNAceptar.TabIndex = 17;
+            this.BTNAceptar.Click += new System.EventHandler(this.BTNAceptar_Click);
+            // 
+            // BTNAgregarProveedor
+            // 
+            this.BTNAgregarProveedor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNAgregarProveedor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNAgregarProveedor.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BTNAgregarProveedor.Image = global::SistemaDeInventario2026.Properties.Resources.agregar;
+            this.BTNAgregarProveedor.ImageFixedSize = new System.Drawing.Size(15, 15);
+            this.BTNAgregarProveedor.Location = new System.Drawing.Point(437, 50);
+            this.BTNAgregarProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNAgregarProveedor.Name = "BTNAgregarProveedor";
+            this.BTNAgregarProveedor.Size = new System.Drawing.Size(36, 32);
+            this.BTNAgregarProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNAgregarProveedor.TabIndex = 16;
+            this.BTNAgregarProveedor.Click += new System.EventHandler(this.BTNAgregarProveedor_Click);
+            // 
+            // BTNFiltrar
+            // 
+            this.BTNFiltrar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
+            this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
+            this.BTNFiltrar.Location = new System.Drawing.Point(393, 50);
+            this.BTNFiltrar.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNFiltrar.Name = "BTNFiltrar";
+            this.BTNFiltrar.Size = new System.Drawing.Size(36, 32);
+            this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.BTNFiltrar.TabIndex = 6;
+            this.BTNFiltrar.Click += new System.EventHandler(this.BTNFiltrar_Click);
             // 
             // TXTFiltrar
             // 
@@ -139,6 +183,7 @@
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
             this.DTGLista.ReadOnly = true;
+            this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTGLista.Size = new System.Drawing.Size(890, 464);
             this.DTGLista.TabIndex = 22;
@@ -186,50 +231,6 @@
             this.Column6.ReadOnly = true;
             this.Column6.Visible = false;
             this.Column6.Width = 150;
-            // 
-            // BTNAceptar
-            // 
-            this.BTNAceptar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNAceptar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNAceptar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTNAceptar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_ok;
-            this.BTNAceptar.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNAceptar.Location = new System.Drawing.Point(481, 50);
-            this.BTNAceptar.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNAceptar.Name = "BTNAceptar";
-            this.BTNAceptar.Size = new System.Drawing.Size(36, 32);
-            this.BTNAceptar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNAceptar.TabIndex = 17;
-            this.BTNAceptar.Click += new System.EventHandler(this.BTNAceptar_Click);
-            // 
-            // BTNAgregarProveedor
-            // 
-            this.BTNAgregarProveedor.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNAgregarProveedor.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNAgregarProveedor.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTNAgregarProveedor.Image = global::SistemaDeInventario2026.Properties.Resources.agregar;
-            this.BTNAgregarProveedor.ImageFixedSize = new System.Drawing.Size(15, 15);
-            this.BTNAgregarProveedor.Location = new System.Drawing.Point(437, 50);
-            this.BTNAgregarProveedor.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNAgregarProveedor.Name = "BTNAgregarProveedor";
-            this.BTNAgregarProveedor.Size = new System.Drawing.Size(36, 32);
-            this.BTNAgregarProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNAgregarProveedor.TabIndex = 16;
-            this.BTNAgregarProveedor.Click += new System.EventHandler(this.BTNAgregarProveedor_Click);
-            // 
-            // BTNFiltrar
-            // 
-            this.BTNFiltrar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
-            this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
-            this.BTNFiltrar.Location = new System.Drawing.Point(393, 50);
-            this.BTNFiltrar.Margin = new System.Windows.Forms.Padding(4);
-            this.BTNFiltrar.Name = "BTNFiltrar";
-            this.BTNFiltrar.Size = new System.Drawing.Size(36, 32);
-            this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNFiltrar.TabIndex = 6;
-            this.BTNFiltrar.Click += new System.EventHandler(this.BTNFiltrar_Click);
             // 
             // FRMProveedor_Buscar
             // 

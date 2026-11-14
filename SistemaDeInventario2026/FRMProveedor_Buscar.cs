@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMProveedor_Buscar : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMProveedor_Buscar : Form
     {   
         #region Variables
         // Proveedor seleccionado que se devolverá al formulario anterior

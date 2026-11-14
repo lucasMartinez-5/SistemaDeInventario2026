@@ -206,5 +206,10 @@ namespace SistemaDeInventario2026
         {
             this.Close();
         }
+
+        private void TXTFiltrar_Enter(object sender, EventArgs e)
+        {
+            TXTFiltrar.SelectAll();
+        }
     }
 }

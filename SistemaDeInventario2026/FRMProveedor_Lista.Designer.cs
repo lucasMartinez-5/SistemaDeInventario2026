@@ -33,10 +33,8 @@
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inhabilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.styleManager2 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.PProveedor_Lista = new System.Windows.Forms.Panel();
+            this.PPrincipal = new System.Windows.Forms.Panel();
+            this.Plista_Proveedores = new System.Windows.Forms.Panel();
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.IINFilas = new DevComponents.Editors.IntegerInput();
@@ -50,8 +48,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CMSMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.PProveedor_Lista.SuspendLayout();
+            this.PPrincipal.SuspendLayout();
+            this.Plista_Proveedores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IINFilas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).BeginInit();
             this.SuspendLayout();
@@ -87,39 +85,29 @@
             this.habilitarToolStripMenuItem.Text = "&Habilitar";
             this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
             // 
-            // styleManager1
+            // PPrincipal
             // 
-            this.styleManager1.ManagerColorTint = System.Drawing.Color.DodgerBlue;
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            this.PPrincipal.BackColor = System.Drawing.Color.White;
+            this.PPrincipal.Controls.Add(this.Plista_Proveedores);
+            this.PPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.PPrincipal.Name = "PPrincipal";
+            this.PPrincipal.Size = new System.Drawing.Size(970, 519);
+            this.PPrincipal.TabIndex = 16;
             // 
-            // styleManager2
+            // Plista_Proveedores
             // 
-            this.styleManager2.ManagerColorTint = System.Drawing.Color.DodgerBlue;
-            this.styleManager2.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
-            this.styleManager2.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.PProveedor_Lista);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 552);
-            this.panel1.TabIndex = 14;
-            // 
-            // PProveedor_Lista
-            // 
-            this.PProveedor_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PProveedor_Lista.Controls.Add(this.BTNSalir);
-            this.PProveedor_Lista.Controls.Add(this.BTNFiltrar);
-            this.PProveedor_Lista.Controls.Add(this.IINFilas);
-            this.PProveedor_Lista.Controls.Add(this.TXTFiltrar);
-            this.PProveedor_Lista.Controls.Add(this.LBLDirectorioProveedor);
-            this.PProveedor_Lista.Controls.Add(this.DTGLista);
-            this.PProveedor_Lista.Location = new System.Drawing.Point(0, 0);
-            this.PProveedor_Lista.Name = "PProveedor_Lista";
-            this.PProveedor_Lista.Size = new System.Drawing.Size(1067, 552);
-            this.PProveedor_Lista.TabIndex = 15;
+            this.Plista_Proveedores.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Plista_Proveedores.Controls.Add(this.BTNSalir);
+            this.Plista_Proveedores.Controls.Add(this.BTNFiltrar);
+            this.Plista_Proveedores.Controls.Add(this.IINFilas);
+            this.Plista_Proveedores.Controls.Add(this.TXTFiltrar);
+            this.Plista_Proveedores.Controls.Add(this.LBLDirectorioProveedor);
+            this.Plista_Proveedores.Controls.Add(this.DTGLista);
+            this.Plista_Proveedores.Location = new System.Drawing.Point(0, 0);
+            this.Plista_Proveedores.Name = "Plista_Proveedores";
+            this.Plista_Proveedores.Size = new System.Drawing.Size(970, 519);
+            this.Plista_Proveedores.TabIndex = 0;
             // 
             // BTNSalir
             // 
@@ -127,10 +115,10 @@
             this.BTNSalir.FlatAppearance.BorderSize = 0;
             this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(601, 92);
+            this.BTNSalir.Location = new System.Drawing.Point(606, 92);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(158, 23);
-            this.BTNSalir.TabIndex = 44;
+            this.BTNSalir.TabIndex = 50;
             this.BTNSalir.Text = "Salir";
             this.BTNSalir.UseVisualStyleBackColor = false;
             this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
@@ -141,11 +129,12 @@
             this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
-            this.BTNFiltrar.Location = new System.Drawing.Point(571, 92);
+            this.BTNFiltrar.Location = new System.Drawing.Point(576, 92);
             this.BTNFiltrar.Name = "BTNFiltrar";
             this.BTNFiltrar.Size = new System.Drawing.Size(24, 23);
             this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNFiltrar.TabIndex = 15;
+            this.BTNFiltrar.TabIndex = 49;
+            this.BTNFiltrar.Click += new System.EventHandler(this.BTNFiltrar_Click);
             // 
             // IINFilas
             // 
@@ -156,21 +145,22 @@
             this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.IINFilas.Increment = 10;
-            this.IINFilas.Location = new System.Drawing.Point(197, 92);
+            this.IINFilas.Location = new System.Drawing.Point(202, 92);
             this.IINFilas.MaxValue = 1000;
             this.IINFilas.MinValue = 0;
             this.IINFilas.Name = "IINFilas";
             this.IINFilas.ShowUpDown = true;
             this.IINFilas.Size = new System.Drawing.Size(50, 23);
-            this.IINFilas.TabIndex = 14;
+            this.IINFilas.TabIndex = 48;
             this.IINFilas.Value = 50;
             // 
             // TXTFiltrar
             // 
-            this.TXTFiltrar.Location = new System.Drawing.Point(253, 92);
+            this.TXTFiltrar.Location = new System.Drawing.Point(258, 92);
             this.TXTFiltrar.Name = "TXTFiltrar";
             this.TXTFiltrar.Size = new System.Drawing.Size(312, 23);
-            this.TXTFiltrar.TabIndex = 13;
+            this.TXTFiltrar.TabIndex = 47;
+            this.TXTFiltrar.Enter += new System.EventHandler(this.TXTFiltrar_Enter);
             // 
             // LBLDirectorioProveedor
             // 
@@ -181,11 +171,11 @@
             this.LBLDirectorioProveedor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.LBLDirectorioProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLDirectorioProveedor.FontBold = true;
-            this.LBLDirectorioProveedor.Location = new System.Drawing.Point(235, 36);
+            this.LBLDirectorioProveedor.Location = new System.Drawing.Point(240, 36);
             this.LBLDirectorioProveedor.Name = "LBLDirectorioProveedor";
             this.LBLDirectorioProveedor.Size = new System.Drawing.Size(485, 50);
             this.LBLDirectorioProveedor.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2000;
-            this.LBLDirectorioProveedor.TabIndex = 12;
+            this.LBLDirectorioProveedor.TabIndex = 46;
             this.LBLDirectorioProveedor.Text = "Directorio de Proveedores";
             this.LBLDirectorioProveedor.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
@@ -206,8 +196,8 @@
             this.Column6});
             this.DTGLista.ContextMenuStrip = this.CMSMenu;
             this.DTGLista.Cursor = System.Windows.Forms.Cursors.Default;
-            this.DTGLista.GridColor = System.Drawing.SystemColors.Control;
-            this.DTGLista.Location = new System.Drawing.Point(70, 142);
+            this.DTGLista.GridColor = System.Drawing.Color.White;
+            this.DTGLista.Location = new System.Drawing.Point(79, 139);
             this.DTGLista.Margin = new System.Windows.Forms.Padding(4);
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
@@ -215,7 +205,8 @@
             this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DTGLista.Size = new System.Drawing.Size(821, 341);
-            this.DTGLista.TabIndex = 11;
+            this.DTGLista.TabIndex = 45;
+            this.DTGLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellContentClick);
             this.DTGLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellDoubleClick);
             // 
             // Column1
@@ -268,17 +259,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(970, 519);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMProveedor_Lista";
-            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FRMProveedor_Lista_Load);
             this.CMSMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.PProveedor_Lista.ResumeLayout(false);
-            this.PProveedor_Lista.PerformLayout();
+            this.PPrincipal.ResumeLayout(false);
+            this.Plista_Proveedores.ResumeLayout(false);
+            this.Plista_Proveedores.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IINFilas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DTGLista)).EndInit();
             this.ResumeLayout(false);
@@ -286,14 +276,12 @@
         }
 
         #endregion
-        private DevComponents.DotNetBar.StyleManager styleManager1;
-        private DevComponents.DotNetBar.StyleManager styleManager2;
         private System.Windows.Forms.ContextMenuStrip CMSMenu;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inhabilitarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel PProveedor_Lista;
+        private System.Windows.Forms.Panel PPrincipal;
+        private System.Windows.Forms.Panel Plista_Proveedores;
         private System.Windows.Forms.Button BTNSalir;
         private DevComponents.DotNetBar.ButtonX BTNFiltrar;
         private DevComponents.Editors.IntegerInput IINFilas;

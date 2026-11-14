@@ -255,6 +255,7 @@ namespace SistemaDeInventario2026
                 proveedor.caprnumcel = TXTCelular.Text;
                 proveedor.caprsocpro = TXTRazonSocial.Text;
                 proveedor.caprdirpro = TXTDireccion.Text;
+                proveedor.caprestpro = SWBEstado.Value;
                 if (!modificar)
                 {
                     //.causactpas = true;

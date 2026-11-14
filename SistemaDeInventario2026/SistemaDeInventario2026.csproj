@@ -813,5 +813,14 @@
   <ItemGroup>
     <None Include="Resources\ic_proveedor 40x40.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_abrir_camara 35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_elegir_imagen 35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_eliminar_imagen 35.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

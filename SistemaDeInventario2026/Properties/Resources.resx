@@ -124,9 +124,6 @@
   <data name="ic_ver password 23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_ver password 23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="banner_proyecto_ropa_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banner_proyecto_ropa_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,6 +132,9 @@
   </data>
   <data name="ic_salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_producto_nuevo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_producto_nuevo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="analisis fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\analisis fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,20 +157,23 @@
   <data name="ic_persona" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_persona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ic_proveedor 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor 40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="proveedor fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proveedor fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_usuario_registrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_usuario_registrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="campana alerta fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campana alerta fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lapiz sin fondo 30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lapiz sin fondo 30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_proveedor_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_proveedor_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_login_huella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_login_huella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_lectorBarras23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_lectorBarras23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +199,14 @@
   <data name="vender fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vender fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_ver_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_ver_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_proveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_configurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_configurar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DIETER_ camisa casual de fiesta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIETER_ camisa casual de fiesta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_proveedor40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_proveedor40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,6 +219,9 @@
   </data>
   <data name="ic_ojo 30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_ojo 30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_proveedor_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_proveedor_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_circle_usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_circle_usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +247,8 @@
   <data name="ic_circle_analisis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_circle_analisis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guardar fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guardar fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lapiz fondo gris PhotoShop 30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lapiz fondo gris PhotoShop 30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_venta40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_venta40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -249,9 +258,6 @@
   </data>
   <data name="ic_actualizar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_actualizar_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_usuario_cambiar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_usuario_cambiar_password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="comprar fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comprar fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,20 +271,17 @@
   <data name="ic_categoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_categoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_proveedor_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_candado40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_candado40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BannerTiendaDeRopa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BannerTiendaDeRopa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_buscar40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_buscar40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_local_Dieter_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_local_Dieter_circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arcoiris fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arcoiris fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bolsa de dinero fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bolsa de dinero fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,9 +301,6 @@
   <data name="ic_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ic_usuario_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_usuario_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -310,8 +310,11 @@
   <data name="carrito compra fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carrito compra fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="catalogo_visual_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\catalogo_visual_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guardar fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_iniciar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_iniciar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_producto_categoria_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_producto_categoria_circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,29 +331,29 @@
   <data name="ic_producto_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_producto_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_iniciar_sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_iniciar_sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_buscar40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_buscar40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DIETER_ camisa casual de fiesta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DIETER_ camisa casual de fiesta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="campana alerta fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campana alerta fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agregar fondo gris PhotoShop 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar fondo gris PhotoShop 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lapiz fondo gris PhotoShop 30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lapiz fondo gris PhotoShop 30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="catalogo_visual_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catalogo_visual_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_proveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_usuario_cambiar_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_usuario_cambiar_password1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_login_huella" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_login_huella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="banner_proyecto_ropa_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner_proyecto_ropa_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="regla fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\regla fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_producto_nuevo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_producto_nuevo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_ver_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_ver_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_categoria_nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_categoria_nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,8 +361,8 @@
   <data name="ic_catalogo50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_catalogo50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_candado40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_candado40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arcoiris fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcoiris fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -370,7 +373,13 @@
   <data name="cliente fondo gris PhotoShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cliente fondo gris PhotoShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_proveedor 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_proveedor 40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_abrir_camara 35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_abrir_camara 35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_elegir_imagen 35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_elegir_imagen 35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_eliminar_imagen 35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_eliminar_imagen 35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
