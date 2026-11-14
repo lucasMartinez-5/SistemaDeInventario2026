@@ -76,6 +76,7 @@
             // 
             // BTNConfirmarPassword
             // 
+            this.BTNConfirmarPassword.Image = global::SistemaDeInventario2026.Properties.Resources.ic_ver_password_23;
             this.BTNConfirmarPassword.Location = new System.Drawing.Point(662, 232);
             this.BTNConfirmarPassword.Name = "BTNConfirmarPassword";
             this.BTNConfirmarPassword.Size = new System.Drawing.Size(37, 23);
@@ -115,6 +116,7 @@
             // 
             this.TXTConfirmarPassword.Location = new System.Drawing.Point(285, 232);
             this.TXTConfirmarPassword.Name = "TXTConfirmarPassword";
+            this.TXTConfirmarPassword.PasswordChar = '*';
             this.TXTConfirmarPassword.Size = new System.Drawing.Size(363, 23);
             this.TXTConfirmarPassword.TabIndex = 79;
             // 
@@ -145,6 +147,7 @@
             // 
             // BTNPassword
             // 
+            this.BTNPassword.Image = global::SistemaDeInventario2026.Properties.Resources.ic_ver_password_23;
             this.BTNPassword.Location = new System.Drawing.Point(662, 177);
             this.BTNPassword.Name = "BTNPassword";
             this.BTNPassword.Size = new System.Drawing.Size(37, 23);
@@ -156,6 +159,7 @@
             // 
             this.TXTPassword.Location = new System.Drawing.Point(285, 177);
             this.TXTPassword.Name = "TXTPassword";
+            this.TXTPassword.PasswordChar = '*';
             this.TXTPassword.Size = new System.Drawing.Size(363, 23);
             this.TXTPassword.TabIndex = 75;
             this.TXTPassword.TextChanged += new System.EventHandler(this.TXTPassword_TextChanged);

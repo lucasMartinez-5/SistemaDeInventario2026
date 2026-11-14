@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMCompra_Detalle));
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PCompraDetallePDF = new System.Windows.Forms.Panel();
             this.DTGDetalle = new System.Windows.Forms.DataGridView();
@@ -314,7 +313,7 @@
             // PBXLogo
             // 
             this.PBXLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PBXLogo.Image = ((System.Drawing.Image)(resources.GetObject("PBXLogo.Image")));
+            this.PBXLogo.Image = global::SistemaDeInventario2026.Properties.Resources.DIETER__camisa_casual_de_fiesta;
             this.PBXLogo.Location = new System.Drawing.Point(165, 148);
             this.PBXLogo.Name = "PBXLogo";
             this.PBXLogo.Size = new System.Drawing.Size(52, 52);

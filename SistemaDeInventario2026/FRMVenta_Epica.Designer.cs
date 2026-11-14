@@ -185,6 +185,7 @@
             this.BTNResumenInversion.TabIndex = 94;
             this.BTNResumenInversion.Text = "Emitir Recibo";
             this.BTNResumenInversion.UseVisualStyleBackColor = false;
+            this.BTNResumenInversion.Click += new System.EventHandler(this.BTNResumenInversion_Click);
             // 
             // materialLabel2
             // 

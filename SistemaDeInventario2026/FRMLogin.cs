@@ -18,6 +18,7 @@ namespace SistemaDeInventario2026
         public aperson persona = new aperson();
         public bool loginExitoso = false;
         public bool actualizarPassword = false;
+        private bool recuperarConCarnet = false;   // ← NUEVO
 
         private Control pantallaActual = null;
         #endregion
@@ -25,9 +26,13 @@ namespace SistemaDeInventario2026
         public FRMLogin()
         {
             InitializeComponent();
+            BTNCerrarSesion.Enabled = false;
         }
 
         #region Metodos
+        
+        // Estado "LOGIN": header superior oculto, botón Cerrar Sesión inerte
+        
         private void PrecalentarBD()
         {
             try { new CapaRN.aproved().Lista("1 = 0"); } catch { }   // consulta vacía: solo abre y cierra una conexión
@@ -82,7 +87,7 @@ namespace SistemaDeInventario2026
             }
             else if (TXTPassword.Text.Replace(" ", "") == "")
             {
-                MessageBox.Show("Introduzca el PASSWORD del usuario", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Introduzca La contraseña de usuario", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 TXTPassword.Focus();
                 respuesta = false;
             }
@@ -105,6 +110,7 @@ namespace SistemaDeInventario2026
             actualizarPassword = false;
             AplicarPrivilegios();
             AbrirEnPanel(new FRMInicioPrincipal());
+            BTNCerrarSesion.Enabled = true;
         }
         #endregion
 
@@ -151,6 +157,30 @@ namespace SistemaDeInventario2026
                 persona.papscodper = usuario.fauscodper;
                 persona.ObtenerDatos();
 
+                if (recuperarConCarnet)
+                {
+                    if (TXTPassword.Text == persona.capsnumcid)
+                    {
+                        MessageBox.Show("Bienvenido " + persona.capsnomper + " " +
+                                                        persona.capsapepat + " " +
+                                                        persona.capsapemat,
+                                        "Validación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        loginExitoso = true;
+                        actualizarPassword = true;
+                        recuperarConCarnet = false; // limpia el flag
+
+                        FRMAdministracion_Modificar_Contraseña cambioPassword = new FRMAdministracion_Modificar_Contraseña();
+                        cambioPassword.ausuario = usuario;
+                        AbrirEnPanel(cambioPassword);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El carnet de identidad no coincide", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        TXTPassword.Focus();
+                    }
+                    return; // sale del método, no sigue al flujo normal
+                }
+
                 if (usuario.causactpas)
                 {
                     if (TXTPassword.Text == persona.capsnumcid)
@@ -187,6 +217,7 @@ namespace SistemaDeInventario2026
                         AplicarPrivilegios();
                         SesionActual.NombreUsuario = persona.capsapepat + " " + persona.capsapemat + " " + persona.capsnomper;
                         AbrirEnPanel(new FRMInicioPrincipal());
+                        BTNCerrarSesion.Enabled = true;
                         LBLUsuario_Sesion.Text = "Usuario: " + SesionActual.NombreUsuario;
                         /*
                         LBLUsuario_Sesion.Text = "Usuario: " +
@@ -261,10 +292,39 @@ namespace SistemaDeInventario2026
 
         private void materialLabel3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Su contraseña se restablecerá por su seguridad, ingrese nuevamente con su carnet de identidad", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            usuario.causactpas = true;
-            usuario.causpasswo = persona.capsnumcid;
+            // Sin usuario escrito no sabemos de quién es el carnet
+            if (TXTLoginUsuario.Text.Trim() == "")
+            {
+                MessageBox.Show("Primero escriba su LOGIN de usuario", "Validación",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TXTLoginUsuario.Focus();
+                return;
+            }
+
+            recuperarConCarnet = true;   // ← flag que BTNIngresar_Click respetará
+            MessageBox.Show("Su contraseña se restablecerá por su seguridad, " +
+                            "ingrese nuevamente con su carnet de identidad",
+                            "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            TXTPassword.Clear();
             TXTPassword.Focus();
+        }
+
+        private void BTNCerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Desea cerrar sesion ???", "Pregunta",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                CerrarActual();  // cierra FRMInicioPrincipal u otro formulario incrustado
+                                 // PantallaCerrada() automáticamente muestra PLogin de nuevo
+
+                BTNCerrarSesion.Enabled = false;  // deshabilita el botón
+                TXTLoginUsuario.Clear();
+                TXTPassword.Clear();
+                LBLUsuario_Sesion.Text = "Usuario: --------";
+                TXTLoginUsuario.Focus();
+                panel2.Enabled = false;  // deshabilita el panel de botones de navegación
+            }
         }
     }
 }

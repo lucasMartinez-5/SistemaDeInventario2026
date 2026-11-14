@@ -339,7 +339,7 @@
             this.BTNDirectorio.FlatAppearance.BorderSize = 0;
             this.BTNDirectorio.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BTNDirectorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNDirectorio.Image = global::SistemaDeInventario2026.Properties.Resources.ic_proveedor40;
+            this.BTNDirectorio.Image = global::SistemaDeInventario2026.Properties.Resources.ic_proveedor_40x40;
             this.BTNDirectorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNDirectorio.Location = new System.Drawing.Point(10, 21);
             this.BTNDirectorio.Margin = new System.Windows.Forms.Padding(4);
@@ -392,6 +392,7 @@
             this.BTNCerrarSesion.TabIndex = 68;
             this.BTNCerrarSesion.Text = "Cerrar Sesion";
             this.BTNCerrarSesion.UseVisualStyleBackColor = false;
+            this.BTNCerrarSesion.Click += new System.EventHandler(this.BTNCerrarSesion_Click);
             // 
             // label1
             // 

@@ -109,13 +109,13 @@
             // 
             // PProveedor_Lista
             // 
+            this.PProveedor_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PProveedor_Lista.Controls.Add(this.BTNSalir);
             this.PProveedor_Lista.Controls.Add(this.BTNFiltrar);
             this.PProveedor_Lista.Controls.Add(this.IINFilas);
             this.PProveedor_Lista.Controls.Add(this.TXTFiltrar);
             this.PProveedor_Lista.Controls.Add(this.LBLDirectorioProveedor);
             this.PProveedor_Lista.Controls.Add(this.DTGLista);
-            this.PProveedor_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PProveedor_Lista.Location = new System.Drawing.Point(0, 0);
             this.PProveedor_Lista.Name = "PProveedor_Lista";
             this.PProveedor_Lista.Size = new System.Drawing.Size(1067, 552);

@@ -119,8 +119,9 @@ namespace SistemaDeInventario2026
         #region Eventos
         private void FRMProveedor_Registrar_Load(object sender, EventArgs e)
         {
+            LBLRegistrarProveedor.ForeColor = Color.Black;
             //IniciarCamara();
-            
+
             if (this.modificar)
             {
                 JalarDatos();

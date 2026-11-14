@@ -143,7 +143,7 @@ namespace SistemaDeInventario2026
             imgMarca = null;
             try
             {
-                string rutaMarca = Path.Combine(Application.StartupPath, "logo.png");
+                string rutaMarca = Path.Combine(Application.StartupPath, "DIETER_ camisa casual de fiesta.png");
                 if (File.Exists(rutaMarca))
                 {
                     using (Image temporal = Image.FromFile(rutaMarca))
@@ -166,6 +166,11 @@ namespace SistemaDeInventario2026
             if (bCuadro != null) bCuadro.Dispose();
 
             if (imgMarca != null) imgMarca.Dispose();
+        }
+
+        private void FRMAdministracion_Venta_Detalle_Auditoria_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void DibujarMarcaDeAgua(Graphics g, Rectangle pagina)

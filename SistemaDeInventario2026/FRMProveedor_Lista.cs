@@ -72,7 +72,7 @@ namespace SistemaDeInventario2026
         private void FRMProveedor_Lista_Load(object sender, EventArgs e)
         {
             //this.WindowState = FormWindowState.Maximized;
-
+            LBLDirectorioProveedor.ForeColor = Color.Black;
             ActualizarGrid();
         }
 

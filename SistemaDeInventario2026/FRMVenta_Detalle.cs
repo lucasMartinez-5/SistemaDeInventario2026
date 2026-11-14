@@ -135,7 +135,7 @@ namespace SistemaDeInventario2026
             imgMarca = null;
             try
             {
-                string rutaMarca = Path.Combine(Application.StartupPath, "logo.png");
+                string rutaMarca = Path.Combine(Application.StartupPath, "DIETER_ camisa casual de fiesta.png");
                 if (File.Exists(rutaMarca))
                 {
                     using (Image temporal = Image.FromFile(rutaMarca))

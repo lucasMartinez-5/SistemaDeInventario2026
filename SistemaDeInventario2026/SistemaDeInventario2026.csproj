@@ -283,12 +283,6 @@
     <Compile Include="FRMProducto_Lista.Designer.cs">
       <DependentUpon>FRMProducto_Lista.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRMPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMPrincipal.Designer.cs">
-      <DependentUpon>FRMPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="FRMProducto_Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -480,9 +474,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Lista.resx">
       <DependentUpon>FRMProducto_Lista.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRMPrincipal.resx">
-      <DependentUpon>FRMPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMProducto_Registrar.resx">
       <DependentUpon>FRMProducto_Registrar.cs</DependentUpon>
@@ -818,6 +809,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_local_Dieter_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_proveedor 40x40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
