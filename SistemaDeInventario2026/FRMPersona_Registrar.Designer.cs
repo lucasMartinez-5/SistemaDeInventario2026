@@ -43,7 +43,6 @@
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.TXTCelular = new System.Windows.Forms.TextBox();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.dateTimeInput1 = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.DTINacimiento = new System.Windows.Forms.DateTimePicker();
             this.TXTApellidoMaterno = new System.Windows.Forms.TextBox();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
@@ -57,13 +56,12 @@
             this.PCBFotografia = new System.Windows.Forms.PictureBox();
             this.SWBSexo = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.SWBEstado = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.BTNAbrirFoto = new DevComponents.DotNetBar.ButtonX();
             this.PCBCamara = new System.Windows.Forms.PictureBox();
-            this.BTNCapturarFoto = new DevComponents.DotNetBar.ButtonX();
-            this.BTNLimpiarFoto = new DevComponents.DotNetBar.ButtonX();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.PPrincipal.SuspendLayout();
             this.PAgregar_Persona.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +84,9 @@
             // PAgregar_Persona
             // 
             this.PAgregar_Persona.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PAgregar_Persona.Controls.Add(this.button1);
+            this.PAgregar_Persona.Controls.Add(this.button2);
+            this.PAgregar_Persona.Controls.Add(this.button3);
             this.PAgregar_Persona.Controls.Add(this.materialLabel7);
             this.PAgregar_Persona.Controls.Add(this.BTNLimpiar);
             this.PAgregar_Persona.Controls.Add(this.BTNSalir);
@@ -96,7 +97,6 @@
             this.PAgregar_Persona.Controls.Add(this.materialLabel4);
             this.PAgregar_Persona.Controls.Add(this.TXTCelular);
             this.PAgregar_Persona.Controls.Add(this.materialLabel5);
-            this.PAgregar_Persona.Controls.Add(this.dateTimeInput1);
             this.PAgregar_Persona.Controls.Add(this.DTINacimiento);
             this.PAgregar_Persona.Controls.Add(this.TXTApellidoMaterno);
             this.PAgregar_Persona.Controls.Add(this.materialLabel3);
@@ -110,10 +110,7 @@
             this.PAgregar_Persona.Controls.Add(this.PCBFotografia);
             this.PAgregar_Persona.Controls.Add(this.SWBSexo);
             this.PAgregar_Persona.Controls.Add(this.SWBEstado);
-            this.PAgregar_Persona.Controls.Add(this.BTNAbrirFoto);
             this.PAgregar_Persona.Controls.Add(this.PCBCamara);
-            this.PAgregar_Persona.Controls.Add(this.BTNCapturarFoto);
-            this.PAgregar_Persona.Controls.Add(this.BTNLimpiarFoto);
             this.PAgregar_Persona.Location = new System.Drawing.Point(0, 0);
             this.PAgregar_Persona.Name = "PAgregar_Persona";
             this.PAgregar_Persona.Size = new System.Drawing.Size(970, 519);
@@ -231,55 +228,6 @@
             this.materialLabel5.Size = new System.Drawing.Size(50, 19);
             this.materialLabel5.TabIndex = 73;
             this.materialLabel5.Text = "Celular";
-            // 
-            // dateTimeInput1
-            // 
-            // 
-            // 
-            // 
-            this.dateTimeInput1.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dateTimeInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput1.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.dateTimeInput1.ButtonDropDown.Visible = true;
-            this.dateTimeInput1.IsPopupCalendarOpen = false;
-            this.dateTimeInput1.Location = new System.Drawing.Point(700, 444);
-            // 
-            // 
-            // 
-            // 
-            // 
-            // 
-            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BackColor2 = System.Drawing.SystemColors.ButtonHighlight;
-            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BorderColor = System.Drawing.SystemColors.AppWorkspace;
-            this.dateTimeInput1.MonthCalendar.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.DashDotDot;
-            this.dateTimeInput1.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput1.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dateTimeInput1.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dateTimeInput1.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput1.MonthCalendar.DisplayMonth = new System.DateTime(2026, 10, 1, 0, 0, 0, 0);
-            this.dateTimeInput1.MonthCalendar.FirstDayOfWeek = System.DayOfWeek.Monday;
-            // 
-            // 
-            // 
-            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dateTimeInput1.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput1.MonthCalendar.TodayButtonVisible = true;
-            this.dateTimeInput1.Name = "dateTimeInput1";
-            this.dateTimeInput1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimeInput1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dateTimeInput1.TabIndex = 72;
             // 
             // DTINacimiento
             // 
@@ -437,20 +385,6 @@
             this.SWBEstado.Value = true;
             this.SWBEstado.ValueObject = "Y";
             // 
-            // BTNAbrirFoto
-            // 
-            this.BTNAbrirFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNAbrirFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNAbrirFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_abrir;
-            this.BTNAbrirFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNAbrirFoto.Location = new System.Drawing.Point(798, 259);
-            this.BTNAbrirFoto.Name = "BTNAbrirFoto";
-            this.BTNAbrirFoto.Size = new System.Drawing.Size(102, 51);
-            this.BTNAbrirFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNAbrirFoto.TabIndex = 38;
-            this.BTNAbrirFoto.Text = "&Abrir";
-            this.BTNAbrirFoto.Click += new System.EventHandler(this.BTNAbrirFoto_Click);
-            // 
             // PCBCamara
             // 
             this.PCBCamara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -462,33 +396,56 @@
             this.PCBCamara.TabIndex = 35;
             this.PCBCamara.TabStop = false;
             // 
-            // BTNCapturarFoto
+            // button1
             // 
-            this.BTNCapturarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNCapturarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNCapturarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_tomar;
-            this.BTNCapturarFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNCapturarFoto.Location = new System.Drawing.Point(532, 259);
-            this.BTNCapturarFoto.Name = "BTNCapturarFoto";
-            this.BTNCapturarFoto.Size = new System.Drawing.Size(119, 51);
-            this.BTNCapturarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNCapturarFoto.TabIndex = 34;
-            this.BTNCapturarFoto.Text = "&Capturar";
-            this.BTNCapturarFoto.Click += new System.EventHandler(this.BTNCapturarFoto_Click);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = global::SistemaDeInventario2026.Properties.Resources.ic_eliminar_imagen_35;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(675, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 35);
+            this.button1.TabIndex = 117;
+            this.button1.Text = "Limpiar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.BTNLimpiarFoto_Click);
             // 
-            // BTNLimpiarFoto
+            // button2
             // 
-            this.BTNLimpiarFoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNLimpiarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNLimpiarFoto.Image = global::SistemaDeInventario2026.Properties.Resources.ic_camara_Limpiar;
-            this.BTNLimpiarFoto.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNLimpiarFoto.Location = new System.Drawing.Point(667, 259);
-            this.BTNLimpiarFoto.Name = "BTNLimpiarFoto";
-            this.BTNLimpiarFoto.Size = new System.Drawing.Size(113, 51);
-            this.BTNLimpiarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNLimpiarFoto.TabIndex = 37;
-            this.BTNLimpiarFoto.Text = "L&impiar";
-            this.BTNLimpiarFoto.Click += new System.EventHandler(this.BTNLimpiarFoto_Click);
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Image = global::SistemaDeInventario2026.Properties.Resources.ic_elegir_imagen_35;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(786, 267);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(83, 35);
+            this.button2.TabIndex = 116;
+            this.button2.Text = "Abrir";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.BTNAbrirFoto_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Image = global::SistemaDeInventario2026.Properties.Resources.ic_abrir_camara_35;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(551, 267);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 35);
+            this.button3.TabIndex = 115;
+            this.button3.Text = "Capturar";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.BTNCapturarFoto_Click);
             // 
             // FRMPersona_Registrar
             // 
@@ -507,7 +464,6 @@
             this.PPrincipal.ResumeLayout(false);
             this.PAgregar_Persona.ResumeLayout(false);
             this.PAgregar_Persona.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBFotografia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCBCamara)).EndInit();
             this.ResumeLayout(false);
@@ -522,10 +478,7 @@
         private System.Windows.Forms.PictureBox PCBFotografia;
         private DevComponents.DotNetBar.Controls.SwitchButton SWBSexo;
         private DevComponents.DotNetBar.Controls.SwitchButton SWBEstado;
-        private DevComponents.DotNetBar.ButtonX BTNAbrirFoto;
         private System.Windows.Forms.PictureBox PCBCamara;
-        private DevComponents.DotNetBar.ButtonX BTNCapturarFoto;
-        private DevComponents.DotNetBar.ButtonX BTNLimpiarFoto;
         private DevComponents.DotNetBar.LabelX LBLRegistrarPersona;
         private System.Windows.Forms.TextBox TXTCI;
         private MaterialSkin.Controls.MaterialLabel LBLCI;
@@ -535,7 +488,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.TextBox TXTApellidoPaterno;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInput1;
         private System.Windows.Forms.DateTimePicker DTINacimiento;
         private System.Windows.Forms.TextBox TXTDireccion;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
@@ -547,5 +499,8 @@
         private System.Windows.Forms.Button BTNSalir;
         private System.Windows.Forms.Button BTNGrabar;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

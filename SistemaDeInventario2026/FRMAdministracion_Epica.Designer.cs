@@ -342,7 +342,7 @@
             this.LBL.Size = new System.Drawing.Size(186, 25);
             this.LBL.TabIndex = 59;
             this.LBL.Text = "Copia de Seguridad";
-            this.LBL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LBL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox3
             // 

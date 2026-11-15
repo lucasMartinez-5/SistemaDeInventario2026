@@ -129,7 +129,7 @@ namespace SistemaDeInventario2026
             MessageBox.Show(e.Start.ToString("dd/MM/yyyy") + " - " + e.End.ToString("dd/MM/yyyy"));
         }
 
-        private void BTNVerDetalles_Click(object sender, EventArgs e)
+        public void BTNVerDetalles_Click(object sender, EventArgs e)
         {
             /*
             AbrirEnPanel(new FRMVenta_Lista_Filtro_Auditoria());
@@ -141,12 +141,16 @@ namespace SistemaDeInventario2026
             FRMVenta_Lista_Filtro_Auditoria lista = new FRMVenta_Lista_Filtro_Auditoria();
             lista.desde = desde;
             lista.hasta = hasta;
+            lista.mostrarTodo = false; // ← Esto hará que el Load ejecute ActualizarGrid()
             AbrirEnPanel(lista);
         }
 
-        private void BTNVerTodoVentas_Click(object sender, EventArgs e)
+        public void BTNVerTodoVentas_Click(object sender, EventArgs e)
         {
-            //AbrirEnPanel(new FRMVenta_Lista_Auditoria());
+            FRMVenta_Lista_Filtro_Auditoria lista = new FRMVenta_Lista_Filtro_Auditoria();
+            lista.mostrarTodo = true;  // ← Esto hará que el Load ejecute ActualizarGridCompleto()
+
+            AbrirEnPanel(lista);
         }
     }
 }

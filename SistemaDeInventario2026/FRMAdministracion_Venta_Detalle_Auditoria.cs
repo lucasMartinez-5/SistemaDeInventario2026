@@ -37,6 +37,22 @@ namespace SistemaDeInventario2026
             InitializeComponent();
             this.venta = venta;
             this.nombreCliente = cliente;
+            // === FORZAR COLOR BLANCO INCLUSO AL ESTAR SELECCIONADO ===
+
+            // 1. Desactiva el estilo azul de Windows en las cabeceras
+            DTGDetalleAuditoria.EnableHeadersVisualStyles = false;
+
+            // 2. Fuerza que la cabecera sea blanca incluso si tiene el "foco"
+            DTGDetalleAuditoria.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+            DTGDetalleAuditoria.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.White; // Clave: igual al BackColor
+            DTGDetalleAuditoria.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            DTGDetalleAuditoria.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // 3. Fuerza que las filas sean blancas incluso si están "seleccionadas"
+            DTGDetalleAuditoria.DefaultCellStyle.SelectionBackColor = Color.White;
+            DTGDetalleAuditoria.DefaultCellStyle.SelectionForeColor = Color.Black;
+            // ==========================================================
+
             CargarDatos();
         }
 
@@ -170,7 +186,9 @@ namespace SistemaDeInventario2026
 
         private void FRMAdministracion_Venta_Detalle_Auditoria_Load(object sender, EventArgs e)
         {
-
+            // Esto quita la fila azul y el foco de la celda [0,0] al abrir el formulario
+            DTGDetalleAuditoria.ClearSelection();  // quita la fila azul (CAMISA)
+            DTGDetalleAuditoria.CurrentCell = null;  // quita el foco de la cabecera "Producto"
         }
 
         private void DibujarMarcaDeAgua(Graphics g, Rectangle pagina)

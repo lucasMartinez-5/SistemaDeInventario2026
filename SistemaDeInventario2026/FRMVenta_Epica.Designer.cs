@@ -37,7 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.BTNResumenInversion = new System.Windows.Forms.Button();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.BTNCostoRegistros = new System.Windows.Forms.Button();
             this.BTNModificar = new System.Windows.Forms.Button();
@@ -73,7 +72,6 @@
             this.PMenu_Venta.Controls.Add(this.label5);
             this.PMenu_Venta.Controls.Add(this.pictureBox6);
             this.PMenu_Venta.Controls.Add(this.label6);
-            this.PMenu_Venta.Controls.Add(this.BTNResumenInversion);
             this.PMenu_Venta.Controls.Add(this.materialLabel2);
             this.PMenu_Venta.Controls.Add(this.BTNCostoRegistros);
             this.PMenu_Venta.Controls.Add(this.BTNModificar);
@@ -93,7 +91,7 @@
             this.BTNVenta_Lista.FlatAppearance.BorderSize = 0;
             this.BTNVenta_Lista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNVenta_Lista.ForeColor = System.Drawing.Color.White;
-            this.BTNVenta_Lista.Location = new System.Drawing.Point(323, 402);
+            this.BTNVenta_Lista.Location = new System.Drawing.Point(183, 402);
             this.BTNVenta_Lista.Name = "BTNVenta_Lista";
             this.BTNVenta_Lista.Size = new System.Drawing.Size(128, 38);
             this.BTNVenta_Lista.TabIndex = 101;
@@ -172,20 +170,6 @@
             this.label6.TabIndex = 95;
             this.label6.Text = "Directorio de Clientes";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // BTNResumenInversion
-            // 
-            this.BTNResumenInversion.BackColor = System.Drawing.Color.White;
-            this.BTNResumenInversion.FlatAppearance.BorderSize = 0;
-            this.BTNResumenInversion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNResumenInversion.ForeColor = System.Drawing.Color.Black;
-            this.BTNResumenInversion.Location = new System.Drawing.Point(183, 402);
-            this.BTNResumenInversion.Name = "BTNResumenInversion";
-            this.BTNResumenInversion.Size = new System.Drawing.Size(134, 38);
-            this.BTNResumenInversion.TabIndex = 94;
-            this.BTNResumenInversion.Text = "Emitir Recibo";
-            this.BTNResumenInversion.UseVisualStyleBackColor = false;
-            this.BTNResumenInversion.Click += new System.EventHandler(this.BTNResumenInversion_Click);
             // 
             // materialLabel2
             // 
@@ -328,7 +312,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button BTNResumenInversion;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.Button BTNCostoRegistros;
         private System.Windows.Forms.Button BTNModificar;

@@ -158,6 +158,7 @@
             // 
             this.CMBMarca.DisplayMember = "Text";
             this.CMBMarca.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CMBMarca.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
             this.CMBMarca.ForeColor = System.Drawing.Color.Black;
             this.CMBMarca.FormattingEnabled = true;
             this.CMBMarca.ItemHeight = 17;
@@ -171,6 +172,7 @@
             // 
             this.CMBProductoNombre.DisplayMember = "Text";
             this.CMBProductoNombre.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CMBProductoNombre.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
             this.CMBProductoNombre.ForeColor = System.Drawing.Color.Black;
             this.CMBProductoNombre.FormattingEnabled = true;
             this.CMBProductoNombre.ItemHeight = 17;
@@ -187,6 +189,7 @@
             // 
             this.CMBTalla.DisplayMember = "Text";
             this.CMBTalla.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CMBTalla.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
             this.CMBTalla.ForeColor = System.Drawing.Color.Black;
             this.CMBTalla.FormattingEnabled = true;
             this.CMBTalla.ItemHeight = 17;
@@ -200,6 +203,7 @@
             // 
             this.CMBColor.DisplayMember = "Text";
             this.CMBColor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CMBColor.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
             this.CMBColor.ForeColor = System.Drawing.Color.Black;
             this.CMBColor.FormattingEnabled = true;
             this.CMBColor.ItemHeight = 17;
@@ -214,6 +218,7 @@
             this.CMBCategoria.DisplayMember = "Text";
             this.CMBCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMBCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMBCategoria.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
             this.CMBCategoria.ForeColor = System.Drawing.Color.Black;
             this.CMBCategoria.FormattingEnabled = true;
             this.CMBCategoria.ItemHeight = 17;

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Win32;
 
 namespace SistemaDeInventario2026
 {
@@ -48,10 +49,11 @@ namespace SistemaDeInventario2026
 
         private string BuscarPgDump()
         {
+            /* Metodo primero
             string[] raices = new string[] {
-        Environment.GetEnvironmentVariable("ProgramW6432"),
-        Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-        Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) };
+            Environment.GetEnvironmentVariable("ProgramW6432"),
+            Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+            Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86) };
 
             foreach (string raiz in raices)
             {
@@ -66,6 +68,69 @@ namespace SistemaDeInventario2026
                 }
             }
             return null;
+            */
+
+            // 1. PRIORIDAD: Leer la ruta desde App.config (la solución definitiva)
+            string rutaConfig = ConfigurationManager.AppSettings.Get("PG_DUMP");
+            if (!string.IsNullOrEmpty(rutaConfig) && File.Exists(rutaConfig))
+            {
+                return rutaConfig;
+            }
+
+            // 2. RESPALDO: Buscar en el PATH de Windows (si el instalador lo registró)
+            string path = Environment.GetEnvironmentVariable("PATH") ?? "";
+            foreach (string dir in path.Split(';'))
+            {
+                if (string.IsNullOrWhiteSpace(dir)) continue;
+                try
+                {
+                    string exe = Path.Combine(dir.Trim(), "pg_dump.exe");
+                    if (File.Exists(exe)) return exe;
+                }
+                catch { }
+            }
+            // 3. RESPALDO: Buscar en el Registro de Windows (donde PostgreSQL se auto-registra)
+            try
+            {
+                using (var key = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(@"SOFTWARE\PostgreSQL\InstallPaths"))
+                {
+                    if (key != null)
+                    {
+                        foreach (string sub in key.GetSubKeyNames())
+                        {
+                            string baseDir = key.OpenSubKey(sub)?.GetValue("Base") as string;
+                            if (string.IsNullOrEmpty(baseDir)) continue;
+                            string exe = Path.Combine(baseDir, "bin", "pg_dump.exe");
+                            if (File.Exists(exe)) return exe;
+                        }
+                    }
+                }
+            }
+            catch { }
+            // 4. RESPALDO: Buscar en unidades C:, D:, E: (por si acaso no se usó el App.config)
+            string[] raices = new string[] { @"C:\", @"D:\", @"E:\" };
+            foreach (string raiz in raices)
+            {
+                try
+                {
+                    // Busca carpetas que empiecen con "POSTGRESQL" (ignora mayúsculas/minúsculas)
+                    foreach (string sub in Directory.GetDirectories(raiz, "POSTGRESQL*"))
+                    {
+                        string exe = Path.Combine(sub, "bin", "pg_dump.exe");
+                        if (File.Exists(exe)) return exe;
+
+                        // Por si hay una carpeta de versión intermedia (ej. POSTGRESQL 4\16\bin)
+                        foreach (string version in Directory.GetDirectories(sub))
+                        {
+                            string exeVer = Path.Combine(version, "bin", "pg_dump.exe");
+                            if (File.Exists(exeVer)) return exeVer;
+                        }
+                    }
+                }
+                catch { }
+            }
+
+            return null; // No se encontró en ningún lado
         }
 
         private void MostrarEstado()
@@ -78,7 +143,9 @@ namespace SistemaDeInventario2026
             if (ultimo == null)
             {
                 LBL.ForeColor = Color.Firebrick;
-                LBL.Text = "Aún no se ha realizado ninguna copia de seguridad.";
+                // Mostrando en Mensaje en vez de LBL.Text para que sea más visible al usuario
+                MessageBox.Show("Aún no se realizó ninguna copia de seguridad.");
+                //LBL.Text = "Aún no se realizó ninguna copia de seguridad.";
                 return;
             }
 
@@ -86,12 +153,17 @@ namespace SistemaDeInventario2026
             string hace = dias == 0 ? "hoy" : (dias == 1 ? "hace 1 día" : "hace " + dias + " días");
 
             LBL.ForeColor = dias <= DIAS_ALERTA ? Color.SeaGreen : Color.Firebrick;
+            // Mostrando en Mensaje en vez de LBL.Text para que sea más visible al usuario
+            MessageBox.Show("Última copia: " + ultimo.LastWriteTime.ToString("dd/MM/yyyy HH:mm") + " (" + hace + ")" + Environment.NewLine +
+                             "Tamaño: " + (ultimo.Length / 1024.0 / 1024.0).ToString("0.00") + " MB" + Environment.NewLine +
+                             "Carpeta: " + ultimo.DirectoryName);
+            /*
             LBL.Text = "Última copia: " + ultimo.LastWriteTime.ToString("dd/MM/yyyy HH:mm") + " (" + hace + ")" + Environment.NewLine +
                              "Tamaño: " + (ultimo.Length / 1024.0 / 1024.0).ToString("0.00") + " MB" + Environment.NewLine +
                              "Carpeta: " + ultimo.DirectoryName;
-
+            */
             if (dias > DIAS_ALERTA)
-                LBL.Text += Environment.NewLine + "Se recomienda realizar una copia nueva.";
+                LBL.Text += Environment.NewLine + "Se recomienda crear una copia nueva.";
         }
         #endregion
 

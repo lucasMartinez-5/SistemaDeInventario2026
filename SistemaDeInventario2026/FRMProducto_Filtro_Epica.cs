@@ -157,6 +157,11 @@ namespace SistemaDeInventario2026
 
         private void FRMProducto_Filtro_Epica_Load(object sender, EventArgs e)
         {
+            CMBProductoNombre.FocusHighlightColor = Color.LightSkyBlue;
+            CMBMarca.FocusHighlightColor = Color.LightSkyBlue;
+            CMBColor.FocusHighlightColor = Color.LightSkyBlue;
+            CMBCategoria.FocusHighlightColor = Color.LightSkyBlue;
+            CMBTalla.FocusHighlightColor = Color.LightSkyBlue;
             LBLBuscarPor.ForeColor = Color.Black;
             LBLOpcionesFiltro.ForeColor = Color.Black;
             CargarComboCategorias();

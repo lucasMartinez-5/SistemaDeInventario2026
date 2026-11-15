@@ -20,6 +20,9 @@ namespace SistemaDeInventario2026
         private List<aventa> lista_ventas = new List<aventa>();
         public DateTime desde = DateTime.Today;
         public DateTime hasta = DateTime.Today;
+
+        // NUEVA VARIABLE: Controla si se muestran todas o solo el rango
+        public bool mostrarTodo = false;
         #endregion
 
         public FRMVenta_Lista_Filtro_Auditoria()
@@ -71,10 +74,39 @@ namespace SistemaDeInventario2026
                 DTGLista[4, DTGLista.Rows.Count - 1].Value = a.capvtotven.ToString("N2");   // Total
             }
         }
-        #endregion
-        private void FRMVenta_Lista_Filtro_Auditoria_Load(object sender, EventArgs e)
+
+        private void ActualizarGridCompleto()
         {
-            ActualizarGrid();
+            DTGLista.Rows.Clear();
+            lista_ventas.Clear();
+            lista_ventas = aventa.Lista("(fapvcodcli in (select paclcodcli from aclient where caclsoccli like '%" + TXTFiltrar.Text + "%') " +
+                                         "or fapvcodusu in (select pauscodusu from aususis where causnomlog like '%" + TXTFiltrar.Text + "%')) " +
+                                         "order by capvfecven desc limit " +
+                                         IINFilas.Value.ToString()
+                                         );
+            foreach (aventa a in lista_ventas)
+            {
+                DTGLista.Rows.Add();
+                DTGLista[0, DTGLista.Rows.Count - 1].Value = a.papvcodven;
+                DTGLista[1, DTGLista.Rows.Count - 1].Value = NombreUsuario(a.fapvcodusu);
+                DTGLista[2, DTGLista.Rows.Count - 1].Value = NombreCliente(a.fapvcodcli);   // Cliente
+                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capvfecven;                  // Fecha de Venta
+                DTGLista[4, DTGLista.Rows.Count - 1].Value = a.capvtotven.ToString("N2");   // Total
+            }
+        }
+
+        #endregion
+        public void FRMVenta_Lista_Filtro_Auditoria_Load(object sender, EventArgs e)
+        {
+            if (this.mostrarTodo)
+            {
+                ActualizarGridCompleto(); // Muestra todo (sin filtro de fechas)
+            }
+            else
+            {
+                ActualizarGrid();         // Muestra solo el rango de fechas
+            }
+            //ActualizarGrid();
         }
 
         private void BTNSalir_Click(object sender, EventArgs e)
@@ -84,7 +116,15 @@ namespace SistemaDeInventario2026
 
         private void BTNFiltrar_Click(object sender, EventArgs e)
         {
-            ActualizarGrid();
+            if (this.mostrarTodo)
+            {
+                ActualizarGridCompleto(); // Muestra todo (sin filtro de fechas)
+            }
+            else
+            {
+                ActualizarGrid();         // Muestra solo el rango de fechas
+            }
+            //ActualizarGrid();
         }
 
         private void DTGLista_CellContentClick(object sender, DataGridViewCellEventArgs e)

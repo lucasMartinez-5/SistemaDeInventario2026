@@ -104,6 +104,7 @@
             this.BTNAnterior.Size = new System.Drawing.Size(46, 33);
             this.BTNAnterior.TabIndex = 80;
             this.BTNAnterior.UseVisualStyleBackColor = true;
+            this.BTNAnterior.Click += new System.EventHandler(this.BTNAnterior_Click);
             // 
             // LBLCatalogoVisual
             // 
@@ -132,6 +133,7 @@
             this.BTNSiguiente.Size = new System.Drawing.Size(43, 33);
             this.BTNSiguiente.TabIndex = 81;
             this.BTNSiguiente.UseVisualStyleBackColor = true;
+            this.BTNSiguiente.Click += new System.EventHandler(this.BTNSiguiente_Click);
             // 
             // FLPCatalogo
             // 
