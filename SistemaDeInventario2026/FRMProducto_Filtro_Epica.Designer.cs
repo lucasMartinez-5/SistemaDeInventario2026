@@ -30,16 +30,12 @@
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PFiltradoAvanzado_Producto = new System.Windows.Forms.Panel();
+            this.CMBProductoNombre = new Krypton.Toolkit.KryptonComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PBCLogoTalla = new System.Windows.Forms.PictureBox();
             this.LBLOpcionesFiltro = new DevComponents.DotNetBar.LabelX();
             this.LBLBuscarPor = new DevComponents.DotNetBar.LabelX();
-            this.CMBMarca = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.CMBProductoNombre = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.CMBTalla = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.CMBColor = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.CMBCategoria = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -47,11 +43,20 @@
             this.BTNBuscar = new System.Windows.Forms.Button();
             this.LBL = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.CMBCategoria = new Krypton.Toolkit.KryptonComboBox();
+            this.CMBTalla = new Krypton.Toolkit.KryptonComboBox();
+            this.CMBMarca = new Krypton.Toolkit.KryptonComboBox();
+            this.CMBColor = new Krypton.Toolkit.KryptonComboBox();
             this.PPrincipal.SuspendLayout();
             this.PFiltradoAvanzado_Producto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBProductoNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCLogoTalla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBCategoria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBTalla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBMarca)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBColor)).BeginInit();
             this.SuspendLayout();
             // 
             // PPrincipal
@@ -68,16 +73,16 @@
             // 
             this.PFiltradoAvanzado_Producto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PFiltradoAvanzado_Producto.BackColor = System.Drawing.Color.White;
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBColor);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBMarca);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBTalla);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBCategoria);
+            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBProductoNombre);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.pictureBox2);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.pictureBox1);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.PBCLogoTalla);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.LBLOpcionesFiltro);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.LBLBuscarPor);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBMarca);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBProductoNombre);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBTalla);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBColor);
-            this.PFiltradoAvanzado_Producto.Controls.Add(this.CMBCategoria);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel6);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel5);
             this.PFiltradoAvanzado_Producto.Controls.Add(this.materialLabel2);
@@ -89,6 +94,24 @@
             this.PFiltradoAvanzado_Producto.Name = "PFiltradoAvanzado_Producto";
             this.PFiltradoAvanzado_Producto.Size = new System.Drawing.Size(970, 519);
             this.PFiltradoAvanzado_Producto.TabIndex = 0;
+            // 
+            // CMBProductoNombre
+            // 
+            this.CMBProductoNombre.Location = new System.Drawing.Point(175, 175);
+            this.CMBProductoNombre.Name = "CMBProductoNombre";
+            this.CMBProductoNombre.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.CMBProductoNombre.Size = new System.Drawing.Size(191, 22);
+            this.CMBProductoNombre.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.CMBProductoNombre.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.CMBProductoNombre.StateCommon.Item.Back.Color2 = System.Drawing.Color.White;
+            this.CMBProductoNombre.StateCommon.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBProductoNombre.StateTracking.Item.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBProductoNombre.StateTracking.Item.Back.Color2 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBProductoNombre.StateTracking.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBProductoNombre.TabIndex = 142;
+            this.CMBProductoNombre.Enter += new System.EventHandler(this.CMBProductoNombre_Enter);
+            this.CMBProductoNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CMBProductoNombre_KeyDown);
+            this.CMBProductoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBProductoNombre_KeyPress);
             // 
             // pictureBox2
             // 
@@ -153,80 +176,6 @@
             this.LBLBuscarPor.TabIndex = 135;
             this.LBLBuscarPor.Text = "Buscar por:";
             this.LBLBuscarPor.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // CMBMarca
-            // 
-            this.CMBMarca.DisplayMember = "Text";
-            this.CMBMarca.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CMBMarca.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
-            this.CMBMarca.ForeColor = System.Drawing.Color.Black;
-            this.CMBMarca.FormattingEnabled = true;
-            this.CMBMarca.ItemHeight = 17;
-            this.CMBMarca.Location = new System.Drawing.Point(175, 245);
-            this.CMBMarca.Name = "CMBMarca";
-            this.CMBMarca.Size = new System.Drawing.Size(191, 23);
-            this.CMBMarca.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.CMBMarca.TabIndex = 134;
-            // 
-            // CMBProductoNombre
-            // 
-            this.CMBProductoNombre.DisplayMember = "Text";
-            this.CMBProductoNombre.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CMBProductoNombre.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
-            this.CMBProductoNombre.ForeColor = System.Drawing.Color.Black;
-            this.CMBProductoNombre.FormattingEnabled = true;
-            this.CMBProductoNombre.ItemHeight = 17;
-            this.CMBProductoNombre.Location = new System.Drawing.Point(175, 175);
-            this.CMBProductoNombre.Name = "CMBProductoNombre";
-            this.CMBProductoNombre.Size = new System.Drawing.Size(191, 23);
-            this.CMBProductoNombre.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.CMBProductoNombre.TabIndex = 133;
-            this.CMBProductoNombre.Enter += new System.EventHandler(this.CMBProductoNombre_Enter);
-            this.CMBProductoNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CMBProductoNombre_KeyDown);
-            this.CMBProductoNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CMBProductoNombre_KeyPress);
-            // 
-            // CMBTalla
-            // 
-            this.CMBTalla.DisplayMember = "Text";
-            this.CMBTalla.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CMBTalla.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
-            this.CMBTalla.ForeColor = System.Drawing.Color.Black;
-            this.CMBTalla.FormattingEnabled = true;
-            this.CMBTalla.ItemHeight = 17;
-            this.CMBTalla.Location = new System.Drawing.Point(594, 175);
-            this.CMBTalla.Name = "CMBTalla";
-            this.CMBTalla.Size = new System.Drawing.Size(191, 23);
-            this.CMBTalla.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.CMBTalla.TabIndex = 132;
-            // 
-            // CMBColor
-            // 
-            this.CMBColor.DisplayMember = "Text";
-            this.CMBColor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CMBColor.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
-            this.CMBColor.ForeColor = System.Drawing.Color.Black;
-            this.CMBColor.FormattingEnabled = true;
-            this.CMBColor.ItemHeight = 17;
-            this.CMBColor.Location = new System.Drawing.Point(595, 245);
-            this.CMBColor.Name = "CMBColor";
-            this.CMBColor.Size = new System.Drawing.Size(190, 23);
-            this.CMBColor.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.CMBColor.TabIndex = 131;
-            // 
-            // CMBCategoria
-            // 
-            this.CMBCategoria.DisplayMember = "Text";
-            this.CMBCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CMBCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CMBCategoria.FocusHighlightColor = System.Drawing.Color.LightSkyBlue;
-            this.CMBCategoria.ForeColor = System.Drawing.Color.Black;
-            this.CMBCategoria.FormattingEnabled = true;
-            this.CMBCategoria.ItemHeight = 17;
-            this.CMBCategoria.Location = new System.Drawing.Point(594, 315);
-            this.CMBCategoria.Name = "CMBCategoria";
-            this.CMBCategoria.Size = new System.Drawing.Size(191, 23);
-            this.CMBCategoria.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.CMBCategoria.TabIndex = 130;
             // 
             // materialLabel6
             // 
@@ -317,6 +266,67 @@
             this.materialLabel3.TabIndex = 122;
             this.materialLabel3.Text = "Nombre";
             // 
+            // CMBCategoria
+            // 
+            this.CMBCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMBCategoria.Location = new System.Drawing.Point(594, 315);
+            this.CMBCategoria.Name = "CMBCategoria";
+            this.CMBCategoria.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.CMBCategoria.Size = new System.Drawing.Size(191, 22);
+            this.CMBCategoria.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.CMBCategoria.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.CMBCategoria.StateCommon.Item.Back.Color2 = System.Drawing.Color.White;
+            this.CMBCategoria.StateCommon.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBCategoria.StateTracking.Item.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBCategoria.StateTracking.Item.Back.Color2 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBCategoria.StateTracking.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBCategoria.TabIndex = 143;
+            // 
+            // CMBTalla
+            // 
+            this.CMBTalla.Location = new System.Drawing.Point(594, 175);
+            this.CMBTalla.Name = "CMBTalla";
+            this.CMBTalla.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.CMBTalla.Size = new System.Drawing.Size(191, 22);
+            this.CMBTalla.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.CMBTalla.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.CMBTalla.StateCommon.Item.Back.Color2 = System.Drawing.Color.White;
+            this.CMBTalla.StateCommon.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBTalla.StateTracking.Item.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBTalla.StateTracking.Item.Back.Color2 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBTalla.StateTracking.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBTalla.TabIndex = 144;
+            // 
+            // CMBMarca
+            // 
+            this.CMBMarca.Location = new System.Drawing.Point(175, 245);
+            this.CMBMarca.Name = "CMBMarca";
+            this.CMBMarca.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.CMBMarca.Size = new System.Drawing.Size(191, 22);
+            this.CMBMarca.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.CMBMarca.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.CMBMarca.StateCommon.Item.Back.Color2 = System.Drawing.Color.White;
+            this.CMBMarca.StateCommon.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBMarca.StateTracking.Item.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBMarca.StateTracking.Item.Back.Color2 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBMarca.StateTracking.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBMarca.TabIndex = 145;
+            // 
+            // CMBColor
+            // 
+            this.CMBColor.Location = new System.Drawing.Point(595, 245);
+            this.CMBColor.Name = "CMBColor";
+            this.CMBColor.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.CMBColor.Size = new System.Drawing.Size(191, 22);
+            this.CMBColor.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.CMBColor.StateCommon.Item.Back.Color1 = System.Drawing.Color.White;
+            this.CMBColor.StateCommon.Item.Back.Color2 = System.Drawing.Color.White;
+            this.CMBColor.StateCommon.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBColor.StateTracking.Item.Back.Color1 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBColor.StateTracking.Item.Back.Color2 = System.Drawing.Color.DeepSkyBlue;
+            this.CMBColor.StateTracking.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+            this.CMBColor.TabIndex = 146;
+            // 
             // FRMProducto_Filtro_Epica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -331,9 +341,14 @@
             this.PPrincipal.ResumeLayout(false);
             this.PFiltradoAvanzado_Producto.ResumeLayout(false);
             this.PFiltradoAvanzado_Producto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBProductoNombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCLogoTalla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBCategoria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBTalla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBMarca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CMBColor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,11 +357,6 @@
 
         private System.Windows.Forms.Panel PPrincipal;
         private System.Windows.Forms.Panel PFiltradoAvanzado_Producto;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx CMBMarca;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx CMBProductoNombre;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx CMBTalla;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx CMBColor;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx CMBCategoria;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
@@ -359,5 +369,10 @@
         private System.Windows.Forms.PictureBox PBCLogoTalla;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Krypton.Toolkit.KryptonComboBox CMBProductoNombre;
+        private Krypton.Toolkit.KryptonComboBox CMBCategoria;
+        private Krypton.Toolkit.KryptonComboBox CMBTalla;
+        private Krypton.Toolkit.KryptonComboBox CMBMarca;
+        private Krypton.Toolkit.KryptonComboBox CMBColor;
     }
 }

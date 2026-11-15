@@ -45,16 +45,16 @@ namespace SistemaDeInventario2026
         {
             string where = "capdestpro = true";
 
-            if (Texto(CMBProductoNombre) != "")
-                where += " and capdnompro ilike '%" + Texto(CMBProductoNombre) + "%'";
-            if (Texto(CMBMarca) != "")
-                where += " and capdmarpro ilike '%" + Texto(CMBMarca) + "%'";
-            if (Texto(CMBTalla) != "")
-                where += " and lower(capdtalpro) = lower('" + Texto(CMBTalla) + "')";
-            if (Texto(CMBColor) != "")
-                where += " and lower(capdcolpro) = lower('" + Texto(CMBColor) + "')";
-            if (Texto(CMBCategoria) != "")
-                where += " and lower(cacpnomcat) = lower('" + Texto(CMBCategoria) + "')";
+            if (Texto(CMBProductoNombre.ComboBox) != "")
+                where += " and capdnompro ilike '%" + Texto(CMBProductoNombre.ComboBox) + "%'";
+            if (Texto(CMBMarca.ComboBox) != "")
+                where += " and capdmarpro ilike '%" + Texto(CMBMarca.ComboBox) + "%'";
+            if (Texto(CMBTalla.ComboBox) != "")
+                where += " and lower(capdtalpro) = lower('" + Texto(CMBTalla.ComboBox) + "')";
+            if (Texto(CMBColor.ComboBox) != "")
+                where += " and lower(capdcolpro) = lower('" + Texto(CMBColor.ComboBox) + "')";
+            if (Texto(CMBCategoria.ComboBox) != "")
+                where += " and lower(cacpnomcat) = lower('" + Texto(CMBCategoria.ComboBox) + "')";
 
             return where;
         }
@@ -153,22 +153,83 @@ namespace SistemaDeInventario2026
             CMBTalla.Text = "";
             CMBCategoria.SelectedIndex = -1;
         }
+
+        public void ComboBoxEx_DrawItem(object sender, DrawItemEventArgs e, Color colorSeleccion, Color colorTexto)
+        {
+            ComboBoxEx combo = (ComboBoxEx)sender;
+
+            // Fondo por defecto (blanco)
+            e.DrawBackground();
+
+            // Si el item está seleccionado o el mouse está sobre él
+            if ((e.State & DrawItemState.Selected) == DrawItemState.Selected ||
+                (e.State & DrawItemState.Focus) == DrawItemState.Focus)
+            {
+                // Pintar fondo azul sólido
+                using (SolidBrush brush = new SolidBrush(colorSeleccion))
+                {
+                    e.Graphics.FillRectangle(brush, e.Bounds);
+                }
+            }
+            else
+            {
+                // Fondo blanco normal
+                using (SolidBrush brush = new SolidBrush(Color.White))
+                {
+                    e.Graphics.FillRectangle(brush, e.Bounds);
+                }
+            }
+
+            // Dibujar el texto
+            string texto = combo.Items[e.Index]?.ToString() ?? "";
+            using (SolidBrush textBrush = new SolidBrush(colorTexto))
+            {
+                e.Graphics.DrawString(texto, e.Font, textBrush, e.Bounds.X + 2, e.Bounds.Y + 2);
+            }
+
+            // Dibujar borde de foco (opcional)
+            e.DrawFocusRectangle();
+        }
         #endregion
 
         private void FRMProducto_Filtro_Epica_Load(object sender, EventArgs e)
         {
-            CMBProductoNombre.FocusHighlightColor = Color.LightSkyBlue;
-            CMBMarca.FocusHighlightColor = Color.LightSkyBlue;
-            CMBColor.FocusHighlightColor = Color.LightSkyBlue;
-            CMBCategoria.FocusHighlightColor = Color.LightSkyBlue;
-            CMBTalla.FocusHighlightColor = Color.LightSkyBlue;
+            // Color azul sólido (igual que tus grids)
+            Color colorAzul = Color.DodgerBlue;
+            Color colorTexto = Color.Black;
+
+            // Configurar todos los KryptonComboBox del formulario
+            foreach (Control c in this.Controls)
+            {
+                if (c is Krypton.Toolkit.KryptonComboBox combo)
+                {
+                    // Color de fondo cuando el mouse está sobre el item (hover)
+                    combo.StateTracking.Item.Back.Color1 = colorAzul;
+                    combo.StateTracking.Item.Back.Color2 = colorAzul; // Mismo color para evitar degradado
+                    combo.StateTracking.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+
+                    // Color del texto cuando el mouse está sobre el item
+                    combo.StateTracking.Item.Content.ShortText.Color1 = colorTexto;
+                    combo.StateTracking.Item.Content.ShortText.Color2 = colorTexto;
+
+                    // Color de fondo normal (cuando no hay hover)
+                    combo.StateCommon.Item.Back.Color1 = Color.White;
+                    combo.StateCommon.Item.Back.Color2 = Color.White;
+                    combo.StateCommon.Item.Back.ColorStyle = Krypton.Toolkit.PaletteColorStyle.Solid;
+
+                    // Color del texto normal
+                    combo.StateCommon.Item.Content.ShortText.Color1 = colorTexto;
+                    combo.StateCommon.Item.Content.ShortText.Color2 = colorTexto;
+                }
+            }
+
             LBLBuscarPor.ForeColor = Color.Black;
             LBLOpcionesFiltro.ForeColor = Color.Black;
             CargarComboCategorias();
-            CargarCombo("capdnompro", CMBProductoNombre);
-            CargarCombo("capdmarpro", CMBMarca);
-            CargarCombo("capdcolpro", CMBColor);
-            CargarCombo("capdtalpro", CMBTalla);
+            CargarCombo("capdnompro", CMBProductoNombre.ComboBox);
+            CargarCombo("capdmarpro", CMBMarca.ComboBox);
+            CargarCombo("capdcolpro", CMBColor.ComboBox);
+            CargarCombo("capdtalpro", CMBTalla.ComboBox);
         }
 
         private void BTNSalir_Click(object sender, EventArgs e)
@@ -202,8 +263,16 @@ namespace SistemaDeInventario2026
 
         private void CMBProductoNombre_Enter(object sender, EventArgs e)
         {
-            ComboBoxEx a = (ComboBoxEx)sender;
-            a.SelectAll();
+            //ComboBox a = (ComboBox)sender;
+            //a.SelectAll();
+            if (sender is ComboBox a)
+            {
+                a.SelectAll();
+            }
+            else if (sender is Krypton.Toolkit.KryptonComboBox ka)
+            {
+                ka.SelectAll();
+            }
         }
 
         private void CMBProductoNombre_KeyPress(object sender, KeyPressEventArgs e)

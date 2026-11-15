@@ -111,5 +111,26 @@ namespace SistemaDeInventario2026
             }
             
         }
+
+        private void BTNVerUCLProducto_Click(object sender, EventArgs e)
+        {
+            FRMProducto_Ver a = new FRMProducto_Ver();
+            a.codProMod = this.Tag.ToString();
+            a.ShowDialog();
+            //actualizar el catalogo de productos despues de modificar un producto
+            /*
+            if (a.actualizar)
+            {
+                FRMProducto_Lista b = new FRMProducto_Lista();
+                b.ActualizarCatalogo();
+            }
+            */
+
+            if (a.actualizar)
+            {
+                FRMProducto_Lista lista = this.FindForm() as FRMProducto_Lista;   // el catálogo que está en pantalla
+                if (lista != null) lista.ActualizarCatalogo();
+            }
+        }
     }
 }

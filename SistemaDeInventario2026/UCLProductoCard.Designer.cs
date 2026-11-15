@@ -83,6 +83,7 @@
             this.BTNVerUCLProducto.Size = new System.Drawing.Size(30, 30);
             this.BTNVerUCLProducto.TabIndex = 85;
             this.BTNVerUCLProducto.UseVisualStyleBackColor = true;
+            this.BTNVerUCLProducto.Click += new System.EventHandler(this.BTNVerUCLProducto_Click);
             // 
             // BTNModificarUCLProducto
             // 
