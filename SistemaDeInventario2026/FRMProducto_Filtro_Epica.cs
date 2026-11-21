@@ -288,5 +288,85 @@ namespace SistemaDeInventario2026
             lista.filtro = ConstruirFiltro();
             AbrirEnPanel(lista);
         }
+
+        private void CMBCategoria_TextChanged(object sender, EventArgs e)
+        {
+            // Evitamos un bucle infinito verificando si ya está en mayúsculas
+            if (CMBCategoria.Text != CMBCategoria.Text.ToUpper())
+            {
+                // Guardamos la posición del cursor para que no se vaya al final al escribir en medio
+                int cursorPos = CMBCategoria.SelectionStart;
+
+                // Convertimos todo el texto a mayúsculas
+                CMBCategoria.Text = CMBCategoria.Text.ToUpper();
+
+                // Restauramos la posición del cursor
+                CMBCategoria.SelectionStart = cursorPos;
+            }
+        }
+
+        private void CMBColor_TextChanged(object sender, EventArgs e)
+        {
+            // Evitamos un bucle infinito verificando si ya está en mayúsculas
+            if (CMBColor.Text != CMBColor.Text.ToUpper())
+            {
+                // Guardamos la posición del cursor para que no se vaya al final al escribir en medio
+                int cursorPos = CMBColor.SelectionStart;
+
+                // Convertimos todo el texto a mayúsculas
+                CMBColor.Text = CMBColor.Text.ToUpper();
+
+                // Restauramos la posición del cursor
+                CMBColor.SelectionStart = cursorPos;
+            }
+        }
+
+        private void CMBTalla_TextChanged(object sender, EventArgs e)
+        {
+            // Evitamos un bucle infinito verificando si ya está en mayúsculas
+            if (CMBTalla.Text != CMBTalla.Text.ToUpper())
+            {
+                // Guardamos la posición del cursor para que no se vaya al final al escribir en medio
+                int cursorPos = CMBTalla.SelectionStart;
+
+                // Convertimos todo el texto a mayúsculas
+                CMBTalla.Text = CMBTalla.Text.ToUpper();
+
+                // Restauramos la posición del cursor
+                CMBTalla.SelectionStart = cursorPos;
+            }
+        }
+
+        private void CMBProductoNombre_TextChanged(object sender, EventArgs e)
+        {
+            // Evitamos un bucle infinito verificando si ya está en mayúsculas
+            if (CMBProductoNombre.Text != CMBProductoNombre.Text.ToUpper())
+            {
+                // Guardamos la posición del cursor para que no se vaya al final al escribir en medio
+                int cursorPos = CMBProductoNombre.SelectionStart;
+
+                // Convertimos todo el texto a mayúsculas
+                CMBProductoNombre.Text = CMBProductoNombre.Text.ToUpper();
+
+                // Restauramos la posición del cursor
+                CMBProductoNombre.SelectionStart = cursorPos;
+            }
+        }
+
+        private void CMBMarca_TextChanged(object sender, EventArgs e)
+        {
+            // Evitamos un bucle infinito verificando si ya está en mayúsculas
+            if (CMBMarca.Text != CMBMarca.Text.ToUpper())
+            {
+                // Guardamos la posición del cursor para que no se vaya al final al escribir en medio
+                int cursorPos = CMBMarca.SelectionStart;
+
+                // Convertimos todo el texto a mayúsculas
+                CMBMarca.Text = CMBMarca.Text.ToUpper();
+
+                // Restauramos la posición del cursor
+                CMBMarca.SelectionStart = cursorPos;
+            }
+        }
     }
 }

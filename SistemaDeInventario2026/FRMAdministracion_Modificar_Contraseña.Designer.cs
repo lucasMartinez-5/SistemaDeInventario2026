@@ -179,6 +179,7 @@
             // 
             // TXTNombreLogin
             // 
+            this.TXTNombreLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TXTNombreLogin.Location = new System.Drawing.Point(285, 123);
             this.TXTNombreLogin.Name = "TXTNombreLogin";
             this.TXTNombreLogin.Size = new System.Drawing.Size(363, 23);

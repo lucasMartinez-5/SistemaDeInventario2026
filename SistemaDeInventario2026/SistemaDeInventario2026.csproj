@@ -119,12 +119,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FRMAdministracion_Copia_Seguridad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMAdministracion_Copia_Seguridad.Designer.cs">
-      <DependentUpon>FRMAdministracion_Copia_Seguridad.cs</DependentUpon>
-    </Compile>
     <Compile Include="FRMAdministracion_Epica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,24 +215,6 @@
     <Compile Include="FRMCompra_Resumen.Designer.cs">
       <DependentUpon>FRMCompra_Resumen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRMFondo1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMFondo1.Designer.cs">
-      <DependentUpon>FRMFondo1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FRMFondo2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMFondo2.Designer.cs">
-      <DependentUpon>FRMFondo2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FRMIniciar_Sesion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMIniciar_Sesion.Designer.cs">
-      <DependentUpon>FRMIniciar_Sesion.cs</DependentUpon>
-    </Compile>
     <Compile Include="FRMIniciar_Sesion_Huella.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,12 +238,6 @@
     </Compile>
     <Compile Include="FRMLogin_Huella.Designer.cs">
       <DependentUpon>FRMLogin_Huella.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FRMModificarPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRMModificarPassword.Designer.cs">
-      <DependentUpon>FRMModificarPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMPersona_Buscar.cs">
       <SubType>Form</SubType>
@@ -416,9 +386,6 @@
     <Compile Include="UCLProductoCard.Designer.cs">
       <DependentUpon>UCLProductoCard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FRMAdministracion_Copia_Seguridad.resx">
-      <DependentUpon>FRMAdministracion_Copia_Seguridad.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRMAdministracion_Epica.resx">
       <DependentUpon>FRMAdministracion_Epica.cs</DependentUpon>
     </EmbeddedResource>
@@ -467,15 +434,6 @@
     <EmbeddedResource Include="FRMCompra_Resumen.resx">
       <DependentUpon>FRMCompra_Resumen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRMFondo1.resx">
-      <DependentUpon>FRMFondo1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRMFondo2.resx">
-      <DependentUpon>FRMFondo2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRMIniciar_Sesion.resx">
-      <DependentUpon>FRMIniciar_Sesion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FRMIniciar_Sesion_Huella.resx">
       <DependentUpon>FRMIniciar_Sesion_Huella.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,9 +445,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMLogin_Huella.resx">
       <DependentUpon>FRMLogin_Huella.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FRMModificarPassword.resx">
-      <DependentUpon>FRMModificarPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPersona_Buscar.resx">
       <DependentUpon>FRMPersona_Buscar.cs</DependentUpon>

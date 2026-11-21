@@ -248,11 +248,11 @@ namespace SistemaDeInventario2026
         {
             LBLRegistrarProducto.ForeColor = Color.Black;
             CargarComboCategorias();
-            CargarCombo("capdnompro", CMBProductoNombre);
-            CargarCombo("capdmarpro", CMBMarca);
-            CargarCombo("capdmatpro", CMBMaterial);
-            CargarCombo("capdcolpro", CMBColor);
-            CargarCombo("capdtalpro", CMBTalla);
+            CargarCombo("capdnompro", CMBProductoNombre.ComboBox);
+            CargarCombo("capdmarpro", CMBMarca.ComboBox);
+            CargarCombo("capdmatpro", CMBMaterial.ComboBox);
+            CargarCombo("capdcolpro", CMBColor.ComboBox);
+            CargarCombo("capdtalpro", CMBTalla.ComboBox);
 
             IniciarCamara();
             if (codProMod != "")
@@ -263,6 +263,7 @@ namespace SistemaDeInventario2026
                 BTNGrabar.Text = "&Modificar";
                 this.Text = "Modificar Producto";
                 PPrincipal.Text = "Modificar Producto";
+                NUDStockActual.Enabled = true;
                 LBLCodigoDeBarras.Focus();
                 if (LBLCodigoDeBarras.Text == "SIN CÓDIGO")
                 {
@@ -276,6 +277,8 @@ namespace SistemaDeInventario2026
                 BTNGrabar.Text = "&Guardar";
                 this.Text = "Registrar Producto";
                 PPrincipal.Text = "Registrar Producto";
+                NUDStockActual.Enabled = false;
+                NUDStockActual.Value = 0;
                 LBLCodigoDeBarras.Focus();
             }
         }
@@ -592,8 +595,16 @@ namespace SistemaDeInventario2026
 
         private void CMBProductoNombre_Enter(object sender, EventArgs e)
         {
-            ComboBoxEx a = (ComboBoxEx)sender;
-            a.SelectAll();
+            //ComboBox a = (ComboBox)sender;
+            //a.SelectAll();
+            if (sender is ComboBox a)
+            {
+                a.SelectAll();
+            }
+            else if (sender is Krypton.Toolkit.KryptonComboBox ka)
+            {
+                ka.SelectAll();
+            }
         }
 
         private void CMBProductoNombre_KeyPress(object sender, KeyPressEventArgs e)

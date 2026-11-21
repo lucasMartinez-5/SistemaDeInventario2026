@@ -93,11 +93,6 @@ namespace SistemaDeInventario2026
             }
         }        
 
-        private void BTNReporte_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BTNModificar_Click(object sender, EventArgs e)
         {
             if (DTGLista.SelectedRows.Count > 0)
@@ -226,6 +221,20 @@ namespace SistemaDeInventario2026
         private void BTNSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BTNReporte_Click(object sender, EventArgs e)
+        {
+            xreport reporte = new xreport();
+            reporte.titulo = "Reporte de Personas";
+            reporte.descripcion = "Listado de Personas registradas en el sistema Local De Dieter";
+            reporte.hoja = false;
+            reporte.orientacion = true;
+            reporte.letra = 12;
+            int col = 8;
+            float[] anchoColumnas = { 15, 15, 10, 20, 20, 28, 12, 10 };
+            List<string> titulosColumnas = new List<string>() { "Código", "Estado", "Cédula", "Apellido Paterno", "Apellido Materno", "Nombres", "Nacimiento", "Sexo" };
+            reporte.GenerarReporte(col, anchoColumnas, titulosColumnas, lista_personas);
         }
     }
 }

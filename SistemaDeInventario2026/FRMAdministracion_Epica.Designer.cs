@@ -216,9 +216,9 @@
             this.LBLEstado.Location = new System.Drawing.Point(79, 216);
             this.LBLEstado.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBLEstado.Name = "LBLEstado";
-            this.LBLEstado.Size = new System.Drawing.Size(260, 19);
+            this.LBLEstado.Size = new System.Drawing.Size(314, 19);
             this.LBLEstado.TabIndex = 72;
-            this.LBLEstado.Text = "Acciones para la gestión de usuarios";
+            this.LBLEstado.Text = "Acciones para copias de seguridad (backup)";
             this.LBLEstado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BTNExtracto_Venta
@@ -244,9 +244,9 @@
             this.materialLabel2.Location = new System.Drawing.Point(79, 311);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(260, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(269, 19);
             this.materialLabel2.TabIndex = 69;
-            this.materialLabel2.Text = "Acciones para la gestión de usuarios";
+            this.materialLabel2.Text = "Acción para ver las ventas (Auditoria) ";
             // 
             // BTNModificar
             // 

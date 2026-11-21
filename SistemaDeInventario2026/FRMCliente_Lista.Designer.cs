@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PCliente_Lista = new System.Windows.Forms.Panel();
+            this.BTNReporte = new System.Windows.Forms.Button();
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.IINFilas = new DevComponents.Editors.IntegerInput();
@@ -67,6 +68,7 @@
             // PCliente_Lista
             // 
             this.PCliente_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PCliente_Lista.Controls.Add(this.BTNReporte);
             this.PCliente_Lista.Controls.Add(this.BTNSalir);
             this.PCliente_Lista.Controls.Add(this.BTNFiltrar);
             this.PCliente_Lista.Controls.Add(this.IINFilas);
@@ -78,13 +80,27 @@
             this.PCliente_Lista.Size = new System.Drawing.Size(970, 519);
             this.PCliente_Lista.TabIndex = 0;
             // 
+            // BTNReporte
+            // 
+            this.BTNReporte.BackColor = System.Drawing.Color.White;
+            this.BTNReporte.FlatAppearance.BorderSize = 0;
+            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
+            this.BTNReporte.Location = new System.Drawing.Point(701, 92);
+            this.BTNReporte.Name = "BTNReporte";
+            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
+            this.BTNReporte.TabIndex = 51;
+            this.BTNReporte.Text = "Reporte";
+            this.BTNReporte.UseVisualStyleBackColor = false;
+            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
+            // 
             // BTNSalir
             // 
             this.BTNSalir.BackColor = System.Drawing.Color.White;
             this.BTNSalir.FlatAppearance.BorderSize = 0;
             this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(606, 92);
+            this.BTNSalir.Location = new System.Drawing.Point(502, 92);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(158, 23);
             this.BTNSalir.TabIndex = 50;
@@ -98,7 +114,7 @@
             this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
-            this.BTNFiltrar.Location = new System.Drawing.Point(576, 92);
+            this.BTNFiltrar.Location = new System.Drawing.Point(472, 92);
             this.BTNFiltrar.Name = "BTNFiltrar";
             this.BTNFiltrar.Size = new System.Drawing.Size(24, 23);
             this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -114,7 +130,7 @@
             this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.IINFilas.Increment = 10;
-            this.IINFilas.Location = new System.Drawing.Point(202, 92);
+            this.IINFilas.Location = new System.Drawing.Point(98, 92);
             this.IINFilas.MaxValue = 1000;
             this.IINFilas.MinValue = 0;
             this.IINFilas.Name = "IINFilas";
@@ -125,7 +141,7 @@
             // 
             // TXTFiltrar
             // 
-            this.TXTFiltrar.Location = new System.Drawing.Point(258, 92);
+            this.TXTFiltrar.Location = new System.Drawing.Point(154, 92);
             this.TXTFiltrar.Name = "TXTFiltrar";
             this.TXTFiltrar.Size = new System.Drawing.Size(312, 23);
             this.TXTFiltrar.TabIndex = 47;
@@ -293,5 +309,6 @@
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inhabilitarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem habilitarToolStripMenuItem;
+        private System.Windows.Forms.Button BTNReporte;
     }
 }

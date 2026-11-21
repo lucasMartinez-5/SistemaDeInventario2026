@@ -39,6 +39,8 @@
             this.LBLCatalogoVisual = new DevComponents.DotNetBar.LabelX();
             this.BTNSiguiente = new System.Windows.Forms.Button();
             this.FLPCatalogo = new System.Windows.Forms.FlowLayoutPanel();
+            this.BTNReporte = new System.Windows.Forms.Button();
+            this.BTNSalir = new System.Windows.Forms.Button();
             this.CMSMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.PNLConetenedorCatalogo.SuspendLayout();
@@ -85,6 +87,8 @@
             // 
             this.PNLConetenedorCatalogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PNLConetenedorCatalogo.BackColor = System.Drawing.Color.White;
+            this.PNLConetenedorCatalogo.Controls.Add(this.BTNReporte);
+            this.PNLConetenedorCatalogo.Controls.Add(this.BTNSalir);
             this.PNLConetenedorCatalogo.Controls.Add(this.BTNAnterior);
             this.PNLConetenedorCatalogo.Controls.Add(this.LBLCatalogoVisual);
             this.PNLConetenedorCatalogo.Controls.Add(this.BTNSiguiente);
@@ -99,7 +103,7 @@
             this.BTNAnterior.FlatAppearance.BorderSize = 0;
             this.BTNAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNAnterior.Image = global::SistemaDeInventario2026.Properties.Resources.ic_flecha_negra_izquierda_48x48;
-            this.BTNAnterior.Location = new System.Drawing.Point(150, 269);
+            this.BTNAnterior.Location = new System.Drawing.Point(149, 320);
             this.BTNAnterior.Name = "BTNAnterior";
             this.BTNAnterior.Size = new System.Drawing.Size(46, 33);
             this.BTNAnterior.TabIndex = 80;
@@ -115,7 +119,7 @@
             this.LBLCatalogoVisual.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.LBLCatalogoVisual.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLCatalogoVisual.FontBold = true;
-            this.LBLCatalogoVisual.Location = new System.Drawing.Point(383, 52);
+            this.LBLCatalogoVisual.Location = new System.Drawing.Point(383, 35);
             this.LBLCatalogoVisual.Name = "LBLCatalogoVisual";
             this.LBLCatalogoVisual.Size = new System.Drawing.Size(294, 50);
             this.LBLCatalogoVisual.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2000;
@@ -128,7 +132,7 @@
             this.BTNSiguiente.FlatAppearance.BorderSize = 0;
             this.BTNSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNSiguiente.Image = global::SistemaDeInventario2026.Properties.Resources.ic_flecha_negra_derecha_48x48;
-            this.BTNSiguiente.Location = new System.Drawing.Point(890, 260);
+            this.BTNSiguiente.Location = new System.Drawing.Point(889, 311);
             this.BTNSiguiente.Name = "BTNSiguiente";
             this.BTNSiguiente.Size = new System.Drawing.Size(43, 33);
             this.BTNSiguiente.TabIndex = 81;
@@ -139,11 +143,39 @@
             // 
             this.FLPCatalogo.AutoScroll = true;
             this.FLPCatalogo.BackColor = System.Drawing.Color.White;
-            this.FLPCatalogo.Location = new System.Drawing.Point(202, 106);
+            this.FLPCatalogo.Location = new System.Drawing.Point(201, 157);
             this.FLPCatalogo.Name = "FLPCatalogo";
             this.FLPCatalogo.Size = new System.Drawing.Size(682, 361);
             this.FLPCatalogo.TabIndex = 79;
             this.FLPCatalogo.WrapContents = false;
+            // 
+            // BTNReporte
+            // 
+            this.BTNReporte.BackColor = System.Drawing.Color.White;
+            this.BTNReporte.FlatAppearance.BorderSize = 0;
+            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
+            this.BTNReporte.Location = new System.Drawing.Point(557, 116);
+            this.BTNReporte.Name = "BTNReporte";
+            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
+            this.BTNReporte.TabIndex = 142;
+            this.BTNReporte.Text = "Reporte";
+            this.BTNReporte.UseVisualStyleBackColor = false;
+            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
+            // 
+            // BTNSalir
+            // 
+            this.BTNSalir.BackColor = System.Drawing.Color.White;
+            this.BTNSalir.FlatAppearance.BorderSize = 0;
+            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
+            this.BTNSalir.Location = new System.Drawing.Point(349, 116);
+            this.BTNSalir.Name = "BTNSalir";
+            this.BTNSalir.Size = new System.Drawing.Size(158, 23);
+            this.BTNSalir.TabIndex = 141;
+            this.BTNSalir.Text = "Salir";
+            this.BTNSalir.UseVisualStyleBackColor = false;
+            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
             // 
             // FRMProducto_Lista
             // 
@@ -176,5 +208,7 @@
         private System.Windows.Forms.FlowLayoutPanel FLPCatalogo;
         private System.Windows.Forms.Button BTNAnterior;
         private System.Windows.Forms.Button BTNSiguiente;
+        private System.Windows.Forms.Button BTNReporte;
+        private System.Windows.Forms.Button BTNSalir;
     }
 }

@@ -79,7 +79,7 @@ namespace SistemaDeInventario2026
             SWBEstado.Value = true;
             TXTRol.Text = "";
             TXTCI.Text = "";
-            TXTNombreCompleto.Text = "Nombre Completo";
+            TXTNombreCompleto.Text = "";
             TXTLoginUsuario.Text = "";
             DPECHuellas.EnrolledFingerMask = 0;
             TXTLoginUsuario.Focus();

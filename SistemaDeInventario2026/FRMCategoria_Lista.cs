@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMCategoria_Lista : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMCategoria_Lista : Form
     {
         #region Variables
         private acatpro categoria = new acatpro();
@@ -63,6 +63,7 @@ namespace SistemaDeInventario2026
 
         private void FRMCategoria_Lista_Load(object sender, EventArgs e)
         {
+            LBLGestionCategorias.ForeColor = Color.Black;
             this.WindowState = FormWindowState.Maximized;
             ActualizarGrid();
         }
@@ -195,6 +196,11 @@ namespace SistemaDeInventario2026
         private void BTNFiltrar_Enter(object sender, EventArgs e)
         {
             TXTFiltrar.SelectAll();
+        }
+
+        private void BTNLimpiar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

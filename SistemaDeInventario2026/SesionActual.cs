@@ -29,9 +29,9 @@ namespace SistemaDeInventario2026
         {
             switch (Rol)
             {
-                case "Administrador":
+                case "ADMINISTRADOR":
                     return true; // todas las secciones
-                case "Cajero":
+                case "CAJERO":
                     return seccion != SECCION_USUARIOS; // todas excepto Administración de Usuarios
                 default:
                     return false; // rol desconocido o sin sesión: nada

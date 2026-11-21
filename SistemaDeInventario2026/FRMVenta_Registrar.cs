@@ -114,7 +114,7 @@ namespace SistemaDeInventario2026
             TXTObservaciones.Text = "";
 
             DTGCarrito.Rows.Clear();
-            LBLTotal.Text = "Total: 0.00";
+            LBLTotal.Text = "Total: Bs. 0.00";
         }
         private void CalcularTotal()
         {
@@ -123,7 +123,7 @@ namespace SistemaDeInventario2026
             {
                 total += Convert.ToDecimal(fila.Cells[4].Value);
             }
-            LBLTotal.Text = $"Total: {total:F2}";
+            LBLTotal.Text = $"Total: Bs. {total:F2}";
 
         }
         private int CantidadEnCarrito(string codigoProducto, int filaExcluida)
@@ -630,7 +630,10 @@ namespace SistemaDeInventario2026
 
         private void FRMVenta_Registrar_Load(object sender, EventArgs e)
         {
+            LBLTotal.ForeColor = Color.Black;
             LBLTitulo.ForeColor = Color.Black;
-        }
+            LimpiarCasillas();
+            //ConfigurarListView();
+        }        
     }
 }

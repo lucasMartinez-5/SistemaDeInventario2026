@@ -491,7 +491,7 @@
             this.LBLFecha_Sesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLFecha_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LBLFecha_Sesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LBLFecha_Sesion.Location = new System.Drawing.Point(890, 8);
+            this.LBLFecha_Sesion.Location = new System.Drawing.Point(885, 8);
             this.LBLFecha_Sesion.Name = "LBLFecha_Sesion";
             this.LBLFecha_Sesion.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.LBLFecha_Sesion.Size = new System.Drawing.Size(143, 25);

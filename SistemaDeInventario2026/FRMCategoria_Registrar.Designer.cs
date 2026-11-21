@@ -28,146 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GPPanelPrincipal = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.BTNSalir = new DevComponents.DotNetBar.ButtonX();
-            this.BTNLimpiar = new DevComponents.DotNetBar.ButtonX();
-            this.BTNGrabar = new DevComponents.DotNetBar.ButtonX();
-            this.TXTCategoriaProductoCodigo = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.TXTCategoriaProductoNombre = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.SWBCategoriaProductoEstadoStock = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.BLTAyuda = new DevComponents.DotNetBar.BalloonTip();
-            this.GPPanelPrincipal.SuspendLayout();
+            this.PPrincipal = new System.Windows.Forms.Panel();
+            this.PAgregar_Categoria = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.BTNGrabar = new System.Windows.Forms.Button();
+            this.LBLRegistrarCategoria = new DevComponents.DotNetBar.LabelX();
+            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.TXTCategoriaProductoNombre = new System.Windows.Forms.TextBox();
+            this.SWBCategoriaProductoEstadoStock = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.PPrincipal.SuspendLayout();
+            this.PAgregar_Categoria.SuspendLayout();
             this.SuspendLayout();
             // 
-            // GPPanelPrincipal
+            // PPrincipal
             // 
-            this.GPPanelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
-            this.GPPanelPrincipal.CanvasColor = System.Drawing.SystemColors.Control;
-            this.GPPanelPrincipal.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.GPPanelPrincipal.Controls.Add(this.BTNSalir);
-            this.GPPanelPrincipal.Controls.Add(this.BTNLimpiar);
-            this.GPPanelPrincipal.Controls.Add(this.BTNGrabar);
-            this.GPPanelPrincipal.Controls.Add(this.TXTCategoriaProductoCodigo);
-            this.GPPanelPrincipal.Controls.Add(this.TXTCategoriaProductoNombre);
-            this.GPPanelPrincipal.Controls.Add(this.SWBCategoriaProductoEstadoStock);
-            this.GPPanelPrincipal.DisabledBackColor = System.Drawing.Color.Empty;
-            this.GPPanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GPPanelPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.GPPanelPrincipal.Name = "GPPanelPrincipal";
-            this.GPPanelPrincipal.Size = new System.Drawing.Size(383, 198);
+            this.PPrincipal.BackColor = System.Drawing.Color.White;
+            this.PPrincipal.Controls.Add(this.PAgregar_Categoria);
+            this.PPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.PPrincipal.Name = "PPrincipal";
+            this.PPrincipal.Size = new System.Drawing.Size(657, 419);
+            this.PPrincipal.TabIndex = 0;
             // 
+            // PAgregar_Categoria
             // 
+            this.PAgregar_Categoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PAgregar_Categoria.Controls.Add(this.button1);
+            this.PAgregar_Categoria.Controls.Add(this.button2);
+            this.PAgregar_Categoria.Controls.Add(this.BTNGrabar);
+            this.PAgregar_Categoria.Controls.Add(this.LBLRegistrarCategoria);
+            this.PAgregar_Categoria.Controls.Add(this.materialLabel9);
+            this.PAgregar_Categoria.Controls.Add(this.TXTCategoriaProductoNombre);
+            this.PAgregar_Categoria.Controls.Add(this.SWBCategoriaProductoEstadoStock);
+            this.PAgregar_Categoria.Location = new System.Drawing.Point(0, 0);
+            this.PAgregar_Categoria.Name = "PAgregar_Categoria";
+            this.PAgregar_Categoria.Size = new System.Drawing.Size(657, 419);
+            this.PAgregar_Categoria.TabIndex = 0;
             // 
-            this.GPPanelPrincipal.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.GPPanelPrincipal.Style.BackColorGradientAngle = 90;
-            this.GPPanelPrincipal.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.GPPanelPrincipal.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderBottomWidth = 1;
-            this.GPPanelPrincipal.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.GPPanelPrincipal.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderLeftWidth = 1;
-            this.GPPanelPrincipal.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderRightWidth = 1;
-            this.GPPanelPrincipal.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.GPPanelPrincipal.Style.BorderTopWidth = 1;
-            this.GPPanelPrincipal.Style.CornerDiameter = 4;
-            this.GPPanelPrincipal.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.GPPanelPrincipal.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.GPPanelPrincipal.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.GPPanelPrincipal.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // button1
             // 
+            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(409, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 38);
+            this.button1.TabIndex = 108;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.BTNLimpiar_Click);
             // 
+            // button2
             // 
-            this.GPPanelPrincipal.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.GPPanelPrincipal.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.GPPanelPrincipal.TabIndex = 1;
-            this.GPPanelPrincipal.Text = "Categoria";
-            // 
-            // BTNSalir
-            // 
-            this.BTNSalir.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNSalir.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTNSalir.Image = global::SistemaDeInventario2026.Properties.Resources.ic_salir;
-            this.BTNSalir.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNSalir.Location = new System.Drawing.Point(250, 86);
-            this.BTNSalir.Name = "BTNSalir";
-            this.BTNSalir.Size = new System.Drawing.Size(110, 51);
-            this.BTNSalir.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNSalir.TabIndex = 20;
-            this.BTNSalir.Text = "&Salir";
-            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
-            // 
-            // BTNLimpiar
-            // 
-            this.BTNLimpiar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNLimpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNLimpiar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_limpiar;
-            this.BTNLimpiar.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNLimpiar.Location = new System.Drawing.Point(125, 86);
-            this.BTNLimpiar.Name = "BTNLimpiar";
-            this.BTNLimpiar.Size = new System.Drawing.Size(119, 51);
-            this.BTNLimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNLimpiar.TabIndex = 19;
-            this.BTNLimpiar.Text = "&Limpiar";
-            this.BTNLimpiar.Click += new System.EventHandler(this.BTNLimpiar_Click);
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(106, 285);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 38);
+            this.button2.TabIndex = 107;
+            this.button2.Text = "Salir";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.BTNSalir_Click);
             // 
             // BTNGrabar
             // 
             this.BTNGrabar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.BTNGrabar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.BTNGrabar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_guardar;
-            this.BTNGrabar.ImageFixedSize = new System.Drawing.Size(40, 40);
-            this.BTNGrabar.Location = new System.Drawing.Point(8, 86);
+            this.BTNGrabar.BackColor = System.Drawing.Color.Black;
+            this.BTNGrabar.FlatAppearance.BorderSize = 0;
+            this.BTNGrabar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNGrabar.ForeColor = System.Drawing.Color.White;
+            this.BTNGrabar.Location = new System.Drawing.Point(254, 285);
             this.BTNGrabar.Name = "BTNGrabar";
-            this.BTNGrabar.Size = new System.Drawing.Size(111, 51);
-            this.BTNGrabar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.BTNGrabar.TabIndex = 18;
-            this.BTNGrabar.Text = "&Grabar";
+            this.BTNGrabar.Size = new System.Drawing.Size(152, 38);
+            this.BTNGrabar.TabIndex = 106;
+            this.BTNGrabar.Text = "Grabar";
+            this.BTNGrabar.UseVisualStyleBackColor = false;
             this.BTNGrabar.Click += new System.EventHandler(this.BTNGrabar_Click);
             // 
-            // TXTCategoriaProductoCodigo
+            // LBLRegistrarCategoria
             // 
-            this.TXTCategoriaProductoCodigo.BackColor = System.Drawing.Color.White;
+            this.LBLRegistrarCategoria.AutoSize = true;
             // 
             // 
             // 
-            this.TXTCategoriaProductoCodigo.Border.Class = "TextBoxBorder";
-            this.TXTCategoriaProductoCodigo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.TXTCategoriaProductoCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTCategoriaProductoCodigo.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTCategoriaProductoCodigo.Enabled = false;
-            this.TXTCategoriaProductoCodigo.ForeColor = System.Drawing.Color.Black;
-            this.TXTCategoriaProductoCodigo.Location = new System.Drawing.Point(177, 14);
-            this.TXTCategoriaProductoCodigo.Name = "TXTCategoriaProductoCodigo";
-            this.TXTCategoriaProductoCodigo.PreventEnterBeep = true;
-            this.TXTCategoriaProductoCodigo.Size = new System.Drawing.Size(184, 23);
-            this.TXTCategoriaProductoCodigo.TabIndex = 17;
-            this.TXTCategoriaProductoCodigo.WatermarkText = "Codigo de la Categoria";
+            this.LBLRegistrarCategoria.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.LBLRegistrarCategoria.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LBLRegistrarCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLRegistrarCategoria.FontBold = true;
+            this.LBLRegistrarCategoria.ForeColor = System.Drawing.Color.Black;
+            this.LBLRegistrarCategoria.Location = new System.Drawing.Point(216, 68);
+            this.LBLRegistrarCategoria.Name = "LBLRegistrarCategoria";
+            this.LBLRegistrarCategoria.Size = new System.Drawing.Size(229, 35);
+            this.LBLRegistrarCategoria.TabIndex = 105;
+            this.LBLRegistrarCategoria.Text = "Agregar Categoria";
+            this.LBLRegistrarCategoria.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.AutoSize = true;
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel9.Location = new System.Drawing.Point(153, 189);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(150, 19);
+            this.materialLabel9.TabIndex = 104;
+            this.materialLabel9.Text = "Nombre de Categoría";
             // 
             // TXTCategoriaProductoNombre
             // 
-            this.TXTCategoriaProductoNombre.BackColor = System.Drawing.Color.White;
-            this.BLTAyuda.SetBalloonCaption(this.TXTCategoriaProductoNombre, "Ayuda");
-            this.BLTAyuda.SetBalloonText(this.TXTCategoriaProductoNombre, "Nombre de la categoria");
-            // 
-            // 
-            // 
-            this.TXTCategoriaProductoNombre.Border.Class = "TextBoxBorder";
-            this.TXTCategoriaProductoNombre.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.TXTCategoriaProductoNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.TXTCategoriaProductoNombre.DisabledBackColor = System.Drawing.Color.White;
-            this.TXTCategoriaProductoNombre.ForeColor = System.Drawing.Color.Black;
-            this.TXTCategoriaProductoNombre.Location = new System.Drawing.Point(9, 46);
+            this.TXTCategoriaProductoNombre.Location = new System.Drawing.Point(153, 211);
             this.TXTCategoriaProductoNombre.Name = "TXTCategoriaProductoNombre";
-            this.TXTCategoriaProductoNombre.PreventEnterBeep = true;
             this.TXTCategoriaProductoNombre.Size = new System.Drawing.Size(352, 23);
-            this.TXTCategoriaProductoNombre.TabIndex = 0;
-            this.TXTCategoriaProductoNombre.WatermarkText = "Nombre de la Categoria";
-            this.TXTCategoriaProductoNombre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXTCategoriaProductoNombre_KeyDown);
+            this.TXTCategoriaProductoNombre.TabIndex = 103;
             // 
             // SWBCategoriaProductoEstadoStock
             // 
@@ -175,17 +155,17 @@
             // 
             // 
             this.SWBCategoriaProductoEstadoStock.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.SWBCategoriaProductoEstadoStock.Location = new System.Drawing.Point(9, 14);
+            this.SWBCategoriaProductoEstadoStock.Location = new System.Drawing.Point(153, 154);
             this.SWBCategoriaProductoEstadoStock.Name = "SWBCategoriaProductoEstadoStock";
             this.SWBCategoriaProductoEstadoStock.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.SWBCategoriaProductoEstadoStock.OffText = "Inhabilitado";
+            this.SWBCategoriaProductoEstadoStock.OffText = "INHABILITADO";
             this.SWBCategoriaProductoEstadoStock.OffTextColor = System.Drawing.Color.White;
             this.SWBCategoriaProductoEstadoStock.OnBackColor = System.Drawing.Color.LimeGreen;
-            this.SWBCategoriaProductoEstadoStock.OnText = "Habilitado";
+            this.SWBCategoriaProductoEstadoStock.OnText = "HABILITADO";
             this.SWBCategoriaProductoEstadoStock.OnTextColor = System.Drawing.Color.White;
-            this.SWBCategoriaProductoEstadoStock.Size = new System.Drawing.Size(149, 23);
+            this.SWBCategoriaProductoEstadoStock.Size = new System.Drawing.Size(351, 23);
             this.SWBCategoriaProductoEstadoStock.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.SWBCategoriaProductoEstadoStock.TabIndex = 16;
+            this.SWBCategoriaProductoEstadoStock.TabIndex = 22;
             this.SWBCategoriaProductoEstadoStock.Value = true;
             this.SWBCategoriaProductoEstadoStock.ValueObject = "Y";
             // 
@@ -193,8 +173,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 198);
-            this.Controls.Add(this.GPPanelPrincipal);
+            this.ClientSize = new System.Drawing.Size(657, 419);
+            this.Controls.Add(this.PPrincipal);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -203,20 +183,23 @@
             this.Text = "FRMCategoria_Registrar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRMCategoria_Registrar_FormClosing);
             this.Load += new System.EventHandler(this.FRMCategoria_Registrar_Load);
-            this.GPPanelPrincipal.ResumeLayout(false);
+            this.PPrincipal.ResumeLayout(false);
+            this.PAgregar_Categoria.ResumeLayout(false);
+            this.PAgregar_Categoria.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevComponents.DotNetBar.Controls.GroupPanel GPPanelPrincipal;
-        private DevComponents.DotNetBar.ButtonX BTNSalir;
-        private DevComponents.DotNetBar.ButtonX BTNLimpiar;
-        private DevComponents.DotNetBar.ButtonX BTNGrabar;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTCategoriaProductoCodigo;
-        private DevComponents.DotNetBar.Controls.TextBoxX TXTCategoriaProductoNombre;
-        private DevComponents.DotNetBar.Controls.SwitchButton SWBCategoriaProductoEstadoStock;
         private DevComponents.DotNetBar.BalloonTip BLTAyuda;
+        private System.Windows.Forms.Panel PPrincipal;
+        private System.Windows.Forms.Panel PAgregar_Categoria;
+        private DevComponents.DotNetBar.Controls.SwitchButton SWBCategoriaProductoEstadoStock;
+        private System.Windows.Forms.TextBox TXTCategoriaProductoNombre;
+        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private DevComponents.DotNetBar.LabelX LBLRegistrarCategoria;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTNGrabar;
     }
 }

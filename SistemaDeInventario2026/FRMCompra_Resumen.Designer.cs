@@ -30,6 +30,7 @@
         {
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PCompra_Resumen = new System.Windows.Forms.Panel();
+            this.BTNSalir = new System.Windows.Forms.Button();
             this.PFechaInversion = new System.Windows.Forms.Panel();
             this.LBLRangoFechas = new DevComponents.DotNetBar.LabelX();
             this.BTNElegirFecha = new System.Windows.Forms.Button();
@@ -59,6 +60,7 @@
             // PCompra_Resumen
             // 
             this.PCompra_Resumen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PCompra_Resumen.Controls.Add(this.BTNSalir);
             this.PCompra_Resumen.Controls.Add(this.PFechaInversion);
             this.PCompra_Resumen.Controls.Add(this.PInversionTotal);
             this.PCompra_Resumen.Controls.Add(this.label1);
@@ -68,8 +70,23 @@
             this.PCompra_Resumen.Size = new System.Drawing.Size(970, 519);
             this.PCompra_Resumen.TabIndex = 0;
             // 
+            // BTNSalir
+            // 
+            this.BTNSalir.BackColor = System.Drawing.Color.White;
+            this.BTNSalir.FlatAppearance.BorderSize = 0;
+            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
+            this.BTNSalir.Location = new System.Drawing.Point(404, 139);
+            this.BTNSalir.Name = "BTNSalir";
+            this.BTNSalir.Size = new System.Drawing.Size(158, 38);
+            this.BTNSalir.TabIndex = 94;
+            this.BTNSalir.Text = "Salir";
+            this.BTNSalir.UseVisualStyleBackColor = false;
+            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
+            // 
             // PFechaInversion
             // 
+            this.PFechaInversion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PFechaInversion.Controls.Add(this.LBLRangoFechas);
             this.PFechaInversion.Controls.Add(this.BTNElegirFecha);
             this.PFechaInversion.Controls.Add(this.BTNVerDetalles);
@@ -147,6 +164,7 @@
             // 
             // PInversionTotal
             // 
+            this.PInversionTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PInversionTotal.Controls.Add(this.LBLMontoInverstionTotal);
             this.PInversionTotal.Controls.Add(this.LBLInversionTotal);
             this.PInversionTotal.Location = new System.Drawing.Point(104, 196);
@@ -255,5 +273,6 @@
         private System.Windows.Forms.Button BTNVerDetalles;
         private System.Windows.Forms.Button BTNElegirFecha;
         private DevComponents.DotNetBar.LabelX LBLRangoFechas;
+        private System.Windows.Forms.Button BTNSalir;
     }
 }

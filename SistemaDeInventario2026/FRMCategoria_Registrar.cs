@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace SistemaDeInventario2026
 {
-    public partial class FRMCategoria_Registrar : DevComponents.DotNetBar.Office2007Form
+    public partial class FRMCategoria_Registrar : Form
     {
         #region Variables
         private acatpro categoria = new acatpro();
@@ -62,7 +62,7 @@ namespace SistemaDeInventario2026
             categoria.ObtenerDatos();
             SWBCategoriaProductoEstadoStock.Value = categoria.cacpestcat;
             TXTCategoriaProductoNombre.Text = categoria.cacpnomcat;
-            TXTCategoriaProductoCodigo.Text = categoria.pacpcodcat;
+            //TXTCategoriaProductoCodigo.Text = categoria.pacpcodcat;
         }
         #endregion
 
@@ -173,12 +173,13 @@ namespace SistemaDeInventario2026
 
         private void FRMCategoria_Registrar_Load(object sender, EventArgs e)
         {
+            LBLRegistrarCategoria.ForeColor = Color.Black;
             if (this.modificar)
             {
                 JalarDatos();
                 BTNGrabar.Text = "&Modificar";
                 this.Text = "Modificar Categoría";
-                GPPanelPrincipal.Text = "Modificar Categoría";
+                LBLRegistrarCategoria.Text = "Modificar Categoría";
                 TXTCategoriaProductoNombre.Focus();
             }
             else
@@ -186,7 +187,7 @@ namespace SistemaDeInventario2026
                 LimpiarCasillas();
                 BTNGrabar.Text = "&Guardar";
                 this.Text = "Registrar Categoría";
-                GPPanelPrincipal.Text = "Registrar Categoría";
+                LBLRegistrarCategoria.Text = "Registrar Categoría";
                 TXTCategoriaProductoNombre.Focus();
             }
         }

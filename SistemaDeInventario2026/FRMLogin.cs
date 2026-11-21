@@ -97,12 +97,34 @@ namespace SistemaDeInventario2026
 
         private void AplicarPrivilegios()
         {
+            
+            if (SesionActual.Rol== "ADMINISTRADOR")
+            {
+                panel2.Enabled = true;
+                BTNDirectorio.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
+                BTNInventario.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
+                BTNBusquedaAvanzada.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
+                BTNPuntoDeVenta.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
+                BTNAdministracionUsuarios.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
+            }
+            else if (SesionActual.Rol == "CAJERO")
+            {
+                panel2.Enabled = true;
+                BTNDirectorio.Enabled = !SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
+                BTNAdministracionUsuarios.Enabled = !SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
+                BTNInventario.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
+                BTNBusquedaAvanzada.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
+                BTNPuntoDeVenta.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
+                
+            }
+            /*
             panel2.Enabled = true;
             BTNDirectorio.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
             BTNInventario.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
             BTNBusquedaAvanzada.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
             BTNPuntoDeVenta.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
             BTNAdministracionUsuarios.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
+            */
         }
         private void IngresarConHuella()
         {
@@ -305,6 +327,8 @@ namespace SistemaDeInventario2026
             MessageBox.Show("Su contraseña se restablecerá por su seguridad, " +
                             "ingrese nuevamente con su carnet de identidad",
                             "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //usuario.causactpas = true;  // fuerza a cambiar la contraseña
+            //usuario.causpasswo = "";  // borra la contraseña actual
             TXTPassword.Clear();
             TXTPassword.Focus();
         }

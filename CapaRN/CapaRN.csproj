@@ -32,8 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\REPOSITORIO\SistemaDeGestion2026\SistemaDeGestion2026\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,6 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="xgeneral.cs" />
     <Compile Include="xnumcor.cs" />
+    <Compile Include="xreport.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaAD\CapaAD.csproj">

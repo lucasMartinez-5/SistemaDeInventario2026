@@ -82,5 +82,11 @@ namespace SistemaDeInventario2026
             AbrirEnPanel(new FRMProducto_Alerta_Stock());
             return;
         }
+
+        private void PCBGestionCategorias_Click(object sender, EventArgs e)
+        {
+            AbrirEnPanel(new FRMCategoria_Lista());
+            return;
+        }
     }
 }

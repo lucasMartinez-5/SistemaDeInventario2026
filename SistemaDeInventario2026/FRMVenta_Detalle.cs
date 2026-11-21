@@ -251,6 +251,62 @@ namespace SistemaDeInventario2026
 
         private void BTNImprimir_Click(object sender, EventArgs e)
         {
+            using (SaveFileDialog guardar = new SaveFileDialog())
+            {
+                guardar.Filter = "Archivo PDF (*.pdf)|*.pdf";
+                // ✅ 1. Aseguramos que el nombre sugerido ya tenga la extensión .pdf
+                guardar.FileName = "Recibo_Venta_" + venta.papvcodven + ".pdf";
+
+                if (guardar.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        PrintDocument doc = new PrintDocument();
+                        doc.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                        if (!doc.PrinterSettings.IsValid)
+                        {
+                            MessageBox.Show("No se encontró la impresora \"Microsoft Print to PDF\" en este equipo.",
+                                            "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        // ✅ 2. Le decimos que imprima a un archivo (no a una impresora física)
+                        doc.PrinterSettings.PrintToFile = true;
+
+                        // ✅ 3. LE DAMOS LA RUTA EXACTA que eligió el usuario. 
+                        // ESTO ES LO QUE EVITA QUE SALGA EL SEGUNDO DIÁLOGO Y QUE EL ARCHIVO NO SE CORROMPA.
+                        doc.PrinterSettings.PrintFileName = guardar.FileName;
+
+                        doc.DocumentName = "Recibo de venta " + venta.papvcodven;
+                        doc.DefaultPageSettings.Margins = new Margins(70, 70, 70, 70);
+
+                        // Oculta la ventana de "Imprimiendo..." de Windows
+                        doc.PrintController = new StandardPrintController();
+
+                        doc.BeginPrint += (s, a) => PrepararImpresion();
+                        doc.EndPrint += (s, a) => LiberarImpresion();
+                        doc.PrintPage += Doc_PrintPage;
+
+                        // Ejecuta la impresión (guardado)
+                        doc.Print();
+
+                        MessageBox.Show("El recibo se guardó correctamente en:\n" + guardar.FileName,
+                                        "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (System.ComponentModel.Win32Exception w) when (w.NativeErrorCode == 0)
+                    {
+                        // El usuario canceló el diálogo de guardar (no es un error real)
+                        return;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se pudo generar el PDF.\nDetalle: " + ex.Message,
+                                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+
+            /*
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.Filter = "Archivo PDF (*.pdf)|*.pdf";
             //guardar.FileName = "Recibo_Venta_" + venta.capdfaccom;
@@ -289,7 +345,10 @@ namespace SistemaDeInventario2026
                 MessageBox.Show("No se pudo generar el PDF.\n" + ex.Message,
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            */
+
         }
+
         // Dibuja el recibo con la misma distribución del diseño
         private void Doc_PrintPage(object sender, PrintPageEventArgs e)
         {
@@ -306,10 +365,11 @@ namespace SistemaDeInventario2026
                 g.DrawString("Recibo de venta", fRecibo, bTexto, m.Left, y);
                 y += 60;
 
+                
+                y = DibujarBloque(g, m, y, LBLTituloLocal.Text,
+                                  new string[] { LBLRecibo.Text }, new bool[] { false }, PBXLogo.Image);
                 y = DibujarBloque(g, m, y, LBLTituloFecha.Text,
                                   new string[] { LBLFecha.Text }, new bool[] { true }, null);
-                y = DibujarBloque(g, m, y, LBLTituloLocal.Text,
-                  new string[] { LBLRecibo.Text }, new bool[] { false }, PBXLogo.Image);
                 y = DibujarBloque(g, m, y, LBLTituloCliente.Text,
                                   new string[] { LBLCliente.Text, LBLNIT.Text }, new bool[] { false, true }, null);
 

@@ -160,6 +160,7 @@
             // 
             // 
             this.TXTObservaciones.Border.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TXTObservaciones.Border.BorderColor = System.Drawing.Color.Black;
             this.TXTObservaciones.Border.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.TXTObservaciones.Border.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.TXTObservaciones.Border.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;

@@ -135,5 +135,10 @@ namespace SistemaDeInventario2026
             lista.hasta = hasta;     // fecha final elegida (o hoy por defecto)
             AbrirEnPanel(lista);
         }
+
+        private void BTNSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
