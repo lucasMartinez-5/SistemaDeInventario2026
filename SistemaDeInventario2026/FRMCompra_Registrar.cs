@@ -28,6 +28,10 @@ namespace SistemaDeInventario2026
 
         // Variable para mantener el efecto hover en el ListView
         private ListViewItem filaAnteriorListView = null;
+
+        // Edición en línea de la cantidad del carrito
+        private TextBox txtEdicionCantidad = null;
+        private ListViewItem itemEdicionCantidad = null;
         #endregion
         public FRMCompra_Registrar()
         {
@@ -385,8 +389,98 @@ namespace SistemaDeInventario2026
             }
         }
 
+        private void EditarCantidadEnLinea(ListViewItem item)
+        {
+            FinalizarEdicionCantidad(true);
+
+            itemEdicionCantidad = item;
+
+            txtEdicionCantidad = new TextBox();
+            txtEdicionCantidad.Bounds = item.SubItems[1].Bounds;
+            txtEdicionCantidad.Text = item.SubItems[1].Text;
+            txtEdicionCantidad.TextAlign = HorizontalAlignment.Center;
+            txtEdicionCantidad.BorderStyle = BorderStyle.FixedSingle;
+
+            txtEdicionCantidad.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    e.SuppressKeyPress = true;
+                    FinalizarEdicionCantidad(true);
+                }
+                else if (e.KeyCode == Keys.Escape)
+                {
+                    e.SuppressKeyPress = true;
+                    FinalizarEdicionCantidad(false);
+                }
+            };
+
+            txtEdicionCantidad.LostFocus += (s, e) => FinalizarEdicionCantidad(true);
+
+            LTVCarrito.Controls.Add(txtEdicionCantidad);
+            txtEdicionCantidad.Focus();
+            txtEdicionCantidad.SelectAll();
+        }
+
+        private void FinalizarEdicionCantidad(bool guardar)
+        {
+            if (txtEdicionCantidad == null)
+                return;
+
+            TextBox txt = txtEdicionCantidad;
+            ListViewItem item = itemEdicionCantidad;
+
+            // Se limpian primero para evitar que LostFocus vuelva a ejecutar esto
+            txtEdicionCantidad = null;
+            itemEdicionCantidad = null;
+
+            if (guardar && item != null
+                && int.TryParse(txt.Text.Trim(), out int nuevaCantidad) && nuevaCantidad > 0
+                && decimal.TryParse(item.SubItems[2].Text, out decimal precio))
+            {
+                item.SubItems[1].Text = nuevaCantidad.ToString();
+                item.SubItems[3].Text = (nuevaCantidad * precio).ToString("F2");
+                CalcularTotal();
+            }
+
+            LTVCarrito.Controls.Remove(txt);
+            txt.Dispose();
+            LTVCarrito.Focus();
+        }
+
         private void LTVCarrito_MouseClick(object sender, MouseEventArgs e)
         {
+            ListViewItem item = LTVCarrito.GetItemAt(e.X, e.Y);
+
+            if (item != null)
+            {
+                ListViewItem.ListViewSubItem subItem = item.GetSubItemAt(e.X, e.Y);
+                int columnIndex = item.SubItems.IndexOf(subItem);
+
+                // Columna 1: Cantidad -> editar en la misma celda
+                if (columnIndex == 1)
+                {
+                    EditarCantidadEnLinea(item);
+                }
+                // Columna 4: la "X" -> eliminar del carrito
+                else if (columnIndex == 4)
+                {
+                    FinalizarEdicionCantidad(true);
+
+                    DialogResult resultado = MessageBox.Show(
+                        $"¿Eliminar '{item.Text}' del carrito?",
+                        "Confirmar eliminación",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+                    if (resultado == DialogResult.Yes)
+                    {
+                        LTVCarrito.Items.Remove(item);
+                        CalcularTotal();
+                    }
+                }
+            }
+            /*
             ListViewItem item = LTVCarrito.GetItemAt(e.X, e.Y);
 
             if (item != null)
@@ -410,6 +504,7 @@ namespace SistemaDeInventario2026
                     }
                 }
             }
+            */
         }
 
         private void LTVCarrito_MouseLeave(object sender, EventArgs e)

@@ -27,12 +27,14 @@ namespace SistemaDeInventario2026
         // Único lugar donde se define qué puede ver cada rol.
         public static bool PuedeAcceder(string seccion)
         {
-            switch (Rol)
+            switch ((Rol ?? "").ToUpper())
             {
                 case "ADMINISTRADOR":
                     return true; // todas las secciones
                 case "CAJERO":
-                    return seccion != SECCION_USUARIOS; // todas excepto Administración de Usuarios
+                    // todas excepto Administración de Usuarios, Gestión de Inversión y Punto de Venta
+                    return seccion != SECCION_USUARIOS
+                        && seccion != SECCION_INVERSION;
                 default:
                     return false; // rol desconocido o sin sesión: nada
             }

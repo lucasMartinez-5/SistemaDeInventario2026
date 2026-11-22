@@ -97,35 +97,15 @@ namespace SistemaDeInventario2026
 
         private void AplicarPrivilegios()
         {
-            
-            if (SesionActual.Rol== "ADMINISTRADOR")
-            {
-                panel2.Enabled = true;
-                BTNDirectorio.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
-                BTNInventario.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
-                BTNBusquedaAvanzada.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
-                BTNPuntoDeVenta.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
-                BTNAdministracionUsuarios.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
-            }
-            else if (SesionActual.Rol == "CAJERO")
-            {
-                panel2.Enabled = true;
-                BTNDirectorio.Enabled = !SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
-                BTNAdministracionUsuarios.Enabled = !SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
-                BTNInventario.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
-                BTNBusquedaAvanzada.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
-                BTNPuntoDeVenta.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
-                
-            }
-            /*
+
             panel2.Enabled = true;
-            BTNDirectorio.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
-            BTNInventario.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
-            BTNBusquedaAvanzada.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
-            BTNPuntoDeVenta.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
-            BTNAdministracionUsuarios.Visible = SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
-            */
+            BTNDirectorio.Enabled = SesionActual.PuedeAcceder(SesionActual.SECCION_INVERSION);
+            BTNInventario.Enabled = SesionActual.PuedeAcceder(SesionActual.SECCION_INVENTARIO);
+            BTNBusquedaAvanzada.Enabled = SesionActual.PuedeAcceder(SesionActual.SECCION_BUSQUEDA);
+            BTNPuntoDeVenta.Enabled = SesionActual.PuedeAcceder(SesionActual.SECCION_VENTAS);
+            BTNAdministracionUsuarios.Enabled = SesionActual.PuedeAcceder(SesionActual.SECCION_USUARIOS);
         }
+
         private void IngresarConHuella()
         {
             loginExitoso = true;
