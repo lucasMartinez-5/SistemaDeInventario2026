@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PLista_Usuario = new System.Windows.Forms.Panel();
+            this.BTNReporte = new System.Windows.Forms.Button();
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.IINFilas = new DevComponents.Editors.IntegerInput();
@@ -67,6 +68,7 @@
             // PLista_Usuario
             // 
             this.PLista_Usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PLista_Usuario.Controls.Add(this.BTNReporte);
             this.PLista_Usuario.Controls.Add(this.BTNSalir);
             this.PLista_Usuario.Controls.Add(this.BTNFiltrar);
             this.PLista_Usuario.Controls.Add(this.IINFilas);
@@ -78,13 +80,27 @@
             this.PLista_Usuario.Size = new System.Drawing.Size(970, 519);
             this.PLista_Usuario.TabIndex = 0;
             // 
+            // BTNReporte
+            // 
+            this.BTNReporte.BackColor = System.Drawing.Color.White;
+            this.BTNReporte.FlatAppearance.BorderSize = 0;
+            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
+            this.BTNReporte.Location = new System.Drawing.Point(710, 92);
+            this.BTNReporte.Name = "BTNReporte";
+            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
+            this.BTNReporte.TabIndex = 142;
+            this.BTNReporte.Text = "Reporte";
+            this.BTNReporte.UseVisualStyleBackColor = false;
+            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
+            // 
             // BTNSalir
             // 
             this.BTNSalir.BackColor = System.Drawing.Color.White;
             this.BTNSalir.FlatAppearance.BorderSize = 0;
             this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(606, 92);
+            this.BTNSalir.Location = new System.Drawing.Point(526, 92);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(158, 23);
             this.BTNSalir.TabIndex = 50;
@@ -98,7 +114,7 @@
             this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
-            this.BTNFiltrar.Location = new System.Drawing.Point(576, 92);
+            this.BTNFiltrar.Location = new System.Drawing.Point(496, 92);
             this.BTNFiltrar.Name = "BTNFiltrar";
             this.BTNFiltrar.Size = new System.Drawing.Size(24, 23);
             this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -114,7 +130,7 @@
             this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.IINFilas.Increment = 10;
-            this.IINFilas.Location = new System.Drawing.Point(202, 92);
+            this.IINFilas.Location = new System.Drawing.Point(122, 92);
             this.IINFilas.MaxValue = 1000;
             this.IINFilas.MinValue = 0;
             this.IINFilas.Name = "IINFilas";
@@ -125,7 +141,7 @@
             // 
             // TXTFiltrar
             // 
-            this.TXTFiltrar.Location = new System.Drawing.Point(258, 92);
+            this.TXTFiltrar.Location = new System.Drawing.Point(178, 92);
             this.TXTFiltrar.Name = "TXTFiltrar";
             this.TXTFiltrar.Size = new System.Drawing.Size(312, 23);
             this.TXTFiltrar.TabIndex = 47;
@@ -292,5 +308,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Button BTNReporte;
     }
 }

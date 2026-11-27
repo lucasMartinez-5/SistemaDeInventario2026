@@ -76,11 +76,6 @@ namespace SistemaDeInventario2026
             ActualizarGrid();
         }
 
-        private void BTNReporte_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BTNModificar_Click(object sender, EventArgs e)
         {
             if (DTGLista.SelectedRows.Count > 0)
@@ -187,35 +182,34 @@ namespace SistemaDeInventario2026
 
         #endregion
 
-        private void BTNRegistrar_Click_1(object sender, EventArgs e)
-        {
-            FRMUsuario_Registrar F1 = new FRMUsuario_Registrar();
-            F1.ShowDialog();
-            if (F1.actualizar)
-            {
-                ActualizarGrid();
-            }
-        }
+        
 
         private void DTGLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 1)
+            {
+                aususis usuario = new aususis();
+
+                usuario.pauscodusu = DTGLista[0, e.RowIndex].Value?.ToString();
+
+                if (usuario.ObtenerDatos())
+                {
+                    usuario.causestusu = !usuario.causestusu;
+
+                    if (!usuario.ModificarDatos())
+                    {
+                        MessageBox.Show("No se pudo modificar el estado del usuario.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                    }
+                }
+            }
+
             ActualizarGrid();
         }
 
-        private void BTNModificar_Click_1(object sender, EventArgs e)
-        {
-            if (DTGLista.SelectedRows.Count > 0)
-            {
-                FRMUsuario_Registrar F1 = new FRMUsuario_Registrar();
-                F1.modificar = true;
-                F1.codUsuMod = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
-                F1.ShowDialog();
-                if (F1.actualizar)
-                {
-                    ActualizarGrid();
-                }
-            }
-        }
+        
 
         private void BTNActualizarPassword_Click(object sender, EventArgs e)
         {
@@ -264,7 +258,7 @@ namespace SistemaDeInventario2026
             return;
             if (DTGLista.SelectedRows.Count > 0)
             {
-                FRMUsuario_Registrar F1 = new FRMUsuario_Registrar();
+                FRMAdministracion_Usuario_Registrar F1 = new FRMAdministracion_Usuario_Registrar();
                 F1.modificar = true;
                 F1.codUsuMod = DTGLista[0, DTGLista.SelectedRows[0].Index].Value.ToString();
                 F1.ShowDialog();
@@ -274,6 +268,19 @@ namespace SistemaDeInventario2026
                 }
             }
         }
-        
+
+        private void BTNReporte_Click(object sender, EventArgs e)
+        {
+            xreport reporte = new xreport();
+            reporte.titulo = "Reporte de Usuarios";
+            reporte.descripcion = "Listado de Usuarios registrados en el sistema Local de Dieter";
+            reporte.hoja = false;
+            reporte.orientacion = true;
+            reporte.letra = 12;
+            int col = 6;
+            float[] anchoColumnas = { 15, 15, 20, 25, 17, 15 };
+            List<string> titulosColumnas = new List<string>() { "Codigo", "Estado", "Documento", "Nombre Completo", "login", "Rol" };
+            reporte.GenerarReporte(col, anchoColumnas, titulosColumnas, lista_usuarios);
+        }
     }
 }

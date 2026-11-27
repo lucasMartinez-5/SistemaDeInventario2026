@@ -153,6 +153,26 @@ namespace SistemaDeInventario2026
 
         private void DTGLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 1)
+            {
+                aperson persona = new aperson();
+
+                persona.papscodper = DTGLista[0, e.RowIndex].Value?.ToString();
+
+                if (persona.ObtenerDatos())
+                {
+                    persona.capsestper = !persona.capsestper;
+
+                    if (!persona.Modificar())
+                    {
+                        MessageBox.Show("No se pudo modificar el estado de la persona.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                    }
+                }
+            }
+
             ActualizarGrid();
         }
 

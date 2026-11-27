@@ -105,6 +105,7 @@
             this.PCBImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PCBImagen.TabIndex = 78;
             this.PCBImagen.TabStop = false;
+            this.PCBImagen.Click += new System.EventHandler(this.PCBImagen_Click);
             // 
             // UCLProductoCard
             // 

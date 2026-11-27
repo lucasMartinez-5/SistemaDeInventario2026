@@ -41,6 +41,7 @@
             this.LBLInversionTotal = new DevComponents.DotNetBar.LabelX();
             this.label1 = new System.Windows.Forms.Label();
             this.LBLTitulo = new DevComponents.DotNetBar.LabelX();
+            this.BTNVerTodoVentas = new System.Windows.Forms.Button();
             this.PPrincipal.SuspendLayout();
             this.PCompra_Resumen.SuspendLayout();
             this.PFechaInversion.SuspendLayout();
@@ -87,6 +88,7 @@
             // PFechaInversion
             // 
             this.PFechaInversion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PFechaInversion.Controls.Add(this.BTNVerTodoVentas);
             this.PFechaInversion.Controls.Add(this.LBLRangoFechas);
             this.PFechaInversion.Controls.Add(this.BTNElegirFecha);
             this.PFechaInversion.Controls.Add(this.BTNVerDetalles);
@@ -237,6 +239,21 @@
             this.LBLTitulo.Text = "Resumen de Inversiones";
             this.LBLTitulo.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
+            // BTNVerTodoVentas
+            // 
+            this.BTNVerTodoVentas.BackColor = System.Drawing.Color.Black;
+            this.BTNVerTodoVentas.FlatAppearance.BorderSize = 0;
+            this.BTNVerTodoVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNVerTodoVentas.ForeColor = System.Drawing.Color.White;
+            this.BTNVerTodoVentas.Location = new System.Drawing.Point(193, 128);
+            this.BTNVerTodoVentas.Margin = new System.Windows.Forms.Padding(4);
+            this.BTNVerTodoVentas.Name = "BTNVerTodoVentas";
+            this.BTNVerTodoVentas.Size = new System.Drawing.Size(167, 32);
+            this.BTNVerTodoVentas.TabIndex = 92;
+            this.BTNVerTodoVentas.Text = "Ver Todas las compras";
+            this.BTNVerTodoVentas.UseVisualStyleBackColor = false;
+            this.BTNVerTodoVentas.Click += new System.EventHandler(this.BTNVerTodoVentas_Click);
+            // 
             // FRMCompra_Resumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,5 +291,6 @@
         private System.Windows.Forms.Button BTNElegirFecha;
         private DevComponents.DotNetBar.LabelX LBLRangoFechas;
         private System.Windows.Forms.Button BTNSalir;
+        private System.Windows.Forms.Button BTNVerTodoVentas;
     }
 }

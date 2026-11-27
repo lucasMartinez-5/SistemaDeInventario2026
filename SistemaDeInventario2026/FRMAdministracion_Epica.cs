@@ -203,7 +203,7 @@ namespace SistemaDeInventario2026
         }
         private void AbrirModificarUsuario(string codigo)
         {
-            FRMUsuario_Registrar reg = new FRMUsuario_Registrar();
+            FRMAdministracion_Usuario_Registrar reg = new FRMAdministracion_Usuario_Registrar();
             reg.modificar = true;
             reg.codUsuMod = codigo;
             AbrirEnPanelConRetorno(reg, () => CrearLista());

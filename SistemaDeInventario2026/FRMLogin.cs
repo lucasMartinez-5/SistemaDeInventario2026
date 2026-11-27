@@ -113,6 +113,7 @@ namespace SistemaDeInventario2026
             AplicarPrivilegios();
             AbrirEnPanel(new FRMInicioPrincipal());
             BTNCerrarSesion.Enabled = true;
+            LBLUsuario_Sesion.Text = "Usuario: " + SesionActual.NombreUsuario;
         }
         #endregion
 

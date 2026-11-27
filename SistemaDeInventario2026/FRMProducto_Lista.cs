@@ -15,7 +15,7 @@ namespace SistemaDeInventario2026
     public partial class FRMProducto_Lista : Form
     {
         #region Variables
-        public string filtro = "capdestpro = true"; // Filtro para mostrar solo productos habilitados // condición del catálogo (por defecto, la de siempre)
+        public string filtro = ""; // Filtro para mostrar solo productos habilitados // condición del catálogo (por defecto, la de siempre)
         private lproduc lproducto = new lproduc();
         private aproduc aproducto = new aproduc();
         private List<lproduc> lista_productos = new List<lproduc>();

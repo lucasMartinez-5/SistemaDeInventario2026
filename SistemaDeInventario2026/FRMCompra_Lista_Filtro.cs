@@ -18,6 +18,9 @@ namespace SistemaDeInventario2026
         private List<acompra> lista_compras = new List<acompra>();
         public DateTime desde = DateTime.Today;
         public DateTime hasta = DateTime.Today;
+
+        // NUEVA VARIABLE: Controla si se muestran todas o solo el rango
+        public bool mostrarTodo = false;
         #endregion
 
         #region Constructor
@@ -66,6 +69,24 @@ namespace SistemaDeInventario2026
                 //DTGLista[5, DTGLista.Rows.Count - 1].Value = a.capcfeccom.ToString("dd/MM/yyyy");   // Fecha (solo si agregas esa columna)
             }
         }
+
+        private void ActualizarGridCompleto()
+        {
+            DTGLista.Rows.Clear();
+            lista_compras.Clear();
+            lista_compras = compra.Lista("(papccodcom like '%" + TXTFiltrar.Text + "%' or " +
+                                              "faprcodpro like '%" + TXTFiltrar.Text + "%') limit " +
+                                           IINFilas.Value.ToString()
+                                           );
+            foreach (acompra a in lista_compras)
+            {
+                DTGLista.Rows.Add();
+                DTGLista[0, DTGLista.Rows.Count - 1].Value = a.papccodcom;
+                DTGLista[1, DTGLista.Rows.Count - 1].Value = a.capdfaccom;
+                DTGLista[2, DTGLista.Rows.Count - 1].Value = NombreProveedor(a.faprcodpro);
+                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capctotcom.ToString("N2");
+            }
+        }
         #endregion
 
         private void BTNSalir_Click(object sender, EventArgs e)
@@ -75,7 +96,15 @@ namespace SistemaDeInventario2026
 
         private void FRMCompra_Lista_Filtro_Load(object sender, EventArgs e)
         {
-            ActualizarGrid();
+            if (this.mostrarTodo)
+            {
+                ActualizarGridCompleto(); // Muestra todo (sin filtro de fechas)
+            }
+            else
+            {
+                ActualizarGrid();         // Muestra solo el rango de fechas
+            }
+            //ActualizarGrid();
         }
 
         private void BTNFiltrar_Click(object sender, EventArgs e)

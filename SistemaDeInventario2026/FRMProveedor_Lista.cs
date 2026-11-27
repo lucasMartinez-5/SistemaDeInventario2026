@@ -216,13 +216,13 @@ namespace SistemaDeInventario2026
         {
             xreport reporte = new xreport();
             reporte.titulo = "Reporte de Proveedores";
-            reporte.descripcion = "Listado de Proveedores registrados en el sistema surmarket";
+            reporte.descripcion = "Listado de Proveedores registrados en el sistema Local de Dieter";
             reporte.hoja = false;
             reporte.orientacion = true;
             reporte.letra = 12;
-            int col = 7;
-            float[] anchoColumnas = { 15, 15, 20, 25, 17, 15, 25 };
-            List<string> titulosColumnas = new List<string>() { "Código", "Estado", "NIT", "Razón Social", "Celular", "Sexo", "Dirección" };
+            int col = 6;
+            float[] anchoColumnas = { 15, 15, 20, 25, 17, 15 };
+            List<string> titulosColumnas = new List<string>() { "Código", "Estado", "NIT", "Razón Social", "Celular", "Dirección" };
             reporte.GenerarReporte(col, anchoColumnas, titulosColumnas, lista_proveedores);
         }
     }

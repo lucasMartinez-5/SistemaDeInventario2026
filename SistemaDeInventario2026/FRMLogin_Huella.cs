@@ -40,6 +40,7 @@ namespace SistemaDeInventario2026
             DPFP.Template T = new DPFP.Template();
             bool ban = false;
 
+
             foreach (lususis u in listaUsuarios)
             {
                 if (u.causnumhu1 > 0)
@@ -103,11 +104,15 @@ namespace SistemaDeInventario2026
                 persona.ObtenerDatos();
                 loginExitoso = true;
                 //this.Close();
+                //SesionActual.CodigoUsuario = usuario.pauscodusu;
+                //SesionActual.NombreUsuario = usuario.causnomlog;
+                //SesionActual.Rol = usuario.causrolusu;
                 SesionActual.CodigoUsuario = usuario.pauscodusu;
-                SesionActual.NombreUsuario = usuario.causnomlog;
+                SesionActual.NombreUsuario = persona.capsapepat + " " + persona.capsapemat + " " + persona.capsnomper;
                 SesionActual.Rol = usuario.causrolusu;
                 //this.Close();
                 this.BeginInvoke(new Action(this.Close));
+                
             }
             else
             {

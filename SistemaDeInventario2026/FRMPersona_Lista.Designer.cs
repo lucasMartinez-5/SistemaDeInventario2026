@@ -35,6 +35,7 @@
             this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PLista_Persona = new System.Windows.Forms.Panel();
+            this.BTNReporte = new System.Windows.Forms.Button();
             this.DTGLista = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -50,7 +51,6 @@
             this.IINFilas = new DevComponents.Editors.IntegerInput();
             this.TXTFiltrar = new System.Windows.Forms.TextBox();
             this.LBLDirectorioPersonas = new DevComponents.DotNetBar.LabelX();
-            this.BTNReporte = new System.Windows.Forms.Button();
             this.CMSMenu.SuspendLayout();
             this.PPrincipal.SuspendLayout();
             this.PLista_Persona.SuspendLayout();
@@ -113,6 +113,20 @@
             this.PLista_Persona.Name = "PLista_Persona";
             this.PLista_Persona.Size = new System.Drawing.Size(970, 519);
             this.PLista_Persona.TabIndex = 0;
+            // 
+            // BTNReporte
+            // 
+            this.BTNReporte.BackColor = System.Drawing.Color.White;
+            this.BTNReporte.FlatAppearance.BorderSize = 0;
+            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
+            this.BTNReporte.Location = new System.Drawing.Point(711, 92);
+            this.BTNReporte.Name = "BTNReporte";
+            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
+            this.BTNReporte.TabIndex = 140;
+            this.BTNReporte.Text = "Reporte";
+            this.BTNReporte.UseVisualStyleBackColor = false;
+            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
             // 
             // DTGLista
             // 
@@ -278,20 +292,6 @@
             this.LBLDirectorioPersonas.TabIndex = 134;
             this.LBLDirectorioPersonas.Text = "Directorio de Personas";
             this.LBLDirectorioPersonas.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // BTNReporte
-            // 
-            this.BTNReporte.BackColor = System.Drawing.Color.White;
-            this.BTNReporte.FlatAppearance.BorderSize = 0;
-            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
-            this.BTNReporte.Location = new System.Drawing.Point(711, 92);
-            this.BTNReporte.Name = "BTNReporte";
-            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
-            this.BTNReporte.TabIndex = 140;
-            this.BTNReporte.Text = "Reporte";
-            this.BTNReporte.UseVisualStyleBackColor = false;
-            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
             // 
             // FRMPersona_Lista
             // 

@@ -132,5 +132,10 @@ namespace SistemaDeInventario2026
                 if (lista != null) lista.ActualizarCatalogo();
             }
         }
+
+        private void PCBImagen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

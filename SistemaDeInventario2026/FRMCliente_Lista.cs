@@ -211,7 +211,7 @@ namespace SistemaDeInventario2026
             reporte.orientacion = true;
             reporte.letra = 12;
             int col = 6;
-            float[] anchoColumnas = { 15, 15, 20, 25, 17, 25 };
+            float[] anchoColumnas = { 15, 15, 20, 25, 17, 15 };
             List<string> titulosColumnas = new List<string>() { "Código", "Estado", "NIT", "Razón Social", "Celular", "Dirección" };
             reporte.GenerarReporte(col, anchoColumnas, titulosColumnas, lista_clientes);
         }

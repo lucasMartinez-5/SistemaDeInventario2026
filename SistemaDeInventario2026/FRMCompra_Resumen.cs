@@ -140,5 +140,13 @@ namespace SistemaDeInventario2026
         {
             this.Close();
         }
+
+        private void BTNVerTodoVentas_Click(object sender, EventArgs e)
+        {
+            FRMCompra_Lista_Filtro lista = new FRMCompra_Lista_Filtro();
+            lista.mostrarTodo = true;  // ← Esto hará que el Load ejecute ActualizarGridCompleto()
+
+            AbrirEnPanel(lista);
+        }
     }
 }

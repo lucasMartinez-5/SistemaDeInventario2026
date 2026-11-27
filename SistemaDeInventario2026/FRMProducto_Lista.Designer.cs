@@ -35,12 +35,12 @@
             this.habilitarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PNLConetenedorCatalogo = new System.Windows.Forms.Panel();
+            this.BTNReporte = new System.Windows.Forms.Button();
+            this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNAnterior = new System.Windows.Forms.Button();
             this.LBLCatalogoVisual = new DevComponents.DotNetBar.LabelX();
             this.BTNSiguiente = new System.Windows.Forms.Button();
             this.FLPCatalogo = new System.Windows.Forms.FlowLayoutPanel();
-            this.BTNReporte = new System.Windows.Forms.Button();
-            this.BTNSalir = new System.Windows.Forms.Button();
             this.CMSMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.PNLConetenedorCatalogo.SuspendLayout();
@@ -98,6 +98,34 @@
             this.PNLConetenedorCatalogo.Size = new System.Drawing.Size(1067, 552);
             this.PNLConetenedorCatalogo.TabIndex = 79;
             // 
+            // BTNReporte
+            // 
+            this.BTNReporte.BackColor = System.Drawing.Color.White;
+            this.BTNReporte.FlatAppearance.BorderSize = 0;
+            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
+            this.BTNReporte.Location = new System.Drawing.Point(557, 116);
+            this.BTNReporte.Name = "BTNReporte";
+            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
+            this.BTNReporte.TabIndex = 142;
+            this.BTNReporte.Text = "Reporte";
+            this.BTNReporte.UseVisualStyleBackColor = false;
+            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
+            // 
+            // BTNSalir
+            // 
+            this.BTNSalir.BackColor = System.Drawing.Color.White;
+            this.BTNSalir.FlatAppearance.BorderSize = 0;
+            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
+            this.BTNSalir.Location = new System.Drawing.Point(349, 116);
+            this.BTNSalir.Name = "BTNSalir";
+            this.BTNSalir.Size = new System.Drawing.Size(158, 23);
+            this.BTNSalir.TabIndex = 141;
+            this.BTNSalir.Text = "Salir";
+            this.BTNSalir.UseVisualStyleBackColor = false;
+            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
+            // 
             // BTNAnterior
             // 
             this.BTNAnterior.FlatAppearance.BorderSize = 0;
@@ -148,34 +176,6 @@
             this.FLPCatalogo.Size = new System.Drawing.Size(682, 361);
             this.FLPCatalogo.TabIndex = 79;
             this.FLPCatalogo.WrapContents = false;
-            // 
-            // BTNReporte
-            // 
-            this.BTNReporte.BackColor = System.Drawing.Color.White;
-            this.BTNReporte.FlatAppearance.BorderSize = 0;
-            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
-            this.BTNReporte.Location = new System.Drawing.Point(557, 116);
-            this.BTNReporte.Name = "BTNReporte";
-            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
-            this.BTNReporte.TabIndex = 142;
-            this.BTNReporte.Text = "Reporte";
-            this.BTNReporte.UseVisualStyleBackColor = false;
-            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
-            // 
-            // BTNSalir
-            // 
-            this.BTNSalir.BackColor = System.Drawing.Color.White;
-            this.BTNSalir.FlatAppearance.BorderSize = 0;
-            this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(349, 116);
-            this.BTNSalir.Name = "BTNSalir";
-            this.BTNSalir.Size = new System.Drawing.Size(158, 23);
-            this.BTNSalir.TabIndex = 141;
-            this.BTNSalir.Text = "Salir";
-            this.BTNSalir.UseVisualStyleBackColor = false;
-            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
             // 
             // FRMProducto_Lista
             // 
