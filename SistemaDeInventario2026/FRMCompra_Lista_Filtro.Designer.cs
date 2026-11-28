@@ -31,6 +31,7 @@
             this.PPrincipal = new System.Windows.Forms.Panel();
             this.PMenu_Compra_Lista_Filtro = new System.Windows.Forms.Panel();
             this.PCompra_Lista = new System.Windows.Forms.Panel();
+            this.BTNReporte = new System.Windows.Forms.Button();
             this.BTNSalir = new System.Windows.Forms.Button();
             this.BTNFiltrar = new DevComponents.DotNetBar.ButtonX();
             this.IINFilas = new DevComponents.Editors.IntegerInput();
@@ -38,10 +39,11 @@
             this.LBLDetalles_Compra_Filtro = new DevComponents.DotNetBar.LabelX();
             this.DTGLista = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.PPrincipal.SuspendLayout();
             this.PMenu_Compra_Lista_Filtro.SuspendLayout();
             this.PCompra_Lista.SuspendLayout();
@@ -71,6 +73,7 @@
             // PCompra_Lista
             // 
             this.PCompra_Lista.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PCompra_Lista.Controls.Add(this.BTNReporte);
             this.PCompra_Lista.Controls.Add(this.BTNSalir);
             this.PCompra_Lista.Controls.Add(this.BTNFiltrar);
             this.PCompra_Lista.Controls.Add(this.IINFilas);
@@ -82,13 +85,27 @@
             this.PCompra_Lista.Size = new System.Drawing.Size(970, 519);
             this.PCompra_Lista.TabIndex = 16;
             // 
+            // BTNReporte
+            // 
+            this.BTNReporte.BackColor = System.Drawing.Color.White;
+            this.BTNReporte.FlatAppearance.BorderSize = 0;
+            this.BTNReporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.BTNReporte.ForeColor = System.Drawing.Color.Black;
+            this.BTNReporte.Location = new System.Drawing.Point(709, 88);
+            this.BTNReporte.Name = "BTNReporte";
+            this.BTNReporte.Size = new System.Drawing.Size(158, 23);
+            this.BTNReporte.TabIndex = 143;
+            this.BTNReporte.Text = "Reporte";
+            this.BTNReporte.UseVisualStyleBackColor = false;
+            this.BTNReporte.Click += new System.EventHandler(this.BTNReporte_Click);
+            // 
             // BTNSalir
             // 
             this.BTNSalir.BackColor = System.Drawing.Color.White;
             this.BTNSalir.FlatAppearance.BorderSize = 0;
             this.BTNSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.BTNSalir.ForeColor = System.Drawing.Color.Black;
-            this.BTNSalir.Location = new System.Drawing.Point(591, 88);
+            this.BTNSalir.Location = new System.Drawing.Point(492, 88);
             this.BTNSalir.Name = "BTNSalir";
             this.BTNSalir.Size = new System.Drawing.Size(158, 23);
             this.BTNSalir.TabIndex = 44;
@@ -102,7 +119,7 @@
             this.BTNFiltrar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTNFiltrar.Image = global::SistemaDeInventario2026.Properties.Resources.ic_buscar;
             this.BTNFiltrar.ImageFixedSize = new System.Drawing.Size(20, 20);
-            this.BTNFiltrar.Location = new System.Drawing.Point(561, 88);
+            this.BTNFiltrar.Location = new System.Drawing.Point(462, 88);
             this.BTNFiltrar.Name = "BTNFiltrar";
             this.BTNFiltrar.Size = new System.Drawing.Size(24, 23);
             this.BTNFiltrar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -118,7 +135,7 @@
             this.IINFilas.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.IINFilas.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.IINFilas.Increment = 10;
-            this.IINFilas.Location = new System.Drawing.Point(187, 88);
+            this.IINFilas.Location = new System.Drawing.Point(88, 88);
             this.IINFilas.MaxValue = 1000;
             this.IINFilas.MinValue = 0;
             this.IINFilas.Name = "IINFilas";
@@ -129,7 +146,7 @@
             // 
             // TXTFiltrar
             // 
-            this.TXTFiltrar.Location = new System.Drawing.Point(243, 88);
+            this.TXTFiltrar.Location = new System.Drawing.Point(144, 88);
             this.TXTFiltrar.Name = "TXTFiltrar";
             this.TXTFiltrar.Size = new System.Drawing.Size(312, 23);
             this.TXTFiltrar.TabIndex = 13;
@@ -161,19 +178,21 @@
             this.DTGLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DTGLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column2,
             this.Column3,
             this.Column4,
-            this.Column2,
-            this.Column7});
+            this.Column5,
+            this.Column6});
             this.DTGLista.Cursor = System.Windows.Forms.Cursors.Default;
             this.DTGLista.GridColor = System.Drawing.SystemColors.Control;
-            this.DTGLista.Location = new System.Drawing.Point(40, 142);
+            this.DTGLista.Location = new System.Drawing.Point(11, 139);
             this.DTGLista.Margin = new System.Windows.Forms.Padding(4);
             this.DTGLista.MultiSelect = false;
             this.DTGLista.Name = "DTGLista";
             this.DTGLista.ReadOnly = true;
+            this.DTGLista.RowHeadersVisible = false;
             this.DTGLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTGLista.Size = new System.Drawing.Size(887, 341);
+            this.DTGLista.Size = new System.Drawing.Size(947, 341);
             this.DTGLista.TabIndex = 11;
             this.DTGLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGLista_CellContentClick);
             // 
@@ -184,36 +203,43 @@
             this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "N° Factura";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 201;
+            // 
             // Column3
             // 
-            this.Column3.HeaderText = "N° Factura";
+            this.Column3.HeaderText = "Proveedor";
+            this.Column3.MinimumWidth = 20;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 201;
+            this.Column3.Width = 310;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Proveedor";
-            this.Column4.MinimumWidth = 20;
+            this.Column4.HeaderText = "Fecha";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 365;
+            this.Column4.Width = 155;
             // 
-            // Column2
+            // Column5
             // 
-            this.Column2.HeaderText = "Total";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 145;
+            this.Column5.HeaderText = "Total";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 145;
             // 
-            // Column7
+            // Column6
             // 
-            this.Column7.HeaderText = "Acciones";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Text = "Ver";
-            this.Column7.UseColumnTextForButtonValue = true;
-            this.Column7.Width = 135;
+            this.Column6.HeaderText = "Acciones";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Text = "Ver";
+            this.Column6.UseColumnTextForButtonValue = true;
+            this.Column6.Width = 135;
             // 
             // FRMCompra_Lista_Filtro
             // 
@@ -247,10 +273,12 @@
         private System.Windows.Forms.TextBox TXTFiltrar;
         private DevComponents.DotNetBar.LabelX LBLDetalles_Compra_Filtro;
         private System.Windows.Forms.DataGridView DTGLista;
+        private System.Windows.Forms.Button BTNReporte;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewButtonColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewButtonColumn Column6;
     }
 }

@@ -65,7 +65,8 @@ namespace SistemaDeInventario2026
                 DTGLista[0, DTGLista.Rows.Count - 1].Value = a.papccodcom;                  // Código (columna oculta)
                 DTGLista[1, DTGLista.Rows.Count - 1].Value = a.capdfaccom;                  // N° Factura
                 DTGLista[2, DTGLista.Rows.Count - 1].Value = NombreProveedor(a.faprcodpro); // Proveedor
-                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capctotcom.ToString("N2");   // Total
+                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capcfeccom;
+                DTGLista[4, DTGLista.Rows.Count - 1].Value = a.capctotcom.ToString("N2");   // Total
                 //DTGLista[5, DTGLista.Rows.Count - 1].Value = a.capcfeccom.ToString("dd/MM/yyyy");   // Fecha (solo si agregas esa columna)
             }
         }
@@ -84,7 +85,8 @@ namespace SistemaDeInventario2026
                 DTGLista[0, DTGLista.Rows.Count - 1].Value = a.papccodcom;
                 DTGLista[1, DTGLista.Rows.Count - 1].Value = a.capdfaccom;
                 DTGLista[2, DTGLista.Rows.Count - 1].Value = NombreProveedor(a.faprcodpro);
-                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capctotcom.ToString("N2");
+                DTGLista[3, DTGLista.Rows.Count - 1].Value = a.capcfeccom;
+                DTGLista[4, DTGLista.Rows.Count - 1].Value = a.capctotcom.ToString("N2");
             }
         }
         #endregion
@@ -126,6 +128,20 @@ namespace SistemaDeInventario2026
                     F1.ShowDialog();
                 }
             }
+        }
+
+        private void BTNReporte_Click(object sender, EventArgs e)
+        {
+            xreport reporte = new xreport();
+            reporte.titulo = "Reporte de Compras";
+            reporte.descripcion = "Listado de Compras registradas en el sistema Local De Dieter";
+            reporte.hoja = false;
+            reporte.orientacion = true;
+            reporte.letra = 12;
+            int col = 5;
+            float[] anchoColumnas = { 15, 15, 20, 25, 17 };
+            List<string> titulosColumnas = new List<string>() { "Código", "N° Factura", "Proveedor", "Fecha", "Total" };
+            reporte.GenerarReporte(col, anchoColumnas, titulosColumnas, lista_compras);
         }
     }
 }

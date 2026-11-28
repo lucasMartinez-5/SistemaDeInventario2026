@@ -90,5 +90,19 @@ namespace SistemaDeInventario2026
                 }
             }
         }
+
+        private void BTNReporte_Click(object sender, EventArgs e)
+        {
+            xreport reporte = new xreport();
+            reporte.titulo = "Reporte de Ventas";
+            reporte.descripcion = "Listado de Ventas registradas en el sistema Local De Dieter";
+            reporte.hoja = false;
+            reporte.orientacion = true;
+            reporte.letra = 12;
+            int col = 4;
+            float[] anchoColumnas = { 13, 30, 18, 15 };
+            List<string> titulosColumnas = new List<string>() { "Código", "Cliente", "Fecha", "Total" };
+            reporte.GenerarReporte(col, anchoColumnas, titulosColumnas, lista_ventas);
+        }
     }
 }
